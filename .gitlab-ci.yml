@@ -37,7 +37,7 @@ deploy-job:
   variables:
     PROJECT_NAME: blend-docs-material
   dependencies:
-  - build
+  - build-job
   script:
   - wrangler pages deploy site/ --project-name $PROJECT_NAME
   only:
