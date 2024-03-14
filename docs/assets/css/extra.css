@@ -1,0 +1,127 @@
+:root>* {
+    /*
+	https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_colors.scss
+	*/
+    --md-primary-fg-color: #21af90;
+    --md-primary-fg-color--light: #32d8b4;
+    --md-primary-fg-color--dark: #21af90;
+    --md-accent-fg-color: #25c2a0;
+    --md-typeset-mark-color: #2e8555;
+    /* --md-accent-fg-color: #EB459E; */
+}
+
+/* Credit to https://ctt.cx and https://facelessuser.github.io/pymdown-extensions/ */
+
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #1e2029;
+    border-bottom: 0.10rem solid var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    background-color: #263f3f;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link {
+    /* color: var(--md-primary-fg-color--light); */
+    /* color: #e9be91; */
+}
+
+[data-md-color-scheme="default"] .md-header {
+    background-color: white;
+    border-bottom: 0.10rem solid var(--md-accent-fg-color);
+    color: black;
+}
+
+[data-md-color-scheme="default"] .md-tabs {
+    color: black;
+    background-color: white;
+}
+
+.md-nav[data-md-level="2"]>.md-nav__list {
+    margin-left: 1.45em;
+    padding-left: 0.75em;
+    position: relative;
+}
+
+.md-nav[data-md-level="2"]>.md-nav__list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, #473a31 0%, #473a31 50%, #473a31 100%);
+}
+
+@media (max-width: 1220px) {
+    .md-nav[data-md-level="2"]>.md-nav__list::before {
+        opacity: 0%;
+    }
+
+    .md-nav[data-md-level="2"]>.md-nav__list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.md-typeset h1 {
+    color: var(--md-typeset-a-color);
+    font-weight: 700;
+}
+
+/* credit end */
+
+/*
+.md-typeset .admonition,
+.md-typeset details {
+    border-width: 0;
+    border-left-width: 4px;
+}
+*/
+
+
+
+.md-typeset .admonition.image,
+.md-typeset details.image {
+    border-color: rgb(var(--main-color));
+}
+
+.md-typeset .image>.admonition-title,
+.md-typeset .image>summary {
+    background-color: rgba(var(--main-color), 0.1);
+}
+
+.md-typeset .image>.admonition-title::before,
+.md-typeset .image>summary::before {
+    background-color: rgb(var(--main-color));
+    -webkit-mask-image: var(--md-admonition-icon--image);
+    mask-image: var(--md-admonition-icon--image);
+}
+
+
+.circle {
+    border: 1px solid white;
+    border-radius: 100px;
+    
+}
+
+.md-footer {
+  border-top: 0.10rem solid var(--md-accent-fg-color);
+}
+
+.md-footer__link {
+    margin-bottom: 0 !important;
+    margin-top: 0.2rem !important;
+}
+
+.md-social,
+.md-copyright {
+    padding: 0 !important
+}
+
+/* .md-copyright {
+    display: none !important;
+} */
+

@@ -1,0 +1,169 @@
+site_name: blendOS Docs
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/img/logo.png
+  favicon: assets/img/logo.png
+  icon:
+    admonition:
+      tip: material/lightbulb
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.prune
+    - navigation.indexes
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    # - media: "(prefers-color-scheme: dark)"
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    
+    # - media: "(prefers-color-scheme: light)"
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+copyright: "&copy; 2024 blendOS contributors"
+
+extra:
+  generator: false
+  social:
+    - icon: simple/x
+      link: https://x.com/@blend_os
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/fvMpV8ZNxD
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/blendos
+    - icon: simple/uptimekuma
+      link: https://status.asterisk.lol/status/blendos
+    - icon: fontawesome/brands/github
+      link: https://github.com/blend_os
+    - icon: fontawesome/brands/gitlab
+      link: https://git.blendos.co/blendos
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - toc:
+      anchorlink: false
+      permalink: "#"
+      permalink_title: ""
+  - tables
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets:
+      check_paths: true
+      url_download: true
+      url_max_size: 33554432
+      url_timeout: 10
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.magiclink:
+      hide_protocol: true
+      normalize_issue_symbols: false
+      repo_url_shorthand: true
+      repo_url_shortener: true
+      provider: github
+      user: blend-os
+      repo: blendos
+      social_url_shorthand: true
+      social_url_shortener: true
+  - pymdownx.keys
+  - pymdownx.smartsymbols:
+      trademark: true
+      copyright: true
+      registered: true
+      care_of: true
+      plusminus: true
+      arrows: true
+      notequal: true
+      fractions: true
+      ordinal_numbers: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+
+
+plugins:
+  - search
+  - glightbox
+  - group:
+      enabled: !ENV CI 
+      plugins:
+        - privacy:
+            enabled: true
+            cache: true
+            cache_dir: .cache/plugins/privacy
+            log: true
+            assets: true
+            assets_fetch: true
+            assets_fetch_dir: assets/external
+            links: true
+            links_noopener: true
+        - social:
+            enabled: true
+            cache_dir: .cache/plugins/social
+            cards: true
+            cards_dir: assets/images/social
+            cards_layout_options:
+              background_color: "#1e2029"
+              color: "#21af90"
+        - mkdocs-git-authors-plugin
+        - mkdocs-git-revision-date-localized-plugin:
+            type: timeago 
+            
+watch:
+  - "overrides"
+  - "includes"
+
+
+extra_css:
+  - assets/css/extra.css
+
+nav:
+  - Home: index.md
+  - Installation:
+     - Installation: install/README.md
+     - Normal PC: install/normal-pc.md
+     - T2 Mac: install/t2.md
+  - Reference:
+      - Reference: reference/README.md
