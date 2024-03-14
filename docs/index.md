@@ -56,7 +56,7 @@ glightbox: false
 
 -------
 
-[:material-download: Install blendOS](install/README.md){ .md-button }  &nbsp; &nbsp; [:material-cog: Configuration Reference](reference/README.md){ .md-button }
+[:material-download: Install blendOS](install/README.md){ .md-button } [:material-cog: Configuration Reference](reference/README.md){ .md-button }
 
 -------
 
@@ -80,7 +80,7 @@ glightbox: false
 <br>
 *blendOS BDFL/Lead Dev*
 
-![Asterisk](https://github.com/ast3risk-ops.png){ .circle width=200px }
+![Asterisk](assets/img/me.png){ .circle width=200px }
 <br>
 [**Asterisk**](https://asterisk.lol)
 <br>
