@@ -1,11 +1,17 @@
 site_name: blendOS Docs
 site_url: https://blend-docs-material.pages.dev
+repo_url: https://git.blendos.co/asterisk/blend-docs-material
+repo_name: Asterisk/blend-docs-material
+edit_uri: edit/main/docs
 theme:
   name: material
   custom_dir: overrides
   logo: assets/img/logo.png
   favicon: assets/img/logo.png
   icon:
+    repo: fontawesome/brands/gitlab
+    edit: material/pencil
+    view: material/eye
     admonition:
       tip: material/lightbulb
   features:
@@ -18,6 +24,8 @@ theme:
     - content.code.copy
     - content.code.annotate
     - content.tooltips
+    - content.action.edit
+    - content.action.view
     - toc.follow
     - navigation.top
     - search.suggest
