@@ -56,7 +56,7 @@ glightbox: false
 
 -------
 
-[:material-download: Install blendOS](install/README.md){ .md-button } [:material-cog: Configuration Reference](reference/README.md){ .md-button }
+[:material-download: Install blendOS](install/README.md){ .md-button }  &nbsp; &nbsp; [:material-cog: Configuration Reference](reference/README.md){ .md-button }
 
 -------
 
