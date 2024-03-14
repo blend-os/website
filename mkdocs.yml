@@ -150,8 +150,8 @@ plugins:
             cards_layout_options:
               background_color: "#1e2029"
               color: "#21af90"
-        - mkdocs-git-authors-plugin
-        - mkdocs-git-revision-date-localized-plugin:
+        - git-authors
+        - git-revision-date-localized:
             type: timeago 
             
 
