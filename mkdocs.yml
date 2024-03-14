@@ -50,6 +50,8 @@ extra:
       link: https://discord.gg/fvMpV8ZNxD
     - icon: fontawesome/brands/telegram
       link: https://t.me/blendos
+    - icon: simple/element
+      link: https://matrix.to/#/#blendos:matrix.org
     - icon: simple/uptimekuma
       link: https://status.asterisk.lol/status/blendos
     - icon: fontawesome/brands/github
@@ -151,9 +153,7 @@ plugins:
         - mkdocs-git-revision-date-localized-plugin:
             type: timeago 
             
-watch:
-  - "overrides"
-  - "includes"
+
 
 
 extra_css:
