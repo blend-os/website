@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "FiraCodeNerd";
+    src: url("../fonts/FiraMonoNerdFontMono-Regular.otf");
+}
+
 :root>* {
     /*
 	https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_colors.scss
@@ -7,6 +12,7 @@
     --md-primary-fg-color--dark: #21af90;
     --md-accent-fg-color: #25c2a0;
     --md-typeset-mark-color: #2e8555;
+    --md-code-font: "FiraCodeNerd";
     /* --md-accent-fg-color: #EB459E; */
 }
 
@@ -125,3 +131,49 @@
     display: none !important;
 } */
 
+
+.blue {
+    color: #00B8D4;
+}
+
+.tip {
+    color: #00BFA5;
+}
+
+.green {
+    color: #00C853
+}
+
+.orange {
+    color: #FFA724;
+}
+
+.pink {
+    color: #FF00DE;
+}
+
+.red {
+    color: #FF1744;
+}
+
+.text-lg {
+    font-size: large;
+}
+
+.ccc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.windows {
+    color: #0078d6;
+}
+
+.small {
+    font-size: smaller;
+}
+
+.required {
+    title: "Required";
+}

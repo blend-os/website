@@ -4,6 +4,9 @@ repo_url: https://git.blendos.co/asterisk/blend-docs-material
 repo_name: Asterisk/blend-docs-material
 edit_uri: edit/main/docs
 theme:
+  font:
+    text: Archivo
+    mono: custom
   name: material
   custom_dir: overrides
   logo: assets/img/logo.png
@@ -14,6 +17,10 @@ theme:
     view: material/eye
     admonition:
       tip: material/lightbulb
+      danger: material/bomb
+      question: fontawesome/solid/question
+      warning: material/exclamation-thick
+      bug: material/bug
   features:
     - navigation.tracking
     - navigation.tabs
@@ -131,6 +138,7 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.inlinehilite
 
 
 
