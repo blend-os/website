@@ -56,7 +56,9 @@ theme:
         name: Switch to dark mode
 
 copyright: "&copy; 2024 blendOS contributors"
-
+watch:
+  - "includes"
+  - "overrides"
 extra:
   generator: false
   social:
@@ -102,6 +104,8 @@ markdown_extensions:
       url_download: true
       url_max_size: 33554432
       url_timeout: 10
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
