@@ -185,5 +185,7 @@ nav:
      - Installation: install/README.md
      - Normal PC: install/normal-pc.md
      - T2 Mac: install/t2.md
+     - Post-Installation:
+       - Post-Installation: install/post-install/README.md
   - Reference:
       - Reference: reference/README.md
