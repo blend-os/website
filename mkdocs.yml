@@ -19,7 +19,6 @@ theme:
       tip: material/lightbulb
       danger: material/bomb
       question: fontawesome/solid/question
-      warning: material/exclamation-thick
       bug: material/bug
   features:
     - navigation.tracking
@@ -68,7 +67,7 @@ extra:
       link: https://discord.gg/fvMpV8ZNxD
     - icon: fontawesome/brands/telegram
       link: https://t.me/blendos
-    - icon: simple/element
+    - icon: simple/matrix
       link: https://matrix.to/#/#blendos:matrix.org
     - icon: simple/uptimekuma
       link: https://status.asterisk.lol/status/blendos
