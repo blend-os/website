@@ -68,8 +68,7 @@ You can get the current v4 testing edition from the following mirrors:
     ```
 
     Replace `/dev/sdX` with your USB's identifier (found via `lsblk`)
-
-
+------
 
 [^1]: This only works with installed versions of Etcher, not portable ones.
 
