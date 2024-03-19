@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+<!-- Content -->
+{% block content %}
+<div align="center" markdown>
+
+    <h1>
+        404 - Not found
+    </h1>
+    <p>This page does not exist or has been moved. 
+    <br><br>
+    Please contact us or make a pull request if you think a redirect is necessary.</p>
+    <a href="javascript:history.back()" class="md-button md-button--primary">
+        
+        <span class="twemoji">
+        {% include ".icons/material/arrow-left.svg" %}
+        </span>
+        Go Back
+    
+    </a>
+    <a href="/" class="md-button">
+        <span class="twemoji">
+        {% include ".icons/material/home.svg" %}
+        </span>
+        Go Home
+    </a>
+</div>
+
+{% endblock %}
