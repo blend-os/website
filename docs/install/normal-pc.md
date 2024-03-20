@@ -14,7 +14,7 @@ description: "Installing blendOS on a normal PC"
 
 ## :material-clipboard-list-outline: Requirements
 
-!!! question inline end "How can I check my CPU?"
+!!! question inline end "How can I check if I'm 64-bit?"
     **:material-microsoft-windows: Windows**:
     Consult [Microsoft's guide](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808).
 
