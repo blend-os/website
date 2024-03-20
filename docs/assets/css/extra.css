@@ -148,6 +148,10 @@
     color: #FFA724;
 }
 
+.yellow {
+    color: #FFD600;
+}
+
 .pink {
     color: #FF00DE;
 }
@@ -177,3 +181,4 @@
 .required {
     title: "Required";
 }
+
