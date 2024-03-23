@@ -189,3 +189,9 @@ nav:
        - Post-Installation: install/post-install/README.md
   - Reference:
       - Reference: reference/README.md
+      - Utilities: 
+        - Utilities: reference/utils/README.md
+        - bpkg: reference/utils/bpkg.md
+      - Files:
+        - Files: reference/configs/README.md
+        - system.yaml: reference/configs/system.md

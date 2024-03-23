@@ -141,7 +141,11 @@
 }
 
 .green {
-    color: #00C853
+    color: #00C853;
+}
+
+.blend {
+    color: #21af90;
 }
 
 .orange {
