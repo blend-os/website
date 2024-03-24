@@ -143,6 +143,6 @@ This will pull all your containers and generate a new config file, overwriting y
 
 --8<-- "docs/reference/container-list/v3.md"
 
-### v4 ![testing badge](https://img.shields.io/badge/testing-%237c4dff)
+### v4 ![testing badge](https://img.shields.io/badge/testing-#237c4dff)
 
 --8<-- "docs/reference/container-list/v4.md"
