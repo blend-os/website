@@ -195,17 +195,17 @@
 
 .md-typeset .admonition.code,
 .md-typeset details.code {
-    border-color: rgb(123, 43, 155);
+    border-color: rgb(43, 155, 49);
 }
 
 .md-typeset .code>.admonition-title,
 .md-typeset .code>summary {
-    background-color: rgba(105, 43, 155, 0.1);
+    background-color: rgba(43, 155, 80, 0.1);
 }
 
 .md-typeset .code>.admonition-title::before,
 .md-typeset .code>summary::before {
-    background-color: rgb(174, 26, 211);
+    background-color: rgb(17, 128, 27);
     -webkit-mask-image: var(--md-admonition-icon--code);
     mask-image: var(--md-admonition-icon--code);
 }
