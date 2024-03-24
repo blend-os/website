@@ -5,7 +5,7 @@ description: "Reference for bpkg"
 
 <div class="grid cards" markdown>
 
--   # :material-package-variant-closed: bpkg
+-   # :material-package-variant-closed: bpkg ![v3 badge](https://img.shields.io/badge/v3-red) ![v4 badge](https://img.shields.io/badge/v4-green)
     -------
 
     <em>Our universal package manager.</em>
@@ -115,4 +115,13 @@ update_flatpak: true # (3)!
       **Type:** object array
 
       Container list
+
+## :octicons-container-24: Container List
+
+--8<-- "docs/reference/container-list.md"
+
+
+
+
+
 
