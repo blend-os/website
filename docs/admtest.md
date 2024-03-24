@@ -25,3 +25,5 @@ title: "Admonition Test"
 !!! example "hi"
 
 !!! quote "hi"
+
+!!! code "hi"
