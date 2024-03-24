@@ -1,6 +1,7 @@
 ---
 icon: material/package-variant-closed
 description: "Reference for bpkg"
+glightbox: false
 ---
 
 <div class="grid cards" markdown>
@@ -34,6 +35,33 @@ description: "Reference for bpkg"
 Unzip the file into any folder (open it with your archive manager), then open your terminal.
 
 `cd` to the folder you extracted it to, then do `#!bash chmod +x install.sh && ./install.sh`.
+
+
+
+## :material-clipboard-text: Reference
+
+### :material-file-code: `bpkg.yaml`
+
+`bpkg` will generate a config file at first run.
+
+!!! warning ""
+    The config file will need to be updated every time you add or delete a container by running `#!bash bpkg overwrite-config` in your terminal.
+
+Its contents will look something like this based on your containers:
+
+??? abstract "Obtaining the container list"
+    The container list is obtained by using the following commands:
+
+    ```bash
+    podman ps -a --no-trunc --size --format '{{.Names}}'
+    ```
+    ```bash
+    podman ps -a --no-trunc --size --format '{{.Image}}'
+    ```
+
+    The YAML code is generated from the output.
+
+--8<-- "docs/reference/utils/files/bpkg.yaml.md"
 
 ## :material-file-cog: Configuration
 
@@ -70,33 +98,7 @@ containers:
 ```
 
 then the Arch container will not be used by `bpkg`.
-
-## :material-clipboard-text: Reference
-
-### :material-file-code: `bpkg.yaml`
-
-`bpkg` will generate a config file at first run.
-
-!!! warning ""
-    The config file will need to be updated every time you add or delete a container by running `#!bash bpkg overwrite-config` in your terminal.
-
-Its contents will look something like this based on your containers:
-
-??? abstract "Obtaining the container list"
-    The container list is obtained by using the following commands:
-
-    ```bash
-    podman ps -a --no-trunc --size --format '{{.Names}}'
-    ```
-    ```bash
-    podman ps -a --no-trunc --size --format '{{.Image}}'
-    ```
-
-    The YAML code is generated from the output.
-
---8<-- "docs/reference/utils/files/bpkg.yaml.md"
-
-### :octicons-terminal-16: CLI Usage
+## :octicons-terminal-16: CLI Usage
 
 !!! note ""
     `<>` denotes a required parameter, `[]` denotes an optional one.
