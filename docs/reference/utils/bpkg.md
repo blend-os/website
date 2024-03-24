@@ -12,8 +12,9 @@ glightbox: false
     <em>Our universal package manager.</em>
 
     - Language: :misc-python:{ title=Python }
-    - Size: unknown, waiting for gitlab to come back online.
+    - Size::material-approximately-equal:27.63 KB
     - GUI: :octicons-x-12:{ .red title="No" }
+    - Comes with blendOS: :octicons-x-12:{ .red title="No" }
 
     --------
     ```title="Config file location"
@@ -109,6 +110,19 @@ then the Arch container will not be used by `bpkg`.
     !!! example ""
         **Example:** `[-c <container>]`. The `-c` argument is optional, but if you choose to use it `<container>` is required.
 
+#### :fontawesome-solid-question: Help Page
+
+```bash
+bpkg
+```
+
+Shows a help page.
+
+??? code "Source"
+    ```py title="bpkg.py" linenums="1"
+    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:help"
+    ```
+
 #### :material-package-variant-plus: Install a package
 
 ```bash
@@ -118,7 +132,7 @@ bpkg install <package> [-c <container>]
 This will search for the package in your installed distros and install it from the first package manager it finds by your order of preference in [`bpkg.yaml`](#bpkgyaml), though you can specify a specific container.
 
 ??? code "Source"
-    ```py title="bpkg.py"
+    ```py title="bpkg.py" linenums="1"
     --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:install"
     ```
 

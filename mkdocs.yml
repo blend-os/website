@@ -197,6 +197,7 @@ nav:
       - Reference: reference/README.md
       - Utilities: 
         - Utilities: reference/utils/README.md
+        - akshara: reference/utils/akshara.md
         - bpkg: reference/utils/bpkg.md
       - Files:
         - Files: reference/configs/README.md
