@@ -15,33 +15,48 @@ description: "Reference for bpkg"
     - GUI: :octicons-x-12:{ .red title="No" }
 
     --------
+    ```title="Config file location"
+    󱂵 ~
+    └── 󰉋 .config
+        └── 󰈮 bpkg.yaml
+    ```
+
+    ------
 
     [:material-download: Download](https://git.blendos.co/blendOS/bpkg/-/archive/main/bpkg-main.tar.gz){ .md-button target="_blank" rel="noopener noreferrer" } [:octicons-code-16: Source Code](https://git.blendos.co/blendos/bpkg){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 ??? question "What is bpkg?"
     `bpkg` is our package management utility that allows you to use the package managers of all your containers. This allows you to quickly install packages from any repo.
+
 ## :material-package-variant-plus: Installation
 
 Unzip the file into any folder (open it with your archive manager), then open your terminal.
 
 `cd` to the folder you extracted it to, then do `#!bash chmod +x install.sh && ./install.sh`.
 
-## :material-file-cog: Configuration
 
-`bpkg` will generate a config file at first run.
-
-<!-- Nerd Font icons are used here. We've set the monospace font to a nerd font saved in assets/fonts. -->
-
-```title="Config file location"
-󱂵 ~
-└── 󰉋 .config
-    └── 󰈮 bpkg.yaml
-```
 
 ## :material-file-code: Reference
 
+`bpkg` will generate a config file at first run.
+
+!!! info "Updating the config file"
+    The config file will need to be updated every time you add or delete a container by running `#!bash bpkg overwrite-config` in your terminal.
+
 Its contents will look something like this based on your containers:
+
+??? abstract "Obtaining the container list"
+    The container list is obtained by using the following commands:
+
+    ```bash
+    podman ps -a --no-trunc --size --format '{{.Names}}'
+    ```
+    ```bash
+    podman ps -a --no-trunc --size --format '{{.Image}}'
+    ```
+
+    The YAML code is generated from the output.
 
 ```yaml title="bpkg.yaml"
 # bpkg config file
@@ -84,10 +99,14 @@ update_flatpak: true # (3)!
       Container's name, set by the user
     
 2.    **`containers.distro`**
+      
+      **Type:** string
 
       Container's distro
 
 3.    **`update_flatpak`**
+      
+      **Type:** boolean
     
       Toggles whether or not Flatpak is checked during update operations
 
@@ -96,3 +115,4 @@ update_flatpak: true # (3)!
       **Type:** object array
 
       Container list
+

@@ -20,6 +20,7 @@ theme:
       danger: material/bomb
       question: fontawesome/solid/question
       bug: material/bug
+      info: fontawesome/solid/info
   features:
     - navigation.tracking
     - navigation.tabs
