@@ -17,10 +17,13 @@ theme:
     view: material/eye
     admonition:
       tip: material/lightbulb
-      danger: material/bomb
+      danger: material/skull-crossbones
       question: fontawesome/solid/question
       bug: material/bug
       info: fontawesome/solid/info
+      abstract: material/clipboard-text-multiple
+      warning: fontawesome/solid/exclamation
+      note: material/pencil
   features:
     - navigation.tracking
     - navigation.tabs
