@@ -1,5 +1,5 @@
 -------
-<small>Built with [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material).</small>
+<small>Built with [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ target="_blank" rel="noopener noreferrer" }.</small>
 
 -------
 
