@@ -203,12 +203,8 @@ This will pull all your containers and generate a new config file, overwriting y
     --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:overwrite"
     ```
 
-## :octicons-container-24: Container URL List
+## :octicons-container-24: Container List
 
-### v3
+You can view the container list here:
 
---8<-- "docs/reference/container-list/v3.md"
-
-### v4 (testing)
-
---8<-- "docs/reference/container-list/v4.md"
+[ View Container List :octicons-arrow-right-16:](../container-list.md){ .md-button }

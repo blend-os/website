@@ -195,6 +195,7 @@ nav:
        - Post-Installation: install/post-install/README.md
   - Reference:
       - Reference: reference/README.md
+      - Container List: reference/container-list.md
       - Utilities: 
         - Utilities: reference/utils/README.md
         - akshara: reference/utils/akshara.md

@@ -17,7 +17,7 @@ Every single configurable bit of blendOS.
 
     How to use our scripts and tools.
 
-    [:octicons-arrow-right-24: Get started](utils/README.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](utils/README.md){ .md-button }
 
 -   :material-file-cog:{ .lg .middle } __Files__
 
@@ -25,7 +25,7 @@ Every single configurable bit of blendOS.
 
     Learn the different useful files of blendOS.
 
-    [:octicons-arrow-right-24: Get started](configs/README.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](configs/README.md){ .md-button }
 
 
 </div>

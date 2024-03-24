@@ -17,7 +17,7 @@ Our useful files.
 
     Configure your system with one file!
 
-    [:octicons-arrow-right-24: Get started](system.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](system.md){ .md-button }
 
 
 </div>

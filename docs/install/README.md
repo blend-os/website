@@ -17,7 +17,7 @@ You can install BlendOS on the following devices:
 
     Install blendOS on a normal 64-bit PC or non-T2 Intel Mac.
 
-    [:octicons-arrow-right-24: Get started](normal-pc.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](normal-pc.md){ .md-button }
 
 -   :fontawesome-brands-apple:{ .lg .middle } __A T2 Mac__
 
@@ -25,7 +25,7 @@ You can install BlendOS on the following devices:
 
     Install blendOS on an Intel Mac with a T2 chip.
 
-    [:octicons-arrow-right-24: Get started](t2.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](t2.md){ .md-button }
 
 
 </div>

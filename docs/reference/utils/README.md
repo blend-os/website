@@ -17,7 +17,7 @@ Our scripts and tools.
 
     Our universal package manager.
 
-    [:octicons-arrow-right-24: Get started](bpkg.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](bpkg.md){ .md-button }
 
 -   :material-hard-hat:{ .lg .middle }  __akshara__
     
@@ -25,6 +25,6 @@ Our scripts and tools.
 
     The system builder.
 
-    [:octicons-arrow-right-24: Get Started](akshara.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button }
 </div>
 
