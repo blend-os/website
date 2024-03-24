@@ -135,10 +135,6 @@
     filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(148deg) brightness(102%) contrast(106%);
 }
 
-.icon-purple {
-    filter: invert(14%) sepia(94%) saturate(6027%) hue-rotate(275deg) brightness(108%) contrast(129%);
-}
-
 .blue {
     color: #00B8D4;
 }
@@ -165,6 +161,9 @@
 
 .pink {
     color: #FF00DE;
+}
+.purple {
+    color: #ad05ad;
 }
 
 .red {
