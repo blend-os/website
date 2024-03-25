@@ -15,9 +15,10 @@ theme:
     repo: fontawesome/brands/gitlab
     edit: material/pencil
     view: material/eye
+    annotation: material/chevron-right-circle
     admonition:
       tip: material/lightbulb
-      danger: material/skull-crossbones
+      danger: material/lightning-bolt
       question: fontawesome/solid/question
       bug: material/bug
       info: fontawesome/solid/info

@@ -11,7 +11,7 @@ Our useful files.
 
 <div class="grid cards" markdown> 
 
--   :material-file-code:{ .lg .middle } __system.yaml__
+-   :material-file-star:{ .lg .middle } __system.yaml__
 
     ---
 
