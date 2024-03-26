@@ -35,5 +35,7 @@ description: "system.yaml config reference"
 
 ## :material-cog: Configuration
 
+### :material-train: Tracks
 
+#### :octicons-repo-16: Creating a track repo
 
