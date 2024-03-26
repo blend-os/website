@@ -22,6 +22,9 @@ aur-packages: # (5)!
 services: # (6)!
   - 'service_1'
 
+user-services: # (9)!
+  - 'user-service_1'
+
 package-repos: # (7)!
   - name: 'REPO_NAME'
     repo-url: 'REPO_URL'
@@ -79,9 +82,11 @@ commands: # (8)!
 
     !!! warning "This option must be set."
 
-    Sets the track (a mini system.yaml), which must be a YAML file in the folder of the `impl` URL.
+    Sets the track (a mini `system.yaml`), which must be a YAML file in the folder of the `impl` URL.
 
     Available options are determined by the `impl` URL.
+
+    If you are creating a custom track that does not inherit anything, set this value to `custom`.
 
     ??? example
         If I have a track folder/repo with the following files:
@@ -146,3 +151,9 @@ commands: # (8)!
     **Type:** array
 
     A list of commands to be run as `root` at system build.
+
+9.  :material-cog-box: **`user-services`**
+    
+    **Type:** array
+
+    A list of services to start at system boot at the *user* level (`systemctl --user`).
