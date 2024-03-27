@@ -26,7 +26,7 @@ glightbox: false
     ```
 
     ------
-    [:octicons-code-16: Source Code](https://git.blendos.co/blendOS/system-tools/akshara){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="akshara/Source Code Button" }
+    [:octicons-code-16: Source Code](https://git.blendos.co/blendOS/system-tools/akshara){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 

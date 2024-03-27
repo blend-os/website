@@ -25,7 +25,7 @@ glightbox: false
 
     ------
 
-    [:material-download: Download](https://git.blendos.co/blendOS/bpkg/-/archive/main/bpkg-main.tar.gz){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="bpkg/Download Button" } [:octicons-code-16: Source Code](https://git.blendos.co/blendos/bpkg){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="bpkg/Source Code Button" }
+    [:material-download: Download](https://git.blendos.co/blendOS/bpkg/-/archive/main/bpkg-main.tar.gz){ .md-button target="_blank" rel="noopener noreferrer" } [:octicons-code-16: Source Code](https://git.blendos.co/blendos/bpkg){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 ??? question "What is bpkg?"

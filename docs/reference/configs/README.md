@@ -17,7 +17,7 @@ Our useful files.
 
     Configure your system with one file!
 
-    [Get started :octicons-arrow-right-16:](system.md){ .md-button data-umami-event="configs/System.yaml button" }
+    [Get started :octicons-arrow-right-16:](system.md){ .md-button }
 
 
 </div>

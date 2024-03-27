@@ -17,7 +17,7 @@ Our scripts and tools.
 
     Our universal package manager.
 
-    [Get started :octicons-arrow-right-16:](bpkg.md){ .md-button data-umami-event="utils/bpkg Button" }
+    [Get started :octicons-arrow-right-16:](bpkg.md){ .md-button }
 
 -   :material-hard-hat:{ .lg .middle }  __akshara__
     
@@ -25,6 +25,6 @@ Our scripts and tools.
 
     The system builder.
 
-    [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button data-umami-event="utils/akshara Button" }
+    [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button }
 </div>
 

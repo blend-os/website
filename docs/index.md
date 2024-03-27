@@ -24,7 +24,7 @@ glightbox: false
 <em>**A seamless, yet robust experience.**</em>
 
 
-[:material-download: Install blendOS](install/README.md){ .md-button data-umami-event="index/Install Button" } [:material-cog: Configuration Reference](reference/README.md){ .md-button data-umami-event="index/Reference Button" }
+[:material-download: Install blendOS](install/README.md){ .md-button } [:material-cog: Configuration Reference](reference/README.md){ .md-button }
 
 ------
 </div>
