@@ -67,9 +67,6 @@ watch:
   - "overrides"
 extra:
   generator: false
-  analytics:
-    provider: custom
-  
   social:
     - icon: simple/x
       link: https://x.com/@blend_os
