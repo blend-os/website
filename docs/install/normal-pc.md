@@ -34,12 +34,12 @@ description: "Installing blendOS on a normal PC"
 
 You can get the current v4 testing edition from the following mirrors:
 
-[:material-google-drive: Google Drive](https://drive.google.com/file/d/1Paf7mR2t_hw-eC5a3li4Umm02HV40TOf/view){ .md-button target="_blank" rel="noopener noreferrer" }
-[:simple-mega: Mega](https://mega.nz/file/zEgnDDJY#m2S7tzufQFnjdvjaNTrLas-cNVqxbFYbGAXN_bMj_ao){ .md-button target="_blank" rel="noopener noreferrer" }
-[:octicons-download-16: Sahilister](https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" }
-[:octicons-download-16: ico277](https://mirror.ico277.xyz/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" }
+[:material-google-drive: Google Drive](https://drive.google.com/file/d/1Paf7mR2t_hw-eC5a3li4Umm02HV40TOf/view){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="normal-pc/Google Drive" }
+[:simple-mega: Mega](https://mega.nz/file/zEgnDDJY#m2S7tzufQFnjdvjaNTrLas-cNVqxbFYbGAXN_bMj_ao){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="normal-pc/Mega" }
+[:octicons-download-16: Sahilister](https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" data-umami-event="normal-pc/Sahilister" }
+[:octicons-download-16: ico277](https://mirror.ico277.xyz/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" data-umami-event="normal-pc/Sahilister" }
 
-We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d6fff42a6aa7096c7696a7e535bfd2a2&dn=blendos-20240310-x8664.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=http%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fmirrors.sahilister.in%2Fblendos%2Ftesting%2Fblendos-20240310-x8664.iso&ws=https%3A%2F%2Fqiwi.lol%2Fb8Mn0216-blendOS-2024.iso&ws=http%3A%2F%2Ffosstorrents.com%2Fdirect-links%2Fblendos-20240310-x8664.iso){ title="From FossTorrents" rel="noopener noreferrer" } link available from our [FossTorrents](https://fosstorrents.com/distributions/blendos/){ target="_blank" } page.
+We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d6fff42a6aa7096c7696a7e535bfd2a2&dn=blendos-20240310-x8664.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=http%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fmirrors.sahilister.in%2Fblendos%2Ftesting%2Fblendos-20240310-x8664.iso&ws=https%3A%2F%2Fqiwi.lol%2Fb8Mn0216-blendOS-2024.iso&ws=http%3A%2F%2Ffosstorrents.com%2Fdirect-links%2Fblendos-20240310-x8664.iso){ title="From FossTorrents" rel="noopener noreferrer" data-umami-event="normal-pc/Magnet Link" } link available from our [FossTorrents](https://fosstorrents.com/distributions/blendos/){ target="_blank" data-umami-event="normal-pc/FossTorrents Link" } page.
 
 ## :material-lightning-bolt: Flash a USB
 
@@ -49,7 +49,7 @@ We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d
     
     You can click the button below[^1] to download and automatically flash the ISO.
 
-    [![flash-with-etcher](https://balena.io/flash-with-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso)
+    [![flash-with-etcher](https://balena.io/flash-with-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso){ target="_blank" rel="noopener noreferrer" data-umami-event="normal-pc/Etcher Button" }
 
     If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
 
