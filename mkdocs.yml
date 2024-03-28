@@ -5,7 +5,7 @@ repo_name: Asterisk/blend-docs-material
 edit_uri: edit/main/docs
 theme:
   font:
-    text: Archivo
+    text: custom
     mono: custom
   name: material
   custom_dir: overrides
