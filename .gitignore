@@ -4,4 +4,6 @@ Pipfile
 Pipfile.lock
 site/
 .vscode/
+node_modules/
+_jampack/
 

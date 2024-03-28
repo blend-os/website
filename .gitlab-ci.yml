@@ -18,6 +18,7 @@
 
 stages:          # List of stages for jobs, and their order of execution
   - build
+  - optimize
   - deploy
 
 build-job:
@@ -26,6 +27,26 @@ build-job:
   script:  
     - pip install -r requirements.txt
     - mkdocs build
+  artifacts:
+    when: on_success
+    paths:
+        - site
+optimize-job:
+  image: node:lts
+  stage: optimize
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@latest-8 --activate
+    - pnpm config set store-dir .pnpm-store
+  script:
+    - pnpm install # install dependencies
+    - pnpm run optimize
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
   artifacts:
     when: on_success
     paths:

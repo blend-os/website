@@ -1,0 +1,9 @@
+
+{
+  "scripts": {
+    "optimize": "jampack --nocache ./site"
+  },
+  "dependencies": {
+    "@divriots/jampack": "*"
+  }
+}
