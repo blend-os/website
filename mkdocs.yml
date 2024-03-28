@@ -6,7 +6,7 @@ edit_uri: edit/main/docs
 theme:
   font:
     text: custom
-    mono: custom
+    code: custom
   name: material
   custom_dir: overrides
   logo: assets/img/logo.png
