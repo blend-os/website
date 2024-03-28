@@ -31,6 +31,19 @@ build-job:
     when: on_success
     paths:
         - site
+offline:
+  image: python:latest
+  stage: build
+  variables:
+    OFFLINE: 'true'
+  script:  
+    - pip install -r requirements.txt
+    - mkdocs build
+  artifacts:
+    when: on_success
+    paths:
+        - site
+  
 optimize-job:
   image: node:lts
   stage: optimize
@@ -41,6 +54,8 @@ optimize-job:
   script:
     - pnpm install # install dependencies
     - pnpm run optimize
+  dependencies:
+    - build-job
   cache:
     key:
       files:

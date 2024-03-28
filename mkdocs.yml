@@ -166,6 +166,8 @@ plugins:
             assets_fetch_dir: assets/external
             links: true
             links_noopener: true
+        - offline:
+            enabled: !ENV [OFFLINE, false]
         # - social:
         #    enabled: true
         #    cache_dir: .cache/plugins/social
