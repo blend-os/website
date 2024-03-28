@@ -157,7 +157,7 @@ plugins:
       enabled: !ENV CI 
       plugins:
         - privacy:
-            enabled: !ENV [OFFLINE, 'false']
+            enabled: !ENV OFFLINE
             cache: true
             cache_dir: .cache/plugins/privacy
             log: true
