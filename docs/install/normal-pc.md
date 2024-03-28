@@ -49,7 +49,7 @@ We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d
     
     You can click the button below[^1] to download and automatically flash the ISO.
 
-    [![flash-with-etcher](https://balena.io/flash-with-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso)
+    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso)
 
     If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
 
