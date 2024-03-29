@@ -27,3 +27,7 @@ def define_env(env):
     @env.macro
     def custom_track(impl, file):
         return f'<a href="{impl}/{file}.yaml" rel="noopener noreferrer" target="_blank"><code>{file}</code></a>'
+    
+    @env.macro
+    def reference(type, ref):
+        return f'<a href="/reference/{type}/{ref}" rel="noopener noreferrer" target="_blank"><code>{ref}</code></a>'

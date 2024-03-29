@@ -38,6 +38,7 @@ description: "system.yaml config reference"
 ## :material-train: Tracks
 
 !!! danger "Always use the `.yaml` extension when creating track files!"
+    {{ reference("utils", "akshara") }} always looks for files with the `.yaml` extension, not `.yml`.
 
 Tracks are like mini `system.yaml` files that you can create. They can inherit other tracks, or be entirely custom. They can be used to set default values for a certain configuration, like a desktop.
 
@@ -52,7 +53,7 @@ As an example of a custom track, let's look at the official {{ track("blendos-ba
     --8<-- "https://github.com/blend-os/tracks/raw/main/blendos-base.yaml"
     ```
 
-Here, the `track` value is set to `custom`, indicating a fully custom track. This track is setting default values for whomever uses it.
+Here, the `track` value is set to `custom` (no `impl`), indicating a fully custom track. This track is setting default values for whomever uses it.
 
 Tracks can also inherit from eachother (see next section).
 
@@ -82,6 +83,8 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
     ```
 
     This track now inherits from {{ track("blendos-base") }}, and adds a desktop to it.
+
+If you're creating a full custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
 
 ### :octicons-repo-16: Creating a track repo/webserver
 
