@@ -29,7 +29,6 @@ package-repos: # (7)!
   - name: 'REPO_NAME'
     repo-url: 'REPO_URL'
 
-
 commands: # (8)!
   - 'echo command_1'
   - 'echo command_2'
@@ -75,6 +74,15 @@ commands: # (8)!
          ```
          https://github.com/blend-os/tracks/raw/main/plasma.yaml
          ```
+
+         which would redirect to:
+
+         ```
+         https://raw.githubusercontent.com/blend-os/tracks/main/plasma.yaml
+         ```
+
+        which serves the file with a [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type){ target="_blank" rel="noopener noreferrer" } of `text/plain`.
+
 
 3.  **`track`**
     
@@ -134,6 +142,13 @@ commands: # (8)!
     `name`: The repo's name parameter in `pacman.conf` (the value between `[]`)
 
     `repo-url`: The repo's URL (no mirrorlists) (the `Server` variable from `pacman.conf`)
+
+    ??? abstract "Value Placement"
+        ```ini title="pacman.conf"
+        [name]
+        Server = repo-url
+        SigLevel = Never
+        ```
 
     ??? example "Example: Chaotic AUR"
         To add the [Chaotic AUR](https://aur.chaotic.cx){ target="_blank" rel="noopener noreferrer" }, the values here would be set to the following:

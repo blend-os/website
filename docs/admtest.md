@@ -27,3 +27,13 @@ title: "Admonition Test"
 !!! quote "hi"
 
 !!! code "hi"
+
+{{ aur("vesktop-bin") }}
+
+{{ archpkg("linux-zen") }}
+
+{{ debpkg("software-properties-common") }}
+
+{{ ubpkg("software-properties-common") }}
+
+{{ fedorapkg("dnf") }}

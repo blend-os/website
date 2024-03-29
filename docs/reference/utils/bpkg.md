@@ -52,14 +52,14 @@ Its contents will look something like this based on your containers:
 
 ??? abstract "Obtaining the container list"
     The container list is obtained by using the following commands:
-
+    {% raw %}
     ```bash
     podman ps -a --no-trunc --size --format '{{.Names}}'
     ```
     ```bash
     podman ps -a --no-trunc --size --format '{{.Image}}'
     ```
-
+    {% endraw %}
     The YAML code is generated from the output.
 
 --8<-- "docs/reference/utils/files/bpkg.yaml.md"

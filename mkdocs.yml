@@ -63,6 +63,7 @@ copyright: "&copy; 2024 blendOS contributors"
 watch:
   - "includes"
   - "overrides"
+  - "main.py"
 extra:
   generator: false
   social:
@@ -153,6 +154,7 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
+  - macros
   - group:
       enabled: !ENV CI 
       plugins:
