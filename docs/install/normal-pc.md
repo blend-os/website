@@ -47,7 +47,7 @@ We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d
 === ":octicons-star-fill-16: Etcher"
     Download Etcher from https://etcher.io and plug in your USB.
     
-    You can click the button below[^1] to download and automatically flash the ISO.
+    You can click the button below to download and automatically flash the ISO.
 
     [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso)
 
@@ -67,8 +67,6 @@ We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d
 
     Replace `/dev/sdX` with your USB's identifier (found via `lsblk`)
 ------
-
-[^1]: This only works with installed versions of Etcher, not portable ones.
 
 ## :material-package-variant: Install blendOS
 

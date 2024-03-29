@@ -10,7 +10,7 @@ theme:
   logo: assets/img/logo.png
   favicon: assets/img/logo.png
   icon:
-    repo: fontawesome/brands/gitlab
+    repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
     annotation: material/chevron-right-circle
@@ -122,6 +122,12 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.magiclink:
+      custom: 
+        blendgit:
+          host: https://git.blendos.co
+          label: "BlendOS Gitlab"
+          type: gitlab
+          www: false
       hide_protocol: true
       normalize_issue_symbols: false
       repo_url_shorthand: true
@@ -191,7 +197,10 @@ extra_css:
   - assets/css/extra.css
 
 nav:
-  - Home: index.md
+  - Home:
+    - Home: index.md
+    - FAQ: faq.md
+    - Contributing: contribution.md
   - Installation:
      - Installation: install/README.md
      - Normal PC: install/normal-pc.md
