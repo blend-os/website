@@ -168,14 +168,14 @@ plugins:
             links_noopener: true
         - offline:
             enabled: !ENV [OFFLINE, false]
-        # - social:
-        #    enabled: true
-        #    cache_dir: .cache/plugins/social
-        #    cards: true
-        #    cards_dir: assets/images/social
-        #    cards_layout_options:
-        #      background_color: "#1e2029"
-        #      color: "#21af90"
+        - social:
+            enabled: true
+            cache_dir: .cache/plugins/social
+            cards: true
+            cards_dir: assets/images/social
+            cards_layout_options:
+              background_color: "#1e2029"
+              color: "#21af90"
         - git-authors:
             show_email_address: false
             show_contribution: true
