@@ -6,7 +6,7 @@ glightbox: false
 
 <div class="grid cards" markdown>
 
--   # :material-package-variant-closed: bpkg ![v3 badge](https://img.shields.io/badge/v3-red) ![v4 badge](https://img.shields.io/badge/v4-green)
+-   # :material-package-variant-closed: bpkg ![v3 badge](../../assets/img/v3.svg) ![v4 badge](../../assets/img/v4.svg)
     -------
 
     <em>Our universal package manager.</em>

@@ -5,7 +5,7 @@ description: "system.yaml config reference"
 
 <div class="grid cards" markdown>
 
--   # :material-file-star: system.yaml ![v4 badge](https://img.shields.io/badge/v4-green)
+-   # :material-file-star: system.yaml ![v4 badge](../../assets/img/v4.svg)
     -------
 
     <em>Manage your whole system with one file.</em>

@@ -6,7 +6,7 @@ glightbox: false
 
 <div class="grid cards" markdown>
 
--   # :material-hard-hat: akshara ![v4 badge](https://img.shields.io/badge/v4-green)
+-   # :material-hard-hat: akshara ![v4 badge](../../assets/img/v4.svg)
     -------
 
     <em>The system builder.</em>
