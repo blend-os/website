@@ -88,5 +88,33 @@ If you're creating a full custom track and **do not** want to inherit, simply se
 
 ### :octicons-repo-16: Creating a track repo/webserver
 
+First, create a repo on your favorite git forge, and put all your track files in the root of it.
+
+!!! tip "If you want to do this quickly, just fork our [track repo](https://github.com/blend-os/tracks){ rel="noopener noreferrer" target="_blank" }!"
+
+Once that is done, you'll need to make your `impl` URL.
+
+!!! abstract "impl URL structure"
+    === ":simple-github: Github"
+        `https://github.com/USER/REPO/raw/BRANCH`
+    === ":fontawesome-brands-gitlab: Gitlab"
+        `https://GITLAB-SERVER/USER/REPO/-/raw/BRANCH`
+        
+        - `GITLAB-SERVER`: Your gitlab server (usually `gitlab.com`)
+    === ":simple-gitea: Gitea/Forgejo"
+        `https://GITEA-SERVER/USER/REPO/raw/branch/BRANCH`
+
+        - `GITEA-SERVER`: Your Gitea/Forgejo server (`codeberg.org` is a popular one)
+    === ":simple-bitbucket: Bitbucket"
+        `https://bitbucket.org/USER/REPO/raw/FULL_COMMIT_HASH/`
+
+        - `FULL_COMMIT_HASH`: Your full commit hash (you can get this under `Commits`)
+    -----
+    - `USER`: Your username
+    - `REPO`: The repo
+    - `BRANCH`: Your branch (usually `main` or `master`)
+
+*[git forge]: A git storage service like GitHub or GitLab
+
 ## :material-folder-open: Custom repositories
 
