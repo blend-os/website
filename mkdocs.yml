@@ -15,7 +15,7 @@ theme:
     view: material/eye
     annotation: material/chevron-right-circle
     admonition:
-      tip: material/lightbulb
+      tip: fontawesome/solid/lightbulb
       danger: material/lightning-bolt
       question: fontawesome/solid/question
       bug: material/bug
