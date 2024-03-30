@@ -34,22 +34,26 @@ description: "Installing blendOS on a normal PC"
 
 You can get the current v4 testing edition from the following mirrors:
 
-[:material-google-drive: Google Drive](https://drive.google.com/file/d/1Paf7mR2t_hw-eC5a3li4Umm02HV40TOf/view){ .md-button target="_blank" rel="noopener noreferrer" }
-[:simple-mega: Mega](https://mega.nz/file/zEgnDDJY#m2S7tzufQFnjdvjaNTrLas-cNVqxbFYbGAXN_bMj_ao){ .md-button target="_blank" rel="noopener noreferrer" }
-[:octicons-download-16: Sahilister](https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" }
-[:octicons-download-16: ico277](https://mirror.ico277.xyz/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" }
+| :material-map-marker: Location          | :material-format-letter-case: Name |               :material-speedometer: Bandwidth               |             :material-sitemap: CDN              |                                                                        :material-link: URL                                                                        |
+| --------------------------------------- | :--------------------------------: | :----------------------------------------------------------: | :---------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| :globe_with_meridians:{title=""} Global |            Google Drive            |                Unlimited { data-sort='999' }                 | :octicons-check-16:{ .green } { data-sort='1' } |  [:material-download: Download](https://drive.google.com/file/d/1Paf7mR2t_hw-eC5a3li4Umm02HV40TOf/view){ target="_blank" rel="noopener noreferrer" .md-button }   |
+| :globe_with_meridians:{title=""} Global |                MEGA                |                Unlimited { data-sort='999' }                 | :octicons-check-16:{ .green } { data-sort='1' } | [:material-download: Download](https://mega.nz/file/zEgnDDJY#m2S7tzufQFnjdvjaNTrLas-cNVqxbFYbGAXN_bMj_ao){ target="_blank" rel="noopener noreferrer" .md-button } |
+| :flag_us:{title=""} United States       |                Otus9051                |                  10Gbps { data-sort='10' }                   |    :octicons-x-12:{ .red } { data-sort='0' }    |                                                          [:material-download: Download](https://kc1.mirrors.199693.xyz/blend/isos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" rel="noopener noreferrer" }                                                          |
+| :flag_de:{title=""} Germany             |             Sahilister             |                   1Gbps { data-sort='1' }                    |    :octicons-x-12:{ .red } { data-sort='0' }    |              [:material-download: Download](https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" }               |
+| :flag_de:{title=""} Germany             |               ico277               | :material-approximately-equal:0.5-12Gbps { data-sort='0.5' } |             :octicons-x-12:{ .red }             |   [:material-download: Download](https://mirror.ico277.xyz/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" rel="noopener noreferrer" }    |
+| :flag_ca:{title=""} Canada              |           AsteriskCloud            |                           0.2Mbps {data-sort='0.2'}                            |             :octicons-x-12:{ .red }             |                                                                  [:material-download: Download](https://blend.asterisk.lol/dvd/testing/blendOS-2024.03.10-x86_64.iso){ .md-button target="_blank"}                                                                   |
 
-We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d6fff42a6aa7096c7696a7e535bfd2a2&dn=blendos-20240310-x8664.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=http%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fmirrors.sahilister.in%2Fblendos%2Ftesting%2Fblendos-20240310-x8664.iso&ws=https%3A%2F%2Fqiwi.lol%2Fb8Mn0216-blendOS-2024.iso&ws=http%3A%2F%2Ffosstorrents.com%2Fdirect-links%2Fblendos-20240310-x8664.iso){ title="From FossTorrents" rel="noopener noreferrer" } link available from our [FossTorrents](https://fosstorrents.com/distributions/blendos/){ target="_blank" } page.
+<small>We also have a [:fontawesome-solid-magnet: Magnet](magnet:?xt=urn:btih:cd1f5df0d6fff42a6aa7096c7696a7e535bfd2a2&dn=blendos-20240310-x8664.iso&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=http%3A%2F%2Ffosstorrents.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&ws=https%3A%2F%2Fmirrors.sahilister.in%2Fblendos%2Ftesting%2Fblendos-20240310-x8664.iso&ws=https%3A%2F%2Fqiwi.lol%2Fb8Mn0216-blendOS-2024.iso&ws=http%3A%2F%2Ffosstorrents.com%2Fdirect-links%2Fblendos-20240310-x8664.iso){ title="From FossTorrents" rel="noopener noreferrer" } link available from our [FossTorrents](https://fosstorrents.com/distributions/blendos/){ target="_blank" } page.</small>
 
 ## :material-lightning-bolt: Flash a USB
 
 
-=== ":octicons-star-fill-16: Etcher"
+=== ":octicons-star-fill-16:{ .yellow } Etcher"
     Download Etcher from https://etcher.io and plug in your USB.
     
-    You can click the button below to download and automatically flash the ISO.
+    You can click the button below to automatically download and flash the ISO:
 
-    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://mirrors.sahilister.in/blendos/testing/blendos-20240310-x8664.iso)
+    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendos-20240310-x8664.iso){ target="_blank" rel="noopener noreferrer" }
 
     If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
 

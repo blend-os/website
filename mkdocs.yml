@@ -85,7 +85,8 @@ extra:
 markdown_extensions:
   - abbr
   - admonition
-  - attr_list
+  - pm_attr_list
+  # - pm_markdown_captions
   - md_in_html
   - def_list
   - pymdownx.tasklist:
@@ -195,6 +196,10 @@ plugins:
 
 extra_css:
   - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/tablesort.lib.min.js
+  - assets/js/tablesort.js
 
 nav:
   - Home:

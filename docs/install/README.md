@@ -6,11 +6,27 @@ description: "Installing blendOS"
 # :material-hammer-wrench: Installation
 
 !!! warning "v4 Installability"
-    If the pacman repo is down, v4 cannot be installed.
+    If all the pacman repos are down, v4 cannot be installed.
 
-    **Current repo status:** 
+    **Main repo status:** 
     
-    [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" }
+    [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://pkg-repo.blendos.co){ target="_blank" rel="noopener noreferrer" }
+
+    **Backup repo statuses:**
+
+
+    **Repo 1**
+    
+
+    [![backup-repo-1](https://status.asterisk.lol/api/badge/36/status?label=)](https://kc1.mirrors.199693.xyz/blend/){ target="_blank" rel="noopener noreferrer" }
+    
+
+
+    **Repo 2**
+    
+
+    [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://blend.asterisk.lol/mirror){ target="_blank" }
+
 
 You can install BlendOS on the following devices:
 
