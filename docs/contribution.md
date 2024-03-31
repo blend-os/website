@@ -18,8 +18,8 @@ If you would like to add to our docs (please do), you should follow these simple
 3. **Be descriptive.** When writing config and CLI references especially, try to *show, not tell*. A full description of this approach can be seen in the Diátaxis framework: https://diataxis.fr/reference-explanation/
 4. **Follow the format.** We have established formats for directory pages and references. Follow them. References begin with a reference card. Config references need to use code annotations. CLI references should be easy-to-read lists (showing the code like in the `bpkg` reference is optional). Directory pages should use cards to show what users can click on.
 5. **Keep it navigateable.** Mobile users should not have to open the hamburger menu to get anywhere on the site from the root (they can still use it to go back or to skip directory pages).
-6. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. References however, should always be distant (rule 3).
-7. **Use the features given to you.** Be expressive! You are writing with the most powerful documentation framework out there, so *use it!* Don't be afraid to try something new.
+6. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. You can decide what that looks like. References however, should always be distant (rule 3).
+7. **Use the features given to you.** Be expressive! You are writing with the most powerful documentation framework out there, so *use it!* Don't be afraid to try something new in your writing, style or layout.
 
 *[directory pages]: Pages that show a list of possible paths in a folder, i.e. /install
 *[Directory pages]: Pages that show a list of possible paths in a folder, i.e. /install
