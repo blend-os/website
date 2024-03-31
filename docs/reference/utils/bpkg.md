@@ -37,8 +37,6 @@ Unzip the file into any folder (open it with your archive manager), then open yo
 
 `cd` to the folder you extracted it to, then do `#!bash chmod +x install.sh && ./install.sh`.
 
-
-
 ## :material-clipboard-text: Reference
 
 ### :material-file-code: `bpkg.yaml`
