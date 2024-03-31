@@ -179,3 +179,6 @@ We have created the following macros:
 {% endraw %}
 
 {{ reference("utils", "bpkg") }}
+
+## :material-language-css3: CSS classes
+

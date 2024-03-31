@@ -198,8 +198,8 @@ extra_css:
   - assets/css/extra.css
 
 extra_javascript:
-  - assets/js/tablesort.lib.min.js
-  - assets/js/tablesort.js
+  - assets/js/tablesort.min.js
+  - assets/js/sorter.js
 
 nav:
   - Home:
