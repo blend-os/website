@@ -182,3 +182,8 @@ We have created the following macros:
 
 ## :material-language-css3: CSS classes
 
+CSS classes you can use:
+
+```css
+--8<-- "https://git.blendos.co/asterisk/blend-docs-material/-/raw/main/docs/assets/css/extra.css:classes"
+```
