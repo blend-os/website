@@ -117,4 +117,3 @@ Once that is done, you'll need to make your `impl` URL.
 *[git forge]: A git storage service like GitHub or GitLab
 
 ## :material-folder-open: Custom repositories
-

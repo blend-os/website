@@ -57,4 +57,3 @@ akshara update
 ```
 
 Rebuild/update your system. You will need to reboot after this.
-
