@@ -52,6 +52,8 @@ To learn how to write with Material for MkDocs, consult their [reference](https:
 !!! question "Looking for examples?"
     Just click the :material-eye: on any page to view its source code!
 
+Images and links are linked **relative** to the file you're currently editing. Links should link to the markdown file itself, not a path. (e.x. `reference/README.md` `../assets/img/file.png`)
+
 An overview of a few cool features you can use:
 
 #### **:material-exclamation-thick: Admonitions** ([`admonition`](https://python-markdown.github.io/extensions/admonition/){ target="_blank" rel="noopener noreferrer"})
