@@ -6,4 +6,4 @@ site/
 .vscode/
 node_modules/
 _jampack/
-
+__pycache__/
