@@ -29,7 +29,7 @@ If you would like to add to our docs (please do), you should follow these simple
 
 Local development is quite easy. You'll only need:
 
-- :material-language-python: Python 3.9+
+- :material-language-python: Python ≥ 3.8
 
 Simply cd in and run:
 

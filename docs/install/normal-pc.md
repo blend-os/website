@@ -101,11 +101,9 @@ If you see a sort of settings menu, go to the Boot section, and change the boot 
     If you want to know what Secure Boot is, see [Microsoft's article on it](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot).
 
 
-You should see a boot screen, choose `blendOS`, then press ++enter++.
+If you're on **legacy BIOS**, you'll see a bootscreen, just press ++enter++. If you're on **UEFI** blendOS will just load.
 
-(image of **UEFI** bootscreen)
-
-From there, the desktop should load and the installer will open.
+Eventually the desktop will load and look something like this:
 
 ![intro](../assets/img/install/intro.png)
 
