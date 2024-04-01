@@ -279,7 +279,7 @@ You will see a summary and the installation will begin. Wait for first build to 
 
 On first boot, a GNOME welcome window will open. From here, it's pretty self-explanatory. Set your language, keyboard, timezone, etc.
 
-(picture of the first page of the gnome welcome window)
+![gnome-welcome-window](../assets/img/install/gnome-welcome-window.png)
 
 After you click `Start Using`, your desktop will open.
 
