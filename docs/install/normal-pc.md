@@ -111,7 +111,7 @@ From there, the desktop should load and the installer will open.
 
 ### :material-plus-circle: Running the installer
 
-Click on it to start.
+Click `Start`.
 
 #### :material-harddisk: Disk
 
@@ -260,6 +260,16 @@ A copy of the file that opens has been provided here for reference:
 
 ---------
 
-You will see a summary and the installation will begin. Wait for first build to finish, then click
+You will see a summary and the installation will begin. Wait for first build to finish, then click `Next` and finally, `Reboot`.
 
-### :material-account-plus: User Creation
+## :material-power-on: First Boot
+
+On first boot, a GNOME welcome window will open. From here, it's pretty self-explanatory. Set your language, keyboard, timezone, etc.
+
+(picture of the first page of the gnome welcome window)
+
+After you click `Start Using`, your desktop will open.
+
+!!! success "blendOS is now installed!"
+
+Now, continue with the [**:material-wrench: Post-Install**](post-install/README.md) section.
