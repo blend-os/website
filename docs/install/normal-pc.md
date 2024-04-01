@@ -103,6 +103,8 @@ If you see a sort of settings menu, go to the Boot section, and change the boot 
 
 If you're on **legacy BIOS**, you'll see a bootscreen, just press ++enter++. If you're on **UEFI** blendOS will just load.
 
+![legacy-bios-bootscreen](../assets/img/install/legacy-bios-bootscreen.png)
+
 Eventually the desktop will load and look something like this:
 
 ![intro](../assets/img/install/intro.png)
