@@ -30,7 +30,7 @@ glightbox: false
 
 </div>
 
-??? question "What is akshara?"
+!!! question "What is akshara?"
     akshara is a tool for turning a config file (`system.yaml`) into a fully built system. It can also be used to update the built system.
 
 ## :material-clipboard-text: Reference
