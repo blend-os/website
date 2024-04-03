@@ -1,12 +1,11 @@
 ---
 icon: material/package-variant-closed
 description: "Reference for bpkg"
-glightbox: false
 ---
 
 <div class="grid cards" markdown>
 
--   # :material-package-variant-closed: bpkg ![v3 badge](../../assets/img/v3.svg) ![v4 badge](../../assets/img/v4.svg)
+-   # :material-package-variant-closed: bpkg ![v3 badge](../../assets/img/v3.svg){ .off-glb } ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
     <em>Our universal package manager.</em>
@@ -194,7 +193,7 @@ bpkg overwrite-config
 
 This will pull all your containers and generate a new config file, overwriting your current one.
 
-<span class="red">**YOU WILL LOSE ALL YOUR CHANGES!**</span>
+{{ inlinealert("red", ":material-lightning-bolt:", "Danger", "YOU WILL LOSE ALL YOUR CHANGES!" ) }}
 
 ??? code "Source"
     ```py title="bpkg.py" linenums="1"

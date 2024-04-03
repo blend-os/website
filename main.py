@@ -31,3 +31,6 @@ def define_env(env):
     @env.macro
     def reference(type, ref):
         return f'<a href="/reference/{type}/{ref}"><code>{ref}</code></a>'
+    @env.macro
+    def inlinealert(color, icon, title, text):
+        return '<span class=' + color +'>**' + icon + '{ title=' + title + ' } ' + text + '**</span>'

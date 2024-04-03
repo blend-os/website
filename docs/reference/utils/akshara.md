@@ -1,12 +1,11 @@
 ---
 icon: material/hard-hat
 description: "Reference for akshara"
-glightbox: false
 ---
 
 <div class="grid cards" markdown>
 
--   # :material-hard-hat: akshara ![v4 badge](../../assets/img/v4.svg)
+-   # :material-hard-hat: akshara ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
     <em>The system builder.</em>
@@ -16,7 +15,7 @@ glightbox: false
 
     - Language: :misc-python:{ title=Python }
     - Size::material-approximately-equal:16.38 KB
-    - GUI: :octicons-x-12:{ .red title="No" }
+    - GUI: :octicons-check-16:{ .green title="Yes, blend-settings" }
     - Comes with blendOS: :octicons-check-16:{ .green title="Yes" }
 
     --------
@@ -39,6 +38,12 @@ glightbox: false
 
 !!! info ""
     This reference has been moved to a [new page](../configs/system.md).
+
+## :material-window-maximize: GUI
+
+`akshara` has a GUI within `blend-settings`.
+
+![akshara-gui](../../assets/img/akshara-gui.png)
 
 ## :octicons-terminal-16: CLI
 

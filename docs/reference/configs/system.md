@@ -21,7 +21,7 @@ description: "system.yaml config reference"
 
     --------
 
-    To edit the file, just open it in your favorite text editor (<span class="warning">:fontawesome-solid-exclamation:You will need root privileges</span>).
+    To edit the file, just open it in your favorite text editor ({{ inlinealert("warning", ":fontawesome-solid-exclamation:", "Warning", "You will need root privileges." ) }}).
 
 </div>
 
