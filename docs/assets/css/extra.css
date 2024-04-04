@@ -394,6 +394,10 @@
 
 }
 
+.wide-table {
+    width: 100%;
+}
+
 /* --8<-- [end:classes] */
 
 :root {

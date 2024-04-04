@@ -206,6 +206,8 @@ nav:
     - Home: index.md
     - FAQ: faq.md
     - Contributing: contribution.md
+  - Download: 
+    - Download: download/README.md
   - Installation:
      - Installation: install/README.md
      - Normal PC: install/normal-pc.md

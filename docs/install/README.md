@@ -6,7 +6,7 @@ description: "Installing blendOS"
 # :material-hammer-wrench: Installation
 
 !!! warning "v4 Installability"
-    If all the pacman repos are down, v4 cannot be installed.
+    If the main pacman repo is down, v4 cannot be installed.
 
     **Main repo status:** 
     
