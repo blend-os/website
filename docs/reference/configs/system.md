@@ -84,7 +84,7 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
 
     This track now inherits from {{ track("blendos-base") }}, and adds a desktop to it.
 
-If you're creating a full custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
+If you're creating a fully custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
 
 ### :octicons-repo-16: Creating a track repo/webserver
 
@@ -108,7 +108,7 @@ Once that is done, you'll need to make your `impl` URL.
     === ":simple-bitbucket: Bitbucket"
         `https://bitbucket.org/USER/REPO/raw/FULL_COMMIT_HASH/`
 
-        - `FULL_COMMIT_HASH`: Your full commit hash (you can get this under `Commits`)
+        - `FULL_COMMIT_HASH`: The full hash of the latest commit (you can get this under `Commits`)
     -----
     - `USER`: Your username
     - `REPO`: The repo

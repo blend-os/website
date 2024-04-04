@@ -5,3 +5,4 @@
 
 *[UEFI]: Unified Extensible Firmware Interface
 *[BIOS]: Basic Input/Output System
+*[AUR]: Arch User Repository
