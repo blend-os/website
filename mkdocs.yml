@@ -221,6 +221,7 @@ nav:
         - Utilities: reference/utils/README.md
         - akshara: reference/utils/akshara.md
         - bpkg: reference/utils/bpkg.md
+        - blend-inst: reference/utils/blend-inst.md
       - Files:
         - Files: reference/configs/README.md
         - system.yaml: reference/configs/system.md

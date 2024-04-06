@@ -94,7 +94,7 @@ First, create a repo on your favorite git forge, and put all your track files in
 
 Once that is done, you'll need to make your `impl` URL.
 
-!!! abstract "impl URL structure"
+!!! abstract "impl URL structures for common git forges"
     === ":simple-github: Github"
         `https://github.com/USER/REPO/raw/BRANCH`
     === ":fontawesome-brands-gitlab: Gitlab"
@@ -115,5 +115,7 @@ Once that is done, you'll need to make your `impl` URL.
     - `BRANCH`: Your branch (usually `main` or `master`)
 
 *[git forge]: A git storage service like GitHub or GitLab
+
+If you're using a webserver, put all the files in one folder. Your `impl` URL is the URL to that folder.
 
 ## :material-folder-open: Custom repositories
