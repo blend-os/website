@@ -214,6 +214,7 @@ nav:
      - T2 Mac: install/t2.md
      - Post-Installation:
        - Post-Installation: install/post-install/README.md
+       - Container Management: install/post-install/container-guide.md
   - Reference:
       - Reference: reference/README.md
       - Container List: reference/container-list.md
