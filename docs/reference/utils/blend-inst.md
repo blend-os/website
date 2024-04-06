@@ -41,7 +41,7 @@ description: "Reference for our installer"
 
 ## :octicons-terminal-16: CLI usage
 
-### :material-cog-outline: Load a config (dry run)
+### :material-cog-play-outline: Load a config (dry run)
 
 ```bash
 TESTING_INST=true blend-inst config 'some-config.json'
