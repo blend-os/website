@@ -35,11 +35,14 @@ description: "Reference for our installer"
 
 ## :material-file-code: Reference
 
-!!! warning "This example file is from v3 and will be fixed eventually."
+!!! failure "This example file is from v3 and will be fixed eventually."
 
 --8<-- "docs/reference/utils/files/jade.json.md"
 
 ## :octicons-terminal-16: CLI usage
+
+!!! warning "blend-inst is not meant to be used this way!"
+    The tool is meant to be called from a graphical or terminal UI, which creates the config and calls `blend-inst` to install it. For this purpose, we use [`jade-gui`](https://github.com/blend-os/jade-gui){ target="_blank" rel="noopener noreferrer" }.
 
 ### :material-cog-play-outline: Load a config (dry run)
 

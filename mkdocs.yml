@@ -215,6 +215,7 @@ nav:
      - Post-Installation:
        - Post-Installation: install/post-install/README.md
        - Container Management: install/post-install/container-guide.md
+       - System Customization: install/post-install/system-customization.md
   - Reference:
       - Reference: reference/README.md
       - Container List: reference/container-list.md

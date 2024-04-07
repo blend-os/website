@@ -247,22 +247,12 @@ A copy of the file that opens has been provided here for reference:
     ```
 "Reloading the list of available partitions" means click that little refresh icon (![refresh](../assets/img/install/refresh.png){ .tweemoji .off-glb })
 
+??? failure "I set up partitioning and the Next button is greyed out!"
+    This is a strange bug, simply switch to automatic partitioning then back to manual partitioning again.
+
 ---------
 
 You will see a summary and the installation will begin. Wait for first build to finish, then click `Next` and finally, `Reboot`.
-
-??? failure "Troubleshooting: Downloads of certain packages fail or install keeps looping at pacman bit"
-    This is probably due to the fact that our repo is down :pensive: Double check that it is up via our [status page](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener noreferrer" }.
-
-    If it is down, open a terminal in the live CD (:material-apps-box: > Utilities > Console) and type `sudo nano /system.yaml`. 
-    ??? abstract "Nano controls"
-        Arrow keys to move, everything else is the same as any other text editor. ++ctrl+o++ to save, ++ctrl+x++ to save and quit.
-    Change `repo` to one of our **backup repos**:
-
-    - `https://kc1.mirrors.199693.xyz/blend/`
-    - `https://blend.asterisk.lol/mirror`
-    
-    Then hit ++ctrl+x++ to save. Try the install again.
 
 ## :material-power-on: First Boot
 
