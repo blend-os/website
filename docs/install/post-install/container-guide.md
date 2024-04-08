@@ -38,3 +38,8 @@ You can also create associations to remove annoying binary suffixes. Simply type
 
 ## :material-android: Waydroid
 
+Click `Initialize Waydroid`.
+
+## :material-refresh: System Rebuild
+
+Clicking the `Update` button will start a rebuild of your system (same as `sudo akshara update`).
