@@ -13,7 +13,15 @@ You can do all sorts of things to customize your system.
 
     ---
 
-    Learn how blendOS containers work.
+    Create distro containers
 
-    [Get started :octicons-arrow-right-16:](./container-guide.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button }
+
+-   :material-monitor-shimmer:{ .lg .middle } __System Customization__
+    
+    ---
+
+    Customize your system
+
+    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button }
 </div>
