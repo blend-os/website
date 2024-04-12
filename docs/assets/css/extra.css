@@ -332,6 +332,9 @@
 
 /* --8<-- [start:classes] */
 
+
+/* .icon- classes are computed using https://svg-colorizer.pages.dev */
+
 .icon-white {
     filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(148deg) brightness(102%) contrast(106%);
 }
