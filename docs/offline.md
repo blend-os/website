@@ -7,7 +7,7 @@ description: Read our docs offline!
 
 You can download our docs for offline reading.
 
-Simply visit this link: https://git.blendos.co/asterisk/blend-docs-material/-/artifacts
+Simply visit this link: https://git.blendos.co/asterisk/blend-docs-material/-/artifacts{ target="_blank" rel="noopener noreferrer" }
 
 Find the latest `offline` job and click the download button.
 
