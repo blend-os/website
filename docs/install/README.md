@@ -8,21 +8,21 @@ description: "Installing blendOS"
 !!! warning "v4 Installability"
     If the main pacman repo is down, v4 cannot be installed.
 
-    **Main repo status:** 
+    **Main repo status (https://pkg-repo.blendos.co):**
     
     [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://pkg-repo.blendos.co){ target="_blank" rel="noopener noreferrer" }
 
     **Backup repo statuses:**
 
 
-    **Repo 1**
+    **Repo 1 (https://kc1.mirrors.199693.xyz/blend/)**
     
 
     [![backup-repo-1](https://status.asterisk.lol/api/badge/36/status?label=)](https://kc1.mirrors.199693.xyz/blend/){ target="_blank" rel="noopener noreferrer" }
     
 
 
-    **Repo 2**
+    **Repo 2 (https://blend.asterisk.lol/mirror)**
     
 
     [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://blend.asterisk.lol/mirror){ target="_blank" }
