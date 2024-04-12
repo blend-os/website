@@ -36,9 +36,22 @@ Once created, you will see your container, along with 2 options:
 
 You can also create associations to remove annoying binary suffixes. Simply type the binary name and the container name.
 
+![association-use](../../assets/img/association_use.png)
+
+-----
+
+![association-final](../../assets/img/association_final.png)
+
 ## :material-android: Waydroid
 
 Click `Initialize Waydroid`.
+
+After Waydroid initializes, you will see options to install [**:simple-fdroid: F-Droid**](https://f-droid.org){ target="_blank" rel="noopener noreferrer" } or the [![aurora](../../assets/img/aurora.png){ .tweemoji width=24 .off-glb .icon-blend-misc } **Aurora Store**](https://www.auroraoss.com/){ target="_blank" rel="noopener noreferrer" }. Click on them to install them. You will also see an option to open Waydroid settings.
+
+![waydroid-settings](../../assets/img/waydroid-settings.png)
+
+??? failure "I'm stuck in Waydroid!"
+    If you see a weird transparent android homescreen or are generally stuck in Waydroid, hit your ++win++ key and try to open your terminal (:material-apps-box: > Utilities > Console in GNOME). From there, type `waydroid session stop` into it. This will close any and all Waydroid windows.
 
 ## :material-refresh: System Rebuild
 
