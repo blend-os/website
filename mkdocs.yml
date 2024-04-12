@@ -214,6 +214,7 @@ nav:
   - Home:
     - Home: index.md
     - FAQ: faq.md
+    - Offline Reading: offline.md
     - Contributing: contribution.md
   - Download: 
     - Download: download/README.md
