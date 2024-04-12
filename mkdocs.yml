@@ -69,20 +69,28 @@ extra:
   social:
     - icon: fontawesome/solid/earth-americas
       link: https://blendos.co
+      name: blendOS Website
     - icon: simple/x
       link: https://x.com/@blend_os
+      name: blendOS X Feed
     - icon: fontawesome/brands/discord
       link: https://discord.gg/fvMpV8ZNxD
+      name: blendOS Discord
     - icon: fontawesome/brands/telegram
       link: https://t.me/blendos
+      name: blendOS Telegram
     - icon: simple/matrix
       link: https://matrix.to/#/#blendos:matrix.org
+      name: blendOS Matrix Room
     - icon: simple/uptimekuma
       link: https://status.asterisk.lol/status/blendos
+      name: blendOS Status
     - icon: fontawesome/brands/github
       link: https://github.com/blend_os
+      name: blendOS Github
     - icon: fontawesome/brands/gitlab
       link: https://git.blendos.co/blendos
+      name: blendOS Gitlab Server
 
 markdown_extensions:
   - abbr
