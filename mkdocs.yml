@@ -190,8 +190,9 @@ plugins:
         #    show_contribution: true
         - git-committers:
             enabled: true
-            gitlab_hostname: git.blendos.co
+            gitlab_hostname: "git.blendos.co"
             gitlab_repository: 28
+            api_version: "v4"
         - git-revision-date-localized:
             type: timeago 
             
