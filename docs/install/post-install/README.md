@@ -13,7 +13,7 @@ You can do all sorts of things to customize your system.
 
     ---
 
-    Create distro containers
+    Create distro containers.
 
     [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button }
 
@@ -21,7 +21,7 @@ You can do all sorts of things to customize your system.
     
     ---
 
-    Customize your system
+    Customize your host system.
 
     [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button }
 </div>
