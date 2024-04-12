@@ -77,28 +77,28 @@ glightbox: false
 
 ![Rudra](https://github.com/RudraSwat.png){ .circle width=200px }
 <br>
-[**Rudra Saraswat**](https://about.ruds.io)
+[**Rudra Saraswat**](https://about.ruds.io){ target="_blank" rel="noopener noreferrer" }
 <br>
 *blendOS BDFL/Lead Dev*
 
 ![Asterisk](assets/img/me.png){ .circle width=200px }
 <br>
-[**Asterisk**](https://asterisk.lol)
+[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" }
 <br>
 *blendOS Docwriter*
 <br><br>
 
 ![Noa](https://noa.codes/assets/img/noahimesaka-256px.png){ .circle width=200px }
 <br>
-[**Noa Himesaka**](https://noa.codes)
+[**Noa Himesaka**](https://noa.codes){ target="_blank" rel="noopener noreferrer" }
 <br>
 *blendOS T2 Lead Dev*
 
 ![SvGaming](https://github.com/svgaming234.png){ .circle width=200px }
 <br>
-[**Sven Kovač**](https://git.blendos.co/svgaming)
+[**Sven Kovač**](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" }
 <br>
-*blendOS screenshots*
+*blendOS screenshots/testing*
 
 
 </div>

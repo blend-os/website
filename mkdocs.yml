@@ -13,7 +13,6 @@ theme:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
-    annotation: material/chevron-right-circle
     admonition:
       tip: fontawesome/solid/lightbulb
       danger: material/lightning-bolt

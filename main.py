@@ -22,11 +22,11 @@ def define_env(env):
 
     @env.macro
     def track(file):
-        return f'<a href="https://github.com/blend-os/tracks/raw/main/{file}.yaml" rel="noopener noreferrer" target="_blank"><code>{file}</code></a>'
+        return f'<a href="https://github.com/blend-os/tracks/raw/main/{file}.yaml" rel="noopener noreferrer" target="_blank"><code>{file}</code><small><sup>:material-file-code:</sup></small></a>'
     
     @env.macro
     def custom_track(impl, file):
-        return f'<a href="{impl}/{file}.yaml" rel="noopener noreferrer" target="_blank"><code>{file}</code></a>'
+        return f'<a href="{impl}/{file}.yaml" rel="noopener noreferrer" target="_blank"><code>{file}</code><small><sup>:material-file-code:</sup></small></a>'
     
     @env.macro
     def reference(type, ref):

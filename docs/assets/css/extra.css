@@ -413,19 +413,39 @@
 
 .md-typeset .admonition.code,
 .md-typeset details.code {
-    border-color: rgb(43, 155, 49);
+    border-color: #2b9b31;
 }
 
 .md-typeset .code>.admonition-title,
 .md-typeset .code>summary {
-    background-color: rgba(43, 155, 80, 0.1);
+    background-color: #2b9b501a;
 }
 
 .md-typeset .code>.admonition-title::before,
 .md-typeset .code>summary::before {
-    background-color: rgb(17, 128, 27);
+    background-color: #11801b;
     -webkit-mask-image: var(--md-admonition-icon--code);
     mask-image: var(--md-admonition-icon--code);
 }
 
 
+:root {
+    --md-admonition-icon--collapse: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h16v2H4zm0-3h16v2H4zm12-5l-4 4l-4-4h3V1h2v3zM8 19l4-4l4 4h-3v3h-2v-3z" /></svg>')
+}
+
+.md-typeset .admonition.collapse,
+.md-typeset details.collapse {
+    border-color: #2a54dd;
+}
+
+.md-typeset .collapse>.admonition-title,
+.md-typeset .collapse>summary {
+    background-color: #2a54dd1a;
+}
+
+.md-typeset .collapse>.admonition-title::before,
+.md-typeset .collapse>summary::before {
+    background-color: #2a54dd;
+    -webkit-mask-image: var(--md-admonition-icon--collapse);
+    mask-image: var(--md-admonition-icon--collapse);
+}
