@@ -5,12 +5,15 @@ description: "blendOS FAQ"
 
 # :material-chat-question: FAQ
 
-??? question "What desktops are supported?"
+## What desktops are officially supported?
 
-    - GNOME
-    - KDE Plasma
-    - XFCE
-    - Cinnamon
-    - Deepin
-    - MATE
-    - LXQt
+- GNOME (`default-gnome` track)
+- KDE Plasma (`plasma` track)
+- XFCE
+- Cinnamon
+- MATE
+- LXQt
+
+## Why can't I use another init system?
+
+blendOS relies heavily on [`systemd-nspawn`](https://wiki.archlinux.org/title/Systemd-nspawn){ target="_blank" rel="noopener noreferrer" } for containers, which is like `chroot` but on steroids. It is included with the {{ archpkg('systemd') }} package on Arch.

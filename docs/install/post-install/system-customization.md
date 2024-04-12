@@ -125,21 +125,59 @@ Scroll down to learn more!
 
 ## :material-package-variant-closed-plus: Adding host packages
 
-!!! info "blendOS is based on Arch by the way."
-
 Add stuff under [`packages`](../../reference/configs/system.md#reference) like so (packages must be from the Arch repos, [our repo](https://pkg-repo.blendos.co){ target="_blank" rel="noopener noreferrer" }, or any custom repos you add):
 
-```yaml
+!!! note "This should not be used to change desktops, even for custom ones."
+
+```yaml title="system.yaml"
 packages:
   - 'some-driver'
   - 'some-other-arch-thing'
 
 ```
 
+You can do this to add drivers, hypervisor guest tools, daemons (combined with the [`services`](../../reference/configs/system.md#reference) option), and more to your host.
+
+If your package adds a systemd service, add it like so:
+
+!!! note "You can't use another init system. [See why.](../../faq.md#why-cant-i-use-another-init-system)"
+
+```yaml title="system.yaml"
+services: # system level services
+  - 'your-service'
+
+user-services: # user level services
+  - 'ulauncher'
+  - 'something-else'
+
+```
+
+You can also add [custom repos](../../reference/configs/system.md#custom-repositories).
+
 ??? abstract "Adding the Chaotic AUR"
     The Chaotic AUR is a pacman repo with precompiled AUR packages. It holds a lot of popular AUR packages on a global CDN.
 
+    Add the following to your `system.yaml`:
+
+    ```yaml title="system.yaml"
+    package-repos:
+      - name: chaotic-aur
+        repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
+    ```
+
 ## :material-monitor-multiple: Changing desktop
+
+It's as simple as changing your track. Simply edit `track` to a [supported desktop](../../faq.md#what-desktops-are-officially-supported).
+
+```yaml title="system.yaml"
+...
+
+track: plasma # or another supported desktop 
+
+...
+```
+
+Do that, then run `sudo akshara update`.
 
 ## :fontawesome-solid-paintbrush: Themes
 
