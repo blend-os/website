@@ -125,6 +125,8 @@ Scroll down to learn more!
 
 ## :material-package-variant-closed-plus: Adding host packages
 
+!!! info "Always run `sudo akshara update` after editing `system.yaml`!"
+
 Add stuff under [`packages`](../../reference/configs/system.md#reference) like so (packages must be from the Arch repos, [our repo](https://pkg-repo.blendos.co){ target="_blank" rel="noopener noreferrer" }, or any custom repos you add):
 
 !!! note "This should not be used to change desktops, even for custom ones."
