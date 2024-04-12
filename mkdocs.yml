@@ -185,14 +185,9 @@ plugins:
             cards_layout_options:
               background_color: "#1e2029"
               color: "#21af90"
-        # - git-authors:
-        #    show_email_address: false
-        #    show_contribution: true
-        - git-committers:
-            enabled: true
-            gitlab_hostname: "git.blendos.co"
-            gitlab_repository: 28
-            api_version: "v4"
+        - git-authors:
+            show_email_address: false
+            show_contribution: true
         - git-revision-date-localized:
             type: timeago 
             
