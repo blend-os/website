@@ -171,6 +171,9 @@ plugins:
   - search
   - glightbox
   - macros
+  - redirects:
+      redirect_maps: 
+        'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
   - group:
       enabled: !ENV CI 
       plugins:

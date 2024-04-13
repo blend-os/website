@@ -21,6 +21,8 @@ Scroll down to learn more!
     ---
     **impl URL:** `https://github.com/ico277/blendos-tracks/raw/main`
 
+    **Repo:** [:material-github: ico277/blendos-tracks](https://github.com/ico277/blendos-tracks){ target="_blank" rel="noopener noreferrer" }
+
     ---
     **Removed packages:**
         
@@ -72,6 +74,8 @@ Scroll down to learn more!
     ---
     **impl URL:** `https://github.com/noahimesaka1873/blendos-tracks-t2/raw/main`
 
+    **Repo:** [:material-github: NoaHimesaka1873/blendos-tracks-t2](https://github.com/NoaHimesaka1873/blendos-tracks-t2){ target="_blank" rel="noopener noreferrer" }
+
     `blendos-base` is now `blendos-base-t2`.
 
     ---
@@ -110,6 +114,8 @@ Scroll down to learn more!
   
     ---
     **impl URL:** `https://github.com/ast3risk-ops/blendos-tracks-driverless`
+
+    **Repo:** [:material-github: Ast3risk-ops/blend-tracks-driverless](https://github.com/Ast3risk-ops/blend-tracks-driverless){ target="_blank" rel="noopener noreferrer" }
 
     ---
 
