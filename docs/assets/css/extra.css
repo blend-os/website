@@ -276,7 +276,7 @@
     font-weight: 700;
 }
 
-/* credit end */
+
 
 /*
 .md-typeset .admonition,
@@ -306,11 +306,7 @@
 }
 
 
-.circle {
-    border: 1px solid white;
-    border-radius: 100px;
-    
-}
+
 
 .md-footer {
   border-top: 0.10rem solid var(--md-accent-fg-color);
@@ -326,14 +322,15 @@
     padding: 0 !important
 }
 
+/* credit end */
+
 /* .md-copyright {
     display: none !important;
 } */
 
 /* --8<-- [start:classes] */
-
-
-/* .icon- classes are computed using https://svg-colorizer.pages.dev */
+/* .icon classes are computed using https://svg-colorizer.pages.dev */
+/* .icon-x-misc classes are for multi-color images and icons, .icon-x classes are for monochrome images and icons */
 
 .icon-white {
     filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(148deg) brightness(102%) contrast(106%);
@@ -386,6 +383,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.circle {
+    border: 1px solid white;
+    border-radius: 100px;
+    
 }
 
 .windows {
