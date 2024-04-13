@@ -6,7 +6,7 @@ description: "Installing blendOS on a normal PC"
 # :material-laptop: Normal PC
 
 <figure markdown="span">
-  ![install-banner](../assets/img/install-banner.svg){ width="1000" }
+  ![install-banner](../assets/img/install-banner.svg){ width="1000" .off-glb }
   <figcaption></figcaption>
 </figure>
 
