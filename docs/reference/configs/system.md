@@ -119,3 +119,45 @@ Once that is done, you'll need to make your `impl` URL.
 If you're using a webserver, put all the files in one folder. Your `impl` URL is the URL to that folder.
 
 ## :material-folder-open: Custom repositories
+
+Custom repositories in `system.yaml` are quite easy.
+
+If we use the [`arch-mact2`](https://mirror.funami.tech/arch-mact2/){ target="_blank" rel="noopener noreferrer" } repo as an example, the repo folder structure is like this:
+
+``` title="mirror.funami.tech"
+󰉋 /
+└── 󰉋 arch-mact2
+    └── 󰉋 os
+        └── 󰉋 x86_64
+            └── <repo files>
+```
+
+We can replace some of these with values.
+
+``` title="mirror.funami.tech"
+󰉋 /
+└── 󰉋 $repo
+    └── 󰉋 os
+        └── 󰉋 $arch
+            └── <repo files>
+```
+
+In `system.yaml`, `$arch` corresponds to your system's architecture (currently `x86_64`) and `$repo` corresponds to your `name` parameter. 
+
+These variables are parsed by pacman, so never remove or change them from your mirror URL. 
+
+Configuring this mirror in system.yaml would look like this:
+
+```yaml title="system.yaml"
+package-repos:
+  - name: 'arch-mact2'
+    repo-url: 'https://mirror.funami.tech/$repo/os/$arch/'
+```
+
+Corresponding to this in `pacman.conf`:
+
+```ini title="pacman.conf"
+[arch-mact2]
+Server = https://mirror.funami.tech/$repo/os/$arch
+SigLevel = Never
+```

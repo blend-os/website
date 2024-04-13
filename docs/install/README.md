@@ -8,24 +8,26 @@ description: "Installing blendOS"
 !!! warning "v4 Installability"
     If the main pacman repo is down, v4 cannot be installed.
 
-    **Main repo status (https://pkg-repo.blendos.co):**
+    **Main repo status (https://pkg-repo.blendos.co{ target="_blank" rel="noopener noreferrer" }):**
     
-    [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://pkg-repo.blendos.co){ target="_blank" rel="noopener noreferrer" }
+    [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
     **Backup repo statuses:**
 
 
-    **Repo 1 (https://kc1.mirrors.199693.xyz/blend/)**
+    **Repo 1 (https://kc1.mirrors.199693.xyz/blend/{ target="_blank" rel="noopener noreferrer" })**
     
 
-    [![backup-repo-1](https://status.asterisk.lol/api/badge/36/status?label=)](https://kc1.mirrors.199693.xyz/blend/){ target="_blank" rel="noopener noreferrer" }
+    [![backup-repo-1](https://status.asterisk.lol/api/badge/36/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
+    
+    **Repo 2 (https://blend.asterisk.lol/mirror{ target="_blank" rel="noopener noreferrer" })**
     
 
+    [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
-    **Repo 2 (https://blend.asterisk.lol/mirror)**
-    
+    **Repo 3 (https://sg1.mirrors.199693.xyz/blend/{ target="_blank" rel="noopener noreferrer" })**
 
-    [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://blend.asterisk.lol/mirror){ target="_blank" }
+    [![backup-repo-3](https://status.asterisk.lol/api/badge/38/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
 
 You can install BlendOS on the following devices:
@@ -55,5 +57,23 @@ You can install BlendOS on the following devices:
 
 --------
 
-Once you're done you can also do:
+Once you're done you can also check out:
 
+<div class="grid cards" markdown> 
+
+-   :material-truck-cargo-container:{ .lg .middle } __Container Management__
+
+    ---
+
+    Create distro containers.
+
+    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button }
+
+-   :material-monitor-shimmer:{ .lg .middle } __System Customization__
+    
+    ---
+
+    Customize your host system.
+
+    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button }
+</div>

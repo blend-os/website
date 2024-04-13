@@ -27,7 +27,7 @@ Keep in mind the container name will influence the binary suffix, and it can be 
 
 Once created, you will see your container, along with 2 options:
 
-- :material-play-outline: Enter container shell
+- :material-play-outline: Enter container shell (you can also do this by typing `bash.<your container name>` in the terminal)
 - :material-trash-can-outline: Delete container
 
 *[binary suffix]: The part after a container binary, like .ubuntu for apt.ubuntu
