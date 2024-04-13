@@ -9,6 +9,32 @@ System customization are done through the [:material-file-star: `system.yaml`](.
 
 Scroll down to learn more!
 
+## Editing system.yaml
+
+You'll need root privileges, so you'll need to open your favorite text editor as root.
+
+```bash
+# GNOME
+sudo gnome-text-editor /system.yaml
+
+# Plasma
+sudo kate /system.yaml
+
+# XFCE
+sudo mousepad /system.yaml
+
+# Cinnamon
+sudo xed /system.yaml
+
+# CLI text editors
+sudo nano /system.yaml
+
+sudo nvim /system.yaml
+
+sudo micro /system.yaml
+
+```
+
 ## :material-train-variant: Alternate track repos
 
 <div class="grid cards" markdown>
@@ -126,6 +152,18 @@ Scroll down to learn more!
 
 *[Removed packages]: Packages that have been removed from blendos-base or a rename of it
 *[Added packages]: Packages that have been added to blendos-base or a rename of it
+
+Set your track repo by setting your `impl` URL in `system.yaml`:
+
+```yaml title="system.yaml"
+...
+
+impl: <an impl URL>
+
+track: <a track name without the extension>
+
+...
+```
 
 ## :material-package-variant-closed-plus: Adding host packages
 
