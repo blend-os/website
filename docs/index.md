@@ -28,7 +28,7 @@ glightbox: false
 
 ------
 </div>
-!!! warning "These docs are still unfinished!"
+
 <div align="center" markdown>
 
 <div class="grid cards" markdown>
