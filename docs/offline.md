@@ -5,14 +5,14 @@ description: Read our docs offline!
 
 # :material-wifi-off: Offline Reading
 
-You can download our docs for offline reading.
+!!! warning "You will need to update your offline copy manually."
 
-Simply visit this link: https://git.blendos.co/asterisk/blend-docs-material/-/artifacts{ target="_blank" rel="noopener noreferrer" }
+You can download our docs for offline reading using the button below.
 
-Find the latest `offline` job and click the download button.
+[:material-download: Download latest artifact](https://git.blendos.co/api/v4/projects/28/jobs/artifacts/main/download?job=offline){ target="_blank" rel="noopener noreferrer" .md-button }
 
-![offline-artifacts](assets/img/gitlab-offline.png)
 
-Open **artifacts.zip** and extract the `site` folder. Open `index.html` in your browser. 
 
-**Happy reading!**
+Open **artifacts.zip** and extract the `site` folder. Open `index.html` in your browser. Even the search bar will work offline! 
+
+Instant loading will not work and status badges will be frozen to what they showed at build time.
