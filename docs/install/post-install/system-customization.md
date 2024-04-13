@@ -67,8 +67,6 @@ Scroll down to learn more!
 
 -   :fontawesome-brands-apple:{ .lg .middle } __T2 Tracks__
     
-    !!! danger "This repo is not up to date!"
-    
     Makes blendOS compatible with T2 devices as part of the [t2linux project](https://t2linux.org){ target="_blank" rel="noopener noreferrer" }. Maintained by [Noa Himesaka](https://noa.codes){ target="_blank" rel="noopener noreferrer" }.
     
     ---
