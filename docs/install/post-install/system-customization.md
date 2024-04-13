@@ -9,7 +9,7 @@ System customization are done through the [:material-file-star: `system.yaml`](.
 
 Scroll down to learn more!
 
-## Editing system.yaml
+## :material-file-edit: Editing system.yaml
 
 You'll need root privileges, so you'll need to open your favorite text editor as root.
 
