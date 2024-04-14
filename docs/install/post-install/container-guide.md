@@ -19,7 +19,7 @@ In the first tab (`Linux Containers`) you can create associations and Linux dist
 
 In the first box you can create and manage containers. Simply type the name and choose a distro.
 
-Keep in mind the container name will influence the binary suffix, and it can be **whatever you want**. You could name your arch container `ub` so you can have a shorter binary suffix (i.e. `apt.ub` instead of `apt.ubuntu`).
+Keep in mind the container name will influence the binary suffix, and it can be **whatever you want**. You could name your Ubuntu container `ub` so you can have a shorter binary suffix (i.e. `apt.ub` instead of `apt.ubuntu`).
 
 ![ubuntu-container](../../assets/img/ubuntu-container.png)
 
