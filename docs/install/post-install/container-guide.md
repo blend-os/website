@@ -19,11 +19,9 @@ In the first tab (`Linux Containers`) you can create associations and Linux dist
 
 In the first box you can create and manage containers. Simply type the name and choose a distro.
 
-![containers](../../assets/img/containers.gif)
+Keep in mind the container name will influence the binary suffix, and it can be **whatever you want**. You could name your arch container `ub` so you can have a shorter binary suffix (i.e. `apt.ub` instead of `apt.ubuntu`).
 
-Keep in mind the container name will influence the binary suffix, and it can be **whatever you want**. You could name your arch container `ar` so you can have a shorter binary suffix (i.e. `pacman.ar` instead of `pacman.arch`).
-
-![container-list](../../assets/img/arch-container.png)
+![ubuntu-container](../../assets/img/ubuntu-container.png)
 
 Once created, you will see your container, along with 2 options:
 
@@ -31,6 +29,10 @@ Once created, you will see your container, along with 2 options:
 - :material-trash-can-outline: Delete container
 
 *[binary suffix]: The part after a container binary, like .ubuntu for apt.ubuntu
+
+You can also double click on Linux packages and Android APKs to open the blendOS **Package Installer**.
+
+![package-installer](../../assets/img/package-installer.png)
 
 ### :octicons-arrow-switch-16: Associations
 
@@ -42,16 +44,52 @@ You can also create associations to remove annoying binary suffixes. Simply type
 
 ![association-final](../../assets/img/association_final.png)
 
+![association-terminal](../../assets/img/association_terminal.png)
+
 ## :material-android: Waydroid
 
 Click `Initialize Waydroid`.
 
 After Waydroid initializes, you will see options to install [**:simple-fdroid: F-Droid**](https://f-droid.org){ target="_blank" rel="noopener noreferrer" } or the [![aurora](../../assets/img/aurora.png){ .tweemoji width=24 .off-glb .icon-blend-misc } **Aurora Store**](https://www.auroraoss.com/){ target="_blank" rel="noopener noreferrer" }. Click on them to install them. You will also see an option to open Waydroid settings.
 
+
+
 ![waydroid-settings](../../assets/img/waydroid-settings.png)
+
+!!! info "Waydroid's architecture is `x86_64`."
+
+??? abstract "ADB usage"
+    After getting your Android IP from **Settings > About**, use this adb command:
+
+    ```
+    adb connect <IP>:5555
+    ```
+
+Some useful Waydroid CLI commands are:
+
+| Command | Function |
+| -------------------- | -------------------------------- |
+| `waydroid show-full-ui` | Start a full Android session |
+| `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
+| `waydroid session start` | Resumes Waydroid |
+| `waydroid shell` | Android shell |
+| `waydroid app install file.apk` | Mostly redundant with our package installer, but useful |
+| `waydroid app launch com.foo.bar` | Open an Android app (you can also do this from your DE's app launcher) |
+| `waydroid log` | Show the Waydroid log |
+
+
+You can learn more about Waydroid and find more guides and commands at https://docs.waydro.id{ target="blank" rel="noopener noreferrer" }.
 
 ??? failure "I'm stuck in Waydroid!"
     If you see a weird transparent android homescreen or are generally stuck in Waydroid, hit your ++win++ key and try to open your terminal (:material-apps-box: > Utilities > Console in GNOME). From there, type `waydroid session stop` into it. This will close any and all Waydroid windows.
+
+    You will need to run `waydroid session start` before using Waydroid again.
+
+??? failure "Play-protected apps aren't launching!"
+    See [the certification guide](https://docs.waydro.id/faq/google-play-certification){ target="_blank" rel="noopener noreferrer" }.
+
+??? failure "Waydroid isn't working on my NVidia card!"
+    [Disable GPU acceleration](https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm){ target="_blank" rel="noopener noreferrer" }.
 
 ## :material-refresh: System Rebuild
 
