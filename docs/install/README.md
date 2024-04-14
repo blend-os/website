@@ -67,7 +67,7 @@ Once you're done you can also check out:
 
     Create distro containers.
 
-    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](post-install/container-guide.md){ .md-button }
 
 -   :material-monitor-shimmer:{ .lg .middle } __System Customization__
     
@@ -75,5 +75,5 @@ Once you're done you can also check out:
 
     Customize your host system.
 
-    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](post-install/system-customization.md){ .md-button }
 </div>
