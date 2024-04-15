@@ -173,7 +173,14 @@ plugins:
   - macros
   - redirects:
       redirect_maps: 
+        'docs/intro.md': 'index.md'
         'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
+        'docs/faq.md': 'faq.md'
+        'docs/category/installation.md': 'install/README.md'
+        'docs/installation/normal-pc.md': 'install/normal-pc.md'
+        'docs/installation/mac-t2.md': 'install/t2.md'
+        'docs/installation/container.md': 'install/post-install/container-guide.md'
+
   - group:
       enabled: !ENV CI 
       plugins:
