@@ -79,15 +79,15 @@ or
 
 Plug your USB in and spam that key while turning on your PC.
 
-You should see a device list, choose your USB device. It will be listed under its brand name or as `EFI USB device`. If you get booted to a diagnostic screen or get a "secure boot violation" error, see the below abstract.
+You should see a device list, choose your USB device. It will be listed under its brand name or as `EFI USB device`. If you get booted to a diagnostic screen or get a "Secure Boot violation" error, see the below abstract.
 
-If you see a sort of settings menu, go to the Boot section, and change the boot order so that your USB drive is at the top.
+If you see a sort of settings menu, go to the `Boot` section, and change the boot order so that your USB drive is at the top. Then save your changes and reboot.
 
 ??? abstract "Disabling Secure Boot"
     Enter your BIOS setup and find a section called **Secure Boot** (or if it doesn't exist, look under **Boot**). Turn **Secure Boot** (also called **UEFI Secure Boot**) off.
 
     -----
-    If you want to know what Secure Boot is, see [Microsoft's article on it](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot).
+    If you want to know what Secure Boot is, see [Microsoft's article on it](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot){ target="_blank" rel="noopener noreferrer" }.
 
 
 If you're on **legacy BIOS**, you'll see a bootscreen, just press ++enter++. If you're on **UEFI** blendOS will just load.

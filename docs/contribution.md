@@ -286,9 +286,7 @@ We have created the following macros:
 
 ### :material-language-css3: CSS classes
 
-CSS classes you can use:
-
-!!! note "`.small` is depreceated, please use `<small>`"
+**CSS classes you can use:**
 
 ```css title="extra.css"
 --8<-- "https://git.blendos.co/asterisk/blend-docs-material/-/raw/main/docs/assets/css/extra.css:classes"
