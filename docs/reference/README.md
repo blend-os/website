@@ -9,7 +9,15 @@ Every single configurable bit of blendOS.
 
 -----
 
-<div class="grid cards" markdown> 
+<div class="grid cards" markdown>
+
+-   :octicons-container-16:{ .lg .middle } __Container List__
+    
+    ---
+
+    Our list of available distro containers.
+
+    [Get Started :octicons-arrow-right-16:](container-list.md){ .md-button }
 
 -   :simple-googlecloudspanner:{ .lg .middle } __Utilities__
 
