@@ -61,6 +61,8 @@ Tracks can also inherit from eachother (see next section).
 
 Inherited tracks are the most common type of track. They can be used to tack on different desktops, additional drivers/programs, to another track.
 
+
+
 An example of this is the official {{ track("plasma") }} track.
 
 ??? code "plasma.yaml"
@@ -85,6 +87,9 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
     This track now inherits from {{ track("blendos-base") }}, and adds a desktop to it.
 
 If you're creating a fully custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
+
+!!! warning "Reinheritance"
+    If your track inherits a track that inherits another track (reinheritance), issues may result, like certain sections of the file being ignored. This is due to an {{ reference("utils", "akshara") }} bug.
 
 ### :octicons-repo-16: Creating a track repo/webserver
 

@@ -36,6 +36,19 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 ## :material-lightning-bolt: Flash a USB
 
+<script>
+    function replace() {
+        var styleSheet = document.createElement("style")
+        styleSheet.innerText = '.ventoy { display: revert !important }'
+        document.head.appendChild(styleSheet)
+    }
+</script>
+
+<style>
+    .ventoy {
+        display: none;
+    }
+</style>
 
 === ":octicons-star-fill-16:{ .yellow } Etcher"
     Download Etcher from https://etcher.io and plug in your USB.
@@ -51,6 +64,24 @@ Go to the [:material-download: Download](../download/README.md) page.
 === "Rufus (DD mode)"
 
     Open your ISO in Rufus, and hit `START`. When prompted, choose **DD Mode**!
+
+=== "Ventoy"
+    Download Ventoy and extract it to a folder.
+
+    [:material-download: Download Ventoy](javascript:replace();){ .md-button }
+
+    <div id="latest-release-info" class="ventoy"></div>
+
+    Once downloaded, open `Ventoy2Disk.exe` or `Ventoy2Disk.sh`.
+
+    Choose your drive at the top. Then make sure `Secure Boot Support` is checked.
+
+    ![ventoy](../assets/img/install/ventoy.png)
+
+    Choose `Install`.
+
+    Download our ISO and copy it to the root of the drive labeled `Ventoy`.
+
 === "DD"
     Open a terminal and type the following:
 
@@ -59,6 +90,30 @@ Go to the [:material-download: Download](../download/README.md) page.
     ```
 
     Replace `/dev/sdX` with your USB's identifier (found via `lsblk`)
+
+
+
+<script>
+   const apiUrl = 'https://api.github.com/repos/ventoy/ventoy/releases/latest';
+   fetch(apiUrl)
+     .then(response => {
+       if (!response.ok) {
+         throw new Error('Network response was not ok');
+       }
+       return response.json();
+     })
+     .then(data => {
+       const latestReleaseInfo = document.getElementById('latest-release-info');
+       latestReleaseInfo.innerHTML = `
+         <p><a href="${data.assets[3].browser_download_url}" target="_blank" class="md-button" rel="noopener noreferrer">Windows Download</a> <a href="${data.assets[1].browser_download_url}" target="_blank" class="md-button" rel="noopener noreferrer">Linux Download</a></p>
+       `;
+     })
+     .catch(error => {
+       console.error('Error fetching data:', error);
+     });
+</script>
+
+
 ------
 
 ## :material-package-variant: Install blendOS
