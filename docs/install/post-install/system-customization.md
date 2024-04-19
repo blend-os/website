@@ -40,7 +40,6 @@ sudo micro /system.yaml
 <div class="grid cards" markdown>
 -   :material-arrow-collapse:{ .lg .middle } __ico277's stripped tracks__
     
-    !!! danger "This repo is not up to date!"
 
     A seriously stripped back track (experienced users only). Lacks all blendOS apps. Maintained by [ico277](https://github.com/ico277){ target="_blank" rel="noopener noreferrer" }.
 
