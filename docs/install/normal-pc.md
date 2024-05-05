@@ -109,7 +109,7 @@ Go to the [:material-download: Download](../download/README.md) page.
        `;
      })
      .catch(error => {
-       console.error('Error fetching data:', error);
+       console.error('Error fetching Ventoy release data:', error);
      });
 </script>
 
@@ -136,13 +136,50 @@ Plug your USB in and spam that key while turning on your PC.
 
 You should see a device list, choose your USB device. It will be listed under its brand name or as `EFI USB device`. If you get booted to a diagnostic screen or get a "Secure Boot violation" error, see the below abstract.
 
-If you see a sort of settings menu, go to the `Boot` section, and change the boot order so that your USB drive is at the top. Then save your changes and reboot.
 
-??? abstract "Disabling Secure Boot"
+??? failure "Ventoy Users: 'Security Violation' Error"
+
+    ??? video "Video Demonstration"
+          <center>
+           <video src="/assets/vid/enroll-key-vtoy.mp4" controls muted></video>
+           <p>Credit to [Ventoy](https://ventoy.net/en/doc_secure.html) for the video demonstration.<p>
+          </center>
+    
+    ![vtoy-verification-error-0x1A](../assets/img/vtoy-secure-error.png){ align=right width=200 }
+
+     If you get an error screen saying there was a 'Security Violation,' follow the steps below:
+
+     1\. Press ++enter++ to load **MokManager**
+
+     2\. Press any key to begin key management
+
+     3\. Choose **Enroll Key From Disk**
+
+     4\. Choose `VTOYEFI`
+        
+    - The controls are arrow keys to move and ++enter++ to select
+
+     5\. Choose `ENROLL_THIS_KEY_IN_MOKMANAGER.cer`
+
+     6\. Choose **Continue**, then **Yes**, and finally **Reboot**
+    
+    7\. Boot from the USB again, as the issue should be resolved
+
+     ------
+
+     If it is still not working, try 'Hash Enrollment,' as detailed in [Ventoy's guide](https://ventoy.net/en/doc_secure.html){ target="_blank" rel="noopener noreferrer" }.
+
+     Credit to [he3als](https://he3als.xyz){ target="_blank" rel="noopener noreferrer" } on the [AtlasOS Docs](https://docs.atlasos.net){ target="_blank" rel="noopener noreferrer" } for formatting fixes.
+
+??? abstract "Non-Ventoy Users: Disabling Secure Boot"
     Enter your BIOS setup and find a section called **Secure Boot** (or if it doesn't exist, look under **Boot**). Turn **Secure Boot** (also called **UEFI Secure Boot**) off.
 
     -----
     If you want to know what Secure Boot is, see [Microsoft's article on it](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot){ target="_blank" rel="noopener noreferrer" }.
+
+If you see a sort of settings menu, go to the `Boot` section, and change the boot order so that your USB drive is at the top. Then save your changes and reboot.
+
+
 
 
 If you're on **legacy BIOS**, you'll see a bootscreen, just press ++enter++. If you're on **UEFI** blendOS will just load.

@@ -449,3 +449,24 @@
     -webkit-mask-image: var(--md-admonition-icon--collapse);
     mask-image: var(--md-admonition-icon--collapse);
 }
+
+:root {
+    --md-admonition-icon--video: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z" /></svg>')
+}
+
+.md-typeset .admonition.video,
+.md-typeset details.video {
+    border-color: #5d06a3;
+}
+
+.md-typeset .video>.admonition-title,
+.md-typeset .video>summary {
+    background-color: #3e046e1a;
+}
+
+.md-typeset .video>.admonition-title::before,
+.md-typeset .video>summary::before {
+    background-color: #5d06a3;
+    -webkit-mask-image: var(--md-admonition-icon--video);
+    mask-image: var(--md-admonition-icon--video);
+}
