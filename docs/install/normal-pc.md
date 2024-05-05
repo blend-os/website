@@ -66,7 +66,7 @@ Go to the [:material-download: Download](../download/README.md) page.
     Open your ISO in Rufus, and hit `START`. When prompted, choose **DD Mode**!
 
 === "Ventoy"
-    Download Ventoy and extract it to a folder.
+    Download [Ventoy](https://ventoy.net/en/download.html){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
 
     [:material-download: Download Ventoy](javascript:replace();){ .md-button }
 
