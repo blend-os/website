@@ -51,7 +51,7 @@ sudo micro /system.yaml
     ---
     **Removed packages:**
         
-    ??? collapse "28 lines collapsed"
+    ??? collapse follow "28 lines collapsed"
         - {{ archpkg('b43-fwcutter') }}
         - {{ archpkg('bind') }}
         - `blend-settings`

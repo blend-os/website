@@ -79,12 +79,15 @@ An overview of a few cool features you can use:
 
 !!! note inline-end <!-- or inline --> "Inline"
     text
+
+??? abstract follow "This one's header will follow you down the page."
+    looooong text
 ```
 
 In addition to the [regular admonition types](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types){ target="_blank" rel="noopener noreferrer" }, we have also added a `code` admonition for making collapsable codeblocks:
 
 ```md
-??? code "file_name.ext"
+??? code "file_name.ext"     <-- This has follow on by default
     ```
     code here, no space between admonition and code
     ```
@@ -97,7 +100,7 @@ In addition to the [regular admonition types](https://squidfunk.github.io/mkdocs
 As well as a `collapse` admonition:
 
 ```md
-??? collapse "X lines collapsed"
+??? collapse "X lines collapsed"    <-- This also has follow on by default
     1
 
     2
@@ -111,6 +114,26 @@ As well as a `collapse` admonition:
     2
 
     3
+
+And `video`:
+
+```html
+??? video "Video Guide"
+    <center>
+    <video src="path-to-video-file-from-root" controls></video>
+    <p>You should set a width and height if the video is too big, 
+    and muted if it has no sound. 
+    This p section can be omitted if no caption is required.<p>
+    </center>
+
+```
+
+??? video "Video Guide"
+    <center>
+    <video src="/assets/vid/example.webm" controls></video>
+    <p>You should set a width and height if the video is too big, and muted if it has no sound.
+    This p section can be omitted if no caption is required.<p>
+    </center>
 
 #### **:material-emoticon: Emojis/Icons** ([`emoji`](https://facelessuser.github.io/pymdown-extensions/extensions/emoji/){ target="_blank" rel="noopener noreferrer" })
 

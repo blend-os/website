@@ -286,7 +286,7 @@
 }
 */
 
-.md-typeset summary {
+.md-typeset .follow > summary {
     position: sticky;
     top: 48px;
     z-index: 1;
@@ -425,9 +425,17 @@
     border-color: #2b9b31;
 }
 
+
 .md-typeset .code>.admonition-title,
 .md-typeset .code>summary {
     background-color: #2b9b501a;
+}
+
+.md-typeset .code>summary {
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .md-typeset .code>.admonition-title::before,
@@ -450,6 +458,14 @@
 .md-typeset .collapse>.admonition-title,
 .md-typeset .collapse>summary {
     background-color: #2a54dd1a;
+}
+
+
+.md-typeset .collapse>summary {
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .md-typeset .collapse>.admonition-title::before,

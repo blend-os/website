@@ -223,7 +223,7 @@ After clicking `Switch to Manual Partitioning`, choose `Partitioning How-To` und
 
 A copy of the file that opens has been provided here for reference:
 
-??? abstract "Partitioning How-To"
+??? abstract follow "Partitioning How-To"
 
     ```
      ____            _   _ _   _             _             
