@@ -80,7 +80,7 @@ Go to the [:material-download: Download](../download/README.md) page.
     <div id="latest-release-info" class="ventoy"></div>
 
     <noscript>
-    [Download Ventoy](https://github.com/ventoy/Ventoy/releases/){ target="_blank" rel="noopener noreferrer" }
+    [:material-download: Download Ventoy](https://github.com/ventoy/Ventoy/releases/){ target="_blank" rel="noopener noreferrer" .md-button }
     </noscript>
 
     Once downloaded, open `Ventoy2Disk.exe` or `Ventoy2Disk.sh`.
