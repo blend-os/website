@@ -120,7 +120,7 @@ And `video`:
 ```html
 ??? video "Video Guide"
     <center>
-    <video src="path-to-video-file-from-root" controls></video>
+    <video src="/assets/vid/example.webm" controls></video>
     <p>You should set a width and height if the video is too big, 
     and muted if it has no sound. 
     This p section can be omitted if no caption is required.<p>
