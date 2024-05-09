@@ -287,6 +287,9 @@
 */
 
 
+.noJs {
+    display: none
+}
 
 .md-typeset .admonition.image,
 .md-typeset details.image {

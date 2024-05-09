@@ -44,6 +44,13 @@ Go to the [:material-download: Download](../download/README.md) page.
     }
 </script>
 
+
+<script>
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = '.noJs { display: revert !important }'
+    document.head.appendChild(styleSheet)
+</script>
+
 <style>
     .ventoy {
         display: none;
@@ -67,10 +74,14 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 === "Ventoy"
     Download [Ventoy](https://ventoy.net/en/download.html){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
+    
+    <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button }</span>
 
-    [:material-download: Download Ventoy](javascript:replace();){ .md-button }
+    <div class="noJs" id="latest-release-info" class="ventoy"></div>
 
-    <div id="latest-release-info" class="ventoy"></div>
+    <noscript>
+    [Download Ventoy](https://github.com/ventoy/Ventoy/releases/){ target="_blank" rel="noopener noreferrer" }
+    </noscript>
 
     Once downloaded, open `Ventoy2Disk.exe` or `Ventoy2Disk.sh`.
 
