@@ -77,7 +77,7 @@ Go to the [:material-download: Download](../download/README.md) page.
     
     <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button }</span>
 
-    <div class="noJs" id="latest-release-info" class="ventoy"></div>
+    <div id="latest-release-info" class="ventoy"></div>
 
     <noscript>
     [Download Ventoy](https://github.com/ventoy/Ventoy/releases/){ target="_blank" rel="noopener noreferrer" }
