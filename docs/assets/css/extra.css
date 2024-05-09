@@ -286,13 +286,11 @@
 }
 */
 
-.admfollow {
-    .md-typeset summary {
-        position: sticky;
-        top: 48px;
-        z-index: 1;
-        backdrop-filter: blur(10px);
-    }
+.md-typeset summary {
+    position: sticky;
+    top: 48px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
 .noJs {
