@@ -62,7 +62,7 @@ Go to the [:material-download: Download](../download/README.md) page.
     
     You can click the button below to automatically download and flash the ISO:
 
-    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendos-20240310-x8664.iso){ target="_blank" rel="noopener noreferrer" }
+    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendos-20240310-x8664.iso){ target="_blank" rel="noopener noreferrer" data-umami-event="Etcher Button" }
 
     If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
 
@@ -75,7 +75,7 @@ Go to the [:material-download: Download](../download/README.md) page.
 === "Ventoy"
     Download [Ventoy](https://ventoy.net/en/download.html){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
     
-    <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button }</span>
+    <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button data-umami-event="Ventoy Install Button" }</span>
 
     <div id="latest-release-info" class="ventoy"></div>
 
