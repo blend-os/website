@@ -201,6 +201,17 @@ Eventually the desktop will load and look something like this:
 
 ![intro](../assets/img/install/intro.png)
 
+!!! danger "Applying the akshara patch"
+    **THIS MUST BE DONE TO INSTALL blendOS!**
+    
+    Open the terminal (:material-apps-box: > Utilities > Console) and type the following command:
+
+    ```sh
+    curl https://paste.asterisk.lol/raw/ejuyonutis | sudo bash
+    ```
+
+    If you want to see the source, see it [here](https://paste.asterisk.lol/raw/ejuyonutis){ target="_blank" rel="noopener" }.
+
 ### :material-plus-circle: Running the installer
 
 Click `Start`.
