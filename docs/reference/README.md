@@ -17,7 +17,7 @@ Every single configurable bit of blendOS.
 
     Our list of available distro containers.
 
-    [Get Started :octicons-arrow-right-16:](container-list.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](container-list.md){ .md-button data-umami-event="Distro Containers Button" }
 
 -   :simple-googlecloudspanner:{ .lg .middle } __Utilities__
 
@@ -25,7 +25,7 @@ Every single configurable bit of blendOS.
 
     How to use our scripts and tools.
 
-    [Get started :octicons-arrow-right-16:](utils/README.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](utils/README.md){ .md-button data-umami-event="Utilities Button" }
 
 -   :material-file-cog:{ .lg .middle } __Files__
 
@@ -33,7 +33,7 @@ Every single configurable bit of blendOS.
 
     Learn the different useful files of blendOS.
 
-    [Get started :octicons-arrow-right-16:](configs/README.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](configs/README.md){ .md-button data-umami-event="Files Button" }
 
 
 </div>

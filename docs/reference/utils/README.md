@@ -17,7 +17,7 @@ Our scripts and tools.
 
     Our universal package manager.
 
-    [Get started :octicons-arrow-right-16:](bpkg.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](bpkg.md){ .md-button data-umami-event="bpkg Button" }
 
 -   :material-hard-hat:{ .lg .middle }  __akshara__
     
@@ -25,7 +25,7 @@ Our scripts and tools.
 
     The system builder.
 
-    [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button data-umami-event="akshara Button" }
 
 -   :material-cog-box:{ .lg .middle } __blend-inst__
     
@@ -33,6 +33,6 @@ Our scripts and tools.
 
     Our custom backend for [`jade-gui`](https://github.com/blend-os/jade-gui){ target="_blank" rel="noopener noreferrer" }.
 
-    [Get Started :octicons-arrow-right-16:](blend-inst.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](blend-inst.md){ .md-button data-umami-event="blend-inst button" }
 </div>
 

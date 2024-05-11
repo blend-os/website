@@ -36,6 +36,7 @@ end
 Things like:
 
 - Drivers
+- Game Launchers (as a flatpak or a host package)
 - Terminal emulators
 - Web Browsers
 - File managers

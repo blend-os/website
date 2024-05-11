@@ -42,7 +42,7 @@ You can install BlendOS on the following devices:
 
     Install blendOS on a normal 64-bit PC or non-T2 Intel Mac.
 
-    [Get started :octicons-arrow-right-16:](normal-pc.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](normal-pc.md){ .md-button data-umami-event="Install Guide Button" }
 
 -   :fontawesome-brands-apple:{ .lg .middle } __A T2 Mac__
 
@@ -50,7 +50,7 @@ You can install BlendOS on the following devices:
 
     Install blendOS on an Intel Mac with a T2 chip.
 
-    [Get started :octicons-arrow-right-16:](t2.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](t2.md){ .md-button data-umami-event="T2 Mac Guide Button" }
 
 
 </div>
@@ -67,7 +67,7 @@ Once you're done you can also check out:
 
     Create distro containers.
 
-    [Get started :octicons-arrow-right-16:](post-install/container-guide.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](post-install/container-guide.md){ .md-button data-umami-event="Container Guide Button" }
 
 -   :material-monitor-shimmer:{ .lg .middle } __System Customization__
     
@@ -75,5 +75,5 @@ Once you're done you can also check out:
 
     Customize your host system.
 
-    [Get Started :octicons-arrow-right-16:](post-install/system-customization.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](post-install/system-customization.md){ .md-button data-umami-event="System Customization Button" }
 </div>

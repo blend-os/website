@@ -15,7 +15,7 @@ You can do all sorts of things to customize your system.
 
     Create distro containers.
 
-    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button }
+    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button data-umami-event="Container Management Button" }
 
 -   :material-monitor-shimmer:{ .lg .middle } __System Customization__
     
@@ -23,5 +23,5 @@ You can do all sorts of things to customize your system.
 
     Customize your host system.
 
-    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button }
+    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button data-umami-event="System Customization Button" }
 </div>

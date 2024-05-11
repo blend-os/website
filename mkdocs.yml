@@ -67,6 +67,8 @@ watch:
   - "main.py"
 extra:
   generator: false
+  analytics:
+    provider: custom
   social:
     - icon: fontawesome/solid/earth-americas
       link: https://blendos.co
