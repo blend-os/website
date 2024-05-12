@@ -202,7 +202,7 @@ Eventually the desktop will load and look something like this:
 ![intro](../assets/img/install/intro.png)
 
 !!! danger "Applying the akshara patch"
-    **THIS MUST BE DONE TO INSTALL blendOS! and probably also won't work :sob:**
+    **THIS MUST BE DONE TO INSTALL blendOS!**
     
     Open the terminal (:material-apps-box: > Utilities > Console) and type the following command:
 
@@ -215,8 +215,6 @@ Eventually the desktop will load and look something like this:
     ```sh
     mount -o remount,size=4G /run/archiso/cowspace
     ```
-
-    If you want to see the source, see it [here](https://paste.asterisk.lol/raw/ejuyonutis){ target="_blank" rel="noopener" }.
 
 ### :material-plus-circle: Running the installer
 
