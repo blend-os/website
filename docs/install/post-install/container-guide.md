@@ -94,3 +94,20 @@ You can learn more about Waydroid and find more guides and commands at https://d
 ## :material-refresh: System Rebuild
 
 Clicking the `Update` button will start a rebuild of your system (same as `sudo akshara update`).
+
+<div class="annotate" markdown>
+
+??? failure "The update failed due to a timeout!"
+    Our repo may be down, check the [status page](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }.
+
+    If it is down, edit the `repo` section of `system.yaml` to one of our backup repos (1):
+
+    ```yaml title="system.yaml (Example)"
+    repo: 'https://kc1.mirrors.199693.xyz/blend/'
+    ```
+
+    Then rerun the update.
+</div>
+
+1.    - :flag_us: https://kc1.mirrors.199693.xyz/blend/
+      - :flag_ca: https://blend.asterisk.lol/mirror (slower)

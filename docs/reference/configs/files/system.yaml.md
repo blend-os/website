@@ -34,17 +34,17 @@ commands: # (8)!
   - 'echo command_2'
 ```
 
-1.  **`repo`**
+1.  :material-cog-box: **`repo`**
           
     **Type:** string
 
     **Default Value:** `https://pkg-repo.blendos.co`
 
-    !!! danger "Do not change this."
+    !!! warning "This option must be set."
 
     Sets the repo for the core blendOS packages.
 
-2.  **`impl`**
+2.  :material-cog-box: **`impl`**
     
     **Type:** string
 
@@ -84,7 +84,7 @@ commands: # (8)!
         which serves the file with a [`Content-Type`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type){ target="_blank" rel="noopener noreferrer" } of `text/plain`.
 
 
-3.  **`track`**
+3.  :material-cog-box: **`track`**
     
     **Type:** string
 

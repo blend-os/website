@@ -25,6 +25,29 @@ description: "system.yaml config reference"
 
 </div>
 
+<style>
+.md-typeset__table {
+  width: 100%;
+}
+
+.md-typeset__table table:not([class]) {
+  display: table
+}
+</style>
+!!! question "What is system.yaml?"
+    `system.yaml` is a simple host system configuration. It allows you to tweak many essential aspects of the host quickly and easily.
+
+    ------
+
+
+
+    | :octicons-check-circle-fill-12: `system.yaml` **is...**      | :octicons-x-circle-fill-12: `system.yaml` **is not...**      |
+    | :-------------: | :-------------: |
+    | :octicons-check-16: ...device-independent and transferrable | :octicons-x-12: ...advanced, config is quite simple. |
+    | :octicons-check-16: ...simple | :octicons-x-12: ...like NixOS |
+    | :octicons-check-16: ...deployable, [via tracks](#tracks) | :octicons-x-12: ...the way to use most apps on blendOS |
+
+
 ## :material-clipboard-text: Reference
 
 !!! note ""

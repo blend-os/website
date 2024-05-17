@@ -201,21 +201,6 @@ Eventually the desktop will load and look something like this:
 
 ![intro](../assets/img/install/intro.png)
 
-!!! danger "Applying the akshara patch"
-    **THIS MUST BE DONE TO INSTALL blendOS!**
-    
-    Open the terminal (:material-apps-box: > Utilities > Console) and type the following command:
-
-    ```sh
-    umount -l /usr && wget https://git.blendos.co/blendOS/system-tools/akshara/-/raw/main/akshara && mv ./akshara /usr/bin/akshara
-    ```
-
-    If you get an "Out of space" error, run this command (replacing `4G` with the size you want):
-
-    ```sh
-    mount -o remount,size=4G /run/archiso/cowspace
-    ```
-
 ### :material-plus-circle: Running the installer
 
 Click `Start`.
