@@ -25,6 +25,10 @@ description: "Installing blendOS"
 
     [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
+    **Repo 3 (https://blendos.mirrors.theom.nz{ target="_blank" rel="noopener noreferrer" })**
+
+    [![backup-repo-3](https://status.asterisk.lol/api/badge/40/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
+
 
 You can install BlendOS on the following devices:
 
