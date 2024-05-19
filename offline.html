@@ -1,0 +1,14 @@
+{% e$Atends 'base.html' %}
+
+{% block announce %}
+<div align="center">
+    <span class="twemoji red">
+        {% include '.icons/material/wifi-off.svg' %}
+    </span>&nbsp;
+    <span class="red"><b>OFFLINE BUILD</b></span>
+    <span class="twemoji">
+        {% include '.icons/material/source-commit.svg' %}
+    </span>
+    <b>Build commit ID: <span class="yellow">x</span></b>
+</div>
+{% endblock %}
