@@ -38,6 +38,7 @@ offline:
     OFFLINE: 'true'
   script:  
     - pip install -r requirements.txt
+    - echo "{% extends 'base.html' %}{% block announce %}<div align='center'><span class='twemoji red'>{% include '.icons/material/wifi-off.svg' %}</span> <span class='red'><b>OFFLINE BUILD</b></span> <span class='twemoji'>{% include '.icons/material/source-commit.svg' %}</span>$CI_COMMIT_SHORT_SHA<b>Build commit ID: <span class='yellow'> </span></b></div>{% endblock %}" >> overrides/main.html
     - mkdocs build
   artifacts:
     when: on_success
