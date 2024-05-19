@@ -5,6 +5,55 @@ description: "Our contribution guide"
 
 # :material-handshake: Contributing
 
+## :material-mirror: Mirroring
+
+If you'd like to mirror our package repo and/or ISOs, here's the basics for it.
+
+### :material-chart-bar: Current (ish) stats
+
+- :material-folder-zip: Size: :material-approximately-equal:3 GB (repo and current testing ISO)
+- :material-file-multiple: Number of files: 36
+- :material-server: Mirrors: 7 (excluding cloud storage services)
+- :material-earth-box: Coverage: NA, EU, AU/NZ, KP
+- :material-refresh: Rsync: :octicons-x-12:{ .red } (available from other mirrors)
+
+A mirror list is available on the [download](download/README.md) page.
+
+### :material-clipboard-list: Procedure
+
+If you'd like to mirror, great! Here's the steps:
+
+1. Note down your mirror's bandwidth (in Gbps), country, name, and what you'll be serving (ISO-only, repo-only or both)
+1. Clone the master package repo mirror via `wget` and grab the latest ISO (or rsync with another mirror)
+1. Contact Asterisk via one of our chatrooms (in the footer of this page) to get your mirror listed
+
+??? abstract "`wget` mirroring"
+    Otus has provided a cronjob for this:
+
+    ```
+    0 * * * * wget --mirror --no-parent --no-host-directories -P $WEB_FOLDER https://pkg-repo.blendos.co/ && find $WEB_FOLDER -type f -name 'index.html*' -delete
+    ```
+
+    Where `$WEB_FOLDER` is your web data folder.
+
+    This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `index.html` files.
+
+    I wish we had `rsync` too, but here we are. :expressionless:
+
+### :material-note: Notes
+
+You will be asked if you'd like to be used as a webseed for the [FOSS Torrents torrent](https://fosstorrents.com/distributions/blendos/){ target="_blank" rel="noopener" }. This is totally up to you.
+
+You will be added to our [status page](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" } and pinged every 60 seconds. Please give us details if we need to ping something specific or if you want notifications.
+
+If you have any questions, just contact us.
+
+
+*[NA]: North America
+*[EU]: European Union
+*[AU/NZ]: Australia & New Zealand
+*[KP]: Korean Peninsula (South Korea)
+
 ## :material-newspaper-variant: Docs
 
 Our docs are powered by [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ rel="noopener noreferrer" target="_blank" } Community Edition.
