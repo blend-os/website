@@ -38,7 +38,7 @@ offline:
     OFFLINE: 'true'
   script:  
     - pip install -r requirements.txt
-    - sed -i s/x/$CI_COMMIT_SHORT_SHA/g offline.html 
+    - sed -i s/xzz/$CI_COMMIT_SHORT_SHA/g offline.html 
     - mv offline.html overrides/main.html
     - mkdocs build
   artifacts:
