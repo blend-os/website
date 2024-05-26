@@ -21,6 +21,11 @@ stages:          # List of stages for jobs, and their order of execution
   - optimize
   - deploy
 
+workflow:
+  auto_cancel:
+    on_job_failure: all
+
+
 build-job:
   image: python:latest        # This job runs in the build stage, which runs first.
   stage: build
