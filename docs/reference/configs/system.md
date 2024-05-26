@@ -67,7 +67,7 @@ Tracks are like mini `system.yaml` files that you can create. They can inherit o
 
 ### :material-map: Track layout
 
-A track is structured *exactly* like a `system.yaml`, minus the `repo` bit (or other bits depending on inheritance).
+A track is structured *exactly* like a `system.yaml`, `repo` and all (yes you must set the `repo`, `impl`, and `track`).
 
 As an example of a custom track, let's look at the official {{ track("blendos-base") }} track:
 
@@ -83,8 +83,6 @@ Tracks can also inherit from eachother (see next section).
 ### :material-account-child: Inheritance
 
 Inherited tracks are the most common type of track. They can be used to tack on different desktops, additional drivers/programs, to another track.
-
-
 
 An example of this is the official {{ track("plasma") }} track.
 
@@ -112,7 +110,7 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
 If you're creating a fully custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
 
 !!! warning "Reinheritance"
-    If your track inherits a track that inherits another track (reinheritance), issues may result, like certain sections of the file being ignored. This is due to an {{ reference("utils", "akshara") }} bug.
+    If your track inherits a track that inherits another track (reinheritance), issues *may* result, like certain sections of the file being ignored. This is due to an {{ reference("utils", "akshara") }} bug we are still investigating.
 
 ### :octicons-repo-16: Creating a track repo/webserver
 
@@ -137,7 +135,6 @@ Once that is done, you'll need to make your `impl` URL.
         `https://bitbucket.org/USER/REPO/raw/FULL_COMMIT_HASH/`
 
         - `FULL_COMMIT_HASH`: The full hash of the latest commit (you can get this under `Commits`)
-    -----
     - `USER`: Your username
     - `REPO`: The repo
     - `BRANCH`: Your branch (usually `main` or `master`)
