@@ -130,19 +130,28 @@ An overview of a few cool features you can use (**:material-star-box: denotes a 
 !!! note inline end <!-- or inline --> "Inline"
     text
 
-??? abstract follow "󰩳 This one's header will follow you down the page."
+??? abstract follow "󰩳 This one's header will follow you down the page!"
     looooong text
     
     
 
     a
+
     a
+
     a
+    
     a
+    
     a
+
     a
+
     a
+
     a
+
+
 
 ```
 
@@ -154,18 +163,26 @@ An overview of a few cool features you can use (**:material-star-box: denotes a 
 !!! note inline end "Inline"
     text
 
-??? abstract follow ":material-star-box: This one's header will follow you down the page."
+??? abstract follow ":material-star-box: This one's header will follow you down the page!"
     looooong text
 
 
 
     a
+
     a
+
     a
+
     a
+
     a
+
     a
+
     a
+
+
 
 
 </div>
