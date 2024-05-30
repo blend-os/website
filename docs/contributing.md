@@ -399,8 +399,11 @@ Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 
 ```md
 |---------|-----------|
-I HATE MARKDOWN TABLES 󰩳 { .someclass } | a |
+| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
 ```
+
+|---------|-----------|
+| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
 
 :material-star-box: as well as lists:
 
