@@ -221,6 +221,10 @@ Find the icon you want and hover over it. In the copy section, hit `Icon`. Your 
 </div>
 ```
 
+<div markdown>
+  **Markdown works** __just fine!__
+</div>
+
 #### **:fontawesome-solid-scissors: Code Snippets** ([`snippets`](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/){ target="_blank" rel="noopener noreferrer" })
 !!! info "File paths are relative to the repo root."
 
@@ -264,15 +268,15 @@ at this time).
 
 > MagicLink supports shorthand references for GitHub, GitLab, and Bitbucket issues (#1), pull/merge requests (!100), GitHub Discussion (https://github.com/facelessuser/pymdown-extensions/discussions/1173), commits (23bb7083b4699703241d7552ff666cf8cef61337), and compares (23bb7083b4699703241d7552ff666cf8cef61337...0abca9679ec09ca289c345cc8843497fc0f8be9b). You can also reference repositories (https://github.com/facelessuser/pymdown-extensions) and users (@facelessuser). Mentions also works for social media (only Twitter is supported at this time).
 
-If you do not specify a repo, the default repo will be used (here, it's https://github.com/blend-os/blendos).
+If you do not specify a repo, the default repo will be used (here, it's https://github.com/blend-os/blendos (Github)).
 
-You can also specify links to our git server:
+:material-star-box: You can also specify links to our git server:
 
 !!! note "Gitlab subgroups do not work."
 
 ```md
-@blendgit:asterisk
-@blendgit:blendos/docs
+󰩳 @blendgit:asterisk
+󰩳 @blendgit:blendos/docs
 ```
 @blendgit:asterisk
 
@@ -369,8 +373,11 @@ You can apply CSS to a whole block like this:
 
 ```md
 some text
-{ .class }
+{ .yellow }
 ```
+
+some text
+{ .yellow }
 
 to icons:
 
@@ -378,11 +385,15 @@ to icons:
 :material-cog:{ .yellow }
 ```
 
+:material-cog:{ .yellow }
+
 or even to bits of text:
 
 ```html
 Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 ```
+
+Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 
 :material-star-box: Tables too:
 
@@ -399,6 +410,11 @@ I HATE MARKDOWN TABLES 󰩳 { .someclass } | a |
 1. b 󰩳
 { #id }
 ```
+
+1. a 󰩳
+{ .yellow }
+1. b 󰩳
+{ #id }
 
 !!! info "Extra features in attr_list"
     We use a fork of `attr_list` to support lists and tables. More info is [here](https://github.com/paulmelis/pm_attr_list){ target="_blank" rel="noopener noreferrer" }.
