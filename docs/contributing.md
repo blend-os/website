@@ -398,19 +398,21 @@ Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 :material-star-box: Tables too:
 
 ```md
+| 1 | 2 |
 |---------|-----------|
 | I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
 ```
 
+| 1 | 2 |
 |---------|-----------|
 | I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
 
 :material-star-box: as well as lists:
 
 ```md
-1. a 󰩳
+1. a
 { .someclass }
-1. b 󰩳
+1. b
 { #id }
 ```
 
