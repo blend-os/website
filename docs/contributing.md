@@ -124,15 +124,51 @@ An overview of a few cool features you can use (**:material-star-box: denotes a 
 !!! <type> "<title>"
     text
 
-??? note "collapsable"
+??? warning "collapsable"
     text
 
-!!! note inline-end <!-- or inline --> "Inline"
+!!! note inline end <!-- or inline --> "Inline"
     text
 
 ??? abstract follow "󰩳 This one's header will follow you down the page."
-    looooong text 
+    looooong text
+    
+    
+
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+
 ```
+
+<div class="result" markdown>
+
+??? warning "collapsable"
+    text
+
+!!! note inline end "Inline"
+    text
+
+??? abstract follow ":material-star-box: This one's header will follow you down the page."
+    looooong text
+
+
+
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+
+
+</div>
 
 In addition to the [regular admonition types](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types){ target="_blank" rel="noopener noreferrer" }, we have also added a `code` admonition for making collapsable codeblocks:
 
@@ -142,10 +178,14 @@ In addition to the [regular admonition types](https://squidfunk.github.io/mkdocs
     code here, no space between admonition and code
     ```
 ```
+<div class="result" markdown>
+
 ??? code ":material-star-box: file_name.ext"
     ```
     code here
     ```
+
+</div>
 
 As well as a `collapse` admonition:
 
@@ -158,12 +198,15 @@ As well as a `collapse` admonition:
     3
 ```
 
+<div class="result" markdown>
+
 ??? collapse ":material-star-box: X lines collapsed"
     1
 
     2
 
     3
+</div>
 
 And `video`:
 
@@ -178,6 +221,8 @@ And `video`:
 
 ```
 
+<div class="result" markdown>
+
 ??? video ":material-star-box: Video Guide"
     <center>
     <video src="/assets/vid/example.webm" controls></video>
@@ -185,20 +230,31 @@ And `video`:
     This p section can be omitted if no caption is required.<p>
     </center>
 
+</div>
+
 #### **:material-emoticon: Emojis/Icons** ([`emoji`](https://facelessuser.github.io/pymdown-extensions/extensions/emoji/){ target="_blank" rel="noopener noreferrer" })
 
 Call them via their shortcode:
+
 ```
 :lobster:
 ```
+<div class="result" markdown>
+
 :lobster:
+
+</div>
 
 Call icons the same way:
 
 ```
 :material-home:
 ```
+<div class="result" markdown>
+
 :material-home:
+
+</div>
 
 One thing that is a bit different on these docs vs. other sites is you can use icons :material-star-box: *in codeblocks*. Our codeblocks use a *Nerd Font*, which allows you to use icons within your code.
 
@@ -220,9 +276,11 @@ Find the icon you want and hover over it. In the copy section, hit `Icon`. Your 
   **Markdown works** __just fine!__{ .someclass }
 </div>
 ```
+<div class="result" markdown>
 
-<div markdown>
   **Markdown works** __just fine!__
+
+
 </div>
 
 #### **:fontawesome-solid-scissors: Code Snippets** ([`snippets`](https://facelessuser.github.io/pymdown-extensions/extensions/snippets/){ target="_blank" rel="noopener noreferrer" })
@@ -244,15 +302,19 @@ We use this to make reusable Markdown snippets, and pull the latest version of a
 ```md
 ++ctrl+alt+delete++
 ```
-renders to: 
+<div class="result" markdown>
 
 ++ctrl+alt+delete++
+</div>
+
 #### **:octicons-link-16: Automatic Links** ([`magiclink`](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/){ target="_blank" rel="noopener noreferer" })
 
 ```md
 https://google.com
 ```
-renders to: https://google.com
+<div class="result" markdown>
+https://google.com
+</div>
 
 It also works for Github/Gitlab/Bitbucket links too!
 
@@ -265,8 +327,9 @@ MagicLink supports shorthand references for GitHub, GitLab, and Bitbucket issues
 github.com/facelessuser/pymdown-extensions) and users (@facelessuser). Mentions also works for social media (only Twitter is supported 
 at this time).
 ```
-
+<div class="result" markdown>
 > MagicLink supports shorthand references for GitHub, GitLab, and Bitbucket issues (#1), pull/merge requests (!100), GitHub Discussion (https://github.com/facelessuser/pymdown-extensions/discussions/1173), commits (23bb7083b4699703241d7552ff666cf8cef61337), and compares (23bb7083b4699703241d7552ff666cf8cef61337...0abca9679ec09ca289c345cc8843497fc0f8be9b). You can also reference repositories (https://github.com/facelessuser/pymdown-extensions) and users (@facelessuser). Mentions also works for social media (only Twitter is supported at this time).
+</div>
 
 If you do not specify a repo, the default repo will be used (here, it's https://github.com/blend-os/blendos (Github)).
 
@@ -278,9 +341,11 @@ If you do not specify a repo, the default repo will be used (here, it's https://
 󰩳 @blendgit:asterisk
 󰩳 @blendgit:blendos/docs
 ```
+<div class="result" markdown>
 @blendgit:asterisk
 
 @blendgit:blendos/docs
+</div>
 
 !!! tip "There's a lot more!"
     See the full [reference](https://squidfunk.github.io/mkdocs-material/reference/){ target="_blank" rel="noopener noreferrer" } and [extension list](https://squidfunk.github.io/mkdocs-material/setup/extensions/){ target="_blank" rel="noopener noreferrer" } for more cool features.
@@ -299,8 +364,11 @@ We have created the following macros:
 {{ aur("aur-package") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{aur ("vesktop-bin") }}
+
+</div>
 
 {% raw %}
 
@@ -308,32 +376,41 @@ We have created the following macros:
 {{ archpkg("some-package") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ archpkg("linux-zen") }}
 
+</div>
 {% raw %}
 ```md
 {{ ubpkg("some-ubuntu-thing") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ ubpkg("software-properties-common") }}
-
+</div>
 {% raw %}
 ```md
 {{ debpkg("some-debian-thing") }}
 ```
 {% endraw %}
 
+<div class="result" markdown>
+
 {{ debpkg("apt-transport-https") }}
+
+</div>
 
 {% raw %}
 ```md
 {{ fedorapkg("some-fedora-thing") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ fedorapkg("dnf-utils") }}
+</div>
 
 **URL schemas**
 
@@ -342,24 +419,30 @@ We have created the following macros:
 {{ track("track-from-our-repo-without-extension") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ track("lxqt") }}
+</div>
 
 {% raw %}
 ```md
 {{ custom_track("your-impl-url", "your-track-name-without-extension") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ custom_track("https://github.com/noahimesaka1873/blendos-tracks-t2/raw/main", "blendos-base-t2") }}
 
+</div>
 {% raw %}
 ```md
 {{ reference("folder", "page") }}
 ```
 {% endraw %}
+<div class="result" markdown>
 
 {{ reference("utils", "bpkg") }}
+</div>
 
 ### :material-language-css3: :material-star-box: CSS classes
 
@@ -375,25 +458,29 @@ You can apply CSS to a whole block like this:
 some text
 { .yellow }
 ```
+<div class="result" markdown>
 
 some text
 { .yellow }
+</div>
 
 to icons:
 
 ```md
 :material-cog:{ .yellow }
 ```
-
+<div class="result" markdown>
 :material-cog:{ .yellow }
+</div>
 
 or even to bits of text:
 
 ```html
 Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 ```
-
+<div class="result" markdown>
 Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
+</div>
 
 :material-star-box: Tables too:
 
@@ -402,24 +489,28 @@ Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 |---------|-----------|
 | I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
 ```
+<div class="result" markdown>
 
 | 1 | 2 |
 |---------|-----------|
-| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
+| I HATE MARKDOWN TABLES :material-star-box: { .yellow } | a |
+</div>
 
 :material-star-box: as well as lists:
 
 ```md
-1. a
+1. 󰩳 a
 { .someclass }
-1. b
+1. 󰩳 b
 { #id }
 ```
+<div class="result" markdown>
 
-1. a 󰩳
+1. :material-star-box: a
 { .yellow }
-1. b 󰩳
+1. :material-star-box: b
 { #id }
+</div>
 
 !!! info "Extra features in attr_list"
     We use a fork of `attr_list` to support lists and tables. More info is [here](https://github.com/paulmelis/pm_attr_list){ target="_blank" rel="noopener noreferrer" }.

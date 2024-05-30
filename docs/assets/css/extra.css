@@ -495,3 +495,21 @@
     -webkit-mask-image: var(--md-admonition-icon--video);
     mask-image: var(--md-admonition-icon--video);
 }
+
+/* result section from material for mkdocs docs */
+
+.md-typeset .highlight+.result {
+    border: .05rem solid var(--md-code-bg-color);
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    border-top-width: .1rem;
+    margin-top: -1.125em;
+    overflow: visible;
+    padding: 0 1em
+}
+
+.md-typeset .highlight+.result:after {
+    clear: both;
+    content: "";
+    display: block
+}
