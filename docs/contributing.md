@@ -80,7 +80,7 @@ If you would like to add to our docs (please do), you should follow these simple
 *[Directory pages]: Pages that show a list of possible paths in a folder, i.e. /install
 *[hamburger menu]: Those 3 lines mobile users see in the upper left.
 
-### :octicons-code-16: Development
+### :octicons-code-16: Local Development
 
 Local development is quite easy. You'll only need:
 
