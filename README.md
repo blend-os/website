@@ -8,8 +8,9 @@ Please read the [contribution guide](https://blend-docs-material.pages.dev/contr
 
 1. [Rules](#rules)
 2. [Local Development](#local-development)
+3. [Credit](#credit)
 
-## Rules
+# Rules
 
 1. **Keep it local.** If you use any external assets, *download them*. Only do not download something if it is dynamic (like a status badge) or there is no other way (like emoji). Static badges, script links pointing to fixed versions, fonts, images, files, download them all. Save them in the right category in the `docs/assets` folder. This is to minimize external requests.
 2. **Link code properly.** Any code snippets you add should be snippet links to the original file if applicable. You can pull specific lines or even create sections to do this. Only do not do this if it would be way too cumbersome.
@@ -25,7 +26,7 @@ Please read the [contribution guide](https://blend-docs-material.pages.dev/contr
 8. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. You can decide what that looks like. References however, should always be distant (rule 5).
 9. **Use the features given to you.** Be expressive! You are writing with one of the most powerful documentation frameworks out there, so *use it!* Don't be afraid to try something new in your writing, style or layout.
 
-## Local Development
+# Local Development
 
 Local development is quite easy. You'll only need:
 
@@ -51,3 +52,9 @@ If you want to build the website into static HTML run this command (this isn't r
 ```bash
 mkdocs build
 ```
+
+# Credit
+
+- [Couleur Tweak Tips](https://ctt.cx) for appearance
+- [AtlasOS Docs](https://docs.atlasos.net) for noJs features and overall writing philosophy
+- [Material for MkDocs website](https://squidfunk.github.io/mkdocs-material) for `result` class and `follow` (in a discussion)
