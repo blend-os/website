@@ -115,7 +115,11 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.snippets:
@@ -246,6 +250,7 @@ nav:
   - Reference:
       - Reference: reference/README.md
       - Container List: reference/container-list.md
+      - ISO Building: reference/iso-building.md
       - Utilities: 
         - Utilities: reference/utils/README.md
         - akshara: reference/utils/akshara.md

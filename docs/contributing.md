@@ -5,6 +5,30 @@ description: "Our contribution guide"
 
 # :material-handshake: Contributing
 
+Read the [**Git structure page**](#git-structure), then go see an area of contribution below:
+
+[:material-mirror: Mirroring](#mirroring){ .md-button } [:material-newspaper-variant: Docs](#docs){ .md-button }
+
+## :material-git: Git Structure
+
+Our repositories are split across multiple places, this is the average contribution path:
+
+```mermaid
+flowchart TD
+    A[New User] -->|Wants to contribute| B(Needs source code)
+    B -->|Google results bring up Github| C{Where?}
+    C -->|Newer v4-related repos| D[Impossible-to-find <a href="https://git.blendos.co/blendos" target="_blank" rel="noopener noreferrer">Gitlab CE instance</a>]
+    C -->|Old + 'meant to be forked' repos| E[<a href="https://github.com/blend-os" target="_blank" rel="noopener noreferrer">Our Github organization</a>, user always goes here first]
+    D -->|Approval required to sign up| F(User forks)
+    E --> G(User forks)
+```
+
+Most users will never find the Gitlab and will see old decrepit repos alongside newer ones on our [:material-github: Github organization](https://github.com/blend-os){ target='_blank" rel="noopener noreferrer" }. Please remember all new repos are on our [:fontawesome-brands-gitlab: Gitlab CE instance](https://git.blendos.co/blendos){ target="_blank" rel="noopener noreferrer" }, except for "meant to be forked" repos.
+
+You should already know how to use both services depending on what you're contributing to. For things like the tracks repo, view the [Github start guide](https://docs.github.com/get-started/quickstart){ target="_blank" rel="noopener noreferrer" }. For all v4-related repos on our Gitlab, see [Gitlab's start guide](https://docs.gitlab.com/ee/user/index.html){ target="_blank" rel="noopener noreferrer" }.
+
+*[meant to be forked]: Repositories meant to be forked and edited by users easily to suit their needs, like our tracks repo
+
 ## :material-mirror: Mirroring
 
 If you'd like to mirror our package repo and/or ISOs, here's the basics for it.
@@ -55,8 +79,7 @@ If you have any questions, just contact us.
 *[KP]: Korean Peninsula (South Korea)
 
 ## :material-newspaper-variant: Docs
-
-Our docs are powered by [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ rel="noopener noreferrer" target="_blank" } Community Edition.
+<small>[:material-git: Gitlab](https://git.blendos.co/asterisk/blend-docs-material){ target="_blank" rel="noopener noreferrer" } \- [:material-license: CC BY-SA 4.0](https://git.blendos.co/asterisk/blend-docs-material/-/blob/main/LICENSE){ target='_blank" rel="noopener noreferrer" } \- [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ target="_blank" rel="noopener noreferrer" }</small>
 
 ### :material-script-text: Rules
 
