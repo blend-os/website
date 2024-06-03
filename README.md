@@ -6,9 +6,11 @@ Please read the [contribution guide](https://blend-docs-material.pages.dev/contr
 
 # TOC
 
-1. [Rules](#rules)
-2. [Local Development](#local-development)
-3. [Credit](#credit)
+- [Blend Docs Material](#blend-docs-material)
+- [TOC](#toc)
+- [Rules](#rules)
+- [Local Development](#local-development)
+- [Credit](#credit)
 
 # Rules
 
@@ -55,6 +57,4 @@ mkdocs build
 
 # Credit
 
-- [Couleur Tweak Tips](https://ctt.cx) for appearance
-- [AtlasOS Docs](https://docs.atlasos.net) for noJs features and overall writing philosophy
-- [Material for MkDocs website](https://squidfunk.github.io/mkdocs-material) for `result` class and `follow` (in a discussion)
+Moved to the [credits page](https://blend-docs-material.pages.dev/credits)
