@@ -55,4 +55,4 @@ mkdocs build
 
 # Credit
 
-Moved to the [credits page](https://blend-docs-material.pages.dev/credits)
+Moved to the [credits page](https://blend-docs-material.pages.dev/credits).
