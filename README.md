@@ -6,11 +6,9 @@ Please read the [contribution guide](https://blend-docs-material.pages.dev/contr
 
 # TOC
 
-- [Blend Docs Material](#blend-docs-material)
-- [TOC](#toc)
-- [Rules](#rules)
-- [Local Development](#local-development)
-- [Credit](#credit)
+1. [Rules](#rules)
+2. [Local Development](#local-development)
+3. [Credit](#credit)
 
 # Rules
 
