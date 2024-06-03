@@ -4,7 +4,7 @@ New BlendOS docs (WIP). Built with Material for MkDocs.
 
 Please read the [contribution guide](https://blend-docs-material.pages.dev/contributing#docs) for information on additional features, classes and macros.
 
-# TOC
+# Table of Contents
 
 1. [Rules](#rules)
 2. [Local Development](#local-development)
