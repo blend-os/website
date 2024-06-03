@@ -93,7 +93,7 @@ extra:
       name: blendOS Github
     - icon: fontawesome/brands/gitlab
       link: https://git.blendos.co/blendos
-      name: blendOS Gitlab Server
+      name: blendOS Gitlab CE Instance
 
 markdown_extensions:
   - abbr
