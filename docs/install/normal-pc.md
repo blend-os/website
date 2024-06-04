@@ -12,9 +12,6 @@ description: "Installing blendOS on a normal PC"
 
 ------
 
-!!! danger "**V4 CANNOT BE INSTALLED!**"
-    Due to an {{ reference("utils", "akshara") }} bug, it's just not possible. Wait for a new ISO. We'll announce it on our [Discord](https://discord.gg/fvMpV8ZNxD){ target="_blank" } and [Telegram](https://t.me/blendos){ target="_blank" rel="noopener noreferrer" }.
-
 ## :material-clipboard-list-outline: Requirements
 
 !!! question inline end "How can I check if I'm 64-bit?"
