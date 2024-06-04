@@ -62,7 +62,7 @@ Go to the [:material-download: Download](../download/README.md) page.
     
     You can click the button below to automatically download and flash the ISO:
 
-    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendos-20240310-x8664.iso){ target="_blank" rel="noopener noreferrer" data-umami-event="Etcher Button" }
+    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendOS.iso){ target="_blank" rel="noopener noreferrer" data-umami-event="Etcher Button" }
 
     If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
 
