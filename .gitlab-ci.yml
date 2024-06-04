@@ -18,9 +18,8 @@ build-job:
     when: on_success
     paths:
         - site
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: never
+  only:
+    - main
 offline:
   image: python:latest
   stage: build
@@ -61,9 +60,8 @@ optimize-job:
     when: on_success
     paths:
         - site
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: never
+  only:
+    - main
 
 deploy-job:
   image: yinanzhou/wrangler:latest
@@ -74,6 +72,5 @@ deploy-job:
   - optimize-job
   script:
   - wrangler pages deploy site/ --project-name $PROJECT_NAME
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: never
+  only:
+    - main
