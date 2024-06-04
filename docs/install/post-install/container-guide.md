@@ -59,7 +59,7 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
 
     If you need to run an ARM app, you will need to install `libhoudini` or `libndk`.
 
-    You can do this by setting the following in your [`system.yaml`](../../reference/configs/system.md):
+    You can do this by setting the following in your [:material-file-star: `system.yaml`](../../reference/configs/system.md):
     
     ??? question "`libhoudini` or `libndk`?"
         `libhoudini` is generally recommended for Intel CPUs, while `libndk` is generally recommended for AMD CPUs.
