@@ -52,11 +52,29 @@ Click `Initialize Waydroid`.
 
 After Waydroid initializes, you will see options to install [**:simple-fdroid: F-Droid**](https://f-droid.org){ target="_blank" rel="noopener noreferrer" } or the [![aurora](../../assets/img/aurora.png){ .tweemoji width=24 .off-glb .icon-blend-misc } **Aurora Store**](https://www.auroraoss.com/){ target="_blank" rel="noopener noreferrer" }. Click on them to install them. You will also see an option to open Waydroid settings.
 
-
-
 ![waydroid-settings](../../assets/img/waydroid-settings.png)
 
-!!! info "Waydroid's architecture is `x86_64`."
+!!! info "App Architecture"
+    Waydroid only works with apps with an architecture of `x86_64`.
+
+    If you need to run an ARM app, you will need to install `libhoudini` or `libndk`.
+
+    You can do this by setting the following in your {{ reference("configs", "system") }}:
+    
+    !!! question "`libhoudini` or `libndk`?"
+        `libhoudini` is generally recommended for Intel CPUs, while `libndk` is generally recommended for AMD CPUs.
+
+        However, some apps will work on one translation layer and not another. You may need to try both if a game does not work or suffers from bad performance.
+
+    ```yaml title="system.yaml"
+    [...] # Rest of file
+
+    aur-packages:
+      - 'waydroid-script-git'
+    
+    commands:
+      - 'cd /opt/waydroid-script/ && waydroid-extras install libhoudini' # replace libhoudini with libndk if on an AMD CPU
+    ```
 
 ??? abstract "ADB usage"
     After getting your Android IP from **Settings > About**, use this adb command:
