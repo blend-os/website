@@ -18,7 +18,7 @@ description: "Installing blendOS on a normal PC"
     **:material-microsoft-windows: Windows**:
     Consult [Microsoft's guide](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808){ target="_blank" rel="noopener noreferrer" }.
 
-    **:material-apple: MacOS**: Click the :material-apple: and choose **About This Mac**. Anything other than *Intel Core Solo* or *Intel Core Duo* under **CPU** is **64-bit**.
+    **:material-apple: MacOS**: Click the :material-apple: and choose **About This Mac**. Anything other than *Intel Core Solo* or *Intel Core Duo* under **CPU** is **64-bit**. A Core **2** Duo should be **64-bit** however.
 
     **:simple-linux: Linux**:
     Run `#!bash getconf LONG_BIT` in a terminal. The resulting number should be **64**.
