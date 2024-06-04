@@ -55,13 +55,13 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
 ![waydroid-settings](../../assets/img/waydroid-settings.png)
 
 !!! info "App Architecture"
-    Waydroid only works with apps with an architecture of `x86_64`.
+    Waydroid only works with apps that have an architecture of `x86_64`.
 
     If you need to run an ARM app, you will need to install `libhoudini` or `libndk`.
 
-    You can do this by setting the following in your {{ reference("configs", "system") }}:
+    You can do this by setting the following in your [`system.yaml`](../../reference/configs/system.md):
     
-    !!! question "`libhoudini` or `libndk`?"
+    ??? question "`libhoudini` or `libndk`?"
         `libhoudini` is generally recommended for Intel CPUs, while `libndk` is generally recommended for AMD CPUs.
 
         However, some apps will work on one translation layer and not another. You may need to try both if a game does not work or suffers from bad performance.
