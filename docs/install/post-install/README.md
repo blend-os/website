@@ -24,4 +24,12 @@ You can do all sorts of things to customize your system.
     Customize your host system.
 
     [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button data-umami-event="System Customization Button" }
+
+-   :material-monitor-shimmer:{ .lg .middle } __Advanced User Guide__
+    
+    ---
+
+    An introduction to blendOS for power users or experienced Arch Linux users.
+
+    [Get Started :octicons-arrow-right-16:](advanced-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
 </div>

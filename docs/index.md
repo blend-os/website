@@ -5,13 +5,35 @@ title: "Home"
 glightbox: false
 ---
 
+<style>
+  .md-content__button {
+    display: none;
+  }
+
+  .mt-1 {
+    margin-top: 0.1em;
+  }
+
+  #blendos-logo {
+    margin-bottom: 0;
+  }
+
+  #blendos-title .headerlink {
+    display: none;
+  }
+</style>
+
 <div align="center" markdown>
 
-![logo](assets/img/logo.png){ width=200px } 
+![logo](assets/img/logo.svg){ #blendos-logo width=100px }
 
-<h1 style="margin-bottom:0.35 em;">blendOS</h1>
+<h1 style="margin-bottom: 0.2em;" id="blendos-title">blendOS</h1>
 
 --------
+
+<em>**Arch Linux made declarative, immutable and atomic. With Android app support and Fedora, Debian, CentOS Stream and Ubuntu containers available, as well as system packages/DEs/kernels from Arch Linux and the AUR.**</em>
+
+![screenshot](assets/img/blendOS-screenshot.png)
 
 <!-- 
 <figure markdown="span">
@@ -21,10 +43,9 @@ glightbox: false
 -->
 
 <!-- <em>**Beautiful.** **Efficient.** **Elegant.**</em> -->
-<em>**A seamless, yet robust experience.**</em>
 
 
-[:material-hammer-wrench: Install blendOS](install/README.md){ .md-button data-umami-event="Install Button" } [:material-cog: Configuration Reference](reference/README.md){ .md-button data-umami-event="Reference Button" }
+[:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 data-umami-event="Install Button" } [:material-cog: Introduction to blendOS for Arch users](install/post-install/arch-user-guide.md){ .md-button .mt-1 data-umami-event="Introduction for Arch users" }
 
 ------
 </div>
@@ -37,70 +58,31 @@ glightbox: false
 
     ---
 
-    Edit your entire system with one file
+    blendOS v4 is fully declarative, allowing you to use custom packages, kernels, drivers and desktop environments on a minimal, atomic Arch Linux base system.
 
 -   :material-arrow-up-bold-hexagon-outline:{ .lg .middle } __Atomic__
 
     ---
 
-    Update your system cleanly and safely
+    Unlike most other operating systems, blendOS ensures your system does not end up in a half-broken state by replacing your old root filesystem with a new one cleanly.
 
 -   :material-account:{ .lg .middle } __Friendly__
 
     ---
 
-    Your system files are protected
+    Thanks to its immutable nature, blendOS prevents you from wrecking your system if you were to try to delete system directories, and makes troubleshooting issues intuitive for any user.
 
 -   :material-puzzle:{ .lg .middle } __Extensible__
 
     ---
 
-    Install and use apps from any distro
+    blendOS offers support for applications and binaries from several distributions and Android, without the fear of breaking your system through the use of `podman` containers.
 
 </div>
-
-
-
 
 ------
 
-
-
-
+<em>**Flatpak** applications are supported out-of-the-box, and so are Arch Linux & AUR packages through the `/system.yaml` file. Support for applications from **Android**, **Fedora**, **Ubuntu**, **Debian** and **CentOS Stream** can be enabled through the System app on blendOS.</em>
 </div>
 
 <!-- <b><h2>Written by:</h2></b> -->
-
-<div align="center" markdown>
-
-<div class="grid" markdown>
-
-![Rudra](https://github.com/RudraSwat.png){ .circle width=200px }
-<br>
-[**Rudra Saraswat**](https://about.ruds.io){ target="_blank" rel="noopener noreferrer" }
-<br>
-*blendOS BDFL/Lead Dev*
-
-![Asterisk](assets/img/me.png){ .circle width=200px }
-<br>
-[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" }
-<br>
-*blendOS Docwriter*
-<br><br>
-
-![Noa](https://noa.codes/assets/img/noahimesaka-256px.png){ .circle width=200px }
-<br>
-[**Noa Himesaka**](https://noa.codes){ target="_blank" rel="noopener noreferrer" }
-<br>
-*blendOS T2 Lead Dev*
-
-![SvGaming](https://github.com/svgaming234.png){ .circle width=200px }
-<br>
-[**Sven Kovač**](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" }
-<br>
-*blendOS screenshots/testing*
-
-
-</div>
-
-</div>

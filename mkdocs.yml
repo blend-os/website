@@ -1,4 +1,4 @@
-site_name: blendOS Docs
+site_name: blendOS
 site_url: https://blend-docs-material.pages.dev
 site_author: "blendOS Contributors"
 site_description: "A seamless, yet robust experience. These are the blendOS docs."
@@ -12,7 +12,7 @@ theme:
   logo: assets/img/logo.png
   favicon: assets/img/logo.png
   icon:
-    repo: devicon/gitlab
+    repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
     admonition:
@@ -90,10 +90,10 @@ extra:
       name: blendOS Status
     - icon: fontawesome/brands/github
       link: https://github.com/blend_os
-      name: blendOS Github
+      name: blendOS GitHub
     - icon: fontawesome/brands/gitlab
       link: https://git.blendos.co/blendos
-      name: blendOS Gitlab CE Instance
+      name: blendOS GitLab CE Instance
 
 markdown_extensions:
   - abbr
@@ -115,11 +115,7 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.snippets:
@@ -179,6 +175,7 @@ plugins:
   - search
   - glightbox
   - macros
+  - blog
   - redirects:
       redirect_maps: 
         'docs/intro.md': 'index.md'
@@ -237,7 +234,8 @@ nav:
     - FAQ: faq.md
     - Offline Reading: offline.md
     - Contributing: contributing.md
-    - Credits: credits.md
+    - blendOS Team: team.md
+    - Documentation Credits: credits.md
   - Download: 
     - Download: download/README.md
   - Installation:
@@ -246,6 +244,7 @@ nav:
      - T2 Mac: install/t2.md
      - Post-Installation:
        - Post-Installation: install/post-install/README.md
+       - Guide for Arch users: install/post-install/arch-user-guide.md
        - Container Management: install/post-install/container-guide.md
        - System Customization: install/post-install/system-customization.md
   - Reference:
@@ -260,3 +259,5 @@ nav:
       - Files:
         - Files: reference/configs/README.md
         - system.yaml: reference/configs/system.md
+  - Blog:
+      - blog/index.md

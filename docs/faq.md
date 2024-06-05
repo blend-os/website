@@ -45,6 +45,3 @@ Things like:
 - Anything that doesn't work in containers or as a flatpak
 
 
-## I'm having Waydroid/Android app install issues.
-
-See our [:material-android: Waydroid section](install/post-install/container-guide.md#waydroid).
