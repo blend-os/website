@@ -31,5 +31,5 @@ You can do all sorts of things to customize your system.
 
     An introduction to blendOS for power users or experienced Arch Linux users.
 
-    [Get Started :octicons-arrow-right-16:](advanced-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
+    [Get Started :octicons-arrow-right-16:](arch-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
 </div>

@@ -13,10 +13,11 @@ We'd like to thank the following websites and indvidiuals for indirect contribut
 - The [AtlasOS Docs](https://docs.atlasos.net){ target="_blank" rel="noopener noreferrer" } for inspiration on several elements
 - [he3als](https://he3als.xyz){ target="_blank" rel="noopener noreferrer" } (:duck:{ title="Quack Quack" }) for the [`noJs`](contributing.md#javascript) system and several fixes to elements written by Asterisk for the AtlasOS docs and copied over here
 
-**Main Documentation Authors**
+**Main Documentation (Installation Guides & Reference) Authors**
 
 - [Asterisk](https://asterisk.lol){ target="_blank" rel="noopener" } (I wrote *everything*)
-- [SvGaming](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" } for fixes and some screenshots
+- [SvGaming](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" } Fixes and screenshots
+- [Rudra](https://about.ruds.io){target="_blank" rel="noopener"} Guide for Arch Linux users, release posts and parts of reference docs
 
 
 **And one big thank you to [Martin Donath](https://github.com/squidfunk){ target="_blank" rel="noopener noreferrer" } and [the theme contributors](https://github.com/squidfunk/mkdocs-material/graphs/contributors){ target="_blank" rel="noopener noreferrer" } for creating the most powerful documentation framework ever!**
