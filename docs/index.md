@@ -45,7 +45,7 @@ glightbox: false
 <!-- <em>**Beautiful.** **Efficient.** **Elegant.**</em> -->
 
 
-[:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 data-umami-event="Install Button" } [:material-cog: Introduction to blendOS for Arch users](install/post-install/arch-user-guide.md){ .md-button .mt-1 data-umami-event="Introduction for Arch users" }
+[:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 data-umami-event="Install Button" } [:material-cog: Intro to blendOS](install/post-install/arch-user-guide.md){ .md-button .mt-1 data-umami-event="Introduction for Arch users" }
 
 ------
 </div>

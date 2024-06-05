@@ -4,6 +4,7 @@ date: 2024-06-05
 categories:
   - v4
   - stable
+title: 'blendOS v4 released: Arch Linux, made immutable, declarative and atomic'
 ---
 
 ![screenshot](../../assets/img/blendOS-v4-screenshot.png)
