@@ -98,6 +98,7 @@ If you would like to add to our docs (please do), you should follow these simple
 7. **Keep it navigateable.** Mobile users should not have to open the hamburger menu to get anywhere on the site from the root (they can still use it to go back or to skip directory pages).
 8. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. You can decide what that looks like. References however, should always be distant (rule 5).
 9. **Use the features given to you.** Be expressive! You are writing with one of the most powerful documentation frameworks out there, so *use it!* Don't be afraid to try something new in your writing, style or layout.
+10. **Always have a JS-free option.** You can use the [`noJs`](#javascript) system to pull this off.
 
 *[directory pages]: Pages that show a list of possible paths in a folder, i.e. /install
 *[Directory pages]: Pages that show a list of possible paths in a folder, i.e. /install
@@ -389,6 +390,49 @@ If you do not specify a repo, the default repo will be used (here, it's https://
 
 !!! tip "There's a lot more!"
     See the full [reference](https://squidfunk.github.io/mkdocs-material/reference/){ target="_blank" rel="noopener noreferrer" } and [extension list](https://squidfunk.github.io/mkdocs-material/setup/extensions/){ target="_blank" rel="noopener noreferrer" } for more cool features.
+
+### :material-script-text: Javascript
+
+If you add custom HTML elements with Javascript, please use the `noJs` system to provide a Javascript-free option.
+
+Add this section to the page:
+
+```html
+<script>
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = '.noJs { display: revert !important }'
+    document.head.appendChild(styleSheet)
+</script>
+```
+
+This script will show noJs elements (which are hidden by default) and will not run if Javascript is disabled.
+
+Next, put the element with JS in a `div` with the `noJs` class.
+
+Now, if you have a Javascript-free replacement (a warning saying you need Javascript or a replacement button), put it in a `#!html <noscript>` tag.
+
+Example:
+
+```html title="awesome-page.md"
+<div class="noJs" markdown>
+<script>
+
+    console.log("Hello!")
+</script>
+</div>
+
+<noscript>You need Javascript for this.</noscript>
+
+**content**
+
+<script>
+    var styleSheet = document.createElement("style")
+    styleSheet.innerText = '.noJs { display: revert !important }'
+    document.head.appendChild(styleSheet)
+</script>
+```
+
+
 
 ### :material-cog: :material-star-box: Macros
 

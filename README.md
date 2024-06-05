@@ -35,6 +35,29 @@ Local development is quite easy. You'll only need:
 
 Simply cd in and run (this command only has to be run once):
 
+<details>
+<summary>If you can't use pip directly</summary>
+
+Use `pipenv`.
+
+Install pipenv [from pypi](https://pipenv.pypa.io/en/latest/installation.html) or your package manager.
+
+Then do the following in the project folder:
+
+```
+pipenv install
+```
+
+Then, as `pipenv` says, you can use `pipenv shell` and `pipenv run`:
+
+```
+pipenv run mkdocs serve
+```
+
+</details>
+
+
+
 ```bash
 pip install -r requirements.txt
 ```
