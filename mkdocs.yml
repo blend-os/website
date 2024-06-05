@@ -1,9 +1,9 @@
 site_name: blendOS
-site_url: https://blend-docs-material.pages.dev
+site_url: https://blendos.co
 site_author: "blendOS Contributors"
 site_description: "A seamless, yet robust experience. These are the blendOS docs."
-repo_url: https://git.blendos.co/asterisk/blend-docs-material
-repo_name: Asterisk/blend-docs-material
+repo_url: https://git.blendos.co/blendOS/website
+repo_name: blendOS/website
 edit_uri: edit/main/docs
 theme:
   font: false
