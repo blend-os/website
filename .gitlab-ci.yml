@@ -67,7 +67,7 @@ deploy-job:
   image: yinanzhou/wrangler:latest
   stage: deploy
   variables:
-    PROJECT_NAME: blend-docs-material
+    PROJECT_NAME: blendos
   dependencies:
   - optimize-job
   script:
