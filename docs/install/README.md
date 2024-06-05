@@ -67,21 +67,13 @@ Once you're done you can also check out:
 
     Create distro containers.
 
-    [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button data-umami-event="Container Management Button" }
+    [Get started :octicons-arrow-right-16:](post-install/container-guide.md){ .md-button data-umami-event="Container Management Button" }
 
--   :material-monitor-shimmer:{ .lg .middle } __System Customization__
+-   :material-list-status:{ .lg .middle } __Advanced User Guide__
     
     ---
 
-    Customize your host system.
+    An introduction to blendOS for power users.
 
-    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button data-umami-event="System Customization Button" }
-
--   :material-monitor-shimmer:{ .lg .middle } __Advanced User Guide__
-    
-    ---
-
-    An introduction to blendOS for power users or experienced Arch Linux users.
-
-    [Get Started :octicons-arrow-right-16:](arch-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
+    [Get Started :octicons-arrow-right-16:](post-install/arch-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
 </div>

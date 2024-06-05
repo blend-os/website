@@ -17,15 +17,7 @@ You can do all sorts of things to customize your system.
 
     [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button data-umami-event="Container Management Button" }
 
--   :material-monitor-shimmer:{ .lg .middle } __System Customization__
-    
-    ---
-
-    Customize your host system.
-
-    [Get Started :octicons-arrow-right-16:](system-customization.md){ .md-button data-umami-event="System Customization Button" }
-
--   :material-monitor-shimmer:{ .lg .middle } __Advanced User Guide__
+-   :material-list-status:{ .lg .middle } __Advanced User Guide__
     
     ---
 
