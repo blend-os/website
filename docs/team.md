@@ -1,6 +1,6 @@
 ---
 icon: octicons/people-16
-description: "blendOS docs index"
+description: "blendOS team"
 title: "Team"
 glightbox: false
 ---

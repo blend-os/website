@@ -1,6 +1,6 @@
 ---
 icon: material/home
-description: "blendOS docs index"
+description: "blendOS home page"
 title: "Home"
 glightbox: false
 ---
