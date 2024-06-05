@@ -9,6 +9,8 @@ title: 'blendOS v4 released: Arch Linux, made immutable, declarative and atomic'
 
 ![screenshot](../../assets/img/blendOS-v4-screenshot.png)
 
+Download it here: https://blendos.co/download/
+
 We're thrilled to unveil blendOS v4, a groundbreaking release that redefines blendOS as a **highly-flexible**, **immutable** and **atomic** variant of **Arch Linux**. blendOS retains the flexibility of traditional Linux distributions (unlike other immutable Linux distributions) thanks to its **declarative** nature. Of course, we continue to support packages from Ubuntu, Fedora, Debian and other distributions, alongside Android application support. You can also use any desktop environment available in the Arch Linux repositories or AUR, or any of the offered pre-configured desktop environments (including KDE Plasma, MATE, XFCE and Budgie) through the `tracks` features implemented on blendOS v4 (more on that later).
 
 <!-- more -->
