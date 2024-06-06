@@ -66,6 +66,9 @@ optimize-job:
 deploy-job:
   image: yinanzhou/wrangler:latest
   stage: deploy
+  needs: 
+    - job: optimize-job
+      artifacts: true
   variables:
     PROJECT_NAME: blendos
   dependencies:

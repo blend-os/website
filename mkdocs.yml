@@ -222,7 +222,15 @@ plugins:
             show_email_address: false
             show_contribution: true
         - git-revision-date-localized:
-            type: timeago 
+            type: timeago
+        - rss:
+            match_path: blog/posts/.* 
+            date_from_meta:
+              as_creation: date
+            categories:
+              - categories
+              - tags 
+ 
             
 
 
@@ -240,7 +248,7 @@ nav:
     - FAQ: faq.md
     - Offline Reading: offline.md
     - Contributing: contributing.md
-    - blendOS Team: team.md
+    - Team: team.md
     - Documentation Credits: credits.md
   - Download: 
     - Download: download/README.md
