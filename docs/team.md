@@ -1,7 +1,6 @@
 ---
-icon: octicons/people-16
+icon: material/account-group
 description: "blendOS team"
-title: "Team"
 glightbox: false
 ---
 
@@ -23,7 +22,7 @@ glightbox: false
 <br>
 *Project Lead & Dev, creator of blendOS*
 
-![Asterisk](assets/img/me.png){ .circle width=200px }
+![Asterisk](https://github.com/Ast3risk-ops.png){ .circle width=200px }
 <br>
 [**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" }
 <br>
