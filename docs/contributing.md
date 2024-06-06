@@ -51,7 +51,7 @@ If you'd like to mirror, great! Here's the steps:
 1. Clone the master package repo mirror via `wget` and grab the latest ISO (or rsync with another mirror)
 1. Contact Asterisk via one of our chatrooms (in the footer of this page) to get your mirror listed
 
-??? abstract "`wget` mirroring"
+??? abstract "`wget` mirroring for the package repo"
     Otus has provided a cronjob for this:
 
     ```
@@ -63,6 +63,41 @@ If you'd like to mirror, great! Here's the steps:
     This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `index.html` files.
 
     I wish we had `rsync` too, but here we are. :expressionless:
+
+To sync our ISOs you can use the script below:
+
+```bash
+#!/bin/bash
+ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
+LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
+ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
+LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
+
+download_iso() {
+    rm -rf $LOCAL_ISO_PATH
+    wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
+    wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
+}
+
+get_remote_version() {
+    wget -O - "$ISO_VERSION_URL"
+}
+
+REMOTE_VERSION=$(get_remote_version)
+LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
+
+if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
+    echo "New ISO version detected. Downloading..."
+    download_iso
+    echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
+else
+    echo "ISO is up-to-date."
+fi
+```
+
+<small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
+
+Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
 
 ### :material-note: Notes
 

@@ -35,6 +35,8 @@ glightbox: false
 
 ![screenshot](assets/img/blendOS-v4-screenshot.png)
 
+<the-fold></the-fold>
+
 <!-- 
 <figure markdown="span">
   ![hero](assets/img/hero.png){ width="720" }
