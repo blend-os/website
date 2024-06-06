@@ -10,5 +10,5 @@ hide:
 }
 </style>
 
-# Blog
+# :material-newspaper: Blog
 
