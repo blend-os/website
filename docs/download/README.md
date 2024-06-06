@@ -33,7 +33,7 @@ hide:
 </div>
 
 !!! warning "The latest ISO is not on every mirror yet!"  
-    Currently only the main Gitlab build server, the Otus9051 mirror and MEGA have the latest ISO.  
+    Currently only the main Gitlab build server, the Otus9051 mirror, MEGA and Sahilister's mirror have the latest ISO.  
     The older version hosted on the other mirrors is not installable anymore.
 
 --8<-- "docs/download/mirrors.md"
