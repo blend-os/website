@@ -14,7 +14,7 @@ description: Read our docs offline!
 
 You can download our docs for offline reading using the button below.
 
-[:material-download: Download latest artifact](https://git.blendos.co/api/v4/projects/28/jobs/artifacts/main/download?job=offline){ target="_blank" rel="noopener noreferrer" .md-button data-umami-event="Offline Download" }
+[:material-download: Download latest artifact](https://git.blendos.co/api/v4/projects/34/jobs/artifacts/main/download?job=offline){ target="_blank" rel="noopener noreferrer" .md-button data-umami-event="Offline Download" }
 
 
 

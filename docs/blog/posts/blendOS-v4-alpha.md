@@ -4,6 +4,8 @@ date: 2023-11-24
 categories:
   - v4
   - alpha
+authors:
+  - rs2009
 ---
 
 # blendOS v4 Alpha

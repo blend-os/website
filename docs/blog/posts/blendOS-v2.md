@@ -4,6 +4,8 @@ date: 2023-04-22
 categories:
   - v2
   - stable
+authors:
+  - rs2009
 ---
 
 # blendOS v2 "Avial" is now available

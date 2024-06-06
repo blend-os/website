@@ -4,6 +4,8 @@ date: 2023-07-08
 categories:
   - v3
   - stable
+authors:
+  - rs2009
 ---
 
 # blendOS v3 "Bhatura" is now available
