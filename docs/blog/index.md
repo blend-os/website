@@ -17,5 +17,5 @@ hide:
 
 # :material-newspaper: Blog
 
-[:fontawesome-solid-rss:](/feed_rss_created.xml){ .rss title="RSS Feed" }
+[:fontawesome-solid-rss:](/feed_rss_created.xml){ target="_blank" data-umami-event="RSS Feed Button" .rss title="RSS Feed" }
 
