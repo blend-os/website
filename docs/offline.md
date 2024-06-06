@@ -10,7 +10,7 @@ description: Read our docs offline!
 
     ![offline-banner](assets/img/offline-banner.png){ width=500px }
 
-    Compare this hash to the latest commit hash (on the right) in the [commit list](https://git.blendos.co/asterisk/blend-docs-material/-/commits/main){ target="_blank" rel="noopener noreferrer" } to see if your version is up to date.
+    Compare this hash to the latest commit hash (on the right) in the [commit list](https://git.blendos.co/blendOS/website/-/commits/main){ target="_blank" rel="noopener noreferrer" } to see if your version is up to date.
 
 You can download our docs for offline reading using the button below.
 
