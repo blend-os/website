@@ -101,12 +101,6 @@ then the Arch container will not be used by `bpkg`.
 
 ## :octicons-terminal-16: CLI
 
-!!! note "CLI parameters"
-    `<>` denotes a required parameter, `[]` denotes an optional one.
-
-    !!! example ""
-        **Example:** `[-c <container>]`. The `-c` argument is optional, but if you choose to use it `<container>` is required.
-
 #### :fontawesome-solid-question: Help Page
 
 ```bash
@@ -123,10 +117,10 @@ Shows a help page.
 #### :material-package-variant-plus: Install a package
 
 ```bash
-bpkg install <package> [-c <container>]
+bpkg install <package>
 ```
 
-This will search for the package in your installed distros and install it from the first package manager it finds by your order of preference in [`bpkg.yaml`](#bpkgyaml), though you can specify a specific container.
+This will search for the package in your installed distros and install it from the first package manager it finds by your order of preference in [`bpkg.yaml`](#bpkgyaml). Use `user install <container> <package>` to install to a specific container.
 
 ??? code "Source"
     ```py title="bpkg.py" linenums="1"
@@ -136,10 +130,10 @@ This will search for the package in your installed distros and install it from t
 #### :material-package-variant-remove: Remove a package
 
 ```bash
-bpkg remove <package> [-c <container>]
+bpkg remove <package>
 ```
 
-This will remove a package that you installed from a container of your choice or from the first container in [`bpkg.yaml`](#bpkgyaml) the package is found in.
+This will remove a package from the first container in [`bpkg.yaml`](#bpkgyaml) the package is found in. Use `user remove <container> <package>` to remove from a specific container.
 
 ??? code "Source"
     ```py title="bpkg.py" linenums="1"
@@ -148,10 +142,10 @@ This will remove a package that you installed from a container of your choice or
 #### :material-package-down: Update packages
 
 ```bash
-bpkg update [-c <container>]
+bpkg update
 ```
 
-This will update all the packages in all your containers, or you can specify a specific one. If `update_flatpak` is set to <span class="green">true</span> in the config, this will also update your Flatpaks.
+This will update all the packages in all your containers. If `update_flatpak` is set to <span class="green">true</span> in the config, this will also update your Flatpaks.
 
 ??? code "Source"
     ```py title="bpkg.py" linenums="1"
@@ -161,10 +155,10 @@ This will update all the packages in all your containers, or you can specify a s
 #### :octicons-search-16: Package Search
 
 ```bash
-bpkg search <package> [-c <container>]
+bpkg search <package>
 ```
 
-You can search for a package in all of your containers, or specify a specific one.
+You can search for a package in all of your containers.
 
 ??? code "Source"
     ```py title="bpkg.py" linenums="1"
