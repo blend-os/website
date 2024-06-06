@@ -99,7 +99,7 @@ If you would like to add to our docs (please do), you should follow these simple
 8. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. You can decide what that looks like. References however, should always be distant (rule 5).
 9. **Use the features given to you.** Be expressive! You are writing with one of the most powerful documentation frameworks out there, so *use it!* Don't be afraid to try something new in your writing, style or layout.
 10. **Always have a Javascript-free option.** You can use the [`noJs`](#javascript) system to pull this off.
-11. **Always give your headers icons.** This helps them look nice, and will be even nicer once the `typescript` plugin hits the community edition.
+11. **Always give your headers icons.** This helps them look nice, and will be even nicer once the `typeset` plugin hits the community edition.
 12. **Header titles must match page titles.** Each page will have one level 1 header. Make your header like this: `#!md # :<icon-you-used>: <nav-title>`
 13. **Merge to [`dev`](https://git.blendos.co/blendOS/website/-/tree/dev){ target="_blank" rel="noopener noreferrer" }.** This way you can preview everything before pushing it out.
 
