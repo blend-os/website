@@ -111,6 +111,22 @@ Local development is quite easy. You'll only need:
 - :material-language-python: Python ≥ 3.8
 - :material-package-variant: `pip` package manager (included with Python on Windows)
 
+??? abstract "Using `pipenv` if `pip` cannot be used directly"
+    Install pipenv [from pypi](https://pipenv.pypa.io/en/latest/installation.html){ target="_blank" rel="noopener noreferrer" } or your package manager.
+
+    Then do the following in the project folder:
+
+    ```
+    pipenv install
+    ```
+
+    Then, as `pipenv` says, you can use `pipenv shell` and `pipenv run`:
+
+    ```
+    pipenv run mkdocs serve
+    ```
+
+
 Simply cd in and run (this command only has to be run once):
 
 ```bash
