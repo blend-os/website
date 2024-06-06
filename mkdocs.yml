@@ -12,7 +12,7 @@ theme:
   logo: assets/img/logo.png
   favicon: assets/img/logo.png
   icon:
-    repo: simple/gitlab
+    repo: fontawesome/brands/gitlab
     edit: material/pencil
     view: material/eye
     admonition:
