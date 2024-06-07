@@ -13,11 +13,22 @@ This guide will quickly familiarize you with how you can get around blendOS as a
 
 ## :material-file: Default [`system.yaml`](../../reference/configs/system.md)
 
-Begin by opening the [:material-file-star: `system.yaml`](../../reference/configs/system.md) file (at the / of your main partition).
+Begin by opening the [:material-file-star: `system.yaml`](../../reference/configs/system.md) file (at the / of your main partition) using a text editor.
 
 ```bash
 sudo nano /system.yaml
 ```
+??? abstract "`nano` controls"
+    | :material-keyboard: Keybind | :material-location-enter: Action |
+    | :-------------------- | -------------------------------- |
+    | Arrow keys | Move |
+    | Letter/number/symbol keys | Type |
+    | ++enter++ | Newline |
+    | ++ctrl+x++ | Save and Quit |
+    | ++ctrl+o++ | Save |
+    | ++ctrl+w++ | Find |
+
+    More keybinds are specified at the bottom of the `nano` window.
 
 You should be greeted by a file with contents similar to the following (there might be a few differences here and there, of course):
 
