@@ -17,7 +17,7 @@ Our repositories are split across multiple places, this is the average contribut
 flowchart TD
     A[New User] -->|Wants to contribute| B(Needs source code)
     B -->|Google results bring up Github| C{Where?}
-    C -->|Newer v4-related repos| D(Impossible-to-find <a href="https://git.blendos.co/blendos" target="_blank" rel="noopener noreferrer">Gitlab CE instance</a>)
+    C -->|Newer v4-related repos| D(Impossible-to-find <a href="https://git.blendos.co/blendos" target="_blank" rel="noopener noreferrer">Gitlab instance</a>)
     C -->|Old + 'meant to be forked' repos| E(<a href="https://github.com/blend-os" target="_blank" rel="noopener noreferrer">Our Github organization</a>, user always goes here first)
     D --> F[User forks]
     E --> G[User forks]
