@@ -7,6 +7,7 @@ categories:
 title: 'blendOS v4 released: Arch Linux, made immutable, declarative and atomic'
 authors:
   - rs2009
+comments: true
 ---
 
 ![screenshot](../../assets/img/blendOS-v4-screenshot.png)

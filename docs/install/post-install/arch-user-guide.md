@@ -34,7 +34,7 @@ packages:
     - 'nvidia-dkms'
 ```
 
-Wondering where they came from? These lines were appended automatically to the end of the [:material-file-star: `system.yaml`](../../reference/configs/system.md) as part of the installation process, as the installer detected the prescence of an NVIDIA GPU and chose to install the latest proprietary driver for NVIDIA GPUs.
+Wondering where they came from? These lines were appended automatically to the end of the [:material-file-star: `system.yaml`](../../reference/configs/system.md) as part of the installation process, as the installer detected the presence of an NVIDIA GPU and chose to install the latest proprietary driver for NVIDIA GPUs.
 
 ## :material-package: Arch Linux packages
 
@@ -50,7 +50,7 @@ packages:
     # if you're on a system with an NVIDA GPU, keep the 'nvidia-dkms' package unless you'd like to remove the proprietary NVIDIA driver
 ```
 
-!!! warning "Use spaces for indentation in `system.yaml`, not tabs!"
+!!! warning "Use spaces for indentation in `system.yaml`!"
     The YAML format doesn't allow tabs, and only spaces are allowed for indentation. It is also worth noting that like Python, indentation is mandatory, and is integral to parsing.
 
 Now run `sudo akshara update`, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.

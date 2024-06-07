@@ -6,6 +6,7 @@ categories:
   - stable
 authors:
   - rs2009
+comments: true
 ---
 
 # blendOS v2 "Avial" is now available
