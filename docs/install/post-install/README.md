@@ -17,11 +17,11 @@ You can do all sorts of things to customize your system.
 
     [Get started :octicons-arrow-right-16:](container-guide.md){ .md-button data-umami-event="Container Management Button" }
 
--   :material-list-status:{ .lg .middle } __Advanced User Guide__
+-   :material-list-status:{ .lg .middle } __Introduction to blendOS__
     
     ---
 
-    An introduction to blendOS for power users or experienced Arch Linux users.
+    An introduction to blendOS for new users, power users or Arch Linux users.
 
-    [Get Started :octicons-arrow-right-16:](arch-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
+    [Get Started :octicons-arrow-right-16:](intro.md){ .md-button data-umami-event="post-install:Intro Button" }
 </div>

@@ -69,11 +69,11 @@ Once you're done you can also check out:
 
     [Get started :octicons-arrow-right-16:](post-install/container-guide.md){ .md-button data-umami-event="Container Management Button" }
 
--   :material-list-status:{ .lg .middle } __Advanced User Guide__
+-   :material-list-status:{ .lg .middle } __Introduction to blendOS__
     
     ---
+    
+    An introduction to blendOS for new users, power users or Arch Linux users.
 
-    An introduction to blendOS for power users.
-
-    [Get Started :octicons-arrow-right-16:](post-install/arch-user-guide.md){ .md-button data-umami-event="Advanced User Guide Button" }
+    [Get Started :octicons-arrow-right-16:](post-install/intro.md){ .md-button data-umami-event="install:Intro Button" }
 </div>

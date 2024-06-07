@@ -1,10 +1,10 @@
 ---
 icon: material/list-status
-description: "Post-install guide for advanced users, or Arch Linux users."
+description: "Post-install guide for new users, advanced users, and Arch Linux users."
 ---
 
 
-# :material-list-status: Arch User Guide
+# :material-list-status: Introduction to blendOS
 
 !!! info "This is not just for new users"
     This article describes how you can get around blendOS and summarizes blendOS's core functionality in a concise manner, making it easy to decide if blendOS is for you. (Refer to the table of contents to the right if you're on a computer and the table is visible to you. On mobile, open the hamburger menu, and click the table of contents icon.)
@@ -110,14 +110,16 @@ Here's how you can create a Debian (`debian`, as shown in the above table) conta
 user create-container my-first-container debian
 ```
 
+!!! warning "Containers cannot be renamed!"
+    `blend` does not currently support renaming containers, so if you'd like to continue using this container, it is advised you name it something more precise than `my-first-container`.
+
 After its creation is complete, you'll find that all of its binaries will be available on the host with the suffix .my-first-container. For example:
 
 * **apt** in the container -> **apt.my-first-container** on the host
 * **dpkg** in the container -> **dpkg.my-first-container** on the host
 * **bash** in the container -> **bash.my-first-container** on the host
 
-!!! warning "Containers cannot be renamed."
-    `blend` does not currently support renaming containers, so if you'd like to continue using this container, it is advised you name it something more precise than `my-first-container`.
+
 
 #### :octicons-package-dependencies-16: Removing containers
 

@@ -76,6 +76,9 @@ extra:
     - icon: simple/x
       link: https://x.com/@blend_os
       name: blendOS X Feed
+    - icon: simple/mastodon
+      link: https://fosstodon.org/@blendOS
+      name: blendOS on Mastodon
     - icon: fontawesome/brands/discord
       link: https://discord.gg/fvMpV8ZNxD
       name: blendOS Discord
@@ -193,6 +196,7 @@ plugins:
         'docs/installation/mac-t2.md': 'install/t2.md'
         'docs/installation/container.md': 'install/post-install/container-guide.md'
         'contribution.md': 'contributing.md'
+        'install/post-install/arch-user-guide.md': 'install/post-install/intro.md'
 
   - group:
       enabled: !ENV CI 
@@ -259,7 +263,7 @@ nav:
      - T2 Mac: install/t2.md
      - Post-Installation:
        - Post-Installation: install/post-install/README.md
-       - Guide for Arch users: install/post-install/arch-user-guide.md
+       - Introduction to blendOS: install/post-install/intro.md
        - Container Management: install/post-install/container-guide.md
   - Reference:
       - Reference: reference/README.md
