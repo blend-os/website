@@ -14,6 +14,11 @@ hide:
 .md-typeset__table table:not([class]) {
   display: table
 }
+
+.md-content__button {
+  display: none;
+}
+
 </style>
 
 <div align="center" markdown> 
