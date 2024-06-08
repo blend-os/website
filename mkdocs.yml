@@ -70,9 +70,6 @@ extra:
   analytics:
     provider: custom
   social:
-    - icon: fontawesome/solid/earth-americas
-      link: https://blendos.co
-      name: blendOS Website
     - icon: simple/x
       link: https://x.com/@blend_os
       name: blendOS X Feed

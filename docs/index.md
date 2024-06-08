@@ -3,6 +3,8 @@ icon: material/home
 description: "blendOS home page"
 title: "Home"
 glightbox: false
+hide:
+  - toc
 ---
 
 <style>
@@ -44,6 +46,7 @@ glightbox: false
 
 
 [:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 data-umami-event="Install Button" } [:material-cog: Intro to blendOS](install/post-install/intro.md){ .md-button .mt-1 data-umami-event="Introduction for Arch users" }
+<br><br>[:fontawesome-brands-discord: Discord](https://discord.gg/fvMpV8ZNxD){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-brands-telegram: Telegram](https://t.me/blendos){ .md-button target="_blank" rel="noopener noreferrer" } [:simple-matrix: Matrix](https://matrix.to/#/#blendos:matrix.org){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-solid-ellipsis-vertical: Other Socials](#footer){ .md-button }
 
 ------
 </div>
@@ -84,3 +87,5 @@ glightbox: false
 </div>
 
 <!-- <b><h2>Written by:</h2></b> -->
+
+###### Footer { style="visibility: hidden;width: 0; height: 0;" }
