@@ -474,18 +474,21 @@ Add this section to the page:
 
 This script will show `noJs` elements (which are hidden by default) and will not run if Javascript is disabled.
 
-Next, put the element with Javascript in a `#!html <div>` with the `noJs` class.
+Next, give the element using the Javascript (i.e. if it uses a `#!html <div>` or `#!html <span>`) the `noJs` class.
 
 Now, if you have a Javascript-free replacement (a warning saying you need Javascript or a replacement button), put it in a `#!html <noscript>` tag.
 
 Example:
 
 ```html title="awesome-page.md"
-<div class="noJs" markdown>
 <script>
     console.log("Hello!")
+    document.getElementById('someDiv').innerHTML = "html goes here"
 </script>
-</div>
+
+<span id="someDiv" class="noJs"></span>
+
+[Button](javascript:history.forward){ .noJs .md-button }
 
 <noscript>You need Javascript for this.</noscript>
 

@@ -2,13 +2,15 @@
 
 New BlendOS docs (WIP). Built with Material for MkDocs.
 
-Please read the [contribution guide](https://blend-docs-material.pages.dev/contributing#docs) for information on additional features, classes and macros.
+Please read the [contribution guide](https://blendos.co/contributing#docs) for information on additional features, classes and macros.
 
 # Table of Contents
 
-1. [Rules](#rules)
-2. [Local Development](#local-development)
-3. [Credit](#credit)
+- [Blend Docs Material](#blend-docs-material)
+- [Table of Contents](#table-of-contents)
+- [Rules](#rules)
+- [Local Development](#local-development)
+- [Credit](#credit)
 
 # Rules
 
@@ -25,7 +27,7 @@ Please read the [contribution guide](https://blend-docs-material.pages.dev/contr
 7. **Keep it navigateable.** Mobile users should not have to open the hamburger menu to get anywhere on the site from the root (they can still use it to go back or to skip directory pages).
 8. **Be semi-casual.** For guides, you may find it better to be less distant from the reader. However, you need to also offer a reliable explanation of steps. You can decide what that looks like. References however, should always be distant (rule 5).
 9. **Use the features given to you.** Be expressive! You are writing with one of the most powerful documentation frameworks out there, so *use it!* Don't be afraid to try something new in your writing, style or layout.
-10. **Always have a Javascript-free option.** You can use the [`noJs`](https://blend-docs-material.pages.dev/contributing/#javascript) system to pull this off.
+10. **Always have a Javascript-free option.** You can use the [`noJs`](https://blendos.co/contributing/#javascript) system to pull this off.
 11. **Always give your headers icons.** This helps them look nice, and will be even nicer once the `typeset` plugin hits the community edition.
 12. **Header titles must match page titles.** Each page will have one level 1 header. Make your header like this: `# :<icon-you-used>: <nav-title>`
 13. **Merge to [`dev`](https://git.blendos.co/blendOS/website/-/tree/dev).** This way you can preview everything before pushing it out.
@@ -82,4 +84,4 @@ mkdocs build
 
 # Credit
 
-Moved to the [credits page](https://blend-docs-material.pages.dev/credits).
+Moved to the [credits page](https://blendos.co/credits).
