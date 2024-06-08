@@ -10,10 +10,6 @@ glightbox: false
     display: none;
   }
 
-  .mt-1 {
-    margin-top: 0.1em;
-  }
-
   #blendos-logo {
     margin-bottom: 0;
   }

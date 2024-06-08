@@ -37,8 +37,9 @@ hide:
 
 </div>
 
-!!! warning "The latest ISO is not on every mirror yet!"  
-    Currently only the main Gitlab build server, Otus9051's mirror, Sahilister's mirror, YuruMirror and the AsteriskCloud mirror have the latest ISO.  
-    The older versions hosted on the other mirrors were either not installable anymore or had issues with booting on some systems.
+!!! info "Versions"
+    To tell which mirrors are up-to-date, look at the version with the :star:{title=""} next to it (the first one). This is the latest version. All mirrors with the same version are up-to-date. If you don't see a version, something is wrong. Mirrors with an :x:{title=""} have not updated to the new version system.
+
+    <noscript>**Since you have Javascript disabled, you will need to check manually by clicking the `Version` link under each download button.**</noscript>
 
 --8<-- "docs/download/mirrors.md"

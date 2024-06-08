@@ -294,7 +294,7 @@
 }
 
 .noJs {
-    display: none
+    display: none;
 }
 
 .md-typeset .admonition.image,
@@ -372,6 +372,10 @@
 
 .red {
     color: #ff0000;
+}
+
+.mt-1 {
+    margin-top: 0.1em;
 }
 
 .mega {
