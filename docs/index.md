@@ -31,7 +31,7 @@ hide:
 
 <em>**Arch Linux made declarative, immutable and atomic. With Android app support and Fedora, Debian, CentOS Stream and Ubuntu containers available, as well as system packages/DEs/kernels from Arch Linux and the AUR.**</em>
 
-![screenshot](assets/img/blendOS-v4-screenshot.png)
+![screenshot](assets/img/blendOS-v4-screenshot.png){ width=650px }
 
 <the-fold></the-fold>
 
