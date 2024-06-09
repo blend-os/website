@@ -4,3 +4,29 @@ authors:
     description: Project Lead
     avatar: https://github.com/RudraSwat.png
     url: https://about.ruds.io
+  asterisk:
+    name: Asterisk
+    description: Infrastructure Manager
+    avatar: https://github.com/Ast3risk-ops.png
+    url: https://asterisk.lol
+  jaoheah:
+    name: Joey Schaff (Jaoheah)
+    description: Community Manager & Infrastructure
+    avatar: https://github.com/Jaoheah.png
+    url: https://github.com/Jaoheah
+  svgaming:
+    name: SvGaming
+    description: Developer
+    avatar: https://github.com/svgaming234.png
+    url: https://git.blendos.co/svgaming
+  rayvermey:
+    name: Ray Vermey
+    description: Community Manager
+    avatar: https://github.com/rayvermey.png
+    url: https://github.com/rayvermey
+  noa:
+    name: Noa Himesaka
+    description: T2 Branch Developer
+    avatar: https://noa.codes/assets/img/noahimesaka-256px.png
+    url: https://noa.codes
+  
