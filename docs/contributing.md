@@ -602,7 +602,7 @@ We have created the following macros:
 **CSS classes you can use:**
 
 ```css title="extra.css"
---8<-- "https://git.blendos.co/asterisk/blend-docs-material/-/raw/main/docs/assets/css/extra.css:classes"
+--8<-- "https://git.blendos.co/blendOS/website/-/raw/main/docs/assets/css/extra.css:classes"
 ```
 
 You can apply CSS to a whole block like this:
