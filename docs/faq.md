@@ -7,12 +7,12 @@ description: "blendOS FAQ"
 
 ## What desktops are officially supported?
 
-- GNOME (`default-gnome` track)
-- KDE Plasma (`plasma` track)
-- XFCE (`xfce` track)
-- Cinnamon (`cinnamon` track)
-- MATE (`mate` track)
-- LXQt (`lxqt` track)
+- GNOME ({{ track("default-gnome") }} track)
+- KDE Plasma ({{ track("plasma") }} track)
+- XFCE ({{ track("xfce") }} track)
+- Cinnamon ({{ track("cinnamon") }} track)
+- MATE ({{ track("mate") }} track)
+- LXQt ({{ track("lxqt") }} track)
 
 You can [make your own tracks](reference/configs/system.md#tracks) to support whatever desktop or WM you want, this is just what we offer by default.
 
@@ -43,5 +43,3 @@ Things like:
 - Desktops/WMs
 - Podman containers
 - Anything that doesn't work in containers or as a flatpak
-
-
