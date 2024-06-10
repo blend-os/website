@@ -194,6 +194,7 @@ plugins:
         'docs/intro.md': 'index.md'
         'docs/index.md': 'index.md'
         'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
+        'docs/utilities/user.md': 'reference/utils/user.md'
         'docs/faq.md': 'faq.md'
         'docs/category/installation.md': 'install/README.md'
         'docs/installation/normal-pc.md': 'install/normal-pc.md'

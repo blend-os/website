@@ -120,7 +120,7 @@ Now, you might want to install applications from other distributions like Ubuntu
 
 --8<-- "docs/reference/container-list/v4.md"
 
-#### :octicons-package-16: Creating containers
+#### :material-plus-box: Creating containers
 
 Here's how you can create a Debian (`debian`, as shown in the above table) container named `my-first-container`.
 
@@ -139,7 +139,7 @@ After its creation is complete, you'll find that all of its binaries will be ava
 
 
 
-#### :octicons-package-dependencies-16: Removing containers
+#### :material-minus-box: Removing containers
 
 Just run:
 
@@ -147,7 +147,7 @@ Just run:
 user remove-container my-first-container
 ```
 
-#### :octicons-package-dependents-16: Entering containers
+#### :material-arrow-right-box: Entering containers
 
 There are multiple ways in which you can enter a container. The first one is to use [`user`](../../reference/utils/user.md) to enter a container, as shown below (terminal window on the host):
 
@@ -159,7 +159,7 @@ The second, less common one, would be to run `bash.my-first-container` in a regu
 
 ### :octicons-arrow-switch-16: Associations
 
-#### :material-plus: Creating associations
+#### :material-link-variant-plus: Creating associations
 
 Getting tired of running apt.my-first-container all the time? You can shorten it to apt by simply running the command below (in a terminal window on the host):
 
@@ -169,7 +169,7 @@ user associate apt my-first-container
 
 You can now install a package with `sudo apt install [pkg]` from a regular shell.
 
-#### :material-minus: Deleting associations
+#### :material-link-variant-minus: Deleting associations
 
 Just run:
 
@@ -187,7 +187,7 @@ Aside from entering a shell, calling the container's package manager, or using a
 user install my-first-container hello # 'hello' is the name of the package
 ```
 
-#### :material-package-variant-closed-minus: Removing packages
+#### :material-package-variant-remove: Removing packages
 
 Similarly, you can also remove packages with [`user`](../../reference/utils/user.md):
 

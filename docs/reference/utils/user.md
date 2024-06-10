@@ -26,28 +26,35 @@ description: "A CLI container management utility"
 
 ## :octicons-terminal-16: CLI usage
 
-### :material-truck-cargo-container: Create a container
+### :material-plus-box: Create a container
 
 ```bash
 user create-container <CONTAINERNAME> <CONTAINERTYPE>
 ```
 Creates a container of the selected container type.
 
-### :material-delete: Remove a container
+### :material-minus-box: Remove a container
 
 ```bash
 user remove-container <CONTAINERNAME>
 ```
 Removes a container.
 
-### :material-link: Create an association
+### :material-arrow-right-box: Entering a container
+
+```bash
+user enter <CONTAINERNAME>
+```
+Spawns a shell in the container.
+
+### :material-link-variant-plus: Create an association
 
 ```bash
 user associate <BINARYNAME> <CONTAINERNAME>
 ```
 Creates an association so that commonly-used binaries can be called without a suffix.
 
-### :material-link: Delete an association
+### :material-link-variant-minus: Delete an association
 
 ```bash
 user dissociate <BINARYNAME>
