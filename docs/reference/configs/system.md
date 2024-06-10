@@ -54,7 +54,7 @@ description: "system.yaml config reference"
     **Any options marked with a :material-cog-box: next to their name in the expanded view can be set by a track.**
 
 !!! info ""
-    More info on the possible values of these options is given in the next section.
+    All values shown here are default values or examples. You can find the default value (as well as info and examples) in the tooltip (:material-plus-circle:).
 
 --8<-- "docs/reference/configs/files/system.yaml.md"
 

@@ -7,6 +7,8 @@
 ```yaml title="system.yaml"
 repo: 'https://pkg-repo.blendos.co' # (1)!
 
+arch-repo: 'https://geo.mirror.pkgbuild.com' # (10)!
+
 impl: 'https://github.com/USER/REPO/raw/BRANCH' # (2)!
 
 track: 'plasma' # (3)!
@@ -172,3 +174,39 @@ commands: # (8)!
     **Type:** array
 
     A list of services to start at system boot at the *user* level (`systemctl --user`).
+
+10. :material-cog-box: **`arch-repo`**
+    
+    **Type:** string
+
+    **Default Value:** `https://geo.mirror.pkgbuild.com`
+
+    !!! note "This is not specified in the file, but is rather the default if no value is specified."
+
+    The main Arch Linux repo to use in `pacman.conf`.
+
+    ??? warning "Do not put a trailing / at the end of the URL."
+        Do not do this:
+
+        ```yaml title="system.yaml"
+        arch-repo: 'https://geo.mirror.pkgbuild.com/'
+        ```
+
+        Do this:
+        
+        ```yaml title="system.yaml"
+        arch-repo: 'https://geo.mirror.pkgbuild.com'
+        ```
+
+    You can find a list of mirror URLs by visiting https://cloudflaremirrors.com{ target="_blank" rel="noopener noreferrer" } (and looking at the bullet list, this shows nearby mirrors) or the [Arch mirrorlist](https://archlinux.org/mirrorlist/?protocol=https&use_mirror_status=on){ target="_blank" rel="noopener noreferrer" }. Only copy the first part of the URL (before `$repo`).
+
+    ??? example
+        If I want to use the University of Waterloo's mirror (:flag_ca:):
+
+        ```title="URL shown in the mirrorlist"
+        https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch
+        ```
+
+        ```yaml title="system.yaml"
+        arch-repo: 'https://mirror.csclub.uwaterloo.ca/archlinux'
+        ```
