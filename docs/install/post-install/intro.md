@@ -21,7 +21,7 @@ sudo nano /system.yaml
 ??? abstract "`nano` controls"
     | :material-keyboard: Keybind | :material-location-enter: Action |
     | :-------------------- | -------------------------------- |
-    | Arrow keys | Move |
+    | ++left+right+up+down++ | Move |
     | Letter/number/symbol keys | Type |
     | ++enter++ | Newline |
     | ++ctrl+x++ | Save and Quit |
@@ -64,11 +64,18 @@ packages:
 !!! warning "Use spaces for indentation in `system.yaml`!"
     The YAML format doesn't allow tabs, and only spaces are allowed for indentation. It is also worth noting that like Python, indentation is mandatory, and is integral to parsing.
 
-Now run `sudo akshara update`, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.
+Now run `sudo akshara update` in the terminal, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.
+
+!!! info "Updating"
+    While we mention `sudo akshara update` everywhere in this guide, note that you can also update graphically, using the **System** app.
+
+    ![system-update](../../assets/img/system-update.png)
+
+
 
 ## :material-arrow-up-bold-hexagon-outline: Updating your computer
 
-It is advised that you run `sudo akshara update` every few days to keep your system in sync with the Arch Linux repositories and AUR. Of course, you also have to run `sudo akshara update` every time you modify [:material-file-star: `system.yaml`](../../reference/configs/system.md) for your system to reflect any changes in that file. The System application on blendOS also presents an option to 'update your system' (which runs `sudo akshara update`) under the System tab, if you prefer a UI.
+It is advised that you run `sudo akshara update` every few days to keep your system in sync with the Arch Linux repositories and AUR. Of course, you also have to run `sudo akshara update` every time you modify [:material-file-star: `system.yaml`](../../reference/configs/system.md) for your system to reflect any changes in that file. The **System** application on blendOS also presents an option to 'update your system' (which runs `sudo akshara update`) under the **System** tab, if you prefer a UI.
 
 ## :material-arch: AUR packages
 
@@ -105,7 +112,7 @@ This line in [:material-file-star: `system.yaml`](../../reference/configs/system
 
 ## :octicons-container-16: Containers (apps from other distros)
 
-Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the System app, but we will be using the `user` CLI utility in this guide. Initializing Android app support will not be discussed here either, as it is primarily for GUI (Wayland) users and can easily be initialized through the System app.
+Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the **System** app, but we will be using the [`user`](../../reference/utils/user.md) CLI utility in this guide. **For GUI instructions and Waydroid information, you can consult the [:material-truck-cargo-container: Container Management](./container-guide.md) guide.**
 
 ### :material-truck-cargo-container: Container management
 
@@ -142,7 +149,7 @@ user remove-container my-first-container
 
 #### :octicons-package-dependents-16: Entering containers
 
-There are multiple ways in which you can enter a container. The first one is to use user to enter a container, as shown below (terminal window on the host):
+There are multiple ways in which you can enter a container. The first one is to use [`user`](../../reference/utils/user.md) to enter a container, as shown below (terminal window on the host):
 
 ```bash
 user enter my-first-container
@@ -174,7 +181,7 @@ user dissociate apt
 
 #### :material-package-variant-plus: Installing packages
 
-Aside from entering a shell, calling the container's package manager, or using associations, you can also simply use `user` to install packages within a container:
+Aside from entering a shell, calling the container's package manager, or using associations, you can also simply use [`user`](../../reference/utils/user.md) to install packages within a container:
 
 ```bash
 user install my-first-container hello # 'hello' is the name of the package
@@ -182,11 +189,13 @@ user install my-first-container hello # 'hello' is the name of the package
 
 #### :material-package-variant-closed-minus: Removing packages
 
-Similarly, you can also remove packages with `user`:
+Similarly, you can also remove packages with [`user`](../../reference/utils/user.md):
 
 ```bash
 user remove my-first-container hello
 ```
 
 
-This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to join our [Discord server](https://discord.gg/fvMpV8ZNxD){ target="_blank" relk="noopener noreferrer" } if you need help or encounter any bugs though!
+This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to [reach out to us](../../index.md#footer) if you need help or encounter any bugs though!
+
+*[reach out to us]: See those social icons at the bottom right?

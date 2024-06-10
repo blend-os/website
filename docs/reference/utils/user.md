@@ -1,14 +1,14 @@
 ---
-icon: material/cog-box
-description: "Reference for our installer"
+icon: material/train-car-container
+description: "A CLI container management utility"
 ---
 
 <div class="grid cards" markdown>
 
--   # :material-cog-box: user ![v4 badge](../../assets/img/v4.svg){ .off-glb }
+-   # :material-train-car-container: user ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
-    <em>A container management CLI utility.</em>
+    <em>A CLI container management utility.</em>
 
     - Language: :misc-python:{ title=Python }
     - Size::material-approximately-equal:27 KB (part of `blend`)

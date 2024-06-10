@@ -59,7 +59,7 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
 
     If you need to run an ARM app, you will need to install `libhoudini` or `libndk`.
 
-    You can do this by setting the following in your [:material-file-star: `system.yaml`](../../reference/configs/system.md):
+    You can do this by setting the following in your [:material-file-star: `system.yaml`](../../reference/configs/system.md) and updating:
     
     ??? question "`libhoudini` or `libndk`?"
         `libhoudini` is generally recommended for Intel CPUs, while `libndk` is generally recommended for AMD CPUs.
@@ -112,6 +112,8 @@ You can learn more about Waydroid and find more guides and commands at https://d
 ## :material-refresh: System Rebuild
 
 Clicking the `Update` button will start a rebuild of your system (same as `sudo akshara update`).
+
+![system-update](../../assets/img/system-update.png)
 
 <div class="annotate" markdown>
 

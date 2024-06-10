@@ -27,6 +27,14 @@ Our scripts and tools.
 
     [Get Started :octicons-arrow-right-16:](akshara.md){ .md-button data-umami-event="akshara Button" }
 
+-   :material-train-car-container:{ .lg .middle } __user__
+    
+    ---
+
+    A CLI container management utility.
+
+    [Get Started :octicons-arrow-right-16:](user.md){ .md-button data-umami-event="user Button" }
+
 -   :material-cog-box:{ .lg .middle } __blend-inst__
     
     ---
