@@ -40,6 +40,8 @@ hide:
 !!! info "Versions"
     To tell which mirrors are up-to-date, check which mirrors have the latest version <span id="v" class="noJs"></span>. All mirrors with the same version are up-to-date. If you don't see a version, something is wrong. Mirrors with an :x:{title=""} have not updated to the new version system.
 
+    If you have been to this site before, you should do a **cacheless reload (++cmd++/++ctrl+shift+r++)** to ensure you're actually seeing the correct versions.
+
     <noscript>**Since you have Javascript disabled, you will need to check manually by clicking the `Version` link under each download button.**</noscript>
 
 <script>
