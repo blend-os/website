@@ -64,7 +64,7 @@ optimize-job:
     - main
 
 deploy-job:
-  image: yinanzhou/wrangler:latest
+  image: jfxs/wrangler:latest
   stage: deploy
   needs: 
     - job: optimize-job
