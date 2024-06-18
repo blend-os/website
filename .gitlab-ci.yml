@@ -70,7 +70,8 @@ deploy-job:
     - job: optimize-job
       artifacts: true
   variables:
-    PROJECT_NAME: blendos
+    PROJECT_NAME: "blendos"
+    WRANGLER_SEND_METRICS: "false"
   dependencies:
   - optimize-job
   script:
