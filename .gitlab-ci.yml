@@ -77,4 +77,4 @@ deploy-job:
   script:
   - wrangler pages deploy site/ --project-name $PROJECT_NAME
   only:
-    - main
+  - main
