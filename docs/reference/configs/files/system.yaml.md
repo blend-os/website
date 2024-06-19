@@ -210,3 +210,16 @@ commands: # (8)!
         ```yaml title="system.yaml"
         arch-repo: 'https://mirror.csclub.uwaterloo.ca/archlinux'
         ```
+
+        You put the link to the folder that has a directory list like this:
+
+        ```title="Some Mirror"
+        .
+        ├── 󰉋 core
+        ├── <variants>
+        ├── 󰉋 community
+        ├── <variants>
+        ├── 󰉋 multilib
+        ├── <variants>
+        └── <more folders>
+        ```
