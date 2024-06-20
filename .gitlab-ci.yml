@@ -75,6 +75,6 @@ deploy-job:
   dependencies:
   - optimize-job
   script:
-  - wrangler pages deploy site/ --project-name $PROJECT_NAME
+  - wrangler pages deploy site/ --project-name $PROJECT_NAME --branch main
   only:
   - main
