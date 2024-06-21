@@ -23,7 +23,7 @@ flowchart TD
     E --> G[User forks]
 ```
 
-Most users will never find the Gitlab and will see old decrepit repos alongside newer ones on our [:material-github: Github organization](https://github.com/blend-os){ target='_blank" rel="noopener noreferrer" }. Please remember all new repos are on our [:fontawesome-brands-gitlab: Gitlab CE instance](https://git.blendos.co/blendos){ target="_blank" rel="noopener noreferrer" }, except for "meant to be forked" repos.
+Most users will never find the Gitlab and will see old decrepit repos alongside newer ones on our [:material-github: Github organization](https://github.com/blend-os){ target='_blank" rel="noopener noreferrer" }. Please remember all new repos are on our [:fontawesome-brands-gitlab: Gitlab instance](https://git.blendos.co/blendos){ target="_blank" rel="noopener noreferrer" }, except for "meant to be forked" repos.
 
 You should already know how to use both services depending on what you're contributing to. For things like the tracks repo, view the [Github start guide](https://docs.github.com/get-started/quickstart){ target="_blank" rel="noopener noreferrer" }. For all v4-related repos on our Gitlab, see [Gitlab's start guide](https://docs.gitlab.com/ee/user/index.html){ target="_blank" rel="noopener noreferrer" }.
 
