@@ -505,7 +505,7 @@ Example:
 
 ### :material-cog: :material-star-box: Macros
 
-We have set up [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/en/latest/){ target="_blank" rel="noopener noreferrer" } to turn MkDocs into more of a wiki engine.
+We have set up [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/en/stable/){ target="_blank" rel="noopener noreferrer" } to turn MkDocs into more of a wiki engine.
 
 We have created the following macros:
 
