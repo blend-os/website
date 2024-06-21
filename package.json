@@ -1,7 +1,7 @@
 
 {
   "scripts": {
-    "optimize": "jampack --nocache ./site"
+    "optimize": "jampack --nocache --exclude docs/overrides/.icons/misc/** ./site"
   },
   "dependencies": {
     "@divriots/jampack": "*"
