@@ -350,6 +350,14 @@
     filter: brightness(0) saturate(100%) invert(63%) sepia(95%) saturate(356%) hue-rotate(115deg) brightness(85%) contrast(88%);;
 }
 
+.icon-link-misc {
+    filter: invert(60%) sepia(73%) saturate(415%) hue-rotate(117deg) brightness(91%) contrast(94%);
+}
+
+.icon-link {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(73%) saturate(415%) hue-rotate(117deg) brightness(91%) contrast(94%);
+}
+
 .info {
     color: #00B8D4;
 }

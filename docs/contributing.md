@@ -597,12 +597,99 @@ We have created the following macros:
 {{ reference("utils", "bpkg") }}
 </div>
 
+**Container Registries**
+
+{% raw %}
+```md
+{{ dockerhub("author", "image") }}
+```
+{% endraw %}
+<div class="result" markdown>
+
+{{ dockerhub("library", "archlinux") }}
+
+</div>
+{% raw %}
+```md
+{{ ghcr("author", "image") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ ghcr("diced", "zipline") }}
+</div>
+
+{% raw %}
+```md
+{{ quay("author, "image") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ quay("toolbx", "ubuntu-toolbox") }}
+</div>
+
+**Git Forges**
+
+{% raw %}
+```md
+{{ github("user", "repo") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{  github("blend-os", "blendos") }}
+</div>
+
+{% raw %}
+```md
+{{ gitlab("user", "repo", "subgroup", "subgroup1") }}
+
+* subgroup and subgroup1 are optional arguments.
+* Used as: gitlab.com/user/subgroup/subgroup1/repo
+* They both default to nothing.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ gitlab("gitlab-org", "gitlab") }}
+</div>
+
+{% raw %}
+```md
+{{ codeberg("user", "repo") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ codeberg("forgejo", "forgejo") }}
+</div>
+
+{% raw %}
+```md
+{{ blendgit("user", "repo", "subgroup", "subgroup1") }}
+
+* subgroup and subgroup1 are optional arguments.
+* Used as: git.blendos.co/user/subgroup/subgroup1/repo
+* They both default to nothing.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ blendgit("blendos", "website") }}
+</div>
+
+{% raw %}
+```md
+{{ sourcehut("user", "repo") }}
+
+* For user, do not put the ~, that is added for you.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ sourcehut("libreboot", "lbmk") }}
+</div>
+
 ### :material-language-css3: :material-star-box: CSS classes
 
 **CSS classes you can use:**
 
 ```css title="extra.css"
---8<-- "https://git.blendos.co/blendOS/website/-/raw/main/docs/assets/css/extra.css:classes"
+--8<-- "docs/assets/css/extra.css:classes"
 ```
 
 You can apply CSS to a whole block like this:
@@ -638,15 +725,15 @@ Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 :material-star-box: Tables too:
 
 ```md
-| 1 | 2 |
-|---------|-----------|
-| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
+| 1                                    | 2   |
+| ------------------------------------ | --- |
+| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a   |
 ```
 <div class="result" markdown>
 
-| 1 | 2 |
-|---------|-----------|
-| I HATE MARKDOWN TABLES :material-star-box: { .yellow } | a |
+| 1                                                      | 2   |
+| ------------------------------------------------------ | --- |
+| I HATE MARKDOWN TABLES :material-star-box: { .yellow } | a   |
 </div>
 
 :material-star-box: as well as lists:

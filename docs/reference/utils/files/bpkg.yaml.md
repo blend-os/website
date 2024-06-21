@@ -55,7 +55,7 @@ update_flatpak: true # (3)!
       
       **Type:** boolean
     
-      Toggles whether or not Flatpak is checked during [update operations](../bpkg#update-packages)
+      Toggles whether or not Flatpak is checked during [update operations](#update-packages).
 
 4.    **`containers`**
       

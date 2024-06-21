@@ -50,3 +50,27 @@ def define_env(env):
     @env.macro
     def inlinealert(color, icon, title, text):
         return '<span class=' + color +'>**' + icon + '{ title=' + title + ' } ' + text + '**</span>'
+    @env.macro
+    def dockerhub(author, image):
+        return f'<a href="https://hub.docker.com/r/{author}/{image}" title="Docker Hub" rel="noopener noreferrer" target="_blank"><code>{author}/{image}</code><small><sup>:fontawesome-brands-docker:</sup></small></a>'
+    @env.macro
+    def ghcr(author, image):
+        return f'<a href="https://ghcr.io/{author}/{image}" title="Github Container Registry" rel="noopener noreferrer" target="_blank"><code>{author}/{image}</code><small><sup>:octicons-container-16:</sup></small></a>'
+    @env.macro
+    def quay(author, image):
+        return f'<a href="https://quay.io/{author}/{image}" title="Quay.io" rel="noopener noreferrer" target="_blank"><code>{author}/{image}</code><small><sup><span class="icon-link-misc">:misc-quay:</span></sup></small></a>'
+    @env.macro
+    def github(user, repo):
+        return f'<a href="https://github.com/{user}/{repo}" title="Github Repo" rel="noopener noreferrer" target="_blank"><code>{user}/{repo}</code><small><sup>:fontawesome-brands-github:</sup></small></a>'
+    @env.macro
+    def gitlab(user,  repo, subgroup="", subgroup1=""):
+        return f'<a href="https://gitlab.com/{user}/{subgroup}/{subgroup1}/{repo}" title="Gitlab.com Repo" rel="noopener noreferrer" target="_blank"><code>{user}/{repo}</code><small><sup>:fontawesome-brands-gitlab:</sup></small></a>'
+    @env.macro
+    def codeberg(user, repo):
+        return f'<a href="https://codeberg.org/{user}/{repo}" title="Codeberg Repo" rel="noopener noreferrer" target="_blank"><code>{user}/{repo}</code><small><sup>:simple-codeberg:</sup></small></a>'
+    @env.macro
+    def blendgit(user, repo, subgroup="", subgroup1=""):
+        return f'<a href="https://git.blendos.co/{user}/{subgroup}/{subgroup1}/{repo}" title="blendOS Gitlab Repo" rel="noopener noreferrer" target="_blank"><code>{user}/{repo}</code><small><sup>:distro-blend:</sup></small></a>'
+    @env.macro
+    def sourcehut(user, repo):
+        return f'<a href="https://sr.ht/~{user}/{repo}" title="Sourcehut Repo" rel="noopener noreferrer" target="_blank"><code>~{user}/{repo}</code><small><sup>:simple-sourcehut:</sup></small></a>'
