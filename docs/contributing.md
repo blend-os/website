@@ -602,6 +602,8 @@ We have created the following macros:
 {% raw %}
 ```md
 {{ dockerhub("author", "image") }}
+
+* If the image has no author (r/_/container), set the author to library.
 ```
 {% endraw %}
 <div class="result" markdown>
