@@ -75,6 +75,6 @@ deploy-job:
   dependencies:
   - optimize-job
   script:
-  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME 
+  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA --commit-message $CI_COMMIT_MESSAGE
   only:
   - main
