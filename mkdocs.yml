@@ -79,6 +79,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/fvMpV8ZNxD
       name: blendOS Discord
+    - icon: material/forum
+      link: https://www.answeroverflow.com/c/1068192254365282405
+      name: blendOS on AnswerOverflow
     - icon: fontawesome/brands/telegram
       link: https://t.me/blendos
       name: blendOS Telegram

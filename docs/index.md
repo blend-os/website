@@ -46,7 +46,7 @@ hide:
 
 
 [:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 data-umami-event="Install Button" } [:material-cog: Intro to blendOS](install/post-install/intro.md){ .md-button .mt-1 data-umami-event="Introduction for Arch users" }
-<br><br>[:fontawesome-brands-discord: Discord](https://discord.gg/fvMpV8ZNxD){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-brands-telegram: Telegram](https://t.me/blendos){ .md-button target="_blank" rel="noopener noreferrer" } [:simple-matrix: Matrix](https://matrix.to/#/#blendos:matrix.org){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-solid-ellipsis-vertical: Other Socials](#footer){ .md-button }
+<br><br>[:fontawesome-brands-discord: Discord](https://discord.gg/fvMpV8ZNxD){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-brands-telegram: Telegram](https://t.me/blendos){ .md-button target="_blank" rel="noopener noreferrer" } [:simple-matrix: Matrix](https://matrix.to/#/#blendos:matrix.org){ .md-button target="_blank" rel="noopener noreferrer" } [:material-forum: AnswerOverflow](https://www.answeroverflow.com/c/1068192254365282405){ .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-solid-ellipsis-vertical: Other Socials](#footer){ .md-button }
 
 ------
 </div>
@@ -83,7 +83,7 @@ hide:
 
 ------
 
-<em>**Flatpak** applications are supported out-of-the-box, and so are Arch Linux & AUR packages through the `/system.yaml` file. Support for applications from **Android**, **Fedora**, **Ubuntu**, **Debian** and **CentOS Stream** can be enabled through the System app on blendOS.</em>
+<em>**Flatpak** applications are supported out-of-the-box, and so are Arch Linux & AUR packages through the `/system.yaml` file. Support for applications from **Android**, **Fedora**, **Ubuntu**, **Debian** and [more](reference/container-list.md) can be enabled through the System app on blendOS.</em>
 </div>
 
 <!-- <b><h2>Written by:</h2></b> -->

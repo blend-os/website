@@ -228,9 +228,9 @@
     background-color: #263f3f;
 }
 
-[data-md-color-scheme="slate"] .md-tabs__link {
-    /* color: var(--md-primary-fg-color--light); */
-    /* color: #e9be91; */
+.md-tabs__list:first-child {
+    /* margin-left: 350px;*/
+    margin-left: 25%;
 }
 
 [data-md-color-scheme="default"] .md-header {
