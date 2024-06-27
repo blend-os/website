@@ -48,56 +48,80 @@ A mirror list is available on the [download](download/README.md) page.
 If you'd like to mirror, great! Here's the steps:
 
 1. Note down your mirror's bandwidth (in Gbps), country, name, and what you'll be serving (ISO-only, repo-only or both)
-1. Clone the master package repo mirror via `wget` and grab the latest ISO (or rsync with another mirror)
+2. Clone the master package repo mirror via `wget` and grab the latest ISO:
+    
+    ??? abstract "ISO mirroring"
+        You can use the following script:
+
+        ```bash
+        #!/bin/bash
+        ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
+        LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
+        ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
+        LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
+        
+        download_iso() {
+            rm -rf $LOCAL_ISO_PATH
+            wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
+            wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
+        }
+        
+        get_remote_version() {
+            wget -O - "$ISO_VERSION_URL"
+        }
+        
+        REMOTE_VERSION=$(get_remote_version)
+        LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
+        
+        if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
+            echo "New ISO version detected. Downloading..."
+            download_iso
+            echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
+        else
+            echo "ISO is up-to-date."
+        fi
+        ```
+        
+        <small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
+        
+        Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
+
+    ??? abstract "`wget` mirroring for the package repo"
+        Otus has provided a cronjob for this:
+    
+        ```
+        0 * * * * wget --mirror --no-parent --no-host-directories -P $WEB_FOLDER https://pkg-repo.blendos.co/ && find $WEB_FOLDER -type f -name 'index.html*' -delete
+        ```
+    
+        Where `$WEB_FOLDER` is your web data folder.
+    
+        This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `indexhtml` files.
+    
+        I wish we had `rsync` too, but here we are. :expressionless:
+
+1. If mirroring the ISO, add a CORS header to allow us to fetch your `version` file:
+   
+     <small>Examples taken from the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin){ target="_blank" rel="noopener noreferrer" }.</small>
+     ```http
+     Access-Control-Allow-Origin: https://blendos.co
+     ```
+
+     ```apache title="Apache"
+     Header set Access-Control-Allow-Origin 'https://blendos.co'
+     ```
+
+     ```nginx title="Nginx"
+     add_header 'Access-Control-Allow-Origin' 'https://blendos.co' always;
+     ```
+
+    !!! info "The `caddy.cors` plugin is not available for Caddy v2."
+
+     ```title="Caddy (v2)"
+     header Access-Control-Allow-Origin "https://blendos.co"
+     ```
+
 1. Contact Asterisk via one of our chatrooms (in the footer of this page) to get your mirror listed
 
-??? abstract "`wget` mirroring for the package repo"
-    Otus has provided a cronjob for this:
-
-    ```
-    0 * * * * wget --mirror --no-parent --no-host-directories -P $WEB_FOLDER https://pkg-repo.blendos.co/ && find $WEB_FOLDER -type f -name 'index.html*' -delete
-    ```
-
-    Where `$WEB_FOLDER` is your web data folder.
-
-    This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `index.html` files.
-
-    I wish we had `rsync` too, but here we are. :expressionless:
-
-To sync our ISOs you can use the script below:
-
-```bash
-#!/bin/bash
-ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
-LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
-ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
-LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
-
-download_iso() {
-    rm -rf $LOCAL_ISO_PATH
-    wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
-    wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
-}
-
-get_remote_version() {
-    wget -O - "$ISO_VERSION_URL"
-}
-
-REMOTE_VERSION=$(get_remote_version)
-LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
-
-if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
-    echo "New ISO version detected. Downloading..."
-    download_iso
-    echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
-else
-    echo "ISO is up-to-date."
-fi
-```
-
-<small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
-
-Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
 
 ### :material-note: Notes
 
