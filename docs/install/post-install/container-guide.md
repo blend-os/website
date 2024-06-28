@@ -67,8 +67,6 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
         However, some apps will work on one translation layer and not another. You may need to try both if a game does not work or suffers from bad performance.
 
     ```yaml title="system.yaml"
-    [...] # Rest of file
-
     aur-packages:
       - 'waydroid-script-git'
     
@@ -76,16 +74,11 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
       - 'cd /opt/waydroid-script/ && waydroid-extras install libhoudini' # replace libhoudini with libndk if on an AMD CPU
     ```
 
-??? abstract "ADB usage"
-    After getting your Android IP from **Settings > About**, use this adb command:
 
-    ```
-    adb connect <IP>:5555
-    ```
 
 Some useful Waydroid CLI commands are:
 
-| Command | Function |
+| :fontawesome-solid-terminal: Command | :fontawesome-solid-gear: Function |
 | -------------------- | -------------------------------- |
 | `waydroid show-full-ui` | Start a full Android session |
 | `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
@@ -95,6 +88,12 @@ Some useful Waydroid CLI commands are:
 | `waydroid app launch com.foo.bar` | Open an Android app (you can also do this from your DE's app launcher) |
 | `waydroid log` | Show the Waydroid log |
 
+??? abstract "ADB usage"
+    After getting your Android IP from **Settings > About**, use this adb command:
+
+    ```
+    adb connect <IP>:5555
+    ```
 
 You can learn more about Waydroid and find more guides and commands at https://docs.waydro.id{ target="blank" rel="noopener noreferrer" }.
 
