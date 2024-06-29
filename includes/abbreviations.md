@@ -12,3 +12,5 @@
 *[BIOS]: Basic Input/Output System
 *[AUR]: Arch User Repository
 *[POSIX]: Portable Operating System Interface
+*[SDDM]: Simple Desktop Display Manager
+*[GDM]: GNOME Display Manager
