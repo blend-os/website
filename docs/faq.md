@@ -88,7 +88,7 @@ packages:
   - xorg
 ```
 
-Then, change your session to X11 depending on your desktop:
+Then, change your session to X11 depending on your desktop's **login screen**:
 
 ### :material-gnome: GNOME (GDM)
 
