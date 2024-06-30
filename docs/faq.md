@@ -31,6 +31,36 @@ if status is-login
 end
 ```
 
+## The Plasma track isn't working!
+
+On the boot menu, hit ++e++ on the `Arch Linux` option. This will open an editor with controls shown at the bottom (arrow keys to move).
+
+Remove `splash` from the kernel parameters and hit ++ctrl+x++.
+
+![grub-settings](assets/img/grub-settings.png)
+
+This is only temporary, and will allow you to boot.
+
+Once in your system, open the terminal. Type:
+
+```
+sudo nano /etc/default/grub
+```
+
+This will open a basic editor (arrow keys to move).
+
+Remove `splash` from the second `GRUB_CMDLINE_LINUX_DEFAULT` near the end and hit ++ctrl+x++ to save and quit (hit ++y++ to save, ++enter++ to save as the same file name).
+
+![splash-boot](assets/img/splash-boot.png)
+
+Now type:
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+The edit is now permanent and KDE Plasma should work.
+
 ## What should go on the host?
 
 Things like:
