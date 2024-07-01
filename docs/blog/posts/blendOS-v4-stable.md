@@ -10,6 +10,13 @@ authors:
 comments: true
 ---
 
+<style>
+.built-with-footer {
+  display: none;
+}
+
+</style>
+
 ![screenshot](../../assets/img/blendOS-v4-screenshot.png)
 
 Download it here: [blendos.co/download/](../../download/README.md)

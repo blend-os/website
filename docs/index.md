@@ -19,6 +19,10 @@ hide:
   #blendos-title .headerlink {
     display: none;
   }
+
+  .built-with-footer {
+    display: none;
+  }
 </style>
 
 <div align="center" markdown>
@@ -87,5 +91,7 @@ hide:
 </div>
 
 <!-- <b><h2>Written by:</h2></b> -->
+
+---------
 
 ###### Footer { style="visibility: hidden;width: 0; height: 0;" }
