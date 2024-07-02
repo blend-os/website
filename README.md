@@ -4,14 +4,6 @@ New BlendOS docs (WIP). Built with Material for MkDocs.
 
 Please read the [contribution guide](https://blendos.co/contributing#docs) for information on additional features, classes and macros.
 
-# Table of Contents
-
-- [Blend Docs Material](#blend-docs-material)
-- [Table of Contents](#table-of-contents)
-- [Rules](#rules)
-- [Local Development](#local-development)
-- [Credit](#credit)
-
 # Rules
 
 1. **Keep it local.** If you use any external assets, *download them*. Only do not download something if it is dynamic (like a status badge) or there is no other way (like emoji). Static badges, script links pointing to fixed versions, fonts, images, files, download them all. Save them in the right category in the `docs/assets` folder. This is to minimize external requests.
