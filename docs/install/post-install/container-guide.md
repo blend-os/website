@@ -67,11 +67,19 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
         However, some apps will work on one translation layer and not another. You may need to try both if a game does not work or suffers from bad performance.
 
     ```yaml title="system.yaml"
+    packages:
+      - 'lzip'
+      - 'python-requests'
+      - 'python-tqdm'
+      - 'sqlite'
+      - 'python-dbus'
+    
     aur-packages:
-      - 'waydroid-script-git'
+      - 'python-inquirerpy'
     
     commands:
-      - 'cd /opt/waydroid-script/ && waydroid-extras install libhoudini' # replace libhoudini with libndk if on an AMD CPU
+      - 'git clone https://github.com/casualsnek/waydroid_script.git /opt/waydroid-script/'
+      - 'python /opt/waydroid-script/main.py install libhoudini' # replace libhoudini with libndk if on an AMD CPU
     ```
 
 
