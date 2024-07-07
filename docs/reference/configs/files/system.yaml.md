@@ -9,7 +9,7 @@ repo: 'https://pkg-repo.blendos.co' # (1)!
 
 arch-repo: 'https://geo.mirror.pkgbuild.com' # (10)!
 
-impl: 'https://github.com/USER/REPO/raw/BRANCH' # (2)!
+impl: 'https://github.com/blend-os/tracks/raw/main' # (2)!
 
 track: 'plasma' # (3)!
 
