@@ -560,7 +560,7 @@ Now, click the :fontawesome-solid-ellipsis-vertical: icon to show all languages.
 
 ![lang-gnome-2](assets/img/lang-gnome-2.png)
 
-Find your newly added language and click it. It will now show a banner at the toip of the settings window saying that you need to log out to apply language settings. Click the **Log Out** button to do so.
+Find your newly added language and click it, then **Select**. It will now show a banner at the top of the settings window saying that you need to log out to apply language settings. Click the **Log Out** button to do so.
 
 ![lang-gnome-banner](assets/img/lang-gnome-banner.png)
 
