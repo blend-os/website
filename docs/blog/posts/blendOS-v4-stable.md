@@ -15,6 +15,10 @@ comments: true
   display: none;
 }
 
+.md-content__button {
+  display: none;
+}
+
 </style>
 
 ![screenshot](../../assets/img/blendOS-v4-screenshot.png)
