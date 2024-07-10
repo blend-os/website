@@ -17,7 +17,7 @@ description: "A CLI container management utility"
 
     ------
 
-    [:octicons-code-16: Source Code](https://github.com/blend-os/blend-inst){ .md-button target="_blank" rel="noopener noreferrer" }
+    [:octicons-code-16: Source Code](https://github.com/blend-os/blend/blob/main/user){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 
