@@ -191,7 +191,9 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - glightbox
   - macros
-  - blog
+  - blog:
+      post_date_format: medium
+      post_excerpt: required
   - redirects:
       redirect_maps: 
         'docs/intro.md': 'index.md'

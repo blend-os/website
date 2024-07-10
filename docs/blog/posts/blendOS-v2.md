@@ -19,6 +19,8 @@ Download: [https://github.com/blend-os/blendOS/releases/tag/23.04](https://youtu
 
 Discord: [https://discord.gg/m9JPmZB8Kd](https://youtu.be/_OpKeqTtY1s)
 
+<!-- more -->
+
 ## Release notes
 
 ### Major changes
