@@ -196,7 +196,8 @@ plugins:
       post_excerpt: required
   - redirects:
       redirect_maps: 
-        'docs/intro.md': 'index.md'
+        'docs/intro.md': 'install/post-install/intro.md'
+        'intro.md': 'install/post-install/intro.md'
         'docs/index.md': 'index.md'
         'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
         'docs/utilities/user.md': 'reference/utils/user.md'
