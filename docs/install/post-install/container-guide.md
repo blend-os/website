@@ -92,7 +92,7 @@ Some useful Waydroid CLI commands are:
 | `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
 | `waydroid session start` | Resumes Waydroid |
 | `waydroid shell` | Android shell |
-| `waydroid app install file.apk` | Mostly redundant with our package installer, but useful |
+| `waydroid app install file.apk` | Installs an APK (Mostly redundant with our package installer, but useful) |
 | `waydroid app launch com.foo.bar` | Open an Android app (you can also do this from your DE's app launcher) |
 | `waydroid log` | Show the Waydroid log |
 
