@@ -669,6 +669,7 @@ First, install Xorg and update:
 packages:
   - xorg
 ```
+<small>\* [`xorg`](https://archlinux.org/groups/x86_64/xorg/){ target="_blank" rel="noopener noreferrer" } is a package *group*, not a standalone package.</small>
 
 Then, change your session to X11 depending on your desktop's **login screen**:
 
