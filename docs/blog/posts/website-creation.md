@@ -8,6 +8,7 @@ title: 'Making this website'
 authors:
   - asterisk
 comments: true
+description: 'The history behind the blendOS website'
 ---
 
 <style>
