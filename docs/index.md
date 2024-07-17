@@ -27,7 +27,7 @@ hide:
 
 <div align="center" markdown>
 
-![logo](assets/img/logo.svg){ #blendos-logo width=100px }
+![logo](assets/img/logo.svg){ #blendos-logo width=100 }
 
 <h1 style="margin-bottom: 0.2em;" id="blendos-title">blendOS</h1>
 
@@ -35,7 +35,7 @@ hide:
 
 <em>**Arch Linux made declarative, immutable and atomic. With Android app support and Fedora, Debian, CentOS Stream and Ubuntu containers available, as well as system packages/DEs/kernels from Arch Linux and the AUR.**</em>
 
-![screenshot](assets/img/blendOS-v4-screenshot.png){ width=650px }
+![screenshot](assets/img/blendOS-v4-screenshot.png){ width=650 }
 
 <the-fold></the-fold>
 

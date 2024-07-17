@@ -58,7 +58,7 @@ I also wrote the guide like an idiot, using "appendices" at the end to hold cert
 
 I also forgot you could set custom admonition titles in Docusaurus, and made a garbage download page with too many admonitions that actually got used as the official download page :grimacing:.
 
-![The download list](../../assets/img/posts/website-creation/docusarus-mirrors.png){ width=300px }
+![The download list](../../assets/img/posts/website-creation/docusarus-mirrors.png){ width=300 }
 
 The container guide was quite good, I must admit, but I felt limited by the components of Docusaurus (don't know any React :pensive:)
 
@@ -198,11 +198,11 @@ Another thing I did that I've never seen before is making all codeblocks on the 
 
 I was also inspired by the [Couleur Tweak Tips software cards](https://ctt.cx/video/cutters/avidemux/#avidemux){ target="_blank" rel="noopener noreferrer" } (same place I found the sidebar tweaks), and made every reference *page* have a reference *card* to explain basic information.
 
-![CTT card](../../assets/img/posts/website-creation/avidemux-card.png){ width=400px }
+![CTT card](../../assets/img/posts/website-creation/avidemux-card.png){ width=400 }
 
 <small>Couleur Tweak Tips card</small>
 
-![bpkg card](../../assets/img/posts/website-creation/bpkg-card.png){ width=400px }
+![bpkg card](../../assets/img/posts/website-creation/bpkg-card.png){ width=400 }
 
 <small>`bpkg` reference card</small>
 
