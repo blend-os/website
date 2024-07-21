@@ -498,9 +498,11 @@ Add this section to the page:
 
 This script will show `noJs` elements (which are hidden by default) and will not run if Javascript is disabled.
 
-Next, give the element using the Javascript (i.e. if it uses a `#!html <div>` or `#!html <span>`) the `noJs` class.
+Next, give **the trigger of the Javascript (i.e. a button)** *and/or* **the `#!html <div>`/`#!html <span>` where the Javascript inserts content** the `noJs` class.
 
 Now, if you have a Javascript-free replacement (a warning saying you need Javascript or a replacement button), put it in a `#!html <noscript>` tag.
+
+No external libraries should be used unless they are either *essential* (can't be done without JS and this library) or the rest of the docs could benefit from them. If either of these things are the case, rule 1 still applies, ***do not use a CDN***.
 
 Example:
 
