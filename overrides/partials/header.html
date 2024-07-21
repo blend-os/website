@@ -14,7 +14,7 @@
 
         <!-- Link to home -->
         <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}"
-            class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+            class="md-header__button md-logo notranslate" aria-label="{{ config.site_name }}" data-md-component="logo">
             {% include "partials/logo.html" %}
         </a>
 
@@ -25,7 +25,7 @@
         </label>
 
         <!-- Header title -->
-        <div class="md-header__title" data-md-component="header-title">
+        <div class="md-header__title notranslate" data-md-component="header-title">
             <div class="md-header__ellipsis">
                 <div class="md-header__topic">
                     <span class="md-ellipsis">
@@ -79,7 +79,7 @@
 
         <!-- Repository information -->
         {% if config.repo_url %}
-        <div class="md-header__source">
+        <div class="md-header__source notranslate">
             {% include "partials/source.html" %}
         </div>
         {% endif %}

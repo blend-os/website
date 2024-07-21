@@ -209,7 +209,7 @@ Click `Start`.
 
 Once you start, you now need to choose your installation disk. 
 
-You can either choose a disk (**<span class="red">:material-lightning-bolt:{ title="Danger" } THIS WIPES THE CHOSEN DISK AND ALL DATA ON IT!**</span>) or go to [**Manual Partitioning**](#manual-partitioning).
+You can either choose a disk (**<span class="red">:material-lightning-bolt:{ title="Danger" } THIS WIPES THE CHOSEN DISK AND ALL DATA ON IT!**</span>) or go to [**Manual Partitioning**](#manual-partitioning){ .notranslate }.
 
 ![disk-selector](../assets/img/install/disk-selector.png)
 
@@ -219,11 +219,11 @@ Oh, wait, Rudra wrote this guide for me  :expressionless:.
 
 ![manual-partitioning](../assets/img/install/manual-partitioning.png)
 
-After clicking `Switch to Manual Partitioning`, choose `Partitioning How-To` under **Quick Actions**. This will explain exactly what to do.
+After clicking `Switch to Manual Partitioning`, choose `Partitioning How-To` under <span class="notranslate">**Quick Actions**</span>. This will explain exactly what to do.
 
 A copy of the file that opens has been provided here for reference:
 
-??? abstract follow "Partitioning How-To"
+??? abstract follow "Partitioning How-To (English only)"
 
     ```
      ____            _   _ _   _             _             
@@ -350,7 +350,7 @@ A copy of the file that opens has been provided here for reference:
     ```
 "Reloading the list of available partitions" means click that little refresh icon (![refresh](../assets/img/install/refresh.png){ .tweemoji .off-glb })
 
-??? failure "I set up partitioning and the Next button is greyed out!"
+??? failure "I set up partitioning and the `Next` button is greyed out!"
     This is a strange bug, simply switch to automatic partitioning then back to manual partitioning again.
 
 ---------

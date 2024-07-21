@@ -27,8 +27,9 @@ hide:
 
 
 ## :simple-bittorrent: BitTorrent
-
+<div class="notranslate" markdown>
 [:material-file-download: Torrent](https://fosstorrents.com/thankyou/?name=blendos&cat=Latest%20Edition&id=0&hybrid=0){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="Torrent Download" } [:fontawesome-solid-magnet: Magnet](https://fosstorrents.com/distributions/blendos/#downloads){ .md-button rel="noopener noreferrer" target="_blank" data-umami-event="Magnet Download" }
+</div>
 
 <small>:fontawesome-solid-info:{ title="Info" } A webseed-capable client is **highly recommended**. A torrent client must be installed to open magnet links.</small>
 { .info }
