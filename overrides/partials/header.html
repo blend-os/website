@@ -44,8 +44,7 @@
             </div>
         </div>
         
-        <!-- Google Translate button -->
-        {% include "partials/google-translate.html" %}
+
 
         <!-- Color palette toggle -->
         {% if config.theme.palette %}
@@ -73,7 +72,10 @@
 
         <!-- Search interface -->
         {% include "partials/search.html" %}
-        {% endif %}
+        {% endif %}        
+        
+        <!-- Google Translate button -->
+        {% include "partials/google-translate.html" %}
 
         <!-- Repository information -->
         {% if config.repo_url %}
