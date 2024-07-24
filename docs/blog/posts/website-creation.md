@@ -28,6 +28,10 @@ The website you are looking at right now is an amalgamation of time and effort o
 
 !!! info "Click on images to expand them."
 
+!!! note "Updates"
+    - Added information about updated Mintlify pricing
+    - Fixed caption on new Mintlify pricing image
+
 ## History
 
 ### Docs
@@ -116,18 +120,24 @@ Alas, the aforementioned issues meant I dropped Starlight as well. :frowning2:
 ![Mintlify](../../assets/img/posts/website-creation/mintlify.png)
 <small>Taken from the [Mintlify Starter Kit](https://starter.mintlify.com/introduction){ target="_blank" rel="noopener noreferrer" }.</small>
 
-Mintlify looks great. It *is* a SaaS like Gitbook, but anything is better than Gitbook. It seems to be very similar to [Guider](https://neatojs.com/docs/guider){ target="_blank" rel="noopener noreferrer" } by NeatoJS, but closed-source and with more builtin components. I thought about using it, however its Gitlab integration is paid:
+Mintlify looks great. It *is* a SaaS like Gitbook, but anything is better than Gitbook. It seems to be very similar to [Guider](https://neatojs.com/docs/guider){ target="_blank" rel="noopener noreferrer" } by NeatoJS, but closed-source and with more builtin components. I thought about using it, however its Gitlab integration is paid.
+
+**UPDATE:** Mintlify has since changed their pricing. Gitlab support is now part of the **Enterprise** plan, which we would need to *contact Mintlify for*:
 
 ![Mintlify Pricing](../../assets/img/posts/website-creation/mintlify-pricing.png)
-
 <small>Taken from Mintlify's [pricing page](https://mintlify.com/pricing){ target="_blank" rel="noopener noreferrer" }. Prices are in USD.</small>
+
+And wow. Custom CSS/JS is worth $100/month to them. This is starting to get to Gitbook levels of bullshit pricing (through the removal of the Growth plan and price cut is nice). Also, they changed to per-page pricing so the free plan only gets you 30 pages:
+
+![Mintlify Pricing 2](../../assets/img/posts/website-creation/mintlify-pricing-2.png)
+<small>I changed my mind. This *is* Gitbook-level bullshit, worse even.</small>
 
 It also really only works if your website looks like this:
 
 ![Resend Website](../../assets/img/posts/website-creation/resend.png)
 <small>Taken from [Resend](https://resend.com){ target="_blank" rel="noopener noreferrer" }.</small>
 
-And its components aren't as flexible (custom CSS/JS is also paid).
+Its components also aren't as flexible.
 
 ### Site
 
