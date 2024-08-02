@@ -6,6 +6,7 @@ categories:
   - alpha
 authors:
   - rs2009
+comments: true
 ---
 
 # blendOS v4 Alpha

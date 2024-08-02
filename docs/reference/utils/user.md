@@ -1,14 +1,14 @@
 ---
-icon: material/cog-box
-description: "Reference for our installer"
+icon: material/train-car-container
+description: "A CLI container management utility"
 ---
 
 <div class="grid cards" markdown>
 
--   # :material-cog-box: user ![v4 badge](../../assets/img/v4.svg){ .off-glb }
+-   # :material-train-car-container: <span class="notranslate">user</span> ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
-    <em>A container management CLI utility.</em>
+    <em>A CLI container management utility.</em>
 
     - Language: :misc-python:{ title=Python }
     - Size::material-approximately-equal:27 KB (part of `blend`)
@@ -17,37 +17,44 @@ description: "Reference for our installer"
 
     ------
 
-    [:octicons-code-16: Source Code](https://github.com/blend-os/blend-inst){ .md-button target="_blank" rel="noopener noreferrer" }
+    [:octicons-code-16: Source Code](https://github.com/blend-os/blend/blob/main/user){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 
-!!! question "What is blend-inst?"
+!!! question "What is <span class="notranslate">user</span>?"
     [`user`](https://github.com/blend-os/blend/blob/main/user){ target="_blank" rel="noopener noreferrer" } is a part of [blend](https://github.com/blend-os/blend){ target="_blank" rel="noopener noreferrer" } in Python. It allows for container management through the command-line, a use-case that had not been considered prior to v3.
 
 ## :octicons-terminal-16: CLI usage
 
-### :material-truck-cargo-container: Create a container
+### :material-plus-box: Create a container
 
 ```bash
 user create-container <CONTAINERNAME> <CONTAINERTYPE>
 ```
 Creates a container of the selected container type.
 
-### :material-delete: Remove a container
+### :material-minus-box: Remove a container
 
 ```bash
 user remove-container <CONTAINERNAME>
 ```
 Removes a container.
 
-### :material-link: Create an association
+### :material-arrow-right-box: Entering a container
+
+```bash
+user enter <CONTAINERNAME>
+```
+Spawns a shell in the container.
+
+### :material-link-variant-plus: Create an association
 
 ```bash
 user associate <BINARYNAME> <CONTAINERNAME>
 ```
 Creates an association so that commonly-used binaries can be called without a suffix.
 
-### :material-link: Delete an association
+### :material-link-variant-minus: Delete an association
 
 ```bash
 user dissociate <BINARYNAME>

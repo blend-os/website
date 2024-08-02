@@ -17,13 +17,13 @@ Our repositories are split across multiple places, this is the average contribut
 flowchart TD
     A[New User] -->|Wants to contribute| B(Needs source code)
     B -->|Google results bring up Github| C{Where?}
-    C -->|Newer v4-related repos| D(Impossible-to-find <a href="https://git.blendos.co/blendos" target="_blank" rel="noopener noreferrer">Gitlab CE instance</a>)
+    C -->|Newer v4-related repos| D(Impossible-to-find <a href="https://git.blendos.co/blendos" target="_blank" rel="noopener noreferrer">Gitlab instance</a>)
     C -->|Old + 'meant to be forked' repos| E(<a href="https://github.com/blend-os" target="_blank" rel="noopener noreferrer">Our Github organization</a>, user always goes here first)
     D --> F[User forks]
     E --> G[User forks]
 ```
 
-Most users will never find the Gitlab and will see old decrepit repos alongside newer ones on our [:material-github: Github organization](https://github.com/blend-os){ target='_blank" rel="noopener noreferrer" }. Please remember all new repos are on our [:fontawesome-brands-gitlab: Gitlab CE instance](https://git.blendos.co/blendos){ target="_blank" rel="noopener noreferrer" }, except for "meant to be forked" repos.
+Most users will never find the Gitlab and will see old decrepit repos alongside newer ones on our [:material-github: Github organization](https://github.com/blend-os){ target='_blank" rel="noopener noreferrer" }. Please remember all new repos are on our [:fontawesome-brands-gitlab: Gitlab instance](https://git.blendos.co/blendos){ target="_blank" rel="noopener noreferrer" }, except for "meant to be forked" repos.
 
 You should already know how to use both services depending on what you're contributing to. For things like the tracks repo, view the [Github start guide](https://docs.github.com/get-started/quickstart){ target="_blank" rel="noopener noreferrer" }. For all v4-related repos on our Gitlab, see [Gitlab's start guide](https://docs.gitlab.com/ee/user/index.html){ target="_blank" rel="noopener noreferrer" }.
 
@@ -48,56 +48,80 @@ A mirror list is available on the [download](download/README.md) page.
 If you'd like to mirror, great! Here's the steps:
 
 1. Note down your mirror's bandwidth (in Gbps), country, name, and what you'll be serving (ISO-only, repo-only or both)
-1. Clone the master package repo mirror via `wget` and grab the latest ISO (or rsync with another mirror)
+2. Clone the master package repo mirror via `wget` and grab the latest ISO:
+    
+    ??? abstract "ISO mirroring"
+        You can use the following script:
+
+        ```bash
+        #!/bin/bash
+        ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
+        LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
+        ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
+        LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
+        
+        download_iso() {
+            rm -rf $LOCAL_ISO_PATH
+            wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
+            wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
+        }
+        
+        get_remote_version() {
+            wget -O - "$ISO_VERSION_URL"
+        }
+        
+        REMOTE_VERSION=$(get_remote_version)
+        LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
+        
+        if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
+            echo "New ISO version detected. Downloading..."
+            download_iso
+            echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
+        else
+            echo "ISO is up-to-date."
+        fi
+        ```
+        
+        <small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
+        
+        Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
+
+    ??? abstract "`wget` mirroring for the package repo"
+        Otus has provided a cronjob for this:
+    
+        ```
+        0 * * * * wget --mirror --no-parent --no-host-directories -P $WEB_FOLDER https://pkg-repo.blendos.co/ && find $WEB_FOLDER -type f -name 'index.html*' -delete
+        ```
+    
+        Where `$WEB_FOLDER` is your web data folder.
+    
+        This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `indexhtml` files.
+    
+        I wish we had `rsync` too, but here we are. :expressionless:
+
+1. If mirroring the ISO, add a CORS header to allow us to fetch your `version` file:
+   
+     <small>Examples taken from the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin){ target="_blank" rel="noopener noreferrer" }.</small>
+     ```http
+     Access-Control-Allow-Origin: https://blendos.co
+     ```
+
+     ```apache title="Apache"
+     Header set Access-Control-Allow-Origin 'https://blendos.co'
+     ```
+
+     ```nginx title="Nginx"
+     add_header 'Access-Control-Allow-Origin' 'https://blendos.co' always;
+     ```
+
+    !!! info "The `caddy.cors` plugin is not available for Caddy v2."
+
+     ```title="Caddy (v2)"
+     header Access-Control-Allow-Origin "https://blendos.co"
+     ```
+
 1. Contact Asterisk via one of our chatrooms (in the footer of this page) to get your mirror listed
 
-??? abstract "`wget` mirroring for the package repo"
-    Otus has provided a cronjob for this:
-
-    ```
-    0 * * * * wget --mirror --no-parent --no-host-directories -P $WEB_FOLDER https://pkg-repo.blendos.co/ && find $WEB_FOLDER -type f -name 'index.html*' -delete
-    ```
-
-    Where `$WEB_FOLDER` is your web data folder.
-
-    This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `index.html` files.
-
-    I wish we had `rsync` too, but here we are. :expressionless:
-
-To sync our ISOs you can use the script below:
-
-```bash
-#!/bin/bash
-ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
-LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
-ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
-LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
-
-download_iso() {
-    rm -rf $LOCAL_ISO_PATH
-    wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
-    wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
-}
-
-get_remote_version() {
-    wget -O - "$ISO_VERSION_URL"
-}
-
-REMOTE_VERSION=$(get_remote_version)
-LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
-
-if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
-    echo "New ISO version detected. Downloading..."
-    download_iso
-    echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
-else
-    echo "ISO is up-to-date."
-fi
-```
-
-<small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
-
-Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
 
 ### :material-note: Notes
 
@@ -474,18 +498,23 @@ Add this section to the page:
 
 This script will show `noJs` elements (which are hidden by default) and will not run if Javascript is disabled.
 
-Next, put the element with Javascript in a `#!html <div>` with the `noJs` class.
+Next, give **the trigger of the Javascript (i.e. a button)** *and/or* **the `#!html <div>`/`#!html <span>` where the Javascript inserts content** the `noJs` class.
 
 Now, if you have a Javascript-free replacement (a warning saying you need Javascript or a replacement button), put it in a `#!html <noscript>` tag.
+
+No external libraries should be used unless they are either *essential* (can't be done without JS and this library) or the rest of the docs could benefit from them. If either of these things are the case, rule 1 still applies, ***do not use a CDN***.
 
 Example:
 
 ```html title="awesome-page.md"
-<div class="noJs" markdown>
 <script>
     console.log("Hello!")
+    document.getElementById('someDiv').innerHTML = "html goes here"
 </script>
-</div>
+
+<span id="someDiv" class="noJs"></span>
+
+[Button](javascript:history.forward){ .noJs .md-button }
 
 <noscript>You need Javascript for this.</noscript>
 
@@ -502,7 +531,7 @@ Example:
 
 ### :material-cog: :material-star-box: Macros
 
-We have set up [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/en/latest/) to turn MkDocs into more of a wiki engine.
+We have set up [`mkdocs-macros`](https://mkdocs-macros-plugin.readthedocs.io/en/stable/){ target="_blank" rel="noopener noreferrer" } to turn MkDocs into more of a wiki engine.
 
 We have created the following macros:
 
@@ -594,12 +623,101 @@ We have created the following macros:
 {{ reference("utils", "bpkg") }}
 </div>
 
+**Container Registries**
+
+{% raw %}
+```md
+{{ dockerhub("author", "image") }}
+
+* If the image has no author (r/_/container), set the author to library.
+```
+{% endraw %}
+<div class="result" markdown>
+
+{{ dockerhub("library", "archlinux") }}
+
+</div>
+{% raw %}
+```md
+{{ ghcr("author", "image") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ ghcr("diced", "zipline") }}
+</div>
+
+{% raw %}
+```md
+{{ quay("author, "image") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ quay("toolbx", "ubuntu-toolbox") }}
+</div>
+
+**Git Forges**
+
+{% raw %}
+```md
+{{ github("user", "repo") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{  github("blend-os", "blendos") }}
+</div>
+
+{% raw %}
+```md
+{{ gitlab("user", "repo", "subgroup", "subgroup1") }}
+
+* subgroup and subgroup1 are optional arguments.
+* Used as: gitlab.com/user/subgroup/subgroup1/repo
+* They both default to nothing.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ gitlab("gitlab-org", "gitlab") }}
+</div>
+
+{% raw %}
+```md
+{{ codeberg("user", "repo") }}
+```
+{% endraw %}
+<div class="result" markdown>
+{{ codeberg("forgejo", "forgejo") }}
+</div>
+
+{% raw %}
+```md
+{{ blendgit("user", "repo", "subgroup", "subgroup1") }}
+
+* subgroup and subgroup1 are optional arguments.
+* Used as: git.blendos.co/user/subgroup/subgroup1/repo
+* They both default to nothing.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ blendgit("blendos", "website") }}
+</div>
+
+{% raw %}
+```md
+{{ sourcehut("user", "repo") }}
+
+* For user, do not put the ~, that is added for you.
+```
+{% endraw %}
+<div class="result" markdown>
+{{ sourcehut("libreboot", "lbmk") }}
+</div>
+
 ### :material-language-css3: :material-star-box: CSS classes
 
 **CSS classes you can use:**
 
 ```css title="extra.css"
---8<-- "https://git.blendos.co/asterisk/blend-docs-material/-/raw/main/docs/assets/css/extra.css:classes"
+--8<-- "docs/assets/css/extra.css:classes"
 ```
 
 You can apply CSS to a whole block like this:
@@ -635,15 +753,15 @@ Hi this text is <span class="yellow">**yellow**</span> but this text is normal!
 :material-star-box: Tables too:
 
 ```md
-| 1 | 2 |
-|---------|-----------|
-| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a |
+| 1                                    | 2   |
+| ------------------------------------ | --- |
+| I HATE MARKDOWN TABLES 󰩳 { .yellow } | a   |
 ```
 <div class="result" markdown>
 
-| 1 | 2 |
-|---------|-----------|
-| I HATE MARKDOWN TABLES :material-star-box: { .yellow } | a |
+| 1                                                      | 2   |
+| ------------------------------------------------------ | --- |
+| I HATE MARKDOWN TABLES :material-star-box: { .yellow } | a   |
 </div>
 
 :material-star-box: as well as lists:

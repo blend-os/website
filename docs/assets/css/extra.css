@@ -1,7 +1,11 @@
+/* code font */
+
 @font-face {
     font-family: "FiraCodeNerd";
     src: url("../fonts/FiraMonoNerdFontMono-Regular.otf");
 }
+
+/* text font */
 
 /* archivo-100 - latin */
 @font-face {
@@ -201,6 +205,8 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* colors */
+
 :root>* {
     /*
 	https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_colors.scss
@@ -217,10 +223,14 @@
 
 /* Credit to https://ctt.cx and https://facelessuser.github.io/pymdown-extensions/ */
 
+/* neon header */
+
 [data-md-color-scheme="slate"] .md-header {
     background-color: #1e2029;
     border-bottom: 0.10rem solid var(--md-accent-fg-color);
 }
+
+/* colored background for nav options */
 
 [data-md-color-scheme="slate"] .md-tabs {
     border-bottom-left-radius: 10px !important;
@@ -228,10 +238,14 @@
     background-color: #263f3f;
 }
 
-[data-md-color-scheme="slate"] .md-tabs__link {
-    /* color: var(--md-primary-fg-color--light); */
-    /* color: #e9be91; */
+/* center nav */
+
+.md-tabs__list:first-child {
+    /* margin-left: 350px;*/
+    margin-left: 28%;
 }
+
+/* light mode */
 
 [data-md-color-scheme="default"] .md-header {
     background-color: white;
@@ -244,11 +258,15 @@
     background-color: white;
 }
 
+/* move level 2 items further out */
+
 .md-nav[data-md-level="2"]>.md-nav__list {
     margin-left: 1.45em;
     padding-left: 0.75em;
     position: relative;
 }
+
+/* colored bar before level 2 items */
 
 .md-nav[data-md-level="2"]>.md-nav__list::before {
     content: "";
@@ -271,6 +289,8 @@
     }
 }
 
+/* colored headers */
+
 .md-typeset h1 {
     color: var(--md-typeset-a-color);
     font-weight: 700;
@@ -286,6 +306,8 @@
 }
 */
 
+/* sticky admonition class */
+
 .md-typeset .follow > summary {
     position: sticky;
     top: 48px;
@@ -294,7 +316,7 @@
 }
 
 .noJs {
-    display: none
+    display: none;
 }
 
 .md-typeset .admonition.image,
@@ -316,10 +338,13 @@
 
 
 
+/* top bar on footer */
 
 .md-footer {
   border-top: 0.10rem solid var(--md-accent-fg-color);
 }
+
+/* shrink footer */
 
 .md-footer__link {
     margin-bottom: 0 !important;
@@ -350,6 +375,14 @@
     filter: brightness(0) saturate(100%) invert(63%) sepia(95%) saturate(356%) hue-rotate(115deg) brightness(85%) contrast(88%);;
 }
 
+.icon-link-misc {
+    filter: invert(60%) sepia(73%) saturate(415%) hue-rotate(117deg) brightness(91%) contrast(94%);
+}
+
+.icon-link {
+    filter: brightness(0) saturate(100%) invert(60%) sepia(73%) saturate(415%) hue-rotate(117deg) brightness(91%) contrast(94%);
+}
+
 .info {
     color: #00B8D4;
 }
@@ -372,6 +405,10 @@
 
 .red {
     color: #ff0000;
+}
+
+.mt-1 {
+    margin-top: 0.1em;
 }
 
 .mega {
@@ -423,6 +460,7 @@
 }
 
 /* --8<-- [end:classes] */
+/* code admonition */
 
 :root {
     --md-admonition-icon--code: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="m11.28 3.22l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326a.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275a.749.749 0 0 1 .734.215m-6.56 0a.751.751 0 0 1 1.042.018a.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275a.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z" /></svg>')
@@ -453,6 +491,7 @@
     mask-image: var(--md-admonition-icon--code);
 }
 
+/* collapse admonition */
 
 :root {
     --md-admonition-icon--collapse: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 12h16v2H4zm0-3h16v2H4zm12-5l-4 4l-4-4h3V1h2v3zM8 19l4-4l4 4h-3v3h-2v-3z" /></svg>')
@@ -482,6 +521,8 @@
     -webkit-mask-image: var(--md-admonition-icon--collapse);
     mask-image: var(--md-admonition-icon--collapse);
 }
+
+/* video admonition */
 
 :root {
     --md-admonition-icon--video: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z" /></svg>')

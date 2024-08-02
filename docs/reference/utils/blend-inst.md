@@ -5,7 +5,7 @@ description: "Reference for our installer"
 
 <div class="grid cards" markdown>
 
--   # :material-cog-box: blend-inst ![v4 badge](../../assets/img/v4.svg){ .off-glb }
+-   # :material-cog-box: <span class="notranslate">blend-inst</span> ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
     <em>Our custom backend for [`jade-gui`](https://github.com/blend-os/jade-gui){ target="_blank" rel="noopener noreferrer" }.</em>
@@ -28,7 +28,7 @@ description: "Reference for our installer"
 
 </div>
 
-!!! question "What is blend-inst?"
+!!! question "What is <span class="notranslate">blend-inst</span>?"
     [`blend-inst`](https://github.com/blend-os/blend-inst){ target="_blank" rel="noopener noreferrer" } is a rewrite of [Jade](https://git.getcryst.al/crystal/software/jade){ target="_blank" rel="noopener noreferrer" } (from Crystal Linux) in Python. It has also been reworked to fit our new install style (only do partitioning and system install in the liveCD) and to use the filesystem of the liveCD, instead of painstakingly bootstrapping a fresh filesystem to the installed system.
 
     After the user sets up their install in Jade's GUI, Jade calls `blend-inst`, which does partitioning and installing, before rebooting and calling `blend-postinst`, which sets up a basic system with GNOME's welcome screen, where the user sets things like their timezone and makes an account.

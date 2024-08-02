@@ -64,16 +64,17 @@ optimize-job:
     - main
 
 deploy-job:
-  image: yinanzhou/wrangler:latest
+  image: jfxs/wrangler:latest
   stage: deploy
   needs: 
     - job: optimize-job
       artifacts: true
   variables:
-    PROJECT_NAME: blendos
+    PROJECT_NAME: "blendos"
+    WRANGLER_SEND_METRICS: "false"
   dependencies:
   - optimize-job
   script:
-  - wrangler pages deploy site/ --project-name $PROJECT_NAME
+  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA
   only:
-    - main
+  - main

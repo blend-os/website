@@ -6,6 +6,7 @@ categories:
   - stable
 authors:
   - rs2009
+comments: true
 ---
 
 # blendOS v2 "Avial" is now available
@@ -17,6 +18,8 @@ Check out our video for a quick overview of all the new features: [https://youtu
 Download: [https://github.com/blend-os/blendOS/releases/tag/23.04](https://youtu.be/_OpKeqTtY1s)
 
 Discord: [https://discord.gg/m9JPmZB8Kd](https://youtu.be/_OpKeqTtY1s)
+
+<!-- more -->
 
 ## Release notes
 

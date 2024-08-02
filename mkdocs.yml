@@ -30,8 +30,8 @@ theme:
     - navigation.sections
     - navigation.prune
     - navigation.indexes
-    - navigation.instant
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.progress
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
@@ -60,7 +60,7 @@ theme:
         icon: material/weather-night
         name: Switch to dark mode
 
-copyright: "&copy; 2024 blendOS contributors. All content under <a href='https://creativecommons.org/licenses/by-sa/4.0/' target='_blank' rel='noopener noreferrer'>CC BY-SA 4.0 International</a>."
+copyright: '&copy; 2024 blendOS contributors. All content under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer license">CC BY-SA 4.0</a> unless otherwise noted.'
 watch:
   - "includes"
   - "overrides"
@@ -70,21 +70,30 @@ extra:
   analytics:
     provider: custom
   social:
-    - icon: fontawesome/solid/earth-americas
-      link: https://blendos.co
-      name: blendOS Website
     - icon: simple/x
       link: https://x.com/@blend_os
       name: blendOS X Feed
+    - icon: simple/mastodon
+      link: https://fosstodon.org/@blendOS
+      name: blendOS on Mastodon
     - icon: fontawesome/brands/discord
       link: https://discord.gg/fvMpV8ZNxD
       name: blendOS Discord
+    - icon: material/forum
+      link: https://www.answeroverflow.com/c/1068192254365282405
+      name: blendOS on AnswerOverflow
     - icon: fontawesome/brands/telegram
       link: https://t.me/blendos
       name: blendOS Telegram
     - icon: simple/matrix
       link: https://matrix.to/#/#blendos:matrix.org
       name: blendOS Matrix Room
+    - icon: simple/reddit
+      link: https://reddit.com/r/BlendOS
+      name: blendOS Subreddit
+    - icon: simple/lemmy
+      link: https://lemmy.world/c/blendos
+      name: blendOS Sublemmy
     - icon: simple/uptimekuma
       link: https://status.asterisk.lol/status/blendos
       name: blendOS Status
@@ -93,7 +102,7 @@ extra:
       name: blendOS GitHub
     - icon: fontawesome/brands/gitlab
       link: https://git.blendos.co/blendos
-      name: blendOS GitLab CE Instance
+      name: blendOS GitLab Instance
 
 markdown_extensions:
   - abbr
@@ -129,7 +138,7 @@ markdown_extensions:
       url_max_size: 33554432
       url_timeout: 10
       auto_append:
-        - includes/abbreviations.md
+        - includes/extra.md
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -178,21 +187,27 @@ markdown_extensions:
 
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - glightbox
   - macros
-  - blog
+  - blog:
+      post_date_format: medium
+      post_excerpt: required
   - redirects:
       redirect_maps: 
-        'docs/intro.md': 'index.md'
+        'docs/intro.md': 'install/post-install/intro.md'
+        'intro.md': 'install/post-install/intro.md'
         'docs/index.md': 'index.md'
         'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
+        'docs/utilities/user.md': 'reference/utils/user.md'
         'docs/faq.md': 'faq.md'
         'docs/category/installation.md': 'install/README.md'
         'docs/installation/normal-pc.md': 'install/normal-pc.md'
         'docs/installation/mac-t2.md': 'install/t2.md'
         'docs/installation/container.md': 'install/post-install/container-guide.md'
         'contribution.md': 'contributing.md'
+        'install/post-install/arch-user-guide.md': 'install/post-install/intro.md'
 
   - group:
       enabled: !ENV CI 
@@ -224,7 +239,8 @@ plugins:
         - git-revision-date-localized:
             type: timeago
         - rss:
-            match_path: blog/posts/.* 
+            match_path: blog/posts/.*
+            comments_path: "#__comments" 
             date_from_meta:
               as_creation: date
             categories:
@@ -258,7 +274,7 @@ nav:
      - T2 Mac: install/t2.md
      - Post-Installation:
        - Post-Installation: install/post-install/README.md
-       - Guide for Arch users: install/post-install/arch-user-guide.md
+       - Introduction to blendOS: install/post-install/intro.md
        - Container Management: install/post-install/container-guide.md
   - Reference:
       - Reference: reference/README.md
@@ -268,6 +284,7 @@ nav:
         - Utilities: reference/utils/README.md
         - akshara: reference/utils/akshara.md
         - bpkg: reference/utils/bpkg.md
+        - user: reference/utils/user.md
         - blend-inst: reference/utils/blend-inst.md
       - Files:
         - Files: reference/configs/README.md

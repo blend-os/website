@@ -33,13 +33,13 @@ glightbox: false
 <br>
 [**Noa Himesaka**](https://noa.codes){ target="_blank" rel="noopener noreferrer" }
 <br>
-*T2 Linux*
+*T2 Branch Developer*
 
 ![SvGaming](https://github.com/svgaming234.png){ .circle width=200px }
 <br>
 [**Sven Kovač**](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" }
 <br>
-*Screenshots, BPKG dev*
+*Screenshots, BPKG Developer*
 <br><br>
 
 ![Ray](https://github.com/rayvermey.png){ .circle width=200px }

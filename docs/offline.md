@@ -8,7 +8,7 @@ description: Read our docs offline!
 !!! warning "You will need to update your offline copy manually."
     The version (hash) of your copy is shown in a bar at the top of the page:
 
-    ![offline-banner](assets/img/offline-banner.png){ width=500px }
+    ![offline-banner](assets/img/offline-banner.png){ width=500 }
 
     Compare this hash to the latest commit hash (on the right) in the [commit list](https://git.blendos.co/blendOS/website/-/commits/main){ target="_blank" rel="noopener noreferrer" } to see if your version is up to date.
 

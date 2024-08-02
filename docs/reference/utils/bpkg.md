@@ -109,11 +109,6 @@ bpkg
 
 Shows a help page.
 
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:help"
-    ```
-
 #### :material-package-variant-plus: Install a package
 
 ```bash
@@ -121,11 +116,6 @@ bpkg install <package>
 ```
 
 This will search for the package in your installed distros and install it from the first package manager it finds by your order of preference in [`bpkg.yaml`](#bpkgyaml). Use `user install <container> <package>` to install to a specific container.
-
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:install"
-    ```
 
 #### :material-package-variant-remove: Remove a package
 
@@ -135,10 +125,6 @@ bpkg remove <package>
 
 This will remove a package from the first container in [`bpkg.yaml`](#bpkgyaml) the package is found in. Use `user remove <container> <package>` to remove from a specific container.
 
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:remove"
-    ```
 #### :material-package-down: Update packages
 
 ```bash
@@ -146,11 +132,6 @@ bpkg update
 ```
 
 This will update all the packages in all your containers. If `update_flatpak` is set to <span class="green">true</span> in the config, this will also update your Flatpaks.
-
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:update"
-    ```
 
 #### :octicons-search-16: Package Search
 
@@ -160,20 +141,12 @@ bpkg search <package>
 
 You can search for a package in all of your containers.
 
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:search"
-    ```
 
 #### :material-clipboard-text: Container list
 
 ```bash
 bpkg list-containers
 ```
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:list"
-    ```
 
 Lists all containers on your system (even if they aren't in the config).
 
@@ -189,13 +162,8 @@ This will pull all your containers and generate a new config file, overwriting y
 
 {{ inlinealert("red", ":material-lightning-bolt:", "Danger", "YOU WILL LOSE ALL YOUR CHANGES!" ) }}
 
-??? code "Source"
-    ```py title="bpkg.py" linenums="1"
-    --8<-- "https://git.blendos.co/blendOS/bpkg/-/raw/main/bpkg:overwrite"
-    ```
-
 ## :octicons-container-24: Container List
 
 You can view the container list here:
 
-[ View Container List :octicons-arrow-right-16:](../container-list.md){ .md-button }
+[View Container List :octicons-arrow-right-16:](../container-list.md){ .md-button }

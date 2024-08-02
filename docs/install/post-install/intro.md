@@ -1,10 +1,10 @@
 ---
 icon: material/list-status
-description: "Post-install guide for advanced users, or Arch Linux users."
+description: "Post-install guide for new users, advanced users, and Arch Linux users."
 ---
 
 
-# :material-list-status: Arch User Guide
+# :material-list-status: Introduction to blendOS
 
 !!! info "This is not just for new users"
     This article describes how you can get around blendOS and summarizes blendOS's core functionality in a concise manner, making it easy to decide if blendOS is for you. (Refer to the table of contents to the right if you're on a computer and the table is visible to you. On mobile, open the hamburger menu, and click the table of contents icon.)
@@ -13,11 +13,22 @@ This guide will quickly familiarize you with how you can get around blendOS as a
 
 ## :material-file: Default [`system.yaml`](../../reference/configs/system.md)
 
-Begin by opening the [:material-file-star: `system.yaml`](../../reference/configs/system.md) file (at the / of your main partition).
+Begin by opening the [:material-file-star: `system.yaml`](../../reference/configs/system.md) file (at the / of your main partition) using a text editor.
 
 ```bash
 sudo nano /system.yaml
 ```
+??? abstract "`nano` controls"
+    | :material-keyboard: Keybind | :material-location-enter: Action |
+    | :-------------------- | -------------------------------- |
+    | ++left+right+up+down++ | Move |
+    | Letter/number/symbol keys | Type |
+    | ++enter++ | Newline |
+    | ++ctrl+x++ | Save and Quit |
+    | ++ctrl+o++ | Save |
+    | ++ctrl+w++ | Find |
+
+    More keybinds are specified at the bottom of the `nano` window.
 
 You should be greeted by a file with contents similar to the following (there might be a few differences here and there, of course):
 
@@ -34,7 +45,7 @@ packages:
     - 'nvidia-dkms'
 ```
 
-Wondering where they came from? These lines were appended automatically to the end of the [:material-file-star: `system.yaml`](../../reference/configs/system.md) as part of the installation process, as the installer detected the prescence of an NVIDIA GPU and chose to install the latest proprietary driver for NVIDIA GPUs.
+Wondering where they came from? These lines were appended automatically to the end of the [:material-file-star: `system.yaml`](../../reference/configs/system.md) as part of the installation process, as the installer detected the presence of an NVIDIA GPU and chose to install the latest proprietary driver for NVIDIA GPUs.
 
 ## :material-package: Arch Linux packages
 
@@ -50,14 +61,21 @@ packages:
     # if you're on a system with an NVIDA GPU, keep the 'nvidia-dkms' package unless you'd like to remove the proprietary NVIDIA driver
 ```
 
-!!! warning "Use spaces for indentation in `system.yaml`, not tabs!"
+!!! warning "Use spaces for indentation in `system.yaml`!"
     The YAML format doesn't allow tabs, and only spaces are allowed for indentation. It is also worth noting that like Python, indentation is mandatory, and is integral to parsing.
 
-Now run `sudo akshara update`, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.
+Now run `sudo akshara update` in the terminal, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.
+
+!!! info "Updating"
+    While we mention `sudo akshara update` everywhere in this guide, note that you can also update graphically, using the **System** app.
+
+    ![system-update](../../assets/img/system-update.png)
+
+
 
 ## :material-arrow-up-bold-hexagon-outline: Updating your computer
 
-It is advised that you run `sudo akshara update` every few days to keep your system in sync with the Arch Linux repositories and AUR. Of course, you also have to run `sudo akshara update` every time you modify [:material-file-star: `system.yaml`](../../reference/configs/system.md) for your system to reflect any changes in that file. The System application on blendOS also presents an option to 'update your system' (which runs `sudo akshara update`) under the System tab, if you prefer a UI.
+It is advised that you run `sudo akshara update` every few days to keep your system in sync with the Arch Linux repositories and AUR. Of course, you also have to run `sudo akshara update` every time you modify [:material-file-star: `system.yaml`](../../reference/configs/system.md) for your system to reflect any changes in that file. The **System** application on blendOS also presents an option to 'update your system' (which runs `sudo akshara update`) under the **System** tab, if you prefer a UI.
 
 ## :material-arch: AUR packages
 
@@ -94,7 +112,7 @@ This line in [:material-file-star: `system.yaml`](../../reference/configs/system
 
 ## :octicons-container-16: Containers (apps from other distros)
 
-Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the System app, but we will be using the `user` CLI utility in this guide. Initializing Android app support will not be discussed here either, as it is primarily for GUI (Wayland) users and can easily be initialized through the System app.
+Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the **System** app, but we will be using the [`user`](../../reference/utils/user.md) CLI utility in this guide. **For GUI instructions and Waydroid information, you can consult the [:material-truck-cargo-container: Container Management](./container-guide.md) guide.**
 
 ### :material-truck-cargo-container: Container management
 
@@ -102,7 +120,7 @@ Now, you might want to install applications from other distributions like Ubuntu
 
 --8<-- "docs/reference/container-list/v4.md"
 
-#### :octicons-package-16: Creating containers
+#### :material-plus-box: Creating containers
 
 Here's how you can create a Debian (`debian`, as shown in the above table) container named `my-first-container`.
 
@@ -110,16 +128,18 @@ Here's how you can create a Debian (`debian`, as shown in the above table) conta
 user create-container my-first-container debian
 ```
 
+!!! warning "Containers cannot be renamed!"
+    `blend` does not currently support renaming containers, so if you'd like to continue using this container, it is advised you name it something more precise than `my-first-container`.
+
 After its creation is complete, you'll find that all of its binaries will be available on the host with the suffix .my-first-container. For example:
 
 * **apt** in the container -> **apt.my-first-container** on the host
 * **dpkg** in the container -> **dpkg.my-first-container** on the host
 * **bash** in the container -> **bash.my-first-container** on the host
 
-!!! warning "Containers cannot be renamed."
-    `blend` does not currently support renaming containers, so if you'd like to continue using this container, it is advised you name it something more precise than `my-first-container`.
 
-#### :octicons-package-dependencies-16: Removing containers
+
+#### :material-minus-box: Removing containers
 
 Just run:
 
@@ -127,9 +147,9 @@ Just run:
 user remove-container my-first-container
 ```
 
-#### :octicons-package-dependents-16: Entering containers
+#### :material-arrow-right-box: Entering containers
 
-There are multiple ways in which you can enter a container. The first one is to use user to enter a container, as shown below (terminal window on the host):
+There are multiple ways in which you can enter a container. The first one is to use [`user`](../../reference/utils/user.md) to enter a container, as shown below (terminal window on the host):
 
 ```bash
 user enter my-first-container
@@ -139,7 +159,7 @@ The second, less common one, would be to run `bash.my-first-container` in a regu
 
 ### :octicons-arrow-switch-16: Associations
 
-#### :material-plus: Creating associations
+#### :material-link-variant-plus: Creating associations
 
 Getting tired of running apt.my-first-container all the time? You can shorten it to apt by simply running the command below (in a terminal window on the host):
 
@@ -149,7 +169,7 @@ user associate apt my-first-container
 
 You can now install a package with `sudo apt install [pkg]` from a regular shell.
 
-#### :material-minus: Deleting associations
+#### :material-link-variant-minus: Deleting associations
 
 Just run:
 
@@ -161,19 +181,21 @@ user dissociate apt
 
 #### :material-package-variant-plus: Installing packages
 
-Aside from entering a shell, calling the container's package manager, or using associations, you can also simply use `user` to install packages within a container:
+Aside from entering a shell, calling the container's package manager, or using associations, you can also simply use [`user`](../../reference/utils/user.md) to install packages within a container:
 
 ```bash
 user install my-first-container hello # 'hello' is the name of the package
 ```
 
-#### :material-package-variant-closed-minus: Removing packages
+#### :material-package-variant-remove: Removing packages
 
-Similarly, you can also remove packages with `user`:
+Similarly, you can also remove packages with [`user`](../../reference/utils/user.md):
 
 ```bash
 user remove my-first-container hello
 ```
 
 
-This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to join our [Discord server](https://discord.gg/fvMpV8ZNxD){ target="_blank" relk="noopener noreferrer" } if you need help or encounter any bugs though!
+This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to [reach out to us](../../index.md#footer) if you need help or encounter any bugs though!
+
+*[reach out to us]: See those social icons at the bottom right?

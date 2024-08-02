@@ -30,3 +30,4 @@ The ISO will appear in the `out` folder.
     ```sh
     sudo rm -rf ./out ./workdir
     ```
+    <small>\* `sudo` is required as `archiso` creates these folders as root.</small>

@@ -59,7 +59,7 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
 
     If you need to run an ARM app, you will need to install `libhoudini` or `libndk`.
 
-    You can do this by setting the following in your [:material-file-star: `system.yaml`](../../reference/configs/system.md):
+    You can do this by setting the following in your [:material-file-star: `system.yaml`](../../reference/configs/system.md) and updating:
     
     ??? question "`libhoudini` or `libndk`?"
         `libhoudini` is generally recommended for Intel CPUs, while `libndk` is generally recommended for AMD CPUs.
@@ -67,14 +67,34 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
         However, some apps will work on one translation layer and not another. You may need to try both if a game does not work or suffers from bad performance.
 
     ```yaml title="system.yaml"
-    [...] # Rest of file
-
+    packages:
+      - 'lzip'
+      - 'python-requests'
+      - 'python-tqdm'
+      - 'sqlite'
+      - 'python-dbus'
+    
     aur-packages:
-      - 'waydroid-script-git'
+      - 'python-inquirerpy'
     
     commands:
-      - 'cd /opt/waydroid-script/ && waydroid-extras install libhoudini' # replace libhoudini with libndk if on an AMD CPU
+      - 'git clone https://github.com/casualsnek/waydroid_script.git /opt/waydroid-script/'
+      - 'python /opt/waydroid-script/main.py install libhoudini' # replace libhoudini with libndk if on an AMD CPU
     ```
+
+
+
+Some useful Waydroid CLI commands are:
+
+| :fontawesome-solid-terminal: Command | :fontawesome-solid-gear: Function |
+| -------------------- | -------------------------------- |
+| `waydroid show-full-ui` | Start a full Android session |
+| `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
+| `waydroid session start` | Resumes Waydroid |
+| `waydroid shell` | Android shell |
+| `waydroid app install file.apk` | Installs an APK (Mostly redundant with our package installer) |
+| `waydroid app launch com.foo.bar` | Open an Android app (you can also do this from your DE's app launcher) |
+| `waydroid log` | Show the Waydroid log |
 
 ??? abstract "ADB usage"
     After getting your Android IP from **Settings > About**, use this adb command:
@@ -82,19 +102,6 @@ After Waydroid initializes, you will see options to install [**:simple-fdroid: F
     ```
     adb connect <IP>:5555
     ```
-
-Some useful Waydroid CLI commands are:
-
-| Command | Function |
-| -------------------- | -------------------------------- |
-| `waydroid show-full-ui` | Start a full Android session |
-| `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
-| `waydroid session start` | Resumes Waydroid |
-| `waydroid shell` | Android shell |
-| `waydroid app install file.apk` | Mostly redundant with our package installer, but useful |
-| `waydroid app launch com.foo.bar` | Open an Android app (you can also do this from your DE's app launcher) |
-| `waydroid log` | Show the Waydroid log |
-
 
 You can learn more about Waydroid and find more guides and commands at https://docs.waydro.id{ target="blank" rel="noopener noreferrer" }.
 
@@ -112,6 +119,8 @@ You can learn more about Waydroid and find more guides and commands at https://d
 ## :material-refresh: System Rebuild
 
 Clicking the `Update` button will start a rebuild of your system (same as `sudo akshara update`).
+
+![system-update](../../assets/img/system-update.png)
 
 <div class="annotate" markdown>
 

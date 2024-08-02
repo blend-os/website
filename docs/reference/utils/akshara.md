@@ -5,7 +5,7 @@ description: "Reference for akshara"
 
 <div class="grid cards" markdown>
 
--   # :material-hard-hat: akshara ![v4 badge](../../assets/img/v4.svg){ .off-glb }
+-   # :material-hard-hat: <span class="notranslate">akshara</span> ![v4 badge](../../assets/img/v4.svg){ .off-glb }
     -------
 
     <em>The system builder.</em>
@@ -29,7 +29,7 @@ description: "Reference for akshara"
 
 </div>
 
-!!! question "What is akshara?"
+!!! question "What is <span class="notranslate">akshara</span>?"
     akshara is a tool for turning a config file (`system.yaml`) into a fully built system. It can also be used to update the built system.
 
 ## :material-clipboard-text: Reference
