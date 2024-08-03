@@ -29,9 +29,13 @@ description: "A CLI container management utility"
 ### :material-plus-box: Create a container
 
 ```bash
-user create-container <CONTAINERNAME> <CONTAINERTYPE>
+user create-container <CONTAINERNAME> <DISTRO>
 ```
-Creates a container of the selected container type.
+Creates a container with the selected distro.
+
+`<DISTRO>` can be one of the distro IDs specified below:
+
+--8<-- "docs/reference/container-list/v4.md"
 
 ### :material-minus-box: Remove a container
 
