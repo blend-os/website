@@ -17,9 +17,9 @@ description: "Reference for bpkg"
 
     --------
     ```title="Config file location"
-    󱂵 ~
-    └── 󰉋 .config
-        └── 󰈮 bpkg.yaml
+    📁 ~
+    └── 📁 .config
+        └── ⭐ bpkg.yaml
     ```
 
     ------

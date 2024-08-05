@@ -20,8 +20,8 @@ description: "Reference for akshara"
 
     --------
     ```title="Config file location"
-    󰉋 /
-    └── 󰈮 system.yaml
+    📁 /
+    └── ⭐ system.yaml
     ```
 
     ------
