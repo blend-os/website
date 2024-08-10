@@ -17,3 +17,4 @@
 *[WYSIWYG]: What You See Is What You Get, i.e. Microsoft Word
 *[SaaS]: Software as a Service, i.e. Creative Cloud
 *[APK]: Android Package
+*[CJK]: Chinese, Japanese, Korean, Vietnamese
