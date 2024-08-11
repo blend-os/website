@@ -551,7 +551,6 @@ commands:
     ```yaml title="system.yaml"
     packages:
       - 'noto-fonts-cjk'
-      - 'ttf-hannom' # for vietnamese
     ```
 
     **Arabic**:
