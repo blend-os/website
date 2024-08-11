@@ -546,6 +546,49 @@ commands:
   - 'locale-gen'
 ```
 
+!!! warning "Some languages need additional fonts!"
+    **CJK**:
+    ```yaml title="system.yaml"
+    packages:
+      - 'noto-fonts-cjk'
+    ```
+
+    **Arabic**:
+    ```yaml title="system.yaml"
+    packages:
+      - 'noto-fonts'
+    ```
+
+    **Bengali & Indic**:
+    ```yaml title="system.yaml"
+    aur-packages:
+      - 'ttf-freebanglafont'
+    ```
+
+    **Cyrillic** (i.e. Russian):
+    ```yaml title="system.yaml"
+    aur-packages:
+      - 'ttf-paratype'
+    ```
+
+    **Hebrew**:
+    ```yaml title="system.yaml"
+    aur-packages:
+      - 'opensiddur-hebrew-fonts'
+    ```
+
+    **Khmer**:
+    ```yaml title="system.yaml"
+    packages:
+      - 'ttf-khmer'
+    ```
+
+    **Persian**:
+    ```yaml title="system.yaml"
+    aur-packages:
+      - 'ttf-x2'
+    ```
+
 Save the file and [update your system](#what-is-updating), then reboot.
 
 Now, set your language. In the default GNOME desktop, you need to go to **Settings** > **System** > **Region and Language**.
@@ -560,7 +603,11 @@ Now, click the :fontawesome-solid-ellipsis-vertical: icon to show all languages.
 
 ![lang-gnome-2](assets/img/lang-gnome-2.png)
 
+??? failure "My language still isn't there!"
+    If you've installed the needed fonts for your language and it still won't show up, validate that your `/etc/locale.gen` and `/system.yaml` files are correctly formatted. If they are properly formatted, manually find and install a font for your language, then reboot.
+
 Find your newly added language and click it, then **Select**. It will now show a banner at the top of the settings window saying that you need to log out to apply language settings. Click the **Log Out** button to do so.
+
 
 ![lang-gnome-banner](assets/img/lang-gnome-banner.png)
 

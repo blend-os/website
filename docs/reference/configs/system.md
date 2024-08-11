@@ -15,8 +15,8 @@ description: "system.yaml config reference"
 
     --------
     ```title="File Location"
-    󰉋 /
-    └── 󱀺 system.yaml
+    📁 /
+    └── ⭐ system.yaml
     ```
 
     --------
@@ -150,20 +150,20 @@ Custom repositories in `system.yaml` are quite easy.
 If we use the [`arch-mact2`](https://mirror.funami.tech/arch-mact2/){ target="_blank" rel="noopener noreferrer" } repo as an example, the repo folder structure is like this:
 
 ``` title="mirror.funami.tech"
-󰉋 /
-└── 󰉋 arch-mact2
-    └── 󰉋 os
-        └── 󰉋 x86_64
+📁 /
+└── 📁 arch-mact2
+    └── 📁 os
+        └── 📁 x86_64
             └── <repo files>
 ```
 
 We can replace some of these with values.
 
 ``` title="mirror.funami.tech"
-󰉋 /
-└── 󰉋 $repo
-    └── 󰉋 os
-        └── 󰉋 $arch
+📁 /
+└── 📁 $repo
+    └── 📁 os
+        └── 📁 $arch
             └── <repo files>
 ```
 

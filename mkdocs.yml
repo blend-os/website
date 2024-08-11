@@ -98,7 +98,7 @@ extra:
       link: https://status.asterisk.lol/status/blendos
       name: blendOS Status
     - icon: fontawesome/brands/github
-      link: https://github.com/blend_os
+      link: https://github.com/blend-os
       name: blendOS GitHub
     - icon: fontawesome/brands/gitlab
       link: https://git.blendos.co/blendos
