@@ -44,7 +44,7 @@ user remove-container <CONTAINERNAME>
 ```
 Removes a container.
 
-### :material-arrow-right-box: Entering a container
+### :material-arrow-right-box: Enter a container
 
 ```bash
 user shell <CONTAINERNAME>
