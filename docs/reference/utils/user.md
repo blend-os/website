@@ -47,7 +47,7 @@ Removes a container.
 ### :material-arrow-right-box: Entering a container
 
 ```bash
-user enter <CONTAINERNAME>
+user shell <CONTAINERNAME>
 ```
 Spawns a shell in the container.
 
