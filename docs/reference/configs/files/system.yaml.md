@@ -167,7 +167,7 @@ commands: # (8)!
     
     **Type:** array
 
-    A list of commands to be run as `root` at system build.
+    A list of commands to be run as `root` during build (after package and AUR package installations have finished).
 
 9.  :material-cog-box: **`user-services`**
     
