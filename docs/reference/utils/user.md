@@ -44,10 +44,10 @@ user remove-container <CONTAINERNAME>
 ```
 Removes a container.
 
-### :material-arrow-right-box: Entering a container
+### :material-arrow-right-box: Enter a container
 
 ```bash
-user enter <CONTAINERNAME>
+user shell <CONTAINERNAME>
 ```
 Spawns a shell in the container.
 

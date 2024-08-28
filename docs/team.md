@@ -16,7 +16,7 @@ glightbox: false
 
 <div class="grid" markdown>
 
-![Rudra](https://github.com/RudraSwat.png){ .circle width=200px }
+![Rudra](assets/img/rudra.png){ .circle width=200px }
 <br>
 [**Rudra Saraswat**](https://about.ruds.io){ target="_blank" rel="noopener noreferrer" }
 <br>
@@ -29,7 +29,7 @@ glightbox: false
 *Docs & Infrastructure*
 <br><br>
 
-![Noa](https://noa.codes/assets/img/noahimesaka-256px.png){ .circle width=200px }
+![Noa](https://github.com/NoaHimesaka1873.png){ .circle width=200px }
 <br>
 [**Noa Himesaka**](https://noa.codes){ target="_blank" rel="noopener noreferrer" }
 <br>

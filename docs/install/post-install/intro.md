@@ -64,7 +64,7 @@ packages:
 !!! warning "Use spaces for indentation in `system.yaml`!"
     The YAML format doesn't allow tabs, and only spaces are allowed for indentation. It is also worth noting that like Python, indentation is mandatory, and is integral to parsing.
 
-Now run `sudo akshara update` in the terminal, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track or kernel (required with the `custom` track) under the `packages` section.
+Now run `sudo akshara update` in the terminal, and reboot your computer once it completes. On the next boot, you should find the Chromium browser installed on your computer, as an Arch Linux package. You can even add a desktop environment (useful with the {{ track("blendos-base") }} track) or kernel (required with the `custom` track) under the `packages` section.
 
 !!! info "Updating"
     While we mention `sudo akshara update` everywhere in this guide, note that you can also update graphically, using the **System** app.
@@ -152,7 +152,7 @@ user remove-container my-first-container
 There are multiple ways in which you can enter a container. The first one is to use [`user`](../../reference/utils/user.md) to enter a container, as shown below (terminal window on the host):
 
 ```bash
-user enter my-first-container
+user shell my-first-container
 ```
 
 The second, less common one, would be to run `bash.my-first-container` in a regular shell.
@@ -196,6 +196,6 @@ user remove my-first-container hello
 ```
 
 
-This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to [reach out to us](../../index.md#footer) if you need help or encounter any bugs though!
+This is all you need to know to get around blendOS using the command-line, and you should not have any trouble managing your system now. Feel free to [reach out to us](../../index.md) if you need help or encounter any bugs though!
 
 *[reach out to us]: See those social icons at the bottom right?

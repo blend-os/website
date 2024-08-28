@@ -2,7 +2,7 @@ authors:
   rs2009:
     name: Rudra Saraswat
     description: Project Lead
-    avatar: https://github.com/RudraSwat.png
+    avatar: assets/img/rudra.png
     url: https://about.ruds.io
   asterisk:
     name: Asterisk
@@ -27,6 +27,6 @@ authors:
   noa:
     name: Noa Himesaka
     description: T2 Branch Developer
-    avatar: https://noa.codes/assets/img/noahimesaka-256px.png
+    avatar: https://github.com/NoaHimesaka1873.png
     url: https://noa.codes
   
