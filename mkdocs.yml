@@ -289,5 +289,9 @@ nav:
       - Files:
         - Files: reference/configs/README.md
         - system.yaml: reference/configs/system.md
+      - Nerdy Stuff:
+        - Nerdy Stuff: reference/nerdy-stuff/README.md
+        - Immutability: reference/nerdy-stuff/immutability.md
+        - Atomicity: reference/nerdy-stuff/atomicity.md
   - Blog:
       - blog/index.md

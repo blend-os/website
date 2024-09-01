@@ -43,5 +43,13 @@ Every single configurable bit of blendOS.
 
     [Get started :octicons-arrow-right-16:](configs/README.md){ .md-button data-umami-event="Files Button" }
 
+-   :material-glasses:{ .lg .middle } __Nerdy Stuff__
+    
+    ---
+
+    Nerdy technical details.
+
+    [Get Started :octicons-arrow-right-16:](nerdy-stuff/README.md){ .md-button data-umami-event="Nerdy Button" }
+
 
 </div>
