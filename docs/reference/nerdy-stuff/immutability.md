@@ -5,6 +5,8 @@ description: How blendOS's immutability works
 
 # :material-layers: Immutability
 
+!!! warning "This is a work in progress!"
+
 blendOS's immutability is layered, like any other immutable distro. Here's how it works:
 
 (mermaid chart here)

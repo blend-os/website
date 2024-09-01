@@ -5,6 +5,8 @@ description: Technical details for atomicity and updates
 
 # :material-atom: Atomicity
 
+!!! warning "This is a work in progress!"
+
 First, an important detail:
 
 - Updates are **indivisible transactions**. They must fail or succeed as one, they can never be partially complete.
