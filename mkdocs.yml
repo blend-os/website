@@ -30,8 +30,8 @@ theme:
     - navigation.sections
     - navigation.prune
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.progress
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
