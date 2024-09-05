@@ -82,10 +82,10 @@ hide:
 
     ---
     
-    Now compare the checksum you're shown and the correct checksum in the file you downloaded earlier. Do they match? 
+    Now compare the checksum you're shown and the correct checksum in the file you downloaded earlier. Are they the same? 
     
-    - If they do, your ISO is fine. **Continue with installation.**
-    - If not, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
+    - If they are, your ISO is fine. **Continue with installation.**
+    - If aren't, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
 
 <script>
 var xhr6 = new XMLHttpRequest();
