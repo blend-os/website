@@ -16,7 +16,7 @@ theme:
     edit: material/pencil
     view: material/eye
     admonition:
-      tip: fontawesome/solid/lightbulb
+      tip: material/lightbulb-on
       danger: material/lightning-bolt
       question: fontawesome/solid/question
       bug: material/bug

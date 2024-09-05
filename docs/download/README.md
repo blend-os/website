@@ -45,6 +45,48 @@ hide:
 
     <noscript>**Since you have Javascript disabled, you will need to check manually by clicking the `Version` link under each download button.**</noscript>
 
+??? success "Verifying the ISO"
+    
+    First, download [the correct checksum](https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/checksum?job=build-job){ target="_blank" rel="noopener noreferrer" } from the build server (it's a text document with the SHA256 checksum inside).
+
+    Then, get the checksum of the ISO you downloaded:
+
+    === ":material-microsoft-windows: Windows"
+        Open your terminal of choice (i.e. `cmd`) and type the following:
+        
+        ```batch
+        certutil -hashfile C:\PATH\TO\YOUR\ISO SHA256
+        ```
+
+        If you have [7-zip](https://7-zip.org){ target="_blank" rel="noopener noreferrer" } or a fork of it, you can do this graphically:
+
+        ![Right click the ISO, then go to 7-zip > CRC SHA > SHA256](../assets/img/verify-windows-gui.png){ width=550 }
+    === ":material-apple: MacOS"
+        Open **Terminal** (Launchpad > Utilities) and type the following:
+
+        ```
+        shasum -a 256 path/to/your/iso
+        ```
+    === ":fontawesome-brands-linux: Linux"
+        Open a terminal and type the following:
+
+        ```sh
+        sha256sum path/to/your/iso
+        ```
+
+        or
+
+        ```
+        shasum -a 256 path/to/your/iso
+        ```
+
+    ---
+    
+    Now compare the checksum you're shown and the correct checksum in the file you downloaded earlier. Do they match? 
+    
+    - If they do, your ISO is fine. **Continue with installation.**
+    - If not, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
+
 <script>
 var xhr6 = new XMLHttpRequest();
 var fileUrl6 = 'https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job';
