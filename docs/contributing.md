@@ -95,7 +95,7 @@ If you'd like to mirror, great! Here's the steps:
     
         Where `$WEB_FOLDER` is your web data folder.
     
-        This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `indexhtml` files.
+        This tells wget to download everything without any parent or domain folders, then we use `find` to remove all the `index.html` files.
     
         I wish we had `rsync` too, but here we are. :expressionless:
 
@@ -138,7 +138,7 @@ If you have any questions, just contact us.
 *[KP]: Korean Peninsula (South Korea)
 
 ## :material-newspaper-variant: Docs
-<small>[:material-git: Gitlab](https://git.blendos.co/asterisk/blend-docs-material){ target="_blank" rel="noopener noreferrer" } \- [:material-license: CC BY-SA 4.0](https://git.blendos.co/asterisk/blend-docs-material/-/blob/main/LICENSE){ target='_blank" rel="noopener noreferrer" } \- [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ target="_blank" rel="noopener noreferrer" }</small>
+<small>[:material-git: Gitlab](https://git.blendos.co/blendos/website){ target="_blank" rel="noopener noreferrer" } \- [:material-license: CC BY-SA 4.0](https://git.blendos.co/blendos/website/-/blob/main/LICENSE){ target='_blank" rel="noopener noreferrer" } \- [:simple-materialformkdocs: Material for MkDocs](https://squidfunk.github.io/mkdocs-material){ target="_blank" rel="noopener noreferrer" }</small>
 
 ### :material-script-text: Rules
 
