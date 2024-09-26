@@ -97,7 +97,7 @@ xhr6.onreadystatechange = function() {
       var fileContent6 = xhr6.responseText;
       var numCharacters6 = 8; // Change this number as needed
       var firstCharacters6 = fileContent6.slice(0, numCharacters6);
-      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters6 + "</code></a>)</b>";
+      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/blendOS/image-builder/-/commit/" + fileContent6 + "' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters6 + "</code></a>)</b>";
     } else {
       console.error('Failed to load file:', xhr6.statusText);
     }
