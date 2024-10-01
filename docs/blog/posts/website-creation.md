@@ -31,6 +31,7 @@ The website you are looking at right now is an amalgamation of time and effort o
 !!! note "Updates"
     - Added information about updated Mintlify pricing
     - Fixed caption on new Mintlify pricing image
+    - Updated `i18n` segment
 
 ## History
 
@@ -343,7 +344,7 @@ Oh, and we'd *only* be accepting guides in English, see the abstract below.
 The below question has been asked a few times, by people who either want a specific language or who genuinely want to help (thanks :smiling_face_with_3_hearts:). For those looking to help translate the docs, I'm sorry. Due to the reasons shown in the abstract below, it's just not feasible. Instead you can put your translation efforts towards **System Settings** (something that *should* be in other languages too), Linux as a whole, or your favorite Linux desktop.
 
 ??? question follow "Why won't you embrace `i18n` for your docs?"
-    Firstly, Google Translate's web translator works very well and updates automatically, as humans are naturally slower and must manually update translations. This works in any case where you *need* a translation.
+    Firstly, ~~Google Translate's web translator works very well~~ No it does not. It also updates automatically, as humans are naturally slower and must manually update translations. This works in any case where you *need* a translation.
     
     Also, English is like Latin for tech docs, the main language everything is written in. [`system.yaml`](../../reference/configs/system.md) is written using English words! There are also a lot of different languages and dialects of those languages spoken around the world, it's an insurmountable wall for all but the largest of corporations or communities.
 
@@ -412,7 +413,7 @@ The below question has been asked a few times, by people who either want a speci
     > As even huge corporations known for being user-friendly and also paired with insane budgets fail to do this all the time, I don’t think that it is actually a feasible task.
     
     *\- Valetudo [[Source](https://valetudo.cloud/pages/general/why-not-valetudo.html){ target="_blank" rel="noopener noreferrer" }] with minor formatting changes*
-However, we still have to work out Gitlab's terrible permission system. We can't exactly allow specific users to make repos, apparently that's not possible, the permission management isn't *that* granular. Once we work out how to fix that we can start opening up such a framework (initially was going to be a MediaWiki wiki but this theme has the power of a wiki engine anyway thanks to the [`macros` plugin](https://mkdocs-macros-plugin.readthedocs.io/en/stable/){ target="_blank" rel="noopener noreferrer" }).
+~~However, we still have to work out Gitlab's terrible permission system.~~ We did, everyone can make repos. We can't exactly allow specific users to make repos, apparently that's not possible, the permission management isn't *that* granular. ~~Once we work out how to fix that~~ Now we can start opening up such a framework (initially was going to be a MediaWiki wiki but this theme has the power of a wiki engine anyway thanks to the [`macros` plugin](https://mkdocs-macros-plugin.readthedocs.io/en/stable/){ target="_blank" rel="noopener noreferrer" }).
 
 I will also look to restructuring the [install guide](../../install/normal-pc.md) and make it a bit more... *readable*. A T2 Linux install guide will be coming once our T2 Linux contributor is available to write one, I have no knowledge on that subject.
 
