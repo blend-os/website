@@ -50,6 +50,7 @@ hide:
 
 
 [:material-hammer-wrench: Install blendOS](install/README.md){ .md-button .mt-1 .notranslate data-umami-event="Install Button" } [:material-cog: Intro to blendOS](install/post-install/intro.md){ .md-button .mt-1 .notranslate data-umami-event="Introduction for Arch users" }
+[:material-book-open-variant: Guides](guides/README.md){ .md-button .mt-1 data-umami-event="Guides Button"}
 <br><br>[:fontawesome-brands-discord: Discord](https://discord.gg/fvMpV8ZNxD){ .md-button .notranslate target="_blank" rel="noopener noreferrer" } [:fontawesome-brands-telegram: Telegram](https://t.me/blendos){ .md-button .notranslate target="_blank" rel="noopener noreferrer" } [:simple-matrix: Matrix](https://matrix.to/#/#blendos:matrix.org){ .md-button .notranslate target="_blank" rel="noopener noreferrer" } [:material-forum: AnswerOverflow](https://www.answeroverflow.com/c/1068192254365282405){ .notranslate .md-button target="_blank" rel="noopener noreferrer" } [:fontawesome-solid-ellipsis-vertical: Other Socials](#footer){ .md-button }
 
 ------

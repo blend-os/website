@@ -284,6 +284,7 @@ nav:
         - akshara: reference/utils/akshara.md
         - bpkg: reference/utils/bpkg.md
         - user: reference/utils/user.md
+        - blend: reference/utils/blend.md
         - blend-inst: reference/utils/blend-inst.md
       - Files:
         - Files: reference/configs/README.md
@@ -292,5 +293,7 @@ nav:
         - Nerdy Stuff: reference/nerdy-stuff/README.md
         - Immutability: reference/nerdy-stuff/immutability.md
         - Atomicity: reference/nerdy-stuff/atomicity.md
+  - Guides:
+      - Guides: guides/README.md
   - Blog:
       - blog/index.md

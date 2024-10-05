@@ -142,7 +142,7 @@ bpkg search <package>
 You can search for a package in all of your containers.
 
 
-#### :material-clipboard-text: Container list
+#### :material-clipboard-list: Container list
 
 ```bash
 bpkg list-containers
