@@ -62,10 +62,11 @@
             {% include ".icons/" ~ icon ~ ".svg" %}
         </label>
 
+
         <!-- Search interface -->
         {% include "partials/search.html" %}
         {% endif %}
-        
+
         <!-- Color palette toggle -->
         {% if config.theme.palette %}
         {% if not config.theme.palette is mapping %}
@@ -76,17 +77,16 @@
         <!-- User preference: color palette -->
         {% if not config.theme.palette is mapping %}
         {% include "partials/javascripts/palette.html" %}
-        {% endif %}        
+        {% endif %}
         
-        <!-- Google Translate button -->
-        {% include "partials/google-translate.html" %}
-
         <!-- Repository information -->
         {% if config.repo_url %}
         <div class="md-header__source notranslate">
             {% include "partials/source.html" %}
         </div>
         {% endif %}
+
+
     </nav>
 
     <!-- Navigation tabs (sticky) -->

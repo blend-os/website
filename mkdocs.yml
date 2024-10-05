@@ -16,7 +16,7 @@ theme:
     edit: material/pencil
     view: material/eye
     admonition:
-      tip: fontawesome/solid/lightbulb
+      tip: material/lightbulb-on
       danger: material/lightning-bolt
       question: fontawesome/solid/question
       bug: material/bug
@@ -30,8 +30,8 @@ theme:
     - navigation.sections
     - navigation.prune
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.progress
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
@@ -42,7 +42,6 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - search.share
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -285,9 +284,16 @@ nav:
         - akshara: reference/utils/akshara.md
         - bpkg: reference/utils/bpkg.md
         - user: reference/utils/user.md
+        - blend: reference/utils/blend.md
         - blend-inst: reference/utils/blend-inst.md
       - Files:
         - Files: reference/configs/README.md
         - system.yaml: reference/configs/system.md
+      - Nerdy Stuff:
+        - Nerdy Stuff: reference/nerdy-stuff/README.md
+        - Immutability: reference/nerdy-stuff/immutability.md
+        - Atomicity: reference/nerdy-stuff/atomicity.md
+  - Guides:
+      - Guides: guides/README.md
   - Blog:
       - blog/index.md

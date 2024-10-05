@@ -35,6 +35,14 @@ Our scripts and tools.
 
     [Get Started :octicons-arrow-right-16:](user.md){ .md-button data-umami-event="user Button" }
 
+-   :material-blender:{ .lg .middle } __blend__
+    
+    ---
+
+    The container management backend.
+
+    [Get Started :octicons-arrow-right-16:](blend.md){ .md-button data-umami-event="blend Button" }
+
 -   :material-cog-box:{ .lg .middle } __blend-inst__
     
     ---
