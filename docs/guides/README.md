@@ -43,6 +43,8 @@ You'll also wanna see our [contributing information](../contributing.md#docs) fo
 
     If this sounds too hard, you can use one of many Git GUI programs (**not Github Desktop**, that won't work with Gitlab).
 
+    If you have Git installed, most editors will also have a Git client (Source Control in VSCode) that will handle everything for you.
+
 ??? abstract "Setting up your local Git profile"
     You'll want to do this for your profile to show up properly in commit history.
 
@@ -66,21 +68,11 @@ If you need a crash course on Git, there's plenty available online. Here's the b
    ```
    git clone <YOUR_CLONE_URL>
    ```
-4. Change to the `dev` branch:
+4. `cd` to your cloned folder and change to the `dev` branch:
    ```
    git checkout dev
    ```
-5. Create a new Markdown file in the `docs/guides` folder, write your guide in it (here's how it should be set up)
-   ```yaml title="your-guide.md"
-   ---
-   icon: material/home # for example, see the theme docs for all icons
-   description: "Your Description, used for the embed card and SEO"
-   ---
-
-   # :material-home: Your Title
-
-   content goes here
-   ```
+5. Copy `docs/guides/example.md` to a new file in the same folder and edit it (don't edit the template directly)
 6. Add your guide to `mkdocs.yml`:
    ```yaml title="mkdocs.yml"
    nav:
@@ -89,7 +81,7 @@ If you need a crash course on Git, there's plenty available online. Here's the b
        - Guides: guides/README.md
        - Your Guide Title: guides/your-guide.md
    ```
-7. Edit `guides/README.md` to add your guide to the [recent guides](#recent-guides) following the example in the comment
+7. Edit `docs/guides/README.md` to add your guide to the [recent guides](#recent-guides) following the example in the comment
 8. To preview your changes, see the guide in the [contributing section](../contributing.md#local-development)
 9.  Create an [**access token**](https://git.blendos.co/-/user_settings/personal_access_tokens){ target="_blank" rel="noopener noreferrer" } (tick the `write_repository` and `read_repository` boxes) to authenticate your changes.
 10.  Commit your changes (you'll be asked for a username and password, put your username for the username, then for the password, put your access token):
