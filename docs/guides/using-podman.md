@@ -61,13 +61,13 @@ If not (or if it's empty), change its value to the Podman user socket path, find
 Edit your `.bashrc` (or whatever your shell config is) and add the following:
 
 ```sh title=".bashrc"
-export DOCKER_HOST unix://<socket path>
+export DOCKER_HOST="unix://<socket path>"
 ```
 
 Example:
 
 ```sh title=".bashrc"
-export DOCKER_HOST unix:///run/user/1000/podman/podman.sock
+export DOCKER_HOST="unix:///run/user/1000/podman/podman.sock"
 ```
 
 Instead of `docker.service` and `docker.socket`, you will have `podman.service` and `podman.socket` for rooted containers (not recommended unless rootless fails), as well as the ***user services (`systemctl --user`)*** of `podman.service` and `podman.socket` (only these two user services must be started).
