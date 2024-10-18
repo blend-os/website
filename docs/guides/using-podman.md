@@ -56,6 +56,24 @@ echo $DOCKER_HOST
 
 If it points to a file called `podman.sock` anywhere, you're fine, just start the user service and socket (shown below).
 
-If not, change its value to `unix:///run/user/1000/podman/podman.sock` (or `unix://<socket path, include the first />`, find this with `systemctl status --user podman.socket`) at the user level (your `.bashrc`).
+If not (or if it's empty), change its value to the Podman user socket path, find this with `systemctl status --user podman.socket`.
+
+Edit your `.bashrc` (or whatever your shell config is) and add the following:
+
+```sh title=".bashrc"
+export DOCKER_HOST unix://<socket path>
+```
+
+Example:
+
+```sh title=".bashrc"
+export DOCKER_HOST unix:///run/user/1000/podman/podman.sock
+```
 
 Instead of `docker.service` and `docker.socket`, you will have `podman.service` and `podman.socket` for rooted containers (not recommended unless rootless fails), as well as the ***user services (`systemctl --user`)*** of `podman.service` and `podman.socket` (only these two user services must be started).
+
+```yaml title="system.yaml"
+user-services:
+  - 'podman'
+  - 'podman.socket'
+```
