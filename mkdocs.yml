@@ -295,5 +295,6 @@ nav:
         - Atomicity: reference/nerdy-stuff/atomicity.md
   - Guides:
       - Guides: guides/README.md
+      - Using Podman: guides/using-podman.md
   - Blog:
       - blog/index.md

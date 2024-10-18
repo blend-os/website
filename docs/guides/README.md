@@ -26,6 +26,8 @@ These are community-written guides for blendOS.
 
 -->
 
+- [Using Podman](using-podman.md) by [@Ast3risk-ops](https://asterisk.lol){ target="_blank" rel="noopener noreferrer" }
+
 ## :fontawesome-solid-question: How do I write a guide?
 
 It's pretty simple (and requires [Git](https://git-scm.com){ target="_blank" rel="noopener noreferrer" } and [Python](https://python.org){ target="_blank" rel="noopener noreferrer" } (already installed if you're on Linux) to be installed, we'll walk you through it).
