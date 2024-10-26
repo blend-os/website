@@ -170,7 +170,7 @@ If you would like to add to our docs (please do), you should follow these simple
 
 Local development is quite easy. You'll only need:
 
-- :material-language-python: Python ≥ 3.8
+- :material-language-python: Python ≥ 3.9
 - :material-package-variant: `pip` package manager (included with Python on Windows)
 
 ??? abstract "Using `pipenv` if `pip` cannot be used directly"

@@ -209,7 +209,7 @@ plugins:
         'install/post-install/arch-user-guide.md': 'install/post-install/intro.md'
 
   - group:
-      enabled: !ENV CI 
+      enabled: !ENV CI
       plugins:
         - privacy:
             enabled: !ENV [OFFLINE, false]
@@ -295,5 +295,6 @@ nav:
         - Atomicity: reference/nerdy-stuff/atomicity.md
   - Guides:
       - Guides: guides/README.md
+      - Using Podman: guides/using-podman.md
   - Blog:
       - blog/index.md

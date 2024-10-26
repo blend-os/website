@@ -28,7 +28,7 @@ Please read the [contribution guide](https://blendos.co/contributing#docs) for i
 
 Local development is quite easy. You'll only need:
 
-- Python ≥ 3.8
+- Python ≥ 3.9
 - `pip` package manager (included with Python on Windows)
 
 Simply cd in and run (this command only has to be run once):

@@ -26,6 +26,8 @@ These are community-written guides for blendOS.
 
 -->
 
+- [Using Podman](using-podman.md) by [@Ast3risk-ops](https://asterisk.lol){ target="_blank" rel="noopener noreferrer" }
+
 ## :fontawesome-solid-question: How do I write a guide?
 
 It's pretty simple (and requires [Git](https://git-scm.com){ target="_blank" rel="noopener noreferrer" } and [Python](https://python.org){ target="_blank" rel="noopener noreferrer" } (already installed if you're on Linux) to be installed, we'll walk you through it).
@@ -62,7 +64,7 @@ You'll also wanna see our [contributing information](../contributing.md#docs) fo
 
 If you need a crash course on Git, there's plenty available online. Here's the basic writing steps:
 
-1. Sign up to our [Gitlab instance](https://git.blendos.co/users/sign_up){ target="_blank" rel="noopener noreferrer" data-umami-event="Gitlab signup" }
+1. Sign up to our [Gitlab instance](https://git.blendos.co/users/sign_up){ target="_blank" rel="noopener noreferrer" data-umami-event="Gitlab signup" } and verify your account (more info about that during signup, you just have to contact an admin)
 2. Fork the [docs repo](https://git.blendos.co/blendos/website){ target="_blank" rel="noopener noreferrer" } (click Fork at the top, make sure to choose **All branches**)
 3. Clone your fork (Click clone, then copy the `Clone with HTTPS` url and clone it with your Git program):
    ```
