@@ -56,7 +56,9 @@ echo $DOCKER_HOST
 
 If it points to a file called `podman.sock` anywhere, you're fine, just start the user service and socket (shown below).
 
-If not (or if it's empty), change its value to the Podman user socket path, find this with `systemctl status --user podman.socket`.
+If not (or if it's empty), change its value to the Podman user socket path, find this with `#!bash systemctl status --user podman.socket`:
+
+![Podman Socket example](../assets/img/podman-socket.png)
 
 Edit your `.bashrc` (or whatever your shell config is) and add the following:
 

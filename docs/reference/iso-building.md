@@ -7,6 +7,15 @@ icon: material/disc
 
 You will need a system running [:material-arch: Arch Linux](https://archlinux.org){ target="_blank" rel="noopener noreferrer" } or a derivative of it.
 
+??? tip "Building the ISO on blendOS"
+    Simply start a privileged Arch Linux container (containers in System Settings are unprivileged):
+    
+    
+    ```bash
+    podman run --privileged -it archlinux:latest /bin/bash
+    ```
+    Then follow the rest of the guide.
+
 
 To build a blendOS ISO, do the following:
 

@@ -51,6 +51,8 @@ hide:
 
     Then, get the checksum of the ISO you downloaded:
 
+    !!! note "The build server (Gitlab) ISO *will* have a different checksum due to compression (we're fixing this), but the risk of tampering is low considering it's where the ISO is built."
+
     === ":material-microsoft-windows: Windows"
         Open your terminal of choice (i.e. `cmd`) and type the following:
         
