@@ -31,26 +31,6 @@ xhr.onerror = function() {
 };
 xhr.send();
 
-var xhr2 = new XMLHttpRequest();
-var fileUrl2 = 'https://kc1.mirrors.199693.xyz/blend/isos/testing/version';
-xhr2.open('GET', fileUrl2, true);
-xhr2.onreadystatechange = function() {
-  if (xhr2.readyState === XMLHttpRequest.DONE) {
-    if (xhr2.status >= 200 && xhr2.status < 300) {
-      var fileContent2 = xhr2.responseText;
-      var numCharacters2 = 8; // Change this number as needed
-      var firstCharacters2 = fileContent2.slice(0, numCharacters2);
-      document.getElementById('otus').innerHTML = "Version: <a href='https://kc1.mirrors.199693.xyz/blend/isos/testing/version' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters2 + "</code></a>";
-    } else {
-      console.error('Failed to load file:', xhr2.statusText);
-    }
-  }
-};
-xhr2.onerror = function() {
-  console.error('Network error occurred');
-};
-xhr2.send();
-
 var xhr3 = new XMLHttpRequest();
 var fileUrl3 = 'https://mirrors.de.sahilister.net/blendos/version';
 xhr3.open('GET', fileUrl3, true);
