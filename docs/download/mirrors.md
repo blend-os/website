@@ -2,7 +2,6 @@
 | :material-map-marker: Location          |  :material-format-letter-case: Name  |               :material-speedometer: Bandwidth               |             :material-sitemap: CDN              |                                                                                            :material-link: URL                                                                                            |
 | --------------------------------------- | :----------------------------------: | :----------------------------------------------------------: | :---------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | :flag_de:{title=""} Germany       | :simple-gitlab: Master Build Server (blendOS Gitlab) |                           1Gbps { data-sort='1' }                            |     :octicons-x-12:{ .red } {data-sort='0'}     |            [:material-download: Download](https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job){ target="_blank" rel="noopener noreferrer" .md-button data-umami-event="Gitlab Download" } <br><span id="firstCharacters" class="noJs mt-1"></span> <noscript>[`Version`](https://git.blendos.co/blendos/image-builder/-/commits/main){ target="_blank" rel="noopener noreferrer" }</noscript> <br><span class="info">:fontawesome-solid-info:{ title="Info" } This mirror will always be up to date.<small></small></span>            |
-| :flag_us:{title=""} United States       |               Otus9051               |                  10Gbps { data-sort='10' }                   |    :octicons-x-12:{ .red } { data-sort='0' }    | [:material-download: Download](https://kc1.mirrors.199693.xyz/blend/isos/testing/blendOS.iso){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="Otus USA Download" }<br><span class="noJs mt-1" id="otus"></span> <noscript>[`Version`](https://kc1.mirrors.199693.xyz/blend/isos/testing/version){ target="_blank" rel="noopener noreferrer" }</noscript> |
 | :flag_de:{title=""} Germany             |              Sahilister              |                   1Gbps { data-sort='1' }                    |    :octicons-x-12:{ .red } { data-sort='0' }    |               [:material-download: Download](https://mirrors.de.sahilister.net/blendos/blendOS.iso){ .md-button target="_blank" data-umami-event="Sahilister Download" }<br><span class="noJs mt-1" id="sahilister"></span> <noscript>[`Version`](https://mirrors.de.sahilister.net/blendos/version){ target="_blank" rel="noopener noreferrer" }</noscript>               |
 | :flag_kr:{title=""} South Korea         |              YuruMirror              |                   1Gbps { data-sort='1' }                    |    :octicons-x-12:{ .red } { data-sort='0' }    |  [:material-download: Download](https://mirror.funami.tech/blendos/blendOS.iso){ target="_blank" rel="noopener noreferrer" .md-button data-umami-event="Funami Download" } <br><span class="noJs mt-1" id="yuru"></span> <noscript>[`Version`](https://mirror.funami.tech/blendos/version){ target="_blank" rel="noopener noreferrer" }</noscript>   |
 | :flag_de:{title=""} Germany             |                ico277                | :material-approximately-equal:0.5-12Gbps { data-sort='0.5' } |             :octicons-x-12:{ .red }             |      [:material-download: Download](https://mirror.ico277.xyz/blendos/testing/blendos-20240310-x8664.iso){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="ico277 Download" } <br>Version: :x:{title=""}     |
@@ -31,26 +30,6 @@ xhr.onerror = function() {
   console.error('Network error occurred');
 };
 xhr.send();
-
-var xhr2 = new XMLHttpRequest();
-var fileUrl2 = 'https://kc1.mirrors.199693.xyz/blend/isos/testing/version';
-xhr2.open('GET', fileUrl2, true);
-xhr2.onreadystatechange = function() {
-  if (xhr2.readyState === XMLHttpRequest.DONE) {
-    if (xhr2.status >= 200 && xhr2.status < 300) {
-      var fileContent2 = xhr2.responseText;
-      var numCharacters2 = 8; // Change this number as needed
-      var firstCharacters2 = fileContent2.slice(0, numCharacters2);
-      document.getElementById('otus').innerHTML = "Version: <a href='https://kc1.mirrors.199693.xyz/blend/isos/testing/version' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters2 + "</code></a>";
-    } else {
-      console.error('Failed to load file:', xhr2.statusText);
-    }
-  }
-};
-xhr2.onerror = function() {
-  console.error('Network error occurred');
-};
-xhr2.send();
 
 var xhr3 = new XMLHttpRequest();
 var fileUrl3 = 'https://mirrors.de.sahilister.net/blendos/version';

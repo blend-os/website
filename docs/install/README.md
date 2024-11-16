@@ -13,19 +13,13 @@ description: "Installing blendOS"
     [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
     **Backup repo statuses:**
-
-
-    **Repo 1 (https://kc1.mirrors.199693.xyz/blend/{ target="_blank" rel="noopener noreferrer" })**
     
-
-    [![backup-repo-1](https://status.asterisk.lol/api/badge/36/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
-    
-    **Repo 2 (https://blend.asterisk.lol/mirror{ target="_blank" rel="noopener noreferrer" })**
+    **Repo 1 (https://blend.asterisk.lol/mirror{ target="_blank" rel="noopener noreferrer" })**
     
 
     [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
-    **Repo 3 (https://blendos.mirrors.theom.nz{ target="_blank" rel="noopener noreferrer" })**
+    **Repo 2 (https://blendos.mirrors.theom.nz{ target="_blank" rel="noopener noreferrer" })**
 
     [![backup-repo-3](https://status.asterisk.lol/api/badge/40/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
