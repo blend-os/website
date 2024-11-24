@@ -65,25 +65,25 @@ hide:
 
     ---
 
-    blendOS v4 is fully declarative, allowing you to use custom packages, kernels, drivers and desktop environments on a minimal, atomic Arch Linux base system.
+    blendOS v4 is fully declarative, allowing you to use [custom packages, kernels, drivers and desktop environments](reference/configs/system.md) on a minimal, [deployable](reference/configs/system.md#tracks), atomic Arch Linux base system.
 
 -   :material-arrow-up-bold-hexagon-outline:{ .lg .middle } __Atomic__
 
     ---
 
-    Unlike most other operating systems, blendOS ensures your system does not end up in a half-broken state by replacing your old root filesystem with a new one cleanly.
+    Unlike most other operating systems, blendOS ensures your system does not end up in a half-broken state by [replacing](reference/nerdy-stuff/atomicity.md) your old root filesystem with a new one cleanly.
 
 -   :material-account:{ .lg .middle } __Friendly__
 
     ---
 
-    Thanks to its immutable nature, blendOS prevents you from wrecking your system if you were to try to delete system directories, and makes troubleshooting issues intuitive for any user.
+    Thanks to its [immutable nature](reference/nerdy-stuff/immutability.md), blendOS prevents you from wrecking your system if you were to try to delete system directories, and makes troubleshooting issues intuitive for any user.
 
 -   :material-puzzle:{ .lg .middle } __Extensible__
 
     ---
 
-    blendOS offers support for applications and binaries from several distributions and Android, without the fear of breaking your system through the use of `podman` containers.
+    blendOS offers support for applications and binaries from [several distributions](reference/container-list.md) and Android, without the fear of breaking your system through the use of `podman` containers.
 
 </div>
 
