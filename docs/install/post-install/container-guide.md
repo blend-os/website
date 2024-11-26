@@ -130,11 +130,10 @@ Clicking the `Update` button will start a rebuild of your system (same as `sudo 
     If it is down, edit the `repo` section of `system.yaml` to one of our backup repos (1):
 
     ```yaml title="system.yaml (Example)"
-    repo: 'https://kc1.mirrors.199693.xyz/blend/'
+    repo: 'https://blend.asterisk.lol/mirror/'
     ```
 
     Then rerun the update.
 </div>
 
-1.    - :flag_us: https://kc1.mirrors.199693.xyz/blend/
-      - :flag_ca: https://blend.asterisk.lol/mirror (slower)
+1.     - :flag_ca: https://blend.asterisk.lol/mirror/
