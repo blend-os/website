@@ -56,9 +56,9 @@ If you'd like to mirror, great! Here's the steps:
         ```bash
         #!/bin/bash
         ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
-        LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/testing/blendOS.iso"
+        LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/v4/blendOS.iso"
         ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
-        LOCAL_VERSION_FILE="/var/www/mirrors/blend/isos/testing/version"
+        LOCAL_VERSION_FILE="/var/www/mirrors/blend/v4/testing/version"
         
         download_iso() {
             rm -rf $LOCAL_ISO_PATH
