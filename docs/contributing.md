@@ -643,7 +643,7 @@ We have created the following macros:
 ```
 {% endraw %}
 <div class="result" markdown>
-{{ ghcr("diced", "zipline") }}
+{{ ghcr("Ast3risk-ops", "archiver") }}
 </div>
 
 {% raw %}
