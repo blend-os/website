@@ -363,6 +363,9 @@ On first boot, a GNOME welcome window will open. From here, it's pretty self-exp
 
 ![gnome-welcome-window](../assets/img/install/gnome-welcome-window.png)
 
+??? failure "My language isn't listed!"
+    Pick English for now, once you load into the system follow the [language guide](../faq.md#the-language-i-want-isnt-there) to add another language.
+
 After you click `Start Using`, your desktop will open.
 
 !!! success "blendOS is now installed!"

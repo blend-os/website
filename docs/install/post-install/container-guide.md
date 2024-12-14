@@ -113,7 +113,7 @@ You can learn more about Waydroid and find more guides and commands at https://d
 ??? failure "Play-protected apps aren't launching!"
     See [the certification guide](https://docs.waydro.id/faq/google-play-certification){ target="_blank" rel="noopener noreferrer" }.
 
-??? failure "Waydroid isn't working on my NVidia card!"
+??? failure "Waydroid isn't working on my NVIDIA card!"
     [Disable GPU acceleration](https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm){ target="_blank" rel="noopener noreferrer" }.
 
 ## :material-refresh: System Rebuild
