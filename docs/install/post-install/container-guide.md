@@ -136,4 +136,4 @@ Clicking the `Update` button will start a rebuild of your system (same as `sudo 
     Then rerun the update.
 </div>
 
-1.     - :flag_ca: https://blend.asterisk.lol/mirror/
+1.     - :flag_us: https://blend.asterisk.lol/mirror/
