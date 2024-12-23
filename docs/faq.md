@@ -629,8 +629,10 @@ Let's say I want to use {{ archpkg("linux-lts") }} for an older device.
 # Copy the base track but with linux-lts and linux-lts-headers innstead of linux-zen and linux-zen-headers
 ...
 aur-packages:
-  - 'binder_linux-dkms'
+  - 'binder_linux-dkms' # (1)!
 ```
+
+1.  **Only add this line if you want Android support.**
 
 
 ```yaml title="system.yaml"
@@ -638,7 +640,9 @@ impl: "https://github.com/me/my-track-fork/raw/main"
 track: "my-lts-track"
 ```
 
-Then, create these new files to load the modules:
+!!! info "The below steps are only applicable if you want Android support."
+
+At this point, you've changed kernels. Now, create these new files to load the Waydroid modules:
 
 ```sh title="/etc/modules-load.d/binder_linux.conf"
 # Load binder_linux at boot
