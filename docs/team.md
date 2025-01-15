@@ -18,7 +18,7 @@ glightbox: false
 
 ![Rudra](assets/img/rudra.png){ .circle width=200 }
 <br>
-[**Rudra Saraswat**](https://about.ruds.io){ target="_blank" rel="noopener noreferrer" }
+[**Rudra Saraswat**](https://ruds.io/){ target="_blank" rel="noopener noreferrer" }
 <br>
 *Project Lead & Dev, creator of blendOS*
 
