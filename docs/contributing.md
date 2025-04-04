@@ -51,39 +51,64 @@ If you'd like to mirror, great! Here's the steps:
 2. Clone the master package repo mirror via `wget` and grab the latest ISO:
     
     ??? abstract "ISO mirroring"
-        You can use the following script:
+        !!! warning "The current mirroring script is in alpha, but it is still leagues better than the old script. Report any issues you find to us."
+        First, [download the mirroring script](https://git.blendos.co/blendOS/blendl/-/raw/main/blendl.py?inline=false){ target="_blank" rel="noopener noreferrer" } ([Backup Download](https://github.com/Ast3risk-ops/blenDL/raw/refs/heads/main/blendl.py){ target="_blank" rel="noopener noreferrer" }), and [Python](https://www.python.org){ target="_blank" rel="noopener noreferrer" } 3.9 or later.
+
+        Then, install the dependencies:
+        === ":fontawesome-brands-debian: Debian-based"
+            ```sh
+            apt install python3-tqdm python3-requests python3-dotenv
+            ```
+        === ":fontawesome-brands-redhat: RHEL-based"
+            **:fontawesome-brands-fedora: Fedora**
+            ```sh
+            dnf install python3-requests python3-tqdm python3-dotenv
+            ```
+            **:fontawesome-brands-redhat: Other RHEL-based**
+            ```sh
+            yum install python3-requests python3-tqdm python3-dotenv
+            ```
+        === ":simple-archlinux: Arch Linux"
+            ```sh
+            pacman -S python-requests python-tqdm python-dotenv
+            ```
+        === ":simple-pypi: Generic (Windows/Mac/Other Linux)"
+            ```bat
+            pip install requests tqdm python-dotenv
+            ```
+        Then, create a file in the same folder as the script called `.env` and add the following:
+
+        !!! info "This file also works on Windows."
+        ```bash title=".env"
+        LOCAL_ISO_FILE=<path to blendOS.iso>
+        LOCAL_VERSION_FILE=<path to version file>
+        ```
+
+        These paths need to end with `blendOS.iso` and `version` respectively.
+
+        ??? example
+            ```bash title=".env"
+            LOCAL_ISO_FILE=/var/www/blend/blendOS.iso
+            LOCAL_VERSION_FILE=/var/www/blend/version
+            ```
+        Now, create dummy files in these directories if the files don't exist already (don't worry, these will get replaced when the script is run):
 
         ```bash
-        #!/bin/bash
-        ISO_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job"
-        LOCAL_ISO_PATH="/var/www/mirrors/blend/isos/v4/blendOS.iso"
-        ISO_VERSION_URL="https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job"
-        LOCAL_VERSION_FILE="/var/www/mirrors/blend/v4/testing/version"
-        
-        download_iso() {
-            rm -rf $LOCAL_ISO_PATH
-            wget -O "$LOCAL_ISO_PATH" "$ISO_URL"
-            wget -O "$LOCAL_VERSION_FILE" "$ISO_VERSION_URL"
-        }
-        
-        get_remote_version() {
-            wget -O - "$ISO_VERSION_URL"
-        }
-        
-        REMOTE_VERSION=$(get_remote_version)
-        LOCAL_VERSION=$(cat "$LOCAL_VERSION_FILE")
-        
-        if [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
-            echo "New ISO version detected. Downloading..."
-            download_iso
-            echo "$REMOTE_VERSION" > "$LOCAL_VERSION_FILE"
-        else
-            echo "ISO is up-to-date."
-        fi
+        cd <your iso folder> && touch blendOS.iso
+        cd <your version folder> && touch version
         ```
-        
-        <small>Replace `LOCAL_ISO_PATH` and `LOCAL_VERSION_FILE` with the path to your webserver followed by `blendOS.iso` and `version` respectively. Keep the file names as-is.</small>
-        
+
+        You can run the file by just doing:
+
+        ```bash
+        # python blendl.py if on Windows
+        python3 blendl.py
+        ```
+        or
+        ```bash
+        # Linux only
+        chmod +x blendl.py && ./blendl.py
+        ```
         Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
 
     ??? abstract "`wget` mirroring for the package repo"
