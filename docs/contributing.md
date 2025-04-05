@@ -33,16 +33,6 @@ You should already know how to use both services depending on what you're contri
 
 If you'd like to mirror our package repo and/or ISOs, here's the basics for it.
 
-### :material-chart-bar: Current (ish) stats
-
-- :material-folder-zip: Size: :material-approximately-equal:3 GB (repo and current testing ISO)
-- :material-file-multiple: Number of files: 36
-- :material-server: Mirrors: 7 (excluding cloud storage services)
-- :material-earth-box: Coverage: NA, EU, AU/NZ, KP
-- :material-refresh: Rsync: :octicons-x-12:{ .red } (available from other mirrors)
-
-A mirror list is available on the [download](download/README.md) page.
-
 ### :material-clipboard-list: Procedure
 
 If you'd like to mirror, great! Here's the steps:
@@ -110,6 +100,10 @@ If you'd like to mirror, great! Here's the steps:
         chmod +x blendl.py && ./blendl.py
         ```
         Set this up to a `systemd` timer unit or cronjob, and it will keep everything up-to-date.
+
+        -----------
+
+        The script's source code is on our [Gitlab](https://git.blendos.co/blendos/blendl){ target="_blank" rel="noopener noreferrer" } and @Ast3risk-ops's [Github](https://github.com/Ast3risk-ops/blenDL){ target="_blank" rel="noopener noreferrer" title="Read-only mirror" }.
 
     ??? abstract "`wget` mirroring for the package repo"
         Otus has provided a cronjob for this:
