@@ -383,6 +383,12 @@
     filter: brightness(0) saturate(100%) invert(60%) sepia(73%) saturate(415%) hue-rotate(117deg) brightness(91%) contrast(94%);
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .info {
     color: #00B8D4;
 }
