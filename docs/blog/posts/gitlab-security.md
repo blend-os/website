@@ -9,6 +9,9 @@ authors:
   - asterisk
 comments: true
 description: 'New security measures have been added to prevent bot spam.'
+discuss:
+  subreddit: 'https://old.reddit.com/r/BlendOS/comments/1jusos2/new_gitlab_security_measures/'
+  lemmy: 'https://lemmy.world/post/27964072'
 ---
 
 <style>
@@ -42,7 +45,10 @@ This is the list of allowed email domains (**likely out of date by now, check th
 - `hey.com`
 - `tutanota.com`
 - `outlook.com`
+- `hotmail.com`
 - `gmail.com`
+- `yahoo.com`
+- `yahoo.ca`
 - `ubuntu.com`
 
 We also allow certain custom domains used by verified users. If you'd like yours added (or a large public provider I missed), [contact us](../../team.md).
