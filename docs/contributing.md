@@ -45,6 +45,7 @@ If you'd like to mirror, great! Here's the steps:
         First, [download the mirroring script](https://git.blendos.co/blendOS/blendl/-/raw/main/blendl.py?inline=false){ target="_blank" rel="noopener noreferrer" } ([Backup Download](https://github.com/Ast3risk-ops/blenDL/raw/refs/heads/main/blendl.py){ target="_blank" rel="noopener noreferrer" }), and [Python](https://www.python.org){ target="_blank" rel="noopener noreferrer" } 3.9 or later.
 
         Then, install the dependencies:
+        !!! note "This script works on Windows as well, follow the same instructions."
         === ":fontawesome-brands-debian: Debian-based"
             ```sh
             apt install python3-tqdm python3-requests python3-dotenv
@@ -66,9 +67,8 @@ If you'd like to mirror, great! Here's the steps:
             ```bat
             pip install requests tqdm python-dotenv
             ```
-        Then, create a file in the same folder as the script called `.env` and add the following:
+        Then, create a file in the same folder as the script called `.env` and add the following (do not add quotes):
 
-        !!! info "This file also works on Windows."
         ```bash title=".env"
         LOCAL_ISO_FILE=<path to blendOS.iso>
         LOCAL_VERSION_FILE=<path to version file>
