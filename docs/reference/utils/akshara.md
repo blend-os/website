@@ -47,6 +47,13 @@ description: "Reference for akshara"
 
 ## :octicons-terminal-16: CLI
 
+### :material-flag: Global flags
+
+| Flag   | Description |
+| -------- | ------- |
+| `--keep-files-on-error` | Do not delete leftover files if there is an error. |
+| `-v`/`--version`  | Print the version number |
+
 ### :fontawesome-solid-question: Help Page
 
 ```bash
