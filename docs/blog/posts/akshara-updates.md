@@ -1,9 +1,10 @@
 ---
 draft: false
-date: 2025-04-08
+date: 2025-04-12
 categories:
-  - website
-  - gitlab
+  - akshara
+  - updates
+  - blend-inst
 title: 'Akshara Updates!'
 authors:
   - asterisk
