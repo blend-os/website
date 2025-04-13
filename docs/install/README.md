@@ -23,11 +23,11 @@ description: "Installing blendOS"
 
     [![backup-repo-3](https://status.asterisk.lol/api/badge/40/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 
-    **:flag_at: Repo 4 (https://at.blendos.niranjan.co/repo{ target="_blank" rel="noopener noreferrer" })**
+    **:flag_at: Repo 3 (https://at.blendos.niranjan.co/repo{ target="_blank" rel="noopener noreferrer" })**
 
     [![backup-repo-4](https://status.asterisk.lol/api/badge/47/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener"}
 
-    **:flag_nl: Repo 5 (https://nl.blendos.niranjan.co/repo{ target="_blank" rel="noopener noreferrer" })**
+    **:flag_nl: Repo 4 (https://nl.blendos.niranjan.co/repo{ target="_blank" rel="noopener noreferrer" })**
 
     [![backup-repo-5](https://status.asterisk.lol/api/badge/46/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 

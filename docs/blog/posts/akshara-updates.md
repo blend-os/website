@@ -10,6 +10,8 @@ authors:
   - asterisk
 comments: true
 description: 'Some new fixes to make akshara more stable.'
+discuss:
+  subreddit: 'https://old.reddit.com/r/BlendOS/comments/1jxsgj1/akshara_updates/'
 ---
 ![A bunch of sparks emitted from some old-timey "servers", black and white](../../assets/img/posts/akshara-updates/servers.gif)
 <br><small><i>Shoutout to our overworked servers and runners.</i></small>
