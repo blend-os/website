@@ -296,5 +296,6 @@ nav:
   - Guides:
       - Guides: guides/README.md
       - Using Podman: guides/using-podman.md
+      - Fixing System.yaml: guides/fixing-system-yaml.md
   - Blog:
       - blog/index.md

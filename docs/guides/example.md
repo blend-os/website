@@ -1,4 +1,5 @@
 ---
+# Title is set in mkdocs.yml
 icon: material/book # Your icon, see https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
 description: "Your Description"
 ---
