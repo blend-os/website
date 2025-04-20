@@ -87,7 +87,7 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 === "Rufus (DD mode) (:material-microsoft-windows:)"
 
-    Open the blendOS ISO in Rufus and pick your USB drive (don't touch any other options).
+    Open the blendOS ISO in [Rufus](https://rufus.ie){ target="_blank" rel="noopener noreferrer" } and pick your USB drive (don't touch any other options).
 
     Press `START`. When prompted, choose **DD Mode**!
 
