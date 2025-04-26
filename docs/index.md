@@ -73,17 +73,18 @@ hide:
 
     Unlike most other operating systems, blendOS ensures your system does not end up in a half-broken state by [replacing](reference/nerdy-stuff/atomicity.md) your old root filesystem with a new one cleanly.
 
--   :material-account:{ .lg .middle } __Friendly__
-
-    ---
-
-    Thanks to its [immutable nature](reference/nerdy-stuff/immutability.md), blendOS prevents you from wrecking your system if you were to try to delete system directories, and makes troubleshooting issues intuitive for any user.
-
 -   :material-puzzle:{ .lg .middle } __Extensible__
 
     ---
 
     blendOS offers support for applications and binaries from [several distributions](reference/container-list.md) and Android, without the fear of breaking your system through the use of `podman` containers.
+
+-   :material-account:{ .lg .middle } __Friendly__
+
+    ---
+
+    Thanks to its [**immutable nature**](reference/nerdy-stuff/immutability.md), blendOS prevents you from wrecking your system if you were to try to delete system directories, and makes troubleshooting issues intuitive for any user.
+
 
 </div>
 

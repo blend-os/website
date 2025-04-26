@@ -7,6 +7,8 @@ description: How blendOS's immutability works
 
 !!! warning "This is a work in progress!"
 
+Immutablility means you can't edit system files directly. This is required to preserve [atomicity](atomicity.md), allows [tracks](../configs/system.md#tracks) to work properly and prevents you from destroying your system by accident.
+
 blendOS's immutability is layered, like any other immutable distro. Here's how it works:
 
 (mermaid chart here)

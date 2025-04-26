@@ -11,6 +11,14 @@ description: "Post-install guide for new users, advanced users, and Arch Linux u
 
 This guide will quickly familiarize you with how you can get around blendOS as a prior Arch Linux user through the terminal (this guide is also quite handy if you're a semi-experienced user of other Linux distributions).
 
+## :material-lightbulb-on: Basics
+
+blendOS is [immutable](../../reference/nerdy-stuff/immutability.md), **so you can't use `pacman` directly.** You should instead use a distro container or Flatpak to install apps.
+
+However, for apps that won't work any other way, or for things like desktops and drivers, you need to install things directly to the base system. That's where [:material-file-star: `system.yaml`](../../reference/configs/system.md) comes in. It is a central file that manages how new filesystems will be built (TL;DR, it manages your base system). [Tracks](#switching-to-other-desktop-environments-or-a-clean-arch-like-system-tracks) are deployable [:material-file-star: `system.yaml`](../../reference/configs/system.md) configs (essentially different base systems) for things like desktop environments that you can build upon.
+
+
+
 ## :material-file: Default [`system.yaml`](../../reference/configs/system.md)
 
 Begin by opening the [:material-file-star: `system.yaml`](../../reference/configs/system.md) file (at the / of your main partition) using a text editor.
@@ -112,7 +120,7 @@ This line in [:material-file-star: `system.yaml`](../../reference/configs/system
 
 ## :octicons-container-16: Containers (apps from other distros)
 
-Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the **System** app, but we will be using the [`user`](../../reference/utils/user.md) CLI utility in this guide. **For GUI instructions and Waydroid information, you can consult the [:material-truck-cargo-container: Container Management](./container-guide.md) guide.**
+Now, you might want to install applications from other distributions like Ubuntu or Fedora, usually if they're not available in the Arch repositories or as Flatpaks. You can do so through containers. Container management is also available through the **System** app, but we will be using the {{ reference("utils", "user") }} CLI utility in this guide. **For GUI instructions and Waydroid information, you can consult the [:material-truck-cargo-container: Container Management](./container-guide.md) guide.**
 
 ### :material-truck-cargo-container: Container management
 
@@ -131,7 +139,7 @@ user create-container my-first-container debian
 !!! warning "Containers cannot be renamed!"
     `blend` does not currently support renaming containers, so if you'd like to continue using this container, it is advised you name it something more precise than `my-first-container`.
 
-After its creation is complete, you'll find that all of its binaries will be available on the host with the suffix .my-first-container. For example:
+After its creation is complete, you'll find that all of its binaries will be available on the host with the suffix `.my-first-container`. For example:
 
 * **apt** in the container -> **apt.my-first-container** on the host
 * **dpkg** in the container -> **dpkg.my-first-container** on the host
@@ -149,7 +157,7 @@ user remove-container my-first-container
 
 #### :material-arrow-right-box: Entering containers
 
-There are multiple ways in which you can enter a container. The first one is to use [`user`](../../reference/utils/user.md) to enter a container, as shown below (terminal window on the host):
+There are multiple ways in which you can enter a container. The first one is to use {{ reference("utils", "user") }} to enter a container, as shown below (terminal window on the host):
 
 ```bash
 user shell my-first-container
@@ -161,7 +169,7 @@ The second, less common one, would be to run `bash.my-first-container` in a regu
 
 #### :material-link-variant-plus: Creating associations
 
-Getting tired of running apt.my-first-container all the time? You can shorten it to apt by simply running the command below (in a terminal window on the host):
+Getting tired of running `apt.my-first-container` all the time? You can shorten it to `apt` by simply running the command below (in a terminal window on the host):
 
 ```bash
 user associate apt my-first-container
@@ -189,7 +197,7 @@ user install my-first-container hello # 'hello' is the name of the package
 
 #### :material-package-variant-remove: Removing packages
 
-Similarly, you can also remove packages with [`user`](../../reference/utils/user.md):
+Similarly, you can also remove packages with {{ reference("utils", "user") }}:
 
 ```bash
 user remove my-first-container hello
