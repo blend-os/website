@@ -122,18 +122,13 @@ Clicking the `Update` button will start a rebuild of your system (same as `sudo 
 
 ![system-update](../../assets/img/system-update.png)
 
-<div class="annotate" markdown>
-
 ??? failure "The update failed due to a timeout!"
     Our repo may be down, check the [status page](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }.
 
-    If it is down, edit the `repo` section of `system.yaml` to one of our backup repos (1):
+    If it is down, edit the `repo` section of `system.yaml` to one of our [backup repos](../README.md):
 
     ```yaml title="system.yaml (Example)"
     repo: 'https://blend.asterisk.lol/mirror/'
     ```
 
     Then rerun the update.
-</div>
-
-1.     - :flag_us: https://blend.asterisk.lol/mirror/
