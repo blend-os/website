@@ -12,7 +12,7 @@ description: "I'm hosting it this time."
 ![A picture of a Minecraft mesa landscape at sunset](../../assets/img/posts/smp/mc.png)
 <small>Shot on the server with [Photon](https://modrinth.com/shader/photon-shader){ target="_blank" rel="noopener noreferrer" } and [Iris](https://www.irisshaders.dev/){ target="_blank" rel="noopener noreferrer" }.</small>
 
-TL;DR: Vanilla 1.21.5 SMP now live at `smp.blendos.co` (`smp.blendos.co:25525` for Bedrock users), apply here: https://tally.so/r/wkrDed{ target="_blank" rel="noopener noreferrer" }
+TL;DR: Vanilla 1.21.5 SMP now live at `smp.blendos.co` (`smp.blendos.co:33372` for Bedrock users), apply here: https://tally.so/r/wkrDed{ target="_blank" rel="noopener noreferrer" }
 <!-- more -->
 
 ## What?
