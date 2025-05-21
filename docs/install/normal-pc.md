@@ -59,7 +59,7 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 === ":octicons-star-fill-16:{ .yellow } Ventoy (:material-microsoft-windows:/:fontawesome-brands-linux:)"
 
-    Download [Ventoy](https://ventoy.net/en/download.html){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
+    Download [Ventoy](https://ventoy.net){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
 
     <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button data-umami-event="Ventoy Install Button" }</span>
 
