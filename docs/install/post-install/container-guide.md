@@ -89,7 +89,7 @@ Some useful Waydroid CLI commands are:
 | :fontawesome-solid-terminal: Command | :fontawesome-solid-gear: Function |
 | -------------------- | -------------------------------- |
 | `waydroid show-full-ui` | Start a full Android session |
-| `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
+| `waydroid session stop` | Kills all Waydroid windows and stops Waydroid from working |
 | `waydroid session start` | Resumes Waydroid |
 | `waydroid shell` | Android shell |
 | `waydroid app install file.apk` | Installs an APK (Mostly redundant with our package installer) |
