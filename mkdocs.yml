@@ -59,7 +59,7 @@ theme:
         icon: material/weather-night
         name: Switch to dark mode
 
-copyright: '&copy; 2024 blendOS contributors. All content under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer license">CC BY-SA 4.0</a> unless otherwise noted.'
+copyright: '&copy; 2025 blendOS contributors. All content under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer license">CC BY-SA 4.0</a> unless otherwise noted.'
 watch:
   - "includes"
   - "overrides"
