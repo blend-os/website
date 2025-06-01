@@ -42,7 +42,7 @@ If you'd like to mirror, great! Here's the steps:
     
     ??? abstract "ISO mirroring"
         !!! warning "The current mirroring script is in alpha, but it is still leagues better than the old script. Report any issues you find to us."
-        First, [download the mirroring script](https://git.blendos.co/blendOS/blendl/-/raw/main/blendl.py?inline=false){ target="_blank" rel="noopener noreferrer" } ([Backup Download](https://github.com/Ast3risk-ops/blenDL/raw/refs/heads/main/blendl.py){ target="_blank" rel="noopener noreferrer" }), and [Python](https://www.python.org){ target="_blank" rel="noopener noreferrer" } 3.9 or later.
+        First, [download the mirroring script](https://git.blendos.co/blendOS/blendl/-/raw/main/blendl.py?inline=false){ target="_blank" rel="noopener noreferrer" } ([Backup Download](https://github.com/blend-os/blenDL/raw/refs/heads/main/blendl.py){ target="_blank" rel="noopener noreferrer" }), and [Python](https://www.python.org){ target="_blank" rel="noopener noreferrer" } 3.9 or later.
 
         Then, install the dependencies:
         !!! note "This script works on Windows as well, follow the same instructions."
