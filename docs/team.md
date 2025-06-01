@@ -16,7 +16,7 @@ glightbox: false
 
 <div class="grid" markdown>
 
-![Rudra](assets/img/rudra.png){ .circle width=200 }
+![Rudra](assets/img/ruds.jpg){ .circle width=200 height=50 }
 <br>
 [**Rudra Saraswat**](https://ruds.io/){ target="_blank" rel="noopener noreferrer" }
 <br>
