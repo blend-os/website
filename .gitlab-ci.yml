@@ -80,6 +80,6 @@ deploy-job:
   - optimize-job
   script:
   - mv _headers site/
-  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA
+  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA --commit-dirty=true
   only:
   - main
