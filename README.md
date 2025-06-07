@@ -33,7 +33,7 @@ Local development is quite easy. You'll only need:
 
 Simply cd in and run (this command only has to be run once):
 
->>>[!note]
+>>> [!note]
 <details>
 <summary>If you can't use pip directly</summary>
 
