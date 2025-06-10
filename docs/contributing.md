@@ -65,7 +65,8 @@ If you'd like to mirror, great! Here's the steps:
             ```
         === ":simple-pypi: Generic (Windows/Mac/Other Linux)"
             ```bat
-            pip install requests tqdm python-dotenv
+            # python3 -m pip if on macOS/Linux
+            python -m pip install requests tqdm python-dotenv
             ```
         Then, create a file in the same folder as the script called `.env` and add the following (do not add quotes):
 
