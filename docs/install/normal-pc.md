@@ -71,7 +71,7 @@ Go to the [:material-download: Download](../download/README.md) page.
 
     Once downloaded, open `Ventoy2Disk.exe` or `Ventoy2Disk.sh`.
 
-    Choose your drive at the top. Then make sure `Secure Boot Support` is checked and that the `Partition Scheme` is **GPT**.
+    Choose your drive at the top. Then make sure `Secure Boot Support` is checked and that the `Partition Style` is **GPT**.
 
     ![ventoy](../assets/img/install/ventoy.png)
 
