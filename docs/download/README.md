@@ -23,16 +23,10 @@ hide:
 
 <div align="center" markdown> 
 # :material-download: Download blendOS
+[:material-lock: HTTPS](#https) - [:simple-bittorrent: Bittorrent](#bittorrent)
 
-
-
-## :simple-bittorrent: BitTorrent
-<div class="notranslate" markdown>
-[:material-file-download: Torrent](https://fosstorrents.com/thankyou/?name=blendos&cat=Latest%20Edition&id=0&hybrid=0){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="Torrent Download" }
-</div>
-
-<small>:fontawesome-solid-info:{ title="Info" } A webseed-capable client is **highly recommended**. A torrent client must be installed to open magnet links.</small>
-{ .info }
+!!! warning "Please read the [intro](../install/post-install/intro.md) and [install guide](../install/normal-pc.md) before downloading."
+    This will ensure you properly understand what this distro is before using it.
 
 ## :material-lock: HTTPS
 
@@ -87,7 +81,7 @@ hide:
     Now compare the checksum you're shown and the correct checksum in the file you downloaded earlier. Are they the same? 
     
     - If they are, your ISO is fine. **Continue with installation.**
-    - If aren't, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
+    - If they aren't, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
 
 <script>
 var xhr6 = new XMLHttpRequest();
@@ -112,3 +106,12 @@ xhr6.send();
 </script>
 
 --8<-- "docs/download/mirrors.md"
+
+<div align="center" markdown>
+## :simple-bittorrent: BitTorrent
+<div class="notranslate" markdown>
+[:material-file-download: Torrent](https://fosstorrents.com/thankyou/?name=blendos&cat=Latest%20Edition&id=0&hybrid=0){ .md-button target="_blank" rel="noopener noreferrer" data-umami-event="Torrent Download" }
+</div>
+<small>:fontawesome-solid-info:{ title="Info" } A webseed-capable client is **highly recommended**. A torrent client must be installed to open magnet links.</small>
+{ .info }
+</div>

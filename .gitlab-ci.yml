@@ -1,16 +1,18 @@
 stages:          # List of stages for jobs, and their order of execution
-  - build
-  - optimize
-  - deploy
+  - 🛠️ build
+  - ⛩️ optimize
+  - 📤 deploy
 
 workflow:
   auto_cancel:
     on_job_failure: all
 
 
-build-job:
+🔨 build-job:
   image: python:latest        # This job runs in the build stage, which runs first.
-  stage: build
+  stage: 🛠️ build
+  tags:
+    - 'x86_64'
   script:  
     - pip install -r requirements.txt
     - mkdocs build
@@ -20,9 +22,9 @@ build-job:
         - site
   only:
     - main
-offline:
+🚫 offline:
   image: python:latest
-  stage: build
+  stage: 🛠️ build
   variables:
     OFFLINE: 'true'
   script:  
@@ -35,11 +37,13 @@ offline:
     paths:
         - site
   
-optimize-job:
+⛩️ optimize-job:
   image: node:lts
-  stage: optimize
+  stage: ⛩️ optimize
+  tags:
+    - 'x86_64'
   needs: 
-    - job: build-job
+    - job: 🔨 build-job
       artifacts: true
   before_script:
     - corepack enable
@@ -49,7 +53,7 @@ optimize-job:
     - pnpm install # install dependencies
     - pnpm run optimize
   dependencies:
-    - build-job
+    - 🔨 build-job
   cache:
     key:
       files:
@@ -63,19 +67,19 @@ optimize-job:
   only:
     - main
 
-deploy-job:
+🌐 deploy-job:
   image: jfxs/wrangler:latest
-  stage: deploy
+  stage: 📤 deploy
   needs: 
-    - job: optimize-job
+    - job: ⛩️ optimize-job
       artifacts: true
   variables:
     PROJECT_NAME: "blendos"
     WRANGLER_SEND_METRICS: "false"
   dependencies:
-  - optimize-job
+  - ⛩️ optimize-job
   script:
   - mv _headers site/
-  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA
+  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA --commit-dirty=true
   only:
   - main

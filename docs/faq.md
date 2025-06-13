@@ -615,6 +615,54 @@ Log back in, and revel in the fact that you can use your system in your own lang
 
 !!! note "**System Settings** (not Settings) may still be in English."
 
+## I want to change kernels!
+
+blendOS ships with {{ archpkg("linux-zen") }} as it contains the required modules for Android support.
+
+If you want to use another kernel, you will need to install the modules yourself.
+
+Let's say I want to use {{ archpkg("linux-lts") }} for an older device.
+
+!!! note "You need to [make your own track](reference/configs/system.md#tracks) to change kernels."
+
+```yaml title="my-lts-track.yaml"
+# Copy the base track but with linux-lts and linux-lts-headers innstead of linux-zen and linux-zen-headers
+...
+aur-packages:
+  - 'binder_linux-dkms' # (1)!
+```
+
+1.  **Only add this line if you want Android support.**
+
+
+```yaml title="system.yaml"
+impl: "https://github.com/me/my-track-fork/raw/main"
+track: "my-lts-track"
+```
+
+!!! info "The below steps are only applicable if you want Android support."
+
+At this point, you've changed kernels. Now, create these new files to load the Waydroid modules:
+
+```sh title="/etc/modules-load.d/binder_linux.conf"
+# Load binder_linux at boot
+binder_linux
+```
+
+```sh title="/etc/modprobe.d/binder_linux.conf"
+# Options for binder_linux
+options binder_linux devices=binder,hwbinder,vndbinder
+```
+
+Edit the GRUB configuration:
+
+!!! bug "This is an extra step required to prevent [a segmentation fault](https://bbs.archlinux.org/viewtopic.php?id=293566){ target="_blank" rel="noopener noreferrer" }."
+
+```sh title="/etc/defaults/grub"
+# find the below line and edit it to include ibt=off
+GRUB_CMDLINE_LINUX_DEFAULT="${GRUB_CMDLINE_LINUX_DEFAULT} ibt=off"
+```
+
 ## Why can't I use another init system?
 
 blendOS relies heavily on [`systemd-nspawn`](https://wiki.archlinux.org/title/Systemd-nspawn){ target="_blank" rel="noopener noreferrer" } for containers, which is like `chroot` but on steroids. It is included with the {{ archpkg('systemd') }} package on Arch.

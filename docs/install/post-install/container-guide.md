@@ -89,7 +89,7 @@ Some useful Waydroid CLI commands are:
 | :fontawesome-solid-terminal: Command | :fontawesome-solid-gear: Function |
 | -------------------- | -------------------------------- |
 | `waydroid show-full-ui` | Start a full Android session |
-| `waydroid session stop` | Kills all waydroid windows and stops Waydroid from working |
+| `waydroid session stop` | Kills all Waydroid windows and stops Waydroid from working |
 | `waydroid session start` | Resumes Waydroid |
 | `waydroid shell` | Android shell |
 | `waydroid app install file.apk` | Installs an APK (Mostly redundant with our package installer) |
@@ -113,7 +113,7 @@ You can learn more about Waydroid and find more guides and commands at https://d
 ??? failure "Play-protected apps aren't launching!"
     See [the certification guide](https://docs.waydro.id/faq/google-play-certification){ target="_blank" rel="noopener noreferrer" }.
 
-??? failure "Waydroid isn't working on my NVidia card!"
+??? failure "Waydroid isn't working on my NVIDIA card!"
     [Disable GPU acceleration](https://docs.waydro.id/faq/get-waydroid-to-work-through-a-vm){ target="_blank" rel="noopener noreferrer" }.
 
 ## :material-refresh: System Rebuild
@@ -122,19 +122,13 @@ Clicking the `Update` button will start a rebuild of your system (same as `sudo 
 
 ![system-update](../../assets/img/system-update.png)
 
-<div class="annotate" markdown>
-
 ??? failure "The update failed due to a timeout!"
     Our repo may be down, check the [status page](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }.
 
-    If it is down, edit the `repo` section of `system.yaml` to one of our backup repos (1):
+    If it is down, edit the `repo` section of `system.yaml` to one of our [backup repos](../README.md):
 
     ```yaml title="system.yaml (Example)"
-    repo: 'https://kc1.mirrors.199693.xyz/blend/'
+    repo: 'https://blend.asterisk.lol/mirror/'
     ```
 
     Then rerun the update.
-</div>
-
-1.    - :flag_us: https://kc1.mirrors.199693.xyz/blend/
-      - :flag_ca: https://blend.asterisk.lol/mirror (slower)

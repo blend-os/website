@@ -11,7 +11,7 @@ We'd like to thank the following websites and indvidiuals for indirect contribut
 - https://sqidfunk.github.io/mkdocs-material{ target="_blank" rel="noopener noreferrer" } for the `result` class
 - [Martin Donath](https://github.com/squidfunk){ target="_blank" rel="noopener noreferrer" .notranslate } for the backend CSS of the [`follow` admonition setting](contributing.md#admonitions-admonition) and the large table on the [download page](download/README.md)
 - The [AtlasOS Docs](https://docs.atlasos.net){ target="_blank" rel="noopener noreferrer" } for inspiration on several elements
-- [he3als](https://he3als.xyz){ target="_blank" rel="noopener noreferrer" .notranslate } (:duck:{ title="Quack Quack" }) for the [`noJs`](contributing.md#javascript) system, Google Translate widget and several fixes to elements written by Asterisk for the AtlasOS docs and copied over here.
+- [he3als](https://he3als.xyz){ target="_blank" rel="noopener noreferrer" .notranslate } (:duck:{ title="Quack Quack" }) for the [`noJs`](contributing.md#javascript) system and several fixes to elements written by Asterisk for the AtlasOS docs and copied over here.
 
 **Main Documentation (Installation Guides & Reference) Authors**
 

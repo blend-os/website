@@ -10,18 +10,17 @@ description: "Installing blendOS on a normal PC"
   <figcaption></figcaption>
 </figure>
 
-------
+---
 
 ## :material-clipboard-list-outline: Requirements
 
 !!! question inline end "How can I check if I'm 64-bit?"
-    **:material-microsoft-windows: Windows**:
-    Consult [Microsoft's guide](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808){ target="_blank" rel="noopener noreferrer" }.
+
+    **:material-microsoft-windows: Windows**: Consult [Microsoft's guide](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808){ target="\_blank" rel="noopener noreferrer" }.
 
     **:material-apple: MacOS**: Click the :material-apple: and choose **About This Mac**. Anything other than *Intel Core Solo* or *Intel Core Duo* (Intel Core **2** Duo is 64-bit) under **CPU** is **64-bit**.
 
-    **:simple-linux: Linux**:
-    Run `#!bash getconf LONG_BIT` in a terminal. The resulting number should be **64**.
+    **:simple-linux: Linux**: Run `#!bash getconf LONG_BIT` in a terminal. The resulting number should be **64**.
 
 - :material-cpu-64-bit: A <span class="red" title="Required">**64-bit**</span> CPU, from no earlier than <span class="orange" title="Recommended">2009</span>.
 - :fontawesome-solid-memory: A minimum of <span class="orange" title="Recommended">4 GBs</span> of RAM and <span class="red" title="Required">**25 GBs**</span> of storage.
@@ -36,6 +35,8 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 ## :material-lightning-bolt: Flash a USB
 
+!!! danger "This will wipe the contents of your USB drive!"
+
 <script>
     function replace() {
         var styleSheet = document.createElement("style")
@@ -43,7 +44,6 @@ Go to the [:material-download: Download](../download/README.md) page.
         document.head.appendChild(styleSheet)
     }
 </script>
-
 
 <script>
     var styleSheet = document.createElement("style")
@@ -57,24 +57,10 @@ Go to the [:material-download: Download](../download/README.md) page.
     }
 </style>
 
-=== ":octicons-star-fill-16:{ .yellow } Etcher"
-    Download Etcher from https://etcher.io and plug in your USB.
-    
-    You can click the button below to automatically download and flash the ISO:
+=== ":octicons-star-fill-16:{ .yellow } Ventoy (:material-microsoft-windows:/:fontawesome-brands-linux:)"
 
-    [![flash-with-etcher](../assets/img/flash-etcher.png)](https://efp.balena.io/open-image-url?imageUrl=https://kc1.mirrors.199693.xyz/blend/isos/testing/blendOS.iso){ target="_blank" rel="noopener noreferrer" data-umami-event="Etcher Button" }
+    Download [Ventoy](https://ventoy.net){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
 
-    If you already have an ISO, pick your downloaded ISO, your USB drive, and hit `Flash!`.
-
-    ![etcher-1](../assets/img/etcher-1.png)
-
-=== "Rufus (DD mode)"
-
-    Open your ISO in Rufus, and hit `START`. When prompted, choose **DD Mode**!
-
-=== "Ventoy"
-    Download [Ventoy](https://ventoy.net/en/download.html){ target="_blank" rel="noopener noreferrer" } and extract it to a folder.
-    
     <span class="noJs" markdown>[:material-download: Download Ventoy](javascript:replace();){ .md-button data-umami-event="Ventoy Install Button" }</span>
 
     <div id="latest-release-info" class="ventoy"></div>
@@ -85,15 +71,28 @@ Go to the [:material-download: Download](../download/README.md) page.
 
     Once downloaded, open `Ventoy2Disk.exe` or `Ventoy2Disk.sh`.
 
-    Choose your drive at the top. Then make sure `Secure Boot Support` is checked.
+    Choose your drive at the top. Then make sure `Secure Boot Support` is checked and that the `Partition Scheme` is **GPT**.
 
     ![ventoy](../assets/img/install/ventoy.png)
 
     Choose `Install`.
 
-    Download our ISO and copy it to the root of the drive labeled `Ventoy`.
+    Download the blendOS ISO and copy it to the drive labeled `Ventoy`.
 
-=== "DD"
+=== "Popsicle (:fontawesome-brands-linux:)"
+
+    Download [Popsicle](https://github.com/pop-os/popsicle){ target="_blank" rel="noopener noreferrer" } from your package manager, [Flathub](https://flathub.org/apps/com.system76.Popsicle){ target="_blank" rel="noopener noreferrer" }, or [the AppImage](https://github.com/pop-os/popsicle/releases/latest){ target="_blank" rel="noopener noreferrer" }.
+
+    Pick the blendOS ISO image and click `Next`. Pick your USB device and click `Flash`!
+
+=== "Rufus (DD mode) (:material-microsoft-windows:)"
+
+    Open the blendOS ISO in [Rufus](https://rufus.ie){ target="_blank" rel="noopener noreferrer" } and pick your USB drive (don't touch any other options).
+
+    Press `START`. When prompted, choose **DD Mode**!
+
+=== "DD (:simple-linux:)"
+
     Open a terminal and type the following:
 
     ```sh
@@ -101,8 +100,6 @@ Go to the [:material-download: Download](../download/README.md) page.
     ```
 
     Replace `/dev/sdX` with your USB's identifier (found via `lsblk`)
-
-
 
 <script>
    const apiUrl = 'https://api.github.com/repos/ventoy/ventoy/releases/latest';
@@ -124,8 +121,7 @@ Go to the [:material-download: Download](../download/README.md) page.
      });
 </script>
 
-
-------
+---
 
 ## :material-package-variant: Install blendOS
 
@@ -147,7 +143,6 @@ Plug your USB in and spam that key while turning on your PC.
 
 You should see a device list, choose your USB device. It will be listed under its brand name or as `EFI USB device`. If you get booted to a diagnostic screen or get a "Secure Boot violation" error, see the below abstract.
 
-
 ??? failure "Ventoy Users: 'Security Violation' Error"
 
     ??? video "Video Demonstration"
@@ -155,7 +150,7 @@ You should see a device list, choose your USB device. It will be listed under it
            <video src="/assets/vid/enroll-key-vtoy.mp4" controls muted></video>
            <p>Credit to [Ventoy](https://ventoy.net/en/doc_secure.html) for the video demonstration.<p>
           </center>
-    
+
     ![vtoy-verification-error-0x1A](../assets/img/vtoy-secure-error.png){ align=right width=200 }
 
      If you get an error screen saying there was a 'Security Violation,' follow the steps below:
@@ -167,13 +162,13 @@ You should see a device list, choose your USB device. It will be listed under it
      3\. Choose **Enroll Key From Disk**
 
      4\. Choose `VTOYEFI`
-        
+
     - The controls are arrow keys to move and ++enter++ to select
 
      5\. Choose `ENROLL_THIS_KEY_IN_MOKMANAGER.cer`
 
      6\. Choose **Continue**, then **Yes**, and finally **Reboot**
-    
+
     7\. Boot from the USB again, as the issue should be resolved
 
      ------
@@ -183,15 +178,13 @@ You should see a device list, choose your USB device. It will be listed under it
      Credit to [he3als](https://he3als.xyz){ target="_blank" rel="noopener noreferrer" } on the [AtlasOS Docs](https://docs.atlasos.net){ target="_blank" rel="noopener noreferrer" } for formatting fixes.
 
 ??? abstract "Non-Ventoy Users: Disabling Secure Boot"
+
     Enter your BIOS setup and find a section called **Secure Boot** (or if it doesn't exist, look under **Boot**). Turn **Secure Boot** (also called **UEFI Secure Boot**) off.
 
     -----
     If you want to know what Secure Boot is, see [Microsoft's article on it](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot){ target="_blank" rel="noopener noreferrer" }.
 
 If you see a sort of settings menu, go to the `Boot` section, and change the boot order so that your USB drive is at the top. Then save your changes and reboot.
-
-
-
 
 If you're on **legacy BIOS**, you'll see a bootscreen, just press ++enter++. If you're on **UEFI** blendOS will just load.
 
@@ -207,7 +200,7 @@ Click `Start`.
 
 #### :material-harddisk: Disk
 
-Once you start, you now need to choose your installation disk. 
+Once you start, you now need to choose your installation disk.
 
 You can either choose a disk (**<span class="red">:material-lightning-bolt:{ title="Danger" } THIS WIPES THE CHOSEN DISK AND ALL DATA ON IT!**</span>) or go to [**Manual Partitioning**](#manual-partitioning){ .notranslate }.
 
@@ -215,7 +208,7 @@ You can either choose a disk (**<span class="red">:material-lightning-bolt:{ tit
 
 ##### :material-harddisk-plus: Manual Partitioning
 
-Oh, wait, Rudra wrote this guide for me  :expressionless:.
+Oh, wait, Rudra wrote this guide for me :expressionless:.
 
 ![manual-partitioning](../assets/img/install/manual-partitioning.png)
 
@@ -226,134 +219,136 @@ A copy of the file that opens has been provided here for reference:
 ??? abstract follow "Partitioning How-To (English only)"
 
     ```
-     ____            _   _ _   _             _             
-    |  _ \ __ _ _ __| |_(_) |_(_) ___  _ __ (_)_ __   __ _ 
+     ____            _   _ _   _             _
+    |  _ \ __ _ _ __| |_(_) |_(_) ___  _ __ (_)_ __   __ _
     | |_) / _` | '__| __| | __| |/ _ \| '_ \| | '_ \ / _` |
     |  __/ (_| | |  | |_| | |_| | (_) | | | | | | | | (_| |
     |_|   \__,_|_|   \__|_|\__|_|\___/|_| |_|_|_| |_|\__, |
-                                                     |___/ 
-     _   _                    _        
-    | | | | _____      __    | |_ ___  
+                                                     |___/
+     _   _                    _
+    | | | | _____      __    | |_ ___
     | |_| |/ _ \ \ /\ / /____| __/ _ \       (CC-BY-SA 4.0)
     |  _  | (_) \ V  V /_____| || (_) |         (by rs2009)
-    |_| |_|\___/ \_/\_/       \__\___/ 
-                                       
+    |_| |_|\___/ \_/\_/       \__\___/
+
     =======================================================
-    
+
     This guide will cover different configurations, including
     users who want to install blendOS alongside Windows, as
     well as Linux users who would like to keep their existing
     Linux distribution and install blendOS alongside.
-    
+
     =======================================================
-    
-       ____           _      ___         __                                    
+
+       ____           _      ___         __
       / __/__  ____  | | /| / (_)__  ___/ /__ _    _____   __ _____ ___ _______
      / _// _ \/ __/  | |/ |/ / / _ \/ _  / _ \ |/|/ (_-<  / // (_-</ -_) __(_-<
     /_/  \___/_/     |__/|__/_/_//_/\_,_/\___/__,__/___/  \_,_/___/\__/_/ /___/
-    
+
     Do you want to replace your existing Windows installation
     with blendOS, or install blendOS alongside Windows without
     losing your files?
-    
+
     If the former, follow the 'Automatic Partitioning' guide below; for
     the latter, you may follow the 'Manual Partitioning' guide underneath.
-    
+
     +------------------------+
     + Automatic Partitioning +
     +------------------------+
-    
+
     WARNING: Automatic partitioning will erase all files on your disk.
-    
+
     1. Switch back to Automatic Partitioning.
-    
+
     2. Select your main hard drive/SSD.
-    
+
     3. Proceed to the next page, and continue with installation.
-    
+
     +---------------------+
     + Manual Partitioning +
     +---------------------+
-    
+
     1. Select 'Create Partitions'.
-    
+
     2. Make sure your primary system drive is selected.
-    
+
     3. Create a new partition of a size of 512MB, formatted as fat32.
-    
+
     4. Create another partition of a size of at least 40GBs, formatted as ext4.
-    
+
     5. Click on the tick above to apply the changes.
-    
+
     6. Close the opened window, and reload the list of available partitions.
-    
+
     7. Select the right-most dropdown for the 512MB partition, and select 'Boot'.
-    
+
     8. Select the right-most dropdown for the other partition, and select 'System'.
-    
+
     9. Voila! You may now proceed to the next page, and continue with installation.
-    
+
     =======================================================
-    
-       ____           __   _                                     
+
+       ____           __   _
       / __/__  ____  / /  (_)__  __ ____ __  __ _____ ___ _______
      / _// _ \/ __/ / /__/ / _ \/ // /\ \ / / // (_-</ -_) __(_-<
     /_/  \___/_/   /____/_/_//_/\_,_//_\_\  \_,_/___/\__/_/ /___/
-    
+
     Do you want to replace your existing Linux installation
     with blendOS, or install blendOS alongside Linux without
     losing your files?
-    
+
     If the former, follow the 'Automatic Partitioning' guide below; for
     the latter, you may follow the 'Manual Partitioning' guide underneath.
-    
+
     +------------------------+
     + Automatic Partitioning +
     +------------------------+
-    
+
     WARNING: Automatic partitioning will erase all files on your disk.
-    
+
     1. Switch back to Automatic Partitioning.
-    
+
     2. Select your main hard drive/SSD.
-    
+
     3. Proceed to the next page, and continue with installation.
-    
+
     +---------------------+
     + Manual Partitioning +
     +---------------------+
-    
+
     1. Select 'Create Partitions'.
-    
+
     2. Make sure your primary system drive is selected.
-    
+
     3. Create a new partition of a size of 512MB, formatted as fat32.
-    
+
     4. Create another partition of a size of at least 40GBs, formatted as ext4.
-    
+
     5. Click on the tick above to apply the changes.
-    
+
     6. Close the opened window, and reload the list of available partitions.
-    
+
     7. Select the right-most dropdown for the 512MB partition, and select 'Boot'.
-    
+
     8. Select the right-most dropdown for the other partition, and select 'System'.
-    
+
     9. Voila! You may now proceed to the next page, and continue with installation.
-    
+
     =======================================================
-    
+
     Thanks for taking the time to read this entire guide!
-    
+
     Author: Rudra Saraswat
     License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
     ```
+
 "Reloading the list of available partitions" means click that little refresh icon (![refresh](../assets/img/install/refresh.png){ .tweemoji .off-glb })
 
 ??? failure "I set up partitioning and the `Next` button is greyed out!"
+
     This is a strange bug, simply switch to automatic partitioning then back to manual partitioning again.
 
----------
+---
 
 You will see a summary and the installation will begin. Wait for first build to finish, then click `Next` and finally, `Reboot`.
 
@@ -362,6 +357,10 @@ You will see a summary and the installation will begin. Wait for first build to 
 On first boot, a GNOME welcome window will open. From here, it's pretty self-explanatory. Set your language, keyboard, timezone, etc.
 
 ![gnome-welcome-window](../assets/img/install/gnome-welcome-window.png)
+
+??? failure "My language isn't listed!"
+
+    Pick English for now, once you load into the system follow the [language guide](../faq.md#the-language-i-want-isnt-there) to add another language.
 
 After you click `Start Using`, your desktop will open.
 

@@ -1,4 +1,25 @@
 {% if page.meta.comments %}
+{% if page.meta.discuss %}
+<h2 id="discuss">Join the discussion!</h2>
+{% if page.meta.discuss.subreddit %}
+<a href={{ page.meta.discuss.subreddit }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/fontawesome/brands/square-reddit.svg" %}</span> Reddit (official sub)</a>
+{% endif %}
+{% if page.meta.discuss.reddit %}
+<a href={{ page.meta.discuss.reddit.link }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/fontawesome/brands/reddit.svg" %}</span> Reddit ({{page.meta.discuss.reddit.sub}})</a>
+{% endif %}
+{% if page.meta.discuss.lemmy %}
+<a href={{ page.meta.discuss.lemmy }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/simple/lemmy.svg" %}</span> Lemmy</a>
+{% endif %}
+{% if page.meta.discuss.mastodon %}
+<a href={{ page.meta.discuss.mastodon }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/fontawesome/brands/mastodon.svg" %}</span> Mastodon</a>
+{% endif %}
+{% if page.meta.discuss.hackernews %}
+<a href={{ page.meta.discuss.hackernews }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/fontawesome/brands/hacker-news.svg" %}</span> Hacker News</a>
+{% endif %}
+{% if page.meta.discuss.lobsters %}
+<a href={{ page.meta.discuss.lobsters }} class="md-button" target="_blank" rel="noopener noreferrer"><span class="twemoji">{% include ".icons/simple/lobsters.svg" %}</span> Lobsters</a>
+{% endif %}
+{% endif %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 <!-- Insert generated snippet here -->
 

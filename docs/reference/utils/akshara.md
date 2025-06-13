@@ -30,7 +30,7 @@ description: "Reference for akshara"
 </div>
 
 !!! question "What is <span class="notranslate">akshara</span>?"
-    akshara is a tool for turning a config file (`system.yaml`) into a fully built system. It can also be used to update the built system.
+    akshara is a tool for turning a config file (`system.yaml`) into a fully built system. It does this by parsing the config file and performing actions against an Arch rootfs tarball to create a new system, which [replaces your old one](../nerdy-stuff/atomicity.md) after a reboot (user folders, containers and Flatpaks are preserved).
 
 ## :material-clipboard-text: Reference
 
@@ -46,6 +46,13 @@ description: "Reference for akshara"
 ![akshara-gui](../../assets/img/akshara-gui.png)
 
 ## :octicons-terminal-16: CLI
+
+### :material-flag: Global flags
+
+| Flag   | Description |
+| -------- | ------- |
+| `--keep-files-on-error` | Do not delete leftover files if there is an error. |
+| `-v`/`--version`  | Print the version number |
 
 ### :fontawesome-solid-question: Help Page
 

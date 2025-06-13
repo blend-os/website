@@ -1,9 +1,8 @@
-
 {
   "scripts": {
     "optimize": "jampack --nocache ./site"
   },
   "dependencies": {
-    "@divriots/jampack": "*"
+    "@divriots/jampack": "^0.33.0"
   }
 }

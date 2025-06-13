@@ -56,7 +56,7 @@ description: "system.yaml config reference"
 !!! info ""
     All values shown here are default values or examples. You can find the default value (as well as info and examples) in the tooltip (:material-plus-circle:).
     
-    No value can be specified more than once (you can't have two `commands:` blocks for instance, but you can have 2 commands listed under 1 `commands` block).
+    No value can be specified more than once (you can't have two `#!yaml commands:` blocks for instance, but you can have two commands listed under one `#!yaml commands:` block).
 
 --8<-- "docs/reference/configs/files/system.yaml.md"
 

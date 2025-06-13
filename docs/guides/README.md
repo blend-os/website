@@ -18,15 +18,16 @@ These are community-written guides for blendOS.
 <!-- maximum of 10 -->
 <!-- example: 
 
-- [Guide Title](guide.md) by (paste your github, gitlab.com, blendOS gitlab, bitbucket or 𝕏 profile link here, it'll become a formatted link){ target="_blank" rel="noopener noreferrer" }
+- [:guide-icon: Guide Title](guide.md) by (paste your github, gitlab.com, blendOS gitlab, bitbucket or 𝕏 profile link here, it'll become a formatted link){ target="_blank" rel="noopener noreferrer" }
 
 -or-
 
-- [Guide Title](guide.md) by [@your_username](link-to-your-website-or-profile-elsewhere-or-email-or-something){ target="_blank" rel="noopener noreferrer" }
+- [:guide-icon: Guide Title](guide.md) by [@your_username](link-to-your-website-or-profile-elsewhere-or-email-or-something){ target="_blank" rel="noopener noreferrer" }
 
 -->
 
-- [Using Podman](using-podman.md) by [@Ast3risk-ops](https://asterisk.lol){ target="_blank" rel="noopener noreferrer" }
+- [:octicons-container-16: Using Podman](using-podman.md) by [@Ast3risk-ops](https://asterisk.lol){ target="_blank" rel="noopener noreferrer" }
+- [:material-pipe-wrench: Fixing System.yaml](fixing-system-yaml.md) by [@Ast3risk-ops](https://asterisk.lol){ target="_blank" rel="noopener noreferrer" }
 
 ## :fontawesome-solid-question: How do I write a guide?
 
