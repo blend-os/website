@@ -198,7 +198,7 @@ commands: # (8)!
         arch-repo: 'https://geo.mirror.pkgbuild.com'
         ```
 
-    You can find a list of mirror URLs by visiting https://cloudflaremirrors.com{ target="_blank" rel="noopener noreferrer" } (and looking at the bullet list, this shows nearby mirrors) or the [Arch mirrorlist](https://archlinux.org/mirrorlist/?protocol=https&use_mirror_status=on){ target="_blank" rel="noopener noreferrer" }. Only copy the first part of the URL (before `$repo`).
+    You can find a list of mirror URLs by visiting https://cloudflaremirrors.com{ target="_blank" rel="noopener noreferrer" } (and looking at the bullet list, this shows nearby mirrors) or the [Arch mirrorlist](https://archlinux.org/mirrorlist/?protocol=https&use_mirror_status=on){ target="_blank" rel="noopener noreferrer" }. Only copy **one**. Also, only copy the first part of the URL (before `$repo`).
 
     ??? example
         If I want to use the University of Waterloo's mirror (:flag_ca:):
@@ -211,15 +211,11 @@ commands: # (8)!
         arch-repo: 'https://mirror.csclub.uwaterloo.ca/archlinux'
         ```
 
-        You put the link to the folder that has a directory list like this:
+        You should put the link to the folder that has a directory list like this (there may be other folders too, that's fine):
 
         ```title="Some Mirror"
         .
-        ├── 󰉋 core
-        ├── <variants>
-        ├── 󰉋 community
-        ├── <variants>
-        ├── 󰉋 multilib
-        ├── <variants>
-        └── <more folders>
+        ├── 📁 core
+        ├── 📁 extra
+        ├── 📁 multilib
         ```
