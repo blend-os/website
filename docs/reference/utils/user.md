@@ -17,12 +17,12 @@ description: "A CLI container management utility"
 
     ------
 
-    [:octicons-code-16: Source Code](https://github.com/blend-os/blend/blob/main/user){ .md-button target="_blank" rel="noopener noreferrer" }
+    [:octicons-code-16: Source Code](https://git.blendos.co/blendOS/system-tools/blend/-/blob/main/user){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 
 !!! question "What is <span class="notranslate">user</span>?"
-    [`user`](https://github.com/blend-os/blend/blob/main/user){ target="_blank" rel="noopener noreferrer" } is a part of [blend](https://github.com/blend-os/blend){ target="_blank" rel="noopener noreferrer" } in Python. It allows for container management through the command-line, a use-case that had not been considered prior to v3.
+    `user` allows for container management through the command-line, a use-case that had not been considered prior to v3.
 
 ## :octicons-terminal-16: CLI usage
 
