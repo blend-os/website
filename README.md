@@ -1,6 +1,6 @@
 # Blend Docs Material
 
-New BlendOS docs (WIP). Built with Material for MkDocs.
+New BlendOS docs. Built with Material for MkDocs.
 
 Please read the [contribution guide](https://blendos.co/contributing#docs) for information on additional features, classes and macros.
 
