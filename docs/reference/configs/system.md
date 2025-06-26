@@ -75,7 +75,7 @@ As an example of a custom track, let's look at the official {{ track("blendos-ba
 
 ??? code "blendos-base.yaml"
     ```yaml
-    --8<-- "https://github.com/blend-os/tracks/raw/main/blendos-base.yaml"
+    --8<-- "https://git.blendos.co/blendOS/tracks/-/raw/main/blendos-base.yaml"
     ```
 
 Here, the `track` value is set to `custom` (no `impl`), indicating a fully custom track. This track is setting default values for whomever uses it.
@@ -90,7 +90,7 @@ An example of this is the official {{ track("plasma") }} track.
 
 ??? code "plasma.yaml"
     ```yaml
-    --8<-- "https://github.com/blend-os/tracks/raw/main/plasma.yaml"
+    --8<-- "https://git.blendos.co/blendOS/tracks/-/raw/main/plasma.yaml"
     ```
 
 All of our desktop tracks inherit {{ track("blendos-base") }}. If you're creating a new desktop/WM track **do this as well**.

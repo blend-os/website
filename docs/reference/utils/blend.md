@@ -11,7 +11,7 @@ description: The container backend
     <em>The container backend.</em>
 
     !!! danger
-        This tool **is not** meant to be used directly, but rather through **System** (blendOS settings) and `user`.
+        This tool **is not** meant to be used directly, but rather through **System** (blendOS settings) and {{ reference("utils", "user") }}.
 
         Only use it for debugging or scripting, and if you know what you're doing.
 
@@ -21,7 +21,7 @@ description: The container backend
     - Comes with blendOS: :octicons-check-16:{ .green title="Yes" }
 
     ------
-    [:octicons-code-16: Source Code](https://github.com/blend-os/blend){ .md-button target="_blank" rel="noopener noreferrer" }
+    [:octicons-code-16: Source Code](https://git.blendos.co/blendOS/system-tools/blend){ .md-button target="_blank" rel="noopener noreferrer" }
 
 </div>
 
