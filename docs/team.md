@@ -29,6 +29,13 @@ glightbox: false
 *Docs & Infrastructure*
 <br><br>
 
+![Askiiart](https://github.com/askiiart.png){ .circle width=200 }
+<br>
+[**Askiiart**](https://askiiart.net){ target="_blank" rel="noopener noreferrer" }
+<br>
+*Maintenance Developer*
+<br><br>
+
 ![Noa](https://github.com/NoaHimesaka1873.png){ .circle width=200 }
 <br>
 [**Noa Himesaka**](https://noa.codes){ target="_blank" rel="noopener noreferrer" }
@@ -39,7 +46,7 @@ glightbox: false
 <br>
 [**Sven Kovač**](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" }
 <br>
-*Screenshots, BPKG Developer*
+*Screenshots, `bpkg` Developer*
 <br><br>
 
 ![Ray](https://github.com/rayvermey.png){ .circle width=200 }
