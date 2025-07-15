@@ -193,6 +193,19 @@ plugins:
   - blog:
       post_date_format: medium
       post_excerpt: required
+  - llmstxt:
+      sections:
+        Home:
+          - index.md: Homepage
+          - team.md: Team
+          - faq.md: FAQ with responses to general questions
+          - contributing.md: Contribution guide
+        Installation:
+          - 'install/*.md'
+        Reference:
+          - 'reference/*.md'
+        Guides:
+          - 'guides/*.md'
   - redirects:
       redirect_maps: 
         'docs/intro.md': 'install/post-install/intro.md'
@@ -207,6 +220,7 @@ plugins:
         'docs/installation/container.md': 'install/post-install/container-guide.md'
         'contribution.md': 'contributing.md'
         'install/post-install/arch-user-guide.md': 'install/post-install/intro.md'
+
 
   - group:
       enabled: !ENV CI
