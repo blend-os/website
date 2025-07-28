@@ -25,7 +25,7 @@ hide:
 # :material-download: Download blendOS
 [:material-lock: HTTPS](#https) - [:simple-bittorrent: Bittorrent](#bittorrent)
 
-!!! warning "Please read the [intro](../install/post-install/intro.md) and [install guide](../install/normal-pc.md) before downloading."
+!!! warning "Please read the [intro](../install/post-install/intro.md){ data-umami-event="download:intro" } and [install guide](../install/normal-pc.md){ data-umami-event="download:install-guide" } before downloading."
     This will ensure you properly understand what this distro is before using it.
 
 ## :material-lock: HTTPS
