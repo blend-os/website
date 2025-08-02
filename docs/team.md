@@ -24,7 +24,7 @@ glightbox: false
 
 ![Asterisk](https://github.com/Ast3risk-ops.png){ .circle width=200 }
 <br>
-[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" }
+[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" } ([:fontawesome-brands-mastodon:](https://social.linux.pizza/@asterisk){ target="_blank" rel="me noopener noreferrer"})
 <br>
 *Docs & Infrastructure*
 <br><br>
