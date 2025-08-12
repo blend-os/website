@@ -88,7 +88,7 @@ Inherited tracks are the most common type of track. They can be used to tack on 
 
 An example of this is the official {{ track("plasma") }} track.
 
-??? code "plasma.yaml"
+???+ code "plasma.yaml"
     ```yaml
     --8<-- "https://git.blendos.co/blendOS/tracks/-/raw/main/plasma.yaml"
     ```
