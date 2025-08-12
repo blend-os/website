@@ -111,9 +111,9 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
 
 If you're creating a fully custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
 
-!!! warning "Reinheritance"
+<!-- !!! warning "Reinheritance"
     If your track inherits a track that inherits another track (reinheritance), issues *may* result, like certain sections of the file being ignored. This is due to an {{ reference("utils", "akshara") }} bug we are still investigating.
-
+-->
 ### :octicons-repo-16: Creating a track repo/webserver
 
 First, create a repo on your favorite git forge, and put all your track files in the root of it.
