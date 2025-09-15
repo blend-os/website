@@ -3,6 +3,6 @@
     "optimize": "jampack --nocache ./site"
   },
   "dependencies": {
-    "@divriots/jampack": "^0.33.1"
+    "@divriots/jampack": "^0.34.0"
   }
 }
