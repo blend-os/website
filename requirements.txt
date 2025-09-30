@@ -93,11 +93,11 @@ paginate==0.5.7
 parameter-decorators==0.0.2; python_version >= '3.7'
 parso==0.8.5; python_version >= '3.6'
 pathspec==0.12.1; python_version >= '3.8'
-pexpect==4.9.0; sys_platform != 'win32' and sys_platform != 'emscripten'
+pexpect==4.9.0
 pillow==11.3.0; python_version >= '3.9'
 platformdirs==4.4.0; python_version >= '3.9'
 plumbum==1.9.0; python_version >= '3.8'
-pm-markdown-extensions @ git+https://github.com/paulmelis/pm_attr_list#egg=pm-markdown-extensions@107b1ab6f4cfb0b086015918ac6380079bbfc4bd
+pm-markdown-extensions @ git+https://github.com/paulmelis/pm_attr_list@107b1ab6f4cfb0b086015918ac6380079bbfc4bd
 prompt-toolkit==3.0.52; python_version >= '3.8'
 psutil==7.1.0; python_version >= '3.6'
 ptyprocess==0.7.0
