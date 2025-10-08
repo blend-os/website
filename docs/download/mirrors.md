@@ -9,7 +9,7 @@
 | :flag_ca:{title=""} Canada          |                    AsteriskCloud                     |                0.13 Gbps { data-sort='0.13' }                |          :octicons-x-12:{ .red }          |                                                                                                             [:material-download: Download](https://blend.asterisk.lol/dvd/v4/blendOS.iso){ .md-button target="\_blank" data-umami-event="AsteriskCloud Download" }<br><span class="noJs mt-1" id="asterisk"></span> <noscript>[`Version`](https://blend.asterisk.lol/dvd/v4/version){ target="\_blank" rel="noopener noreferrer" }</noscript>                                                                                                             |
 | :flag_nz:{title=""} New Zealand     |                TheoM's Mirror Service                | :material-approximately-equal:0.5-10Gbps { data-sort='0.5' } | :octicons-x-12:{ .red } { data-sort='0' } |                                                                                                                                                              [:material-download: Download](https://blendos.mirrors.theom.nz/isos/testing/blendos-20240310-x8664.iso){ .md-button rel="noopener noreferrer" target="\_blank" data-umami-event="TheoM Download" } <br>Version: :x:{title=""}                                                                                                                                                               |
 
-<script src="/assets/js/download.js" />
+<script src="/assets/js/download.js"></script>
 
 <script>
     var styleSheet = document.createElement("style")
