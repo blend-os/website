@@ -87,6 +87,9 @@ extra:
     - icon: simple/matrix
       link: https://matrix.to/#/#blendos:matrix.org
       name: blendOS Matrix Room
+    - icon: simple/revoltdotchat
+      link: https://rvlt.gg/h3zgmesS
+      name: blendOS Revolt
     - icon: simple/reddit
       link: https://reddit.com/r/BlendOS
       name: blendOS Subreddit
