@@ -49,12 +49,6 @@ glightbox: false
 *Screenshots, `bpkg` Developer*
 <br><br>
 
-![Ray](https://github.com/rayvermey.png){ .circle width=200 }
-<br>
-[**Ray Vermey**](https://github.com/rayvermey){ target="_blank" rel="noopener noreferrer" }
-<br>
-*Testing/QA*
-
 ![Jaoheah](https://github.com/Jaoheah.png){ .circle width=200 }
 <br>
 [**Jaoheah**](https://github.com/Jaoheah){ target="_blank" rel="noopener noreferrer" }
