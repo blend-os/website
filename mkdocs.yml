@@ -32,6 +32,7 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
+    - navigation.path
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
@@ -50,7 +51,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-    
+
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
@@ -142,7 +143,7 @@ markdown_extensions:
       auto_append:
         - includes/extra.md
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
@@ -152,7 +153,7 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.magiclink:
-      custom: 
+      custom:
         blendgit:
           host: https://git.blendos.co
           label: "BlendOS Gitlab"
@@ -186,8 +187,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.saneheaders
 
-
-
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
@@ -204,27 +203,26 @@ plugins:
           - faq.md: FAQ with responses to general questions
           - contributing.md: Contribution guide
         Installation:
-          - 'install/*.md'
+          - "install/*.md"
         Reference:
-          - 'reference/*.md'
+          - "reference/*.md"
         Guides:
-          - 'guides/*.md'
+          - "guides/*.md"
   - redirects:
-      redirect_maps: 
-        'docs/intro.md': 'install/post-install/intro.md'
-        'intro.md': 'install/post-install/intro.md'
-        'docs/index.md': 'index.md'
-        'docs/utilities/bpkg.md': 'reference/utils/bpkg.md'
-        'docs/utilities/user.md': 'reference/utils/user.md'
-        'docs/faq.md': 'faq.md'
-        'docs/category/installation.md': 'install/README.md'
-        'docs/installation/normal-pc.md': 'install/normal-pc.md'
-        'docs/installation/mac-t2.md': 'install/t2.md'
-        'docs/installation/container.md': 'install/post-install/container-guide.md'
-        'contribution.md': 'contributing.md'
-        'install/post-install/arch-user-guide.md': 'install/post-install/intro.md'
-
-
+      redirect_maps:
+        "docs/intro.md": "install/post-install/intro.md"
+        "intro.md": "install/post-install/intro.md"
+        "docs/index.md": "index.md"
+        "docs/utilities/bpkg.md": "reference/utils/bpkg.md"
+        "docs/utilities/user.md": "reference/utils/user.md"
+        "docs/faq.md": "faq.md"
+        "docs/category/installation.md": "install/README.md"
+        "docs/installation/normal-pc.md": "install/normal-pc.md"
+        "docs/installation/mac-t2.md": "install/t2.md"
+        "docs/installation/container.md": "install/post-install/container-guide.md"
+        "contribution.md": "contributing.md"
+        "install/post-install/arch-user-guide.md": "install/post-install/intro.md"
+  - typeset
   - group:
       enabled: !ENV CI
       plugins:
@@ -256,16 +254,12 @@ plugins:
             type: timeago
         - rss:
             match_path: blog/posts/.*
-            comments_path: "#__comments" 
+            comments_path: "#__comments"
             date_from_meta:
               as_creation: date
             categories:
               - categories
-              - tags 
- 
-            
-
-
+              - tags
 
 extra_css:
   - assets/css/extra.css
@@ -276,44 +270,45 @@ extra_javascript:
 
 nav:
   - Home:
-    - Home: index.md
-    - FAQ: faq.md
-    - Download: download/README.md
-    - Offline Reading: offline.md
-    - Contributing: contributing.md
-    - Team: team.md
-    - Documentation Credits: credits.md
-  - Download: 
-    - Download: download/README.md
+      - Home: index.md
+      - FAQ: faq.md
+      - Download: download/README.md
+      - Offline Reading: offline.md
+      - Contributing: contributing.md
+      - Team: team.md
+      - Documentation Credits: credits.md
+  - Download:
+      - Download: download/README.md
   - Installation:
-     - Installation: install/README.md
-     - Normal PC: install/normal-pc.md
-     - T2 Mac: install/t2.md
-     - Post-Installation:
-       - Post-Installation: install/post-install/README.md
-       - Introduction to blendOS: install/post-install/intro.md
-       - Container Management: install/post-install/container-guide.md
+      - Installation: install/README.md
+      - Normal PC: install/normal-pc.md
+      - T2 Mac: install/t2.md
+      - Post-Installation:
+          - Post-Installation: install/post-install/README.md
+          - Introduction to blendOS: install/post-install/intro.md
+          - Container Management: install/post-install/container-guide.md
   - Reference:
       - Reference: reference/README.md
       - Container List: reference/container-list.md
       - ISO Building: reference/iso-building.md
-      - Utilities: 
-        - Utilities: reference/utils/README.md
-        - akshara: reference/utils/akshara.md
-        - bpkg: reference/utils/bpkg.md
-        - user: reference/utils/user.md
-        - blend: reference/utils/blend.md
-        - blend-inst: reference/utils/blend-inst.md
+      - Utilities:
+          - Utilities: reference/utils/README.md
+          - akshara: reference/utils/akshara.md
+          - bpkg: reference/utils/bpkg.md
+          - user: reference/utils/user.md
+          - blend: reference/utils/blend.md
+          - blend-inst: reference/utils/blend-inst.md
       - Files:
-        - Files: reference/configs/README.md
-        - system.yaml: reference/configs/system.md
+          - Files: reference/configs/README.md
+          - system.yaml: reference/configs/system.md
       - Nerdy Stuff:
-        - Nerdy Stuff: reference/nerdy-stuff/README.md
-        - Immutability: reference/nerdy-stuff/immutability.md
-        - Atomicity: reference/nerdy-stuff/atomicity.md
+          - Nerdy Stuff: reference/nerdy-stuff/README.md
+          - Immutability: reference/nerdy-stuff/immutability.md
+          - Atomicity: reference/nerdy-stuff/atomicity.md
   - Guides:
       - Guides: guides/README.md
       - Using Podman: guides/using-podman.md
       - Fixing System.yaml: guides/fixing-system-yaml.md
+      - COSMIC Setup: guides/cosmic.md
   - Blog:
       - blog/index.md
