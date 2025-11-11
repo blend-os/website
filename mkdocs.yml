@@ -239,7 +239,7 @@ plugins:
         - offline:
             enabled: !ENV [OFFLINE, false]
         - social:
-            enabled: true
+            enabled: false
             cache_dir: .cache/plugins/social
             cards: true
             cards_dir: assets/images/social
