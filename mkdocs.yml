@@ -309,6 +309,6 @@ nav:
       - Guides: guides/README.md
       - Using Podman: guides/using-podman.md
       - Fixing System.yaml: guides/fixing-system-yaml.md
-      # - COSMIC Setup: guides/cosmic.md
+      - COSMIC Setup: guides/cosmic.md
   - Blog:
       - blog/index.md
