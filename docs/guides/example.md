@@ -8,7 +8,13 @@ description: "Your Description"
 
 # :material-book: Your Title
 
-By ![Your Profile Picture](https://github.com/YOUR_USERNAME.png){ width=30 .circle } https://github.com/YOUR_USERNAME
+<!-- Byline (required): 
+
+By ![Your Profile Picture](https://github.com/YOUR_USERNAME.png){ width=30 .circle } https://github.com/YOUR_USERNAME 
+
+-->
+
+
 
 <!-- you can also paste a gitlab.com, blendOS gitlab, bitbucket or 𝕏 profile link here, or make a Markdown link of this format:
 

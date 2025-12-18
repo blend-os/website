@@ -125,8 +125,6 @@ Go to the [:material-download: Download](../download/README.md) page.
 
 ## :material-package-variant: Install blendOS
 
-Now we can get on to actually installing this distro.
-
 ### :material-power: Boot the USB
 
 First, find your **one-time boot** key. You can do this by searching:

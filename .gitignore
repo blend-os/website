@@ -1,7 +1,6 @@
 .cache/
 .idea/
-Pipfile
-Pipfile.lock
+bun.lock
 site/
 .vscode/
 node_modules/

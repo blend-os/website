@@ -774,5 +774,14 @@ There is a cog in the bottom right. Click it and choose `GNOME on Xorg`.
 
 ### :simple-kde: KDE (SDDM)
 
-In the bottom left there is a session selector. Click it and choose `Plasma (X11)`.
+Use these packages instead and update:
+
+```yaml title="system.yaml"
+packages:
+  - xorg
+  - kwin-x11
+  - plasma-x11-session
+```
+
+In the bottom left of the login screen there is a session selector. Click it and choose `Plasma (X11)`.
 

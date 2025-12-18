@@ -1,5 +1,5 @@
-!!! warning "v4 Installability"
-    If the main pacman repo is down, v4 cannot be installed.
+!!! warning "blendOS Installability"
+    If the main pacman repo is down, blendOS cannot be installed.
 
     **:flag_de: Main repo status (https://pkg-repo.blendos.co{ target="_blank" rel="noopener noreferrer" }):**
     
@@ -7,8 +7,7 @@
 
     **Backup repo statuses:**
     
-    **:flag_us: Repo 1 (https://blend.asterisk.lol/mirror{ target="_blank" rel="noopener noreferrer" })**
-    
+    **:flag_ca: Repo 1 (https://blend.asterisk.lol/mirror{ target="_blank" rel="noopener noreferrer" })**
 
     [![backup-repo-2](https://status.asterisk.lol/api/badge/24/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
 

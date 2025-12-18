@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pm-markdown-extensions = {ref = "107b1ab6f4cfb0b086015918ac6380079bbfc4bd", git = "https://github.com/paulmelis/pm_attr_list"}
+mkdocs-rss-plugin = "*"
+mkdocs-git-authors-plugin = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
+mkdocs-llmstxt = "*"
+mkdocs-macros-plugin = "*"
+mkdocs-glightbox = "*"
+mkdocs-redirects = "*"
+click = "==8.2.1"
+mkdocs-material = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
+
+[scripts]
+serve = "mkdocs serve"
+build = "mkdocs build"

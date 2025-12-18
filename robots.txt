@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow: /cgi-bin/
+Disallow: /cdn-cgi/
+
+# It's dangerous to go alone, take this:
+
+Sitemap: https://blendos.co/sitemap.xml

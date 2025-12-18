@@ -24,9 +24,16 @@ glightbox: false
 
 ![Asterisk](https://github.com/Ast3risk-ops.png){ .circle width=200 }
 <br>
-[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" }
+[**Asterisk**](https://asterisk.lol){ target="_blank" rel="noopener" } ([:fontawesome-brands-mastodon:](https://social.linux.pizza/@asterisk){ target="_blank" rel="me noopener noreferrer"})
 <br>
 *Docs & Infrastructure*
+<br><br>
+
+![Askiiart](https://github.com/askiiart.png){ .circle width=200 }
+<br>
+[**Askiiart**](https://askiiart.net){ target="_blank" rel="noopener noreferrer" }
+<br>
+*Maintenance Developer*
 <br><br>
 
 ![Noa](https://github.com/NoaHimesaka1873.png){ .circle width=200 }
@@ -39,14 +46,8 @@ glightbox: false
 <br>
 [**Sven Kovač**](https://git.blendos.co/svgaming){ target="_blank" rel="noopener noreferrer" }
 <br>
-*Screenshots, BPKG Developer*
+*Screenshots, `bpkg` Developer*
 <br><br>
-
-![Ray](https://github.com/rayvermey.png){ .circle width=200 }
-<br>
-[**Ray Vermey**](https://github.com/rayvermey){ target="_blank" rel="noopener noreferrer" }
-<br>
-*Testing/QA*
 
 ![Jaoheah](https://github.com/Jaoheah.png){ .circle width=200 }
 <br>

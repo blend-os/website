@@ -98,3 +98,5 @@ hide:
 ---------
 
 ###### Footer { style="visibility: hidden;width: 0; height: 0;" }
+
+[Totally unsuspicious link](https://social.linux.pizza/@asterisk){ rel="me" target="_blank" style="visibility: hidden;width: 0;height: 0;" }

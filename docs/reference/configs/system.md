@@ -75,7 +75,7 @@ As an example of a custom track, let's look at the official {{ track("blendos-ba
 
 ??? code "blendos-base.yaml"
     ```yaml
-    --8<-- "https://git.blendos.co/blendOS/tracks/-/raw/main/blendos-base.yaml"
+    --8<-- "https://github.com/blend-os/tracks/raw/main/blendos-base.yaml"
     ```
 
 Here, the `track` value is set to `custom` (no `impl`), indicating a fully custom track. This track is setting default values for whomever uses it.
@@ -88,9 +88,9 @@ Inherited tracks are the most common type of track. They can be used to tack on 
 
 An example of this is the official {{ track("plasma") }} track.
 
-??? code "plasma.yaml"
+???+ code "plasma.yaml"
     ```yaml
-    --8<-- "https://git.blendos.co/blendOS/tracks/-/raw/main/plasma.yaml"
+    --8<-- "https://github.com/blend-os/tracks/raw/main/plasma.yaml"
     ```
 
 All of our desktop tracks inherit {{ track("blendos-base") }}. If you're creating a new desktop/WM track **do this as well**.
@@ -111,9 +111,9 @@ To inherit a track, simply set an `impl` and a `track` value in your track file.
 
 If you're creating a fully custom track and **do not** want to inherit, simply set your `track` to `custom` with no `impl` (as mentioned above).
 
-!!! warning "Reinheritance"
+<!-- !!! warning "Reinheritance"
     If your track inherits a track that inherits another track (reinheritance), issues *may* result, like certain sections of the file being ignored. This is due to an {{ reference("utils", "akshara") }} bug we are still investigating.
-
+-->
 ### :octicons-repo-16: Creating a track repo/webserver
 
 First, create a repo on your favorite git forge, and put all your track files in the root of it.
