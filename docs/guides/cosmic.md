@@ -25,7 +25,7 @@ The image can also be a local one, store it in docs/assets/img/guides
 -->
 
 1. [**:material-hammer-wrench: Install blendOS**](../install/normal-pc.md)
-2. Edit [:material-file-star: `system.yaml`](../reference/configs/system.md) and change to the cosmic track:
+2. Edit [:material-file-star: `system.yaml`](../reference/configs/system.md) and change to the COSMIC track:
 ```yaml title="/system.yaml"
 track: "cosmic"
 ```
