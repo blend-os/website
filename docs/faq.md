@@ -547,17 +547,6 @@ commands:
 ```
 
 !!! warning "Some languages need additional fonts!"
-    **CJK**:
-    ```yaml title="system.yaml"
-    packages:
-      - 'noto-fonts-cjk'
-    ```
-
-    **Arabic**:
-    ```yaml title="system.yaml"
-    packages:
-      - 'noto-fonts'
-    ```
 
     **Bengali & Indic**:
     ```yaml title="system.yaml"
