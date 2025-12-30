@@ -4,15 +4,13 @@ stages:
   - ⛩️ optimize
   - 📤 deploy
 
+include:
+# - template: Security/SAST.gitlab-ci.yml    # Code security scanning
+- template: Security/Secret-Detection.gitlab-ci.yml     # Secret detection
+
 workflow:
   auto_cancel:
     on_job_failure: all
-
-sast:
-  stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml    # Code security scanning
-- template: Security/Secret-Detection.gitlab-ci.yml     # Secret detection
 
 🔨 build-job:
   image: python:latest        # This job runs in the build stage, which runs first.
