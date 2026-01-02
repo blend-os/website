@@ -14,6 +14,7 @@ xhr.onreadystatechange = function () {
         "' target='_blank' rel='noopener noreferrer'><code>" +
         firstCharacters +
         "</code></a>";
+      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/blendOS/image-builder/-/commit/" + fileContent + "' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters + "</code></a>)</b>";
     } else {
       console.error("Failed to load file:", xhr.statusText);
     }

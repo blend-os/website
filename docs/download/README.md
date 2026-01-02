@@ -83,27 +83,6 @@ hide:
     - If they are, your ISO is fine. **Continue with installation.**
     - If they aren't, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
 
-<script>
-var xhr6 = new XMLHttpRequest();
-var fileUrl6 = 'https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job';
-xhr6.open('GET', fileUrl6, true);
-xhr6.onreadystatechange = function() {
-  if (xhr6.readyState === XMLHttpRequest.DONE) {
-    if (xhr6.status >= 200 && xhr6.status < 300) {
-      var fileContent6 = xhr6.responseText;
-      var numCharacters6 = 8; // Change this number as needed
-      var firstCharacters6 = fileContent6.slice(0, numCharacters6);
-      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/blendOS/image-builder/-/commit/" + fileContent6 + "' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters6 + "</code></a>)</b>";
-    } else {
-      console.error('Failed to load file:', xhr6.statusText);
-    }
-  }
-};
-xhr6.onerror = function() {
-  console.error('Network error occurred');
-};
-xhr6.send();
-</script>
 
 --8<-- "docs/download/mirrors.md"
 
