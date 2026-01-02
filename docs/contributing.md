@@ -85,8 +85,8 @@ If you'd like to mirror, great! Here's the steps:
         Now, create dummy files in these directories if the files don't exist already (don't worry, these will get replaced when the script is run):
 
         ```bash
-        cd <your iso folder> && touch blendOS.iso
-        cd <your version folder> && touch version
+        touch <your iso folder>/blendOS.iso
+        touch <your version folder>/version
         ```
 
         You can run the file by just doing:
@@ -104,7 +104,7 @@ If you'd like to mirror, great! Here's the steps:
 
         -----------
 
-        The script's source code is on our [Gitlab](https://git.blendos.co/blendos/blendl){ target="_blank" rel="noopener noreferrer" } and @Ast3risk-ops's [Github](https://github.com/Ast3risk-ops/blenDL){ target="_blank" rel="noopener noreferrer" title="Read-only mirror" }.
+        The script's source code is on our [Gitlab](https://git.blendos.co/blendos/blendl){ target="_blank" rel="noopener noreferrer" } and [Github](https://github.com/blend-os/blenDL){ target="_blank" rel="noopener noreferrer" title="Read-only mirror" }.
 
     ??? abstract "`wget` mirroring for the package repo"
         Otus has provided a cronjob for this:
