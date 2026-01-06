@@ -1,90 +1,89 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/user/application_security/secret_detection/pipeline/configure
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
-  - test          # List of stages for jobs, and their order of execution
-  - 🛠️ build
-  - ⛩️ optimize
-  - 📤 deploy
-
+- test
 include:
-# - template: Security/SAST.gitlab-ci.yml    # Code security scanning
-- template: Security/Secret-Detection.gitlab-ci.yml     # Secret detection
-
+- template: Security/Dependency-Scanning.gitlab-ci.yml
 workflow:
   auto_cancel:
     on_job_failure: all
-
-🔨 build-job:
-  image: python:latest        # This job runs in the build stage, which runs first.
-  stage: 🛠️ build
+"\U0001F528 build-job":
+  image: python:latest
+  stage: "\U0001F6E0️ build"
   tags:
-    - 'x86_64'
-  script:  
-    - pip install -r requirements.txt
-    - mkdocs build
+  - x86_64
+  script:
+  - pip install -r requirements.txt
+  - mkdocs build
   artifacts:
     when: on_success
     paths:
-        - site
+    - site
   only:
-    - main
-🚫 offline:
+  - main
+"\U0001F6AB offline":
   image: python:latest
-  stage: 🛠️ build
+  stage: "\U0001F6E0️ build"
   variables:
     OFFLINE: 'true'
-  script:  
-    - pip install -r requirements.txt
-    - sed -i s/xzz/$CI_COMMIT_SHORT_SHA/g offline.html 
-    - mv offline.html overrides/main.html
-    - mkdocs build
+  script:
+  - pip install -r requirements.txt
+  - sed -i s/xzz/$CI_COMMIT_SHORT_SHA/g offline.html
+  - mv offline.html overrides/main.html
+  - mkdocs build
   artifacts:
     when: on_success
     paths:
-        - site
-  
-⛩️ optimize-job:
+    - site
+"⛩️ optimize-job":
   image: node:lts
-  stage: ⛩️ optimize
+  stage: "⛩️ optimize"
   tags:
-    - 'x86_64'
-  needs: 
-    - job: 🔨 build-job
-      artifacts: true
+  - x86_64
+  needs:
+  - job: "\U0001F528 build-job"
+    artifacts: true
   before_script:
-    - corepack enable
-    - corepack prepare pnpm@latest-8 --activate
-    - pnpm config set store-dir .pnpm-store
+  - corepack enable
+  - corepack prepare pnpm@latest-8 --activate
+  - pnpm config set store-dir .pnpm-store
   script:
-    - pnpm install # install dependencies
-    - pnpm run optimize
+  - pnpm install
+  - pnpm run optimize
   dependencies:
-    - 🔨 build-job
+  - "\U0001F528 build-job"
   cache:
     key:
       files:
-        - pnpm-lock.yaml
+      - pnpm-lock.yaml
     paths:
-      - .pnpm-store
+    - ".pnpm-store"
   artifacts:
     when: on_success
     paths:
-        - site
+    - site
   only:
-    - main
-
-🌐 deploy-job:
+  - main
+"\U0001F310 deploy-job":
   image: jfxs/wrangler:latest
-  stage: 📤 deploy
-  needs: 
-    - job: ⛩️ optimize-job
-      artifacts: true
+  stage: "\U0001F4E4 deploy"
+  needs:
+  - job: "⛩️ optimize-job"
+    artifacts: true
   variables:
-    PROJECT_NAME: "blendos"
-    WRANGLER_SEND_METRICS: "false"
+    PROJECT_NAME: blendos
+    WRANGLER_SEND_METRICS: 'false'
   dependencies:
-  - ⛩️ optimize-job
+  - "⛩️ optimize-job"
   script:
   - mv _headers site/
   - mv robots.txt site/
-  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA --commit-dirty=true
+  - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash
+    $CI_COMMIT_SHA --commit-dirty=true
   only:
   - main
