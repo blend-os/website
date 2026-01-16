@@ -6,15 +6,13 @@ xhr.onreadystatechange = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {
     if (xhr.status >= 200 && xhr.status < 300) {
       var fileContent = xhr.responseText;
-      var numCharacters = 8; // Change this number as needed
+      var numCharacters = 13; // Change this number as needed
       var firstCharacters = fileContent.slice(0, numCharacters);
       document.getElementById("firstCharacters").innerHTML =
-        "Version: <a href='https://git.blendos.co/blendOS/image-builder/-/commit/" +
-        fileContent +
-        "' target='_blank' rel='noopener noreferrer'><code>" +
+        "Version: <a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job' target='_blank' rel='noopener noreferrer'><code>" +
         firstCharacters +
         "</code></a>";
-      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/blendOS/image-builder/-/commit/" + fileContent + "' target='_blank' rel='noopener noreferrer'><code>" + firstCharacters + "</code></a>)</b>";
+      document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job target='_blank' rel='noopener noreferrer'><code>" + firstCharacters + "</code></a>)</b>";
     } else {
       console.error("Failed to load file:", xhr.statusText);
     }
@@ -32,7 +30,7 @@ xhr3.onreadystatechange = function () {
   if (xhr3.readyState === XMLHttpRequest.DONE) {
     if (xhr3.status >= 200 && xhr3.status < 300) {
       var fileContent3 = xhr3.responseText;
-      var numCharacters3 = 8; // Change this number as needed
+      var numCharacters3 = 13; // Change this number as needed
       var firstCharacters3 = fileContent3.slice(0, numCharacters3);
       document.getElementById("sahilister").innerHTML =
         "Version: <a href='https://mirrors.de.sahilister.net/blendos/version' target='_blank' rel='noopener noreferrer'><code>" +
@@ -55,7 +53,7 @@ xhr4.onreadystatechange = function () {
   if (xhr4.readyState === XMLHttpRequest.DONE) {
     if (xhr4.status >= 200 && xhr4.status < 300) {
       var fileContent4 = xhr4.responseText;
-      var numCharacters4 = 8; // Change this number as needed
+      var numCharacters4 = 13; // Change this number as needed
       var firstCharacters4 = fileContent4.slice(0, numCharacters4);
       document.getElementById("yuru").innerHTML =
         "Version: <a href='https://mirror.funami.tech/blendos/version' target='_blank' rel='noopener noreferrer'><code>" +
@@ -78,7 +76,7 @@ xhr5.onreadystatechange = function () {
   if (xhr5.readyState === XMLHttpRequest.DONE) {
     if (xhr5.status >= 200 && xhr5.status < 300) {
       var fileContent5 = xhr5.responseText;
-      var numCharacters5 = 8; // Change this number as needed
+      var numCharacters5 = 13; // Change this number as needed
       var firstCharacters5 = fileContent5.slice(0, numCharacters5);
       document.getElementById("asterisk").innerHTML =
         "Version: <a href='https://blend.asterisk.lol/dvd/v4/version' target='_blank' rel='noopener noreferrer'><code>" +
@@ -101,7 +99,7 @@ xhr6.onreadystatechange = function () {
   if (xhr6.readyState === XMLHttpRequest.DONE) {
     if (xhr6.status >= 200 && xhr6.status < 300) {
       var fileContent6 = xhr6.responseText;
-      var numCharacters6 = 8; // Change this number as needed
+      var numCharacters6 = 13; // Change this number as needed
       var firstCharacters6 = fileContent6.slice(0, numCharacters6);
       document.getElementById("niranjan-nl").innerHTML =
         "Version: <a href='https://nl.blendos.niranjan.co/version' target='_blank' rel='noopener noreferrer'><code>" +
@@ -124,7 +122,7 @@ xhr7.onreadystatechange = function () {
   if (xhr7.readyState === XMLHttpRequest.DONE) {
     if (xhr7.status >= 200 && xhr7.status < 300) {
       var fileContent7 = xhr7.responseText;
-      var numCharacters7 = 8; // Change this number as needed
+      var numCharacters7 = 13; // Change this number as needed
       var firstCharacters7 = fileContent7.slice(0, numCharacters7);
       document.getElementById("niranjan-at").innerHTML =
         "Version: <a href='https://at.blendos.niranjan.co/version' target='_blank' rel='noopener noreferrer'><code>" +
