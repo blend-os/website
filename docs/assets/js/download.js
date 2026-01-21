@@ -9,7 +9,7 @@ xhr.onreadystatechange = function () {
       var numCharacters = 13; // Change this number as needed
       var firstCharacters = fileContent.slice(0, numCharacters);
       document.getElementById("firstCharacters").innerHTML =
-        "Version: <a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/blendOS.iso?job=build-job' target='_blank' rel='noopener noreferrer'><code>" +
+        "Version: <a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job' target='_blank' rel='noopener noreferrer'><code>" +
         firstCharacters +
         "</code></a>";
       document.getElementById('v').innerHTML = "<b>(<a href='https://git.blendos.co/api/v4/projects/32/jobs/artifacts/main/raw/version?job=build-job target='_blank' rel='noopener noreferrer'><code>" + firstCharacters + "</code></a>)</b>";
