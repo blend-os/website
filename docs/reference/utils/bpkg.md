@@ -59,7 +59,7 @@ Its contents will look something like this based on your containers:
     {% endraw %}
     The YAML code is generated from the output.
 
---8<-- "docs/reference/utils/files/bpkg.yaml.md"
+--8<-- "files/bpkg.yaml.md"
 
 ## :material-file-cog: Configuration
 

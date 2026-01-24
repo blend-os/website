@@ -126,7 +126,7 @@ Now, you might want to install applications from other distributions like Ubuntu
 
 #### :material-train-car-container: Supported container types
 
---8<-- "docs/reference/container-list/v4.md"
+--8<-- "files/container-list/v4.md"
 
 #### :material-plus-box: Creating containers
 

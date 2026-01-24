@@ -37,7 +37,7 @@ description: "Reference for our installer"
 
 !!! failure "This example file is from v3 and will be fixed eventually."
 
---8<-- "docs/reference/utils/files/jade.json.md"
+--8<-- "files/jade.json.md"
 
 ## :octicons-terminal-16: CLI usage
 

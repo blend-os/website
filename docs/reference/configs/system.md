@@ -58,7 +58,7 @@ description: "system.yaml config reference"
     
     No value can be specified more than once (you can't have two `#!yaml commands:` blocks for instance, but you can have two commands listed under one `#!yaml commands:` block).
 
---8<-- "docs/reference/configs/files/system.yaml.md"
+--8<-- "files/system.yaml.md"
 
 ## :material-train: Tracks
 

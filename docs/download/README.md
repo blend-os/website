@@ -84,7 +84,7 @@ hide:
     - If they aren't, your ISO is either corrupt or was tampered with. **Delete it and use another mirror.**
 
 
---8<-- "docs/download/mirrors.md"
+--8<-- "mirrors.md"
 
 <div align="center" markdown>
 ## :simple-bittorrent: BitTorrent

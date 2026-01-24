@@ -34,7 +34,7 @@ description: The container backend
 
 The table of distributions is below:
 
---8<-- "docs/reference/container-list/v4.md"
+--8<-- "files/container-list/v4.md"
 
 ## :octicons-terminal-16: CLI
 

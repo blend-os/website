@@ -35,7 +35,7 @@ Creates a container with the selected distro.
 
 `<DISTRO>` can be one of the distro IDs specified below:
 
---8<-- "docs/reference/container-list/v4.md"
+--8<-- "files/container-list/v4.md"
 
 ### :material-minus-box: Remove a container
 

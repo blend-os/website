@@ -5,7 +5,7 @@ description: "Installing blendOS"
 
 # :material-hammer-wrench: Installation
 
---8<-- "docs/backup-mirrors.md"
+--8<-- "repo-mirrors.md"
 
 
 You can install BlendOS on the following devices:

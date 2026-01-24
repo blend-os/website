@@ -1,0 +1,2 @@
+# Ignore all Markdown files as Prettier does not support MDC
+**/*.md
