@@ -21,5 +21,5 @@ mkdocs-material = "*"
 python_version = "3.14"
 
 [scripts]
-serve = "mkdocs serve"
+serve = "properdocs serve"
 build = "mkdocs build"
