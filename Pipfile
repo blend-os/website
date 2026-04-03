@@ -13,7 +13,6 @@ mkdocs-macros-plugin = "*"
 mkdocs-glightbox = "*"
 mkdocs-redirects = "*"
 click = "==8.2.1"
-mkdocs-materialx = {extras = ["imaging"], version = "*"}
 mkdocs-material = {extras = ["imaging"], version = "*"}
 
 [dev-packages]
