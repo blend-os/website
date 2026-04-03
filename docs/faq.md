@@ -5,7 +5,7 @@ description: "blendOS FAQ"
 
 # :material-chat-question: FAQ
 
-## What desktops are officially supported?
+## Which desktops are officially supported?
 
 - GNOME ({{ track("default-gnome") }} track)
 - KDE Plasma ({{ track("plasma") }} track)
@@ -13,6 +13,7 @@ description: "blendOS FAQ"
 - Cinnamon ({{ track("cinnamon") }} track)
 - MATE ({{ track("mate") }} track)
 - LXQt ({{ track("lxqt") }} track)
+- Cosmic ({{ track("cosmic") }} track)
 
 You can [make your own tracks](reference/configs/system.md#tracks) to support whatever desktop or WM you want, this is just what we offer by default.
 
