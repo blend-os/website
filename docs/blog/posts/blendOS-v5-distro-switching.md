@@ -48,7 +48,7 @@ track: "https://git.blendos.co/blendOS/tracks/-/raw/v5/arch/gnome.yaml"
 
 Additionally, as part of our snazzy new `/system.yaml` configuration format, one may implement support for their own distributions of choice, building upon OCI images. For instance, illustrated underneath is the configuration for Ubuntu, based atop a custom Ubuntu container image (to reduce update times, though one could also use the pre-existing `ubuntu:latest` image from DockerHub for such a configuration): 
 
-```js
+```yaml
 --8<-- "https://raw.githubusercontent.com/blend-os/tracks/0e28a76b84bf4b83a4dea78dbadfdb7a74dc5057/ubuntu/base.yaml"
 ```
 
@@ -91,7 +91,7 @@ Thus began an effort to produce a successor that utilised solely container image
 
 That all changed earlier this week, when there had occurred to me the possibility of supplying a distribution in possessorship of either update mechanism, or perhaps one that eliminated any such default, laying out the premise for blendOS v5; an alternative approach was considered more alike that offered presently on blendOS. Instead of relying exlusively upon a standard OCI image, such a container-based implementation could well be offered as a track itself for other distribution tracks to rely upon; and so the `oci.yaml` track sprang into existence, as provided underneath:
 
-```js
+```yaml
 --8<-- "https://raw.githubusercontent.com/blend-os/tracks/0e28a76b84bf4b83a4dea78dbadfdb7a74dc5057/oci/oci.yaml"
 ```
 
