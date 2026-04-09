@@ -12,7 +12,7 @@ comments: true
 crosspost_url: http://ruds.io/posts/blendOS-v5-distro-switching
 ---
 
-*This is a cross-post (republished verbatim) from my personal blog that was originally titled **'devlog: distro-switching & OCI system images in blendOS, collaboration with Framework, and a personal update'**; bearing the original description:*
+*This is a cross-post (republished verbatim) from my personal blog that was originally titled **'devlog: distro-switching & OCI system images in blendOS, collaboration with Framework, and a personal update'**, bearing the original description:*
 
 > An account of how I implemented the ability to switch between distributions on blendOS and news of a collaboration with Framework, plus a personal update at the end.
 
