@@ -1,7 +1,7 @@
 !!! warning "blendOS Installability"
     If the main pacman repo is down, blendOS cannot be installed.
 
-    !!! note "While we work on moving to a new status page, these badges currently do not work, use the status page instead."
+    !!! note "While we work on moving to a new status page, these badges currently do not work, use the [status page](https://status.blendos.co){ rel="noopener noreferrer" target="_blank" } instead."
 
     **:flag_de: Main repo status (https://pkg-repo.blendos.co{ target="_blank" rel="noopener noreferrer" }):**
     
