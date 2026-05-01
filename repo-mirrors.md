@@ -1,6 +1,8 @@
 !!! warning "blendOS Installability"
     If the main pacman repo is down, blendOS cannot be installed.
 
+    !!! note "While we work on moving to a new status page, these badges currently do not work, use the status page instead."
+
     **:flag_de: Main repo status (https://pkg-repo.blendos.co{ target="_blank" rel="noopener noreferrer" }):**
     
     [![repo-status](https://status.asterisk.lol/api/badge/21/status?label=)](https://status.asterisk.lol/status/blendos){ target="_blank" rel="noopener" }
