@@ -85,6 +85,8 @@ workflow:
   script:
   - mv _headers site/
   - mv robots.txt site/
+  - mv ads.txt site/
+  - mv app-ads.txt site/
   - wrangler pages deploy site/ --branch main --project-name $PROJECT_NAME --commit-hash $CI_COMMIT_SHA --commit-dirty=true
   only:
   - main
