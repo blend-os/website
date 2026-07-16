@@ -8,3 +8,7 @@ _jampack/
 __pycache__/
 
 .wrangler/
+
+.python-version
+pyproject.toml
+uv.lock
