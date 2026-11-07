@@ -42,7 +42,7 @@ workflow:
         - site
   
 ⛩️ optimize-job:
-  image: node:lts
+  image: ghcr.io/pnpm/pnpm:12
   stage: ⛩️ optimize
   tags:
     - 'x86_64'
@@ -50,9 +50,8 @@ workflow:
     - job: 🔨 build-job
       artifacts: true
   before_script:
-    - corepack enable
-    - corepack prepare pnpm@latest-8 --activate
     - pnpm config set store-dir .pnpm-store
+    - pnpm runtime set node lts -g
   script:
     - pnpm install # install dependencies
     - pnpm run optimize
