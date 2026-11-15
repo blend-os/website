@@ -3,6 +3,7 @@ draft: false
 date: 2025-12-13
 categories:
   - akshara
+  - problems
 title: "Emergency akshara fix for AUR updates"
 authors:
   - asterisk
